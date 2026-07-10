@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Select newest installed stable Xcode
         shell: bash
@@ -73,7 +73,7 @@ jobs:
         run: bash scripts/build-trollstore-ipa.sh
 
       - name: Upload IPA
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: NutritionTracker-TrollStore
           path: artifacts/NutritionTracker-TrollStore.ipa
@@ -81,10 +81,9 @@ jobs:
           retention-days: 30
 
       - name: Upload build information
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: NutritionTracker-build-info
           path: artifacts/build-info.txt
           if-no-files-found: error
           retention-days: 30
-
