@@ -49,23 +49,54 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
+      - name: Prepare iOS simulator
+        shell: bash
+        run: |
+          set -euo pipefail
+          SIMULATOR_INFO=$(xcrun simctl list devices available -j | python3 -c '
+          import json, re, sys
+          runtimes = json.load(sys.stdin)["devices"]
+          candidates = []
+          for runtime, devices in runtimes.items():
+              match = re.search(r"iOS-(\d+)-(\d+)", runtime)
+              if not match:
+                  continue
+              version = tuple(map(int, match.groups()))
+              for device in devices:
+                  if device.get("isAvailable") and device["name"].startswith("iPhone"):
+                      pro_priority = 1 if "Pro" in device["name"] else 0
+                      candidates.append((version, pro_priority, device["name"], runtime, device["udid"]))
+          if not candidates:
+              raise SystemExit("No available iPhone simulator was found")
+          selected = max(candidates)
+          print("|".join((selected[4], selected[2], selected[3])))
+          ')
+          IFS='|' read -r SIMULATOR_ID SIMULATOR_NAME SIMULATOR_RUNTIME <<< "$SIMULATOR_INFO"
+          echo "Selected simulator: $SIMULATOR_NAME ($SIMULATOR_RUNTIME) $SIMULATOR_ID"
+          xcrun simctl boot "$SIMULATOR_ID" 2>&1 || true
+          python3 - "$SIMULATOR_ID" <<'PY'
+          import subprocess
+          import sys
+
+          subprocess.run(
+              ["xcrun", "simctl", "bootstatus", sys.argv[1], "-b"],
+              check=True,
+              timeout=180,
+          )
+          PY
+          xcrun simctl list devices | grep "$SIMULATOR_ID"
+          echo "SIMULATOR_ID=$SIMULATOR_ID" >> "$GITHUB_ENV"
+
       - name: Run unit tests
         shell: bash
         run: |
           set -euo pipefail
-          SIMULATOR_ID=$(xcrun simctl list devices available -j | python3 -c '
-          import json, sys
-          devices = json.load(sys.stdin)["devices"]
-          iphones = [device for runtime in devices.values() for device in runtime if device.get("isAvailable") and device["name"].startswith("iPhone")]
-          if not iphones:
-              raise SystemExit("No available iPhone simulator was found")
-          print(iphones[-1]["udid"])
-          ')
           xcodebuild \
             -project NutritionTracker.xcodeproj \
             -scheme NutritionTracker \
             -destination "platform=iOS Simulator,id=$SIMULATOR_ID" \
             -derivedDataPath "$RUNNER_TEMP/TestDerivedData" \
+            -parallel-testing-enabled NO \
             test
 
       - name: Build TrollStore IPA
