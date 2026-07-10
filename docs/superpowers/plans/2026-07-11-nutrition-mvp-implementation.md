@@ -33,6 +33,9 @@
 - `NutritionTracker/App/AppTab.swift`: stable tab identity and Chinese labels.
 - `NutritionTracker/Supporting/Info.plist`: display name, scene configuration, and camera permission copy.
 - `NutritionTracker/Resources/Assets.xcassets`: minimal valid asset catalog.
+- `.github/workflows/build-trollstore-ipa.yml`: cloud macOS test, unsigned device build, and artifact upload.
+- `scripts/build-trollstore-ipa.sh`: deterministic unsigned device build and TrollStore IPA packaging.
+- `docs/distribution/trollstore-install.md`: Chinese GitHub Actions and TrollStore installation guide.
 
 ### Pure domain and services
 
@@ -97,10 +100,14 @@
 - Create: `NutritionTracker/Supporting/Info.plist`
 - Create: `NutritionTracker/Resources/Assets.xcassets/Contents.json`
 - Create: `NutritionTracker/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json`
+- Create: `.github/workflows/build-trollstore-ipa.yml`
+- Create: `scripts/build-trollstore-ipa.sh`
+- Create: `docs/distribution/trollstore-install.md`
 
 **Interfaces:**
 - Consumes: no production interfaces.
 - Produces: scheme `NutritionTracker`, module `NutritionTracker`, test module `NutritionTrackerTests`, and iOS 16 app entry point.
+- Produces: GitHub Actions artifact `NutritionTracker-TrollStore.ipa` after tests and device build succeed.
 
 - [ ] **Step 1: Create a project whose only production source is the app shell**
 

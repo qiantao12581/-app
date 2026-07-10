@@ -1,0 +1,90 @@
+name: Build TrollStore IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - "codex/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: trollstore-ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Test and package unsigned IPA
+    runs-on: macos-15
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select newest installed stable Xcode
+        shell: bash
+        run: |
+          set -euo pipefail
+          XCODE_APP=$(python3 - <<'PY'
+          import pathlib
+          import re
+
+          candidates = []
+          for path in pathlib.Path("/Applications").glob("Xcode_*.app"):
+              match = re.fullmatch(r"Xcode_(\d+(?:\.\d+)*)\.app", path.name)
+              if match:
+                  version = tuple(int(part) for part in match.group(1).split("."))
+                  candidates.append((version, path))
+
+          if not candidates:
+              raise SystemExit("No stable Xcode installation was found")
+
+          print(max(candidates, key=lambda item: item[0])[1])
+          PY
+          )
+          sudo xcode-select --switch "$XCODE_APP/Contents/Developer"
+          xcodebuild -version
+          xcodebuild -showsdks
+
+      - name: Run unit tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          SIMULATOR_ID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          iphones = [device for runtime in devices.values() for device in runtime if device.get("isAvailable") and device["name"].startswith("iPhone")]
+          if not iphones:
+              raise SystemExit("No available iPhone simulator was found")
+          print(iphones[-1]["udid"])
+          ')
+          xcodebuild \
+            -project NutritionTracker.xcodeproj \
+            -scheme NutritionTracker \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_ID" \
+            -derivedDataPath "$RUNNER_TEMP/TestDerivedData" \
+            test
+
+      - name: Build TrollStore IPA
+        shell: bash
+        run: bash scripts/build-trollstore-ipa.sh
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: NutritionTracker-TrollStore
+          path: artifacts/NutritionTracker-TrollStore.ipa
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload build information
+        uses: actions/upload-artifact@v4
+        with:
+          name: NutritionTracker-build-info
+          path: artifacts/build-info.txt
+          if-no-files-found: error
+          retention-days: 30
+
