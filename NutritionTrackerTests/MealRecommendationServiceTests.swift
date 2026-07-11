@@ -1,3 +1,4 @@
+import Foundation
 import XCTest
 @testable import NutritionTracker
 
@@ -57,6 +58,64 @@ final class MealRecommendationServiceTests: XCTestCase {
 
         XCTAssertEqual(Set(lunch.items.map(\.food.category)), [.staple, .protein, .vegetable])
         XCTAssertTrue(lunch.items.allSatisfy { $0.grams > 0 })
+    }
+
+    func testIncompleteFoodIsExcludedFromAutomaticRecommendations() {
+        let completeStaplesAndVegetables = fixtureFoods.filter {
+            $0.category != .protein
+        }
+        let incompleteProtein = FoodReference(
+            id: "incomplete-protein",
+            name: "营养不完整蛋白质",
+            aliases: [],
+            category: .protein,
+            suitableMeals: [.lunch, .dinner],
+            nutrition: PartialNutritionValues(
+                calories: 100,
+                carbohydrates: 2,
+                protein: nil,
+                fat: 3
+            ),
+            nutritionBasisAmount: 100,
+            nutritionBasisUnit: .gram,
+            portions: [FoodPortion(
+                id: "gram",
+                name: "克",
+                baseAmount: 1,
+                baseUnit: .gram,
+                allowsDecimalQuantity: true,
+                isDefault: true
+            )],
+            source: FoodSourceMetadata(
+                type: .officialMenu,
+                name: "官方菜单",
+                url: nil,
+                verifiedAt: Date(timeIntervalSince1970: 0),
+                specification: "每100克"
+            ),
+            display: FoodDisplayMetadata(
+                iconKey: "protein",
+                colorKey: "protein",
+                tags: []
+            ),
+            dataCompleteness: .missingOfficialFields,
+            minimumSuggestedGrams: 50,
+            maximumSuggestedGrams: 150,
+            suggestionStepGrams: 50
+        )
+
+        let suggestions = MealRecommendationService().suggestions(
+            remaining: NutritionValues(
+                calories: 0,
+                carbohydrates: 100,
+                protein: 70,
+                fat: 30
+            ),
+            completedMeals: [.breakfast],
+            foods: completeStaplesAndVegetables + [incompleteProtein]
+        )
+
+        XCTAssertTrue(suggestions.isEmpty)
     }
 
     private var fixtureFoods: [FoodReference] {
