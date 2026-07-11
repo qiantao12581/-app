@@ -13,6 +13,12 @@ struct PersistenceController {
             container.persistentStoreDescriptions = [description]
         }
 
+        // 覆盖安装新版 IPA 时允许 Core Data 自动加入新实体并保留旧记录。
+        for description in container.persistentStoreDescriptions {
+            description.shouldMigrateStoreAutomatically = true
+            description.shouldInferMappingModelAutomatically = true
+        }
+
         var loadingError: Error?
         container.loadPersistentStores { _, error in
             loadingError = error
