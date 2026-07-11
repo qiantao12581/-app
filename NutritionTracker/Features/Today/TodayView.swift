@@ -119,7 +119,7 @@ struct TodayView: View {
                 if records.isEmpty {
                     EmptyFoodRecordsView()
                 } else {
-                    ForEach(records) { record in
+                    ForEach(records, id: \.objectID) { record in
                         FoodRecordRow(record: record)
                     }
                     .onDelete(perform: deleteRecords)
