@@ -26,6 +26,7 @@ let package = Package(
                 "Services/FoodDatabaseService.swift",
                 "Utilities/NutritionCalculator.swift",
                 "Utilities/DailySummaryCalculator.swift",
+                "Utilities/HistorySummaryCalculator.swift",
                 "Utilities/Date+DayBounds.swift",
                 "Utilities/InputValidator.swift",
                 "Utilities/NutritionFormatters.swift"

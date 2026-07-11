@@ -22,11 +22,7 @@ struct RootTabView: View {
             .tag(AppTab.add)
 
             NavigationStack {
-                WelcomeView(
-                    title: "历史记录",
-                    message: "每天的数据会安全保存在本机。",
-                    systemImage: "calendar.badge.clock"
-                )
+                HistoryView()
             }
             .tabItem {
                 Label(AppTab.history.title, systemImage: AppTab.history.systemImage)
@@ -34,30 +30,5 @@ struct RootTabView: View {
             .tag(AppTab.history)
         }
         .tint(.green)
-    }
-}
-
-private struct WelcomeView: View {
-    let title: String
-    let message: String
-    let systemImage: String
-
-    var body: some View {
-        VStack(spacing: 16) {
-            Image(systemName: systemImage)
-                .font(.system(size: 48))
-                .foregroundStyle(.green)
-                .accessibilityHidden(true)
-
-            Text(title)
-                .font(.title2.bold())
-
-            Text(message)
-                .font(.body)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-        }
-        .padding(24)
-        .navigationTitle(title)
     }
 }
