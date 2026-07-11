@@ -15,6 +15,10 @@
 		A30000000000000000000006 /* NutritionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000009 /* NutritionCalculatorTests.swift */; };
 		A30000000000000000000007 /* InputValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000A /* InputValidatorTests.swift */; };
 		A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000B /* NutritionFormattersTests.swift */; };
+		A30000000000000000000009 /* NutritionValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000C /* NutritionValues.swift */; };
+		A3000000000000000000000A /* NutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000D /* NutritionCalculator.swift */; };
+		A3000000000000000000000B /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000E /* InputValidator.swift */; };
+		A3000000000000000000000C /* NutritionFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000F /* NutritionFormatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		A40000000000000000000009 /* NutritionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculatorTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000000A /* InputValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidatorTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000000B /* NutritionFormattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFormattersTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000000C /* NutritionValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionValues.swift; sourceTree = "<group>"; };
+		A4000000000000000000000D /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
+		A4000000000000000000000E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		A4000000000000000000000F /* NutritionFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFormatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				A70000000000000000000003 /* App */,
+				A70000000000000000000008 /* Models */,
+				A70000000000000000000009 /* Utilities */,
 				A70000000000000000000004 /* Resources */,
 				A70000000000000000000005 /* Supporting */,
 			);
@@ -122,6 +132,24 @@
 				A40000000000000000000008 /* NutritionTrackerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A70000000000000000000008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000000C /* NutritionValues.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A70000000000000000000009 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000000D /* NutritionCalculator.swift */,
+				A4000000000000000000000E /* InputValidator.swift */,
+				A4000000000000000000000F /* NutritionFormatters.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +255,10 @@
 				A30000000000000000000001 /* NutritionTrackerApp.swift in Sources */,
 				A30000000000000000000002 /* AppTab.swift in Sources */,
 				A30000000000000000000003 /* RootTabView.swift in Sources */,
+				A30000000000000000000009 /* NutritionValues.swift in Sources */,
+				A3000000000000000000000A /* NutritionCalculator.swift in Sources */,
+				A3000000000000000000000B /* InputValidator.swift in Sources */,
+				A3000000000000000000000C /* NutritionFormatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
