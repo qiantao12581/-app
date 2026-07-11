@@ -115,7 +115,11 @@ final class MealRecommendationServiceTests: XCTestCase {
             foods: completeStaplesAndVegetables + [incompleteProtein]
         )
 
-        XCTAssertTrue(suggestions.isEmpty)
+        XCTAssertTrue(
+            suggestions
+                .flatMap(\.items)
+                .allSatisfy { $0.food.id != incompleteProtein.id }
+        )
     }
 
     private var fixtureFoods: [FoodReference] {

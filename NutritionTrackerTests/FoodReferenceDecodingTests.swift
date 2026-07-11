@@ -119,4 +119,26 @@ final class FoodReferenceDecodingTests: XCTestCase {
         XCTAssertEqual(service.search("测试乳业").map(\.id), ["milk-carton"])
         XCTAssertEqual(service.search("全脂").map(\.id), ["milk-carton"])
     }
+
+    func testBundledLegacyCatalogDecodesAllFoods() throws {
+        let repository = URL(fileURLWithPath: #filePath)
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+        let catalogURL = repository
+            .appendingPathComponent("NutritionTracker")
+            .appendingPathComponent("Resources")
+            .appendingPathComponent("foods.json")
+
+        let foods = try FoodDatabaseService(
+            data: Data(contentsOf: catalogURL)
+        ).foods
+
+        XCTAssertEqual(foods.count, 22)
+        XCTAssertTrue(foods.allSatisfy { food in
+            food.nutritionBasisAmount == 100
+                && food.nutritionBasisUnit == .gram
+                && food.defaultPortion?.name == "克"
+                && food.completeNutrition != nil
+        })
+    }
 }
