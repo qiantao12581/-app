@@ -44,7 +44,8 @@ let package = Package(
                 "DailySummaryCalculatorTests.swift",
                 "DateDayBoundsTests.swift",
                 "AddFoodFormStateTests.swift",
-                "DailyNutritionBalanceTests.swift"
+                "DailyNutritionBalanceTests.swift",
+                "HistorySummaryCalculatorTests.swift"
             ]
         )
     ]

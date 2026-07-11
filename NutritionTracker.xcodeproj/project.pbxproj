@@ -51,6 +51,7 @@
 		A3000000000000000000002A /* FoodRecordStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002D /* FoodRecordStoreTests.swift */; };
 		A3000000000000000000002B /* FoodRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002E /* FoodRecordStore.swift */; };
 		A3000000000000000000002C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002F /* TodayView.swift */; };
+		A3000000000000000000002D /* HistorySummaryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000030 /* HistorySummaryCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		A4000000000000000000002D /* FoodRecordStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordStoreTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000002E /* FoodRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordStore.swift; sourceTree = "<group>"; };
 		A4000000000000000000002F /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A40000000000000000000030 /* HistorySummaryCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySummaryCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				A40000000000000000000028 /* DailyNutritionBalanceTests.swift */,
 				A40000000000000000000029 /* DailyGoalStoreTests.swift */,
 				A4000000000000000000002D /* FoodRecordStoreTests.swift */,
+				A40000000000000000000030 /* HistorySummaryCalculatorTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				A30000000000000000000025 /* DailyNutritionBalanceTests.swift in Sources */,
 				A30000000000000000000026 /* DailyGoalStoreTests.swift in Sources */,
 				A3000000000000000000002A /* FoodRecordStoreTests.swift in Sources */,
+				A3000000000000000000002D /* HistorySummaryCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
