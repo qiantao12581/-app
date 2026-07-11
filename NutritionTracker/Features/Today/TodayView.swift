@@ -28,11 +28,14 @@ struct TodayView: View {
 
     @State private var presentedSheet: TodaySheet?
     @State private var errorMessage: String?
+    @State private var mealSuggestions: [MealSuggestion] = []
 
     private let date: Date
+    private let recommendationFoods: [FoodReference]
 
-    init(date: Date = Date()) {
+    init(date: Date = Date(), bundle: Bundle = .main) {
         self.date = date
+        recommendationFoods = (try? FoodDatabaseService.loadBundled(bundle: bundle).foods) ?? []
         let bounds = date.dayBounds()
         let predicate = NSPredicate(
             format: "createdAt >= %@ AND createdAt < %@",
@@ -221,6 +224,26 @@ struct TodayView: View {
                 }
             }
 
+            Section("后续餐次建议") {
+                if goals.isEmpty {
+                    Text("设置每日三大营养素目标后，才能生成餐次建议。")
+                        .foregroundStyle(.secondary)
+                } else if recommendationFoods.isEmpty {
+                    Text("内置食物数据库暂时无法读取，请使用手动添加。")
+                        .foregroundStyle(.secondary)
+                } else if mealSuggestions.isEmpty {
+                    Label(
+                        "今天三大营养素已达标，无需额外加餐",
+                        systemImage: "checkmark.circle.fill"
+                    )
+                    .foregroundStyle(.green)
+                } else {
+                    ForEach(mealSuggestions) { suggestion in
+                        MealSuggestionCard(suggestion: suggestion)
+                    }
+                }
+            }
+
             Section("今日食物") {
                 if records.isEmpty {
                     EmptyFoodRecordsView()
@@ -249,7 +272,16 @@ struct TodayView: View {
                 }
             }
         }
-        .onAppear(perform: createGoalSnapshotIfPossible)
+        .onAppear {
+            createGoalSnapshotIfPossible()
+            refreshMealSuggestions()
+        }
+        .onChange(of: records.count) { _ in
+            refreshMealSuggestions()
+        }
+        .onChange(of: goals.first?.updatedAt) { _ in
+            refreshMealSuggestions()
+        }
         .sheet(item: $presentedSheet) { sheet in
             NavigationStack {
                 switch sheet {
@@ -294,6 +326,28 @@ struct TodayView: View {
             context.rollback()
             errorMessage = error.localizedDescription
         }
+    }
+
+    private func refreshMealSuggestions() {
+        guard let goal = goals.first else {
+            mealSuggestions = []
+            return
+        }
+        let target = NutritionValues(
+            calories: 0,
+            carbohydrates: goal.carbohydrates,
+            protein: goal.protein,
+            fat: goal.fat
+        )
+        let remaining = DailyNutritionBalance(
+            target: target,
+            consumed: consumed
+        ).remaining
+        mealSuggestions = MealRecommendationService().suggestions(
+            remaining: remaining,
+            completedMeals: Set(records.map(\.mealType)),
+            foods: recommendationFoods
+        )
     }
 }
 
@@ -418,6 +472,41 @@ private struct WeightGoalCard: View {
             }
         }
         .padding(.vertical, 4)
+    }
+}
+
+private struct MealSuggestionCard: View {
+    let suggestion: MealSuggestion
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            Label(suggestion.mealType.title, systemImage: mealImage)
+                .font(.headline)
+                .foregroundStyle(.green)
+
+            ForEach(suggestion.items) { item in
+                HStack {
+                    Text(item.food.name)
+                    Spacer()
+                    Text("\(NutritionFormatters.oneDecimal(item.grams)) 克")
+                        .foregroundStyle(.secondary)
+                }
+                .font(.subheadline)
+            }
+
+            Text(
+                "预计：碳水 \(NutritionFormatters.oneDecimal(suggestion.nutrition.carbohydrates)) 克 · "
+                + "蛋白质 \(NutritionFormatters.oneDecimal(suggestion.nutrition.protein)) 克 · "
+                + "脂肪 \(NutritionFormatters.oneDecimal(suggestion.nutrition.fat)) 克"
+            )
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
+        .padding(.vertical, 5)
+    }
+
+    private var mealImage: String {
+        suggestion.mealType == .snack ? "takeoutbag.and.cup.and.straw" : "fork.knife"
     }
 }
 
