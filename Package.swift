@@ -21,6 +21,8 @@ let package = Package(
                 "Models/DailyNutritionBalance.swift",
                 "Models/FoodCategory.swift",
                 "Models/FoodReference.swift",
+                "Models/FoodSourceMetadata.swift",
+                "Models/FoodDisplayMetadata.swift",
                 "Models/FoodMeasurementUnit.swift",
                 "Models/FoodPortion.swift",
                 "Models/MealType.swift",

@@ -18,7 +18,9 @@ struct FoodDatabaseService: Sendable {
     let foods: [FoodReference]
 
     init(data: Data) throws {
-        let decoded = try JSONDecoder().decode([FoodReference].self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        let decoded = try decoder.decode([FoodReference].self, from: data)
         if let invalid = decoded.first(where: { !$0.hasValidNutritionAndPortion }) {
             throw FoodDatabaseError.invalidFoodData(invalid.name)
         }
@@ -39,6 +41,10 @@ struct FoodDatabaseService: Sendable {
         return foods.filter { food in
             food.name.localizedCaseInsensitiveContains(term)
                 || food.aliases.contains {
+                    $0.localizedCaseInsensitiveContains(term)
+                }
+                || food.brandName?.localizedCaseInsensitiveContains(term) == true
+                || food.display.tags.contains {
                     $0.localizedCaseInsensitiveContains(term)
                 }
         }

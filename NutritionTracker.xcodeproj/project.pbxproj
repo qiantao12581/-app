@@ -97,6 +97,8 @@
 		A30000000000000000000058 /* FoodPortion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005B /* FoodPortion.swift */; };
 		A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005C /* PortionNutritionCalculator.swift */; };
 		A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005D /* FoodReferenceDecodingTests.swift */; };
+		A3000000000000000000005B /* FoodSourceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005E /* FoodSourceMetadata.swift */; };
+		A3000000000000000000005C /* FoodDisplayMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005F /* FoodDisplayMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +205,8 @@
 		A4000000000000000000005B /* FoodPortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPortion.swift; sourceTree = "<group>"; };
 		A4000000000000000000005C /* PortionNutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000005D /* FoodReferenceDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReferenceDecodingTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
+		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +326,8 @@
 				A4000000000000000000002A /* DailyNutritionBalance.swift */,
 				A40000000000000000000011 /* FoodCategory.swift */,
 				A40000000000000000000012 /* FoodReference.swift */,
+				A4000000000000000000005E /* FoodSourceMetadata.swift */,
+				A4000000000000000000005F /* FoodDisplayMetadata.swift */,
 				A40000000000000000000013 /* MealType.swift */,
 				A40000000000000000000014 /* InputMethod.swift */,
 				A40000000000000000000036 /* BiologicalSex.swift */,
@@ -565,6 +571,8 @@
 				A3000000000000000000000C /* NutritionFormatters.swift in Sources */,
 				A3000000000000000000000E /* FoodCategory.swift in Sources */,
 				A3000000000000000000000F /* FoodReference.swift in Sources */,
+				A3000000000000000000005B /* FoodSourceMetadata.swift in Sources */,
+				A3000000000000000000005C /* FoodDisplayMetadata.swift in Sources */,
 				A30000000000000000000010 /* MealType.swift in Sources */,
 				A30000000000000000000011 /* InputMethod.swift in Sources */,
 				A30000000000000000000012 /* FoodDatabaseService.swift in Sources */,
