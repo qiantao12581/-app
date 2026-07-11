@@ -52,4 +52,119 @@ final class PortionNutritionCalculatorTests: XCTestCase {
 
         XCTAssertNil(result.nutrition.protein)
     }
+
+    func testRejectsInvalidBasisAmounts() {
+        let invalidAmounts: [Double] = [
+            0, -1, Double.infinity, -Double.infinity, Double.nan
+        ]
+
+        for basisAmount in invalidAmounts {
+            assertInvalid(basisAmount: basisAmount)
+        }
+    }
+
+    func testRejectsInvalidQuantities() {
+        let invalidQuantities: [Double] = [
+            0, -1, Double.infinity, -Double.infinity, Double.nan
+        ]
+
+        for quantity in invalidQuantities {
+            assertInvalid(quantity: quantity)
+        }
+    }
+
+    func testRejectsInvalidPortionBaseAmounts() {
+        let invalidAmounts: [Double] = [
+            0, -1, Double.infinity, -Double.infinity, Double.nan
+        ]
+
+        for portionBaseAmount in invalidAmounts {
+            assertInvalid(portionBaseAmount: portionBaseAmount)
+        }
+    }
+
+    func testRejectsMismatchedUnits() {
+        assertInvalid(portionBaseUnit: .milliliter)
+    }
+
+    func testRejectsDecimalQuantityWhenPortionRequiresInteger() {
+        assertInvalid(quantity: 1.5, allowsDecimalQuantity: false)
+    }
+
+    func testRejectsOverflowedActualBaseAmount() {
+        assertInvalid(
+            quantity: Double.greatestFiniteMagnitude,
+            portionBaseAmount: 2
+        )
+    }
+
+    func testRejectsUnderflowedActualBaseAmount() {
+        assertInvalid(
+            quantity: Double.leastNonzeroMagnitude,
+            portionBaseAmount: 0.5
+        )
+    }
+
+    func testRejectsOverflowedScalingFactor() {
+        assertInvalid(
+            basisAmount: Double.leastNonzeroMagnitude,
+            quantity: Double.greatestFiniteMagnitude,
+            portionBaseAmount: 0.5
+        )
+    }
+
+    func testRejectsUnderflowedScalingFactor() {
+        assertInvalid(
+            basisAmount: 2,
+            quantity: Double.leastNonzeroMagnitude
+        )
+    }
+
+    private func assertInvalid(
+        basisAmount: Double = 100,
+        basisUnit: FoodMeasurementUnit = .gram,
+        quantity: Double = 1,
+        portionBaseAmount: Double = 1,
+        portionBaseUnit: FoodMeasurementUnit = .gram,
+        allowsDecimalQuantity: Bool = true,
+        file: StaticString = #filePath,
+        line: UInt = #line
+    ) {
+        XCTAssertThrowsError(
+            try PortionNutritionCalculator.actual(
+                nutrition: PartialNutritionValues(
+                    calories: 100,
+                    carbohydrates: 10,
+                    protein: 5,
+                    fat: 2
+                ),
+                basisAmount: basisAmount,
+                basisUnit: basisUnit,
+                quantity: quantity,
+                portion: FoodPortion(
+                    id: "test-portion",
+                    name: "份",
+                    baseAmount: portionBaseAmount,
+                    baseUnit: portionBaseUnit,
+                    allowsDecimalQuantity: allowsDecimalQuantity,
+                    isDefault: true
+                )
+            ),
+            file: file,
+            line: line
+        ) { error in
+            XCTAssertEqual(
+                error as? PortionInputError,
+                .invalidQuantity,
+                file: file,
+                line: line
+            )
+            XCTAssertEqual(
+                error.localizedDescription,
+                "请输入有效的份量",
+                file: file,
+                line: line
+            )
+        }
+    }
 }
