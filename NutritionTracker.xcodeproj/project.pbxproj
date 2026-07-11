@@ -45,6 +45,9 @@
 		A30000000000000000000024 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000027 /* AddFoodView.swift */; };
 		A30000000000000000000025 /* DailyNutritionBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000028 /* DailyNutritionBalanceTests.swift */; };
 		A30000000000000000000026 /* DailyGoalStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000029 /* DailyGoalStoreTests.swift */; };
+		A30000000000000000000027 /* DailyNutritionBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002A /* DailyNutritionBalance.swift */; };
+		A30000000000000000000028 /* DailyGoalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002B /* DailyGoalStore.swift */; };
+		A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002C /* DailyGoalEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		A40000000000000000000027 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		A40000000000000000000028 /* DailyNutritionBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNutritionBalanceTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000029 /* DailyGoalStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalStoreTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000002A /* DailyNutritionBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNutritionBalance.swift; sourceTree = "<group>"; };
+		A4000000000000000000002B /* DailyGoalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalStore.swift; sourceTree = "<group>"; };
+		A4000000000000000000002C /* DailyGoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000000C /* NutritionValues.swift */,
+				A4000000000000000000002A /* DailyNutritionBalance.swift */,
 				A40000000000000000000011 /* FoodCategory.swift */,
 				A40000000000000000000012 /* FoodReference.swift */,
 				A40000000000000000000013 /* MealType.swift */,
@@ -240,6 +247,7 @@
 				A40000000000000000000020 /* NutritionSettings+CoreDataProperties.swift */,
 				A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */,
 				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
+				A4000000000000000000002B /* DailyGoalStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				A7000000000000000000000D /* Add */,
+				A7000000000000000000000E /* Goals */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -260,6 +269,14 @@
 				A40000000000000000000027 /* AddFoodView.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000E /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000002C /* DailyGoalEditorView.swift */,
+			);
+			path = Goals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +405,9 @@
 				A30000000000000000000022 /* AddFoodFormState.swift in Sources */,
 				A30000000000000000000023 /* FoodSearchView.swift in Sources */,
 				A30000000000000000000024 /* AddFoodView.swift in Sources */,
+				A30000000000000000000027 /* DailyNutritionBalance.swift in Sources */,
+				A30000000000000000000028 /* DailyGoalStore.swift in Sources */,
+				A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
