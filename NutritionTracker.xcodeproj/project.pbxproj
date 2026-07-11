@@ -39,6 +39,7 @@
 		A3000000000000000000001E /* DailyNutritionGoal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */; };
 		A3000000000000000000001F /* DailyNutritionGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */; };
 		A30000000000000000000020 /* NutritionTracker.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */; };
+		A30000000000000000000021 /* AddFoodFormStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000024 /* AddFoodFormStateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyNutritionGoal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyNutritionGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A40000000000000000000023 /* NutritionTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NutritionTracker.xcdatamodel; sourceTree = "<group>"; };
+		A40000000000000000000024 /* AddFoodFormStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFormStateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				A40000000000000000000017 /* DailySummaryCalculatorTests.swift */,
 				A40000000000000000000018 /* DateDayBoundsTests.swift */,
 				A40000000000000000000019 /* PersistenceControllerTests.swift */,
+				A40000000000000000000024 /* AddFoodFormStateTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				A30000000000000000000014 /* DailySummaryCalculatorTests.swift in Sources */,
 				A30000000000000000000015 /* DateDayBoundsTests.swift in Sources */,
 				A30000000000000000000016 /* PersistenceControllerTests.swift in Sources */,
+				A30000000000000000000021 /* AddFoodFormStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
