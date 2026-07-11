@@ -91,6 +91,7 @@
 		A30000000000000000000052 /* MockFoodRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000055 /* MockFoodRecognitionService.swift */; };
 		A30000000000000000000053 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000056 /* CameraPicker.swift */; };
 		A30000000000000000000054 /* PhotoFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000057 /* PhotoFoodView.swift */; };
+		A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,7 @@
 		A40000000000000000000055 /* MockFoodRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFoodRecognitionService.swift; sourceTree = "<group>"; };
 		A40000000000000000000056 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		A40000000000000000000057 /* PhotoFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodView.swift; sourceTree = "<group>"; };
+		A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 				A40000000000000000000042 /* WeightPersistenceTests.swift */,
 				A4000000000000000000004F /* MealRecommendationServiceTests.swift */,
 				A40000000000000000000052 /* FoodRecognitionServiceTests.swift */,
+				A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				A3000000000000000000003F /* WeightPersistenceTests.swift in Sources */,
 				A3000000000000000000004C /* MealRecommendationServiceTests.swift in Sources */,
 				A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */,
+				A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

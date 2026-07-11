@@ -61,7 +61,8 @@ let package = Package(
                 "EnergyBalanceCalculatorTests.swift",
                 "WeightGoalProjectionCalculatorTests.swift",
                 "MealRecommendationServiceTests.swift",
-                "FoodRecognitionServiceTests.swift"
+                "FoodRecognitionServiceTests.swift",
+                "PortionNutritionCalculatorTests.swift"
             ]
         )
     ]
