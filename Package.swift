@@ -1,0 +1,38 @@
+// swift-tools-version: 6.0
+
+import PackageDescription
+
+let package = Package(
+    name: "NutritionTrackerCore",
+    platforms: [
+        .macOS(.v13)
+    ],
+    products: [
+        .library(name: "NutritionTracker", targets: ["NutritionTracker"])
+    ],
+    targets: [
+        .target(
+            name: "NutritionTracker",
+            path: "NutritionTracker",
+            exclude: ["App", "Resources", "Supporting"],
+            sources: [
+                "Models/NutritionValues.swift",
+                "Utilities/NutritionCalculator.swift",
+                "Utilities/InputValidator.swift",
+                "Utilities/NutritionFormatters.swift"
+            ]
+        ),
+        .testTarget(
+            name: "NutritionTrackerCoreTests",
+            dependencies: ["NutritionTracker"],
+            path: "NutritionTrackerTests",
+            exclude: ["AppShellTests.swift"],
+            sources: [
+                "NutritionCalculatorTests.swift",
+                "InputValidatorTests.swift",
+                "NutritionFormattersTests.swift",
+                "FoodDatabaseServiceTests.swift"
+            ]
+        )
+    ]
+)

@@ -19,6 +19,7 @@
 		A3000000000000000000000A /* NutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000D /* NutritionCalculator.swift */; };
 		A3000000000000000000000B /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000E /* InputValidator.swift */; };
 		A3000000000000000000000C /* NutritionFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000F /* NutritionFormatters.swift */; };
+		A3000000000000000000000D /* FoodDatabaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000010 /* FoodDatabaseServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A4000000000000000000000D /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000000E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		A4000000000000000000000F /* NutritionFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFormatters.swift; sourceTree = "<group>"; };
+		A40000000000000000000010 /* FoodDatabaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				A40000000000000000000009 /* NutritionCalculatorTests.swift */,
 				A4000000000000000000000A /* InputValidatorTests.swift */,
 				A4000000000000000000000B /* NutritionFormattersTests.swift */,
+				A40000000000000000000010 /* FoodDatabaseServiceTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A30000000000000000000006 /* NutritionCalculatorTests.swift in Sources */,
 				A30000000000000000000007 /* InputValidatorTests.swift in Sources */,
 				A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */,
+				A3000000000000000000000D /* FoodDatabaseServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

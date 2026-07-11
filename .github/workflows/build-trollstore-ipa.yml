@@ -15,8 +15,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  core-tests:
+    name: Fast core tests
+    runs-on: macos-15
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Run Swift core tests
+        shell: bash
+        run: swift test
+
   build:
     name: Test and package unsigned IPA
+    needs: core-tests
     runs-on: macos-15
     timeout-minutes: 30
 
