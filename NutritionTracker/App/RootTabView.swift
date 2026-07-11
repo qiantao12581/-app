@@ -18,11 +18,7 @@ struct RootTabView: View {
             .tag(AppTab.today)
 
             NavigationStack {
-                WelcomeView(
-                    title: "添加食物",
-                    message: "手动记录与食物搜索将在下一阶段接入。",
-                    systemImage: "fork.knife"
-                )
+                AddFoodView()
             }
             .tabItem {
                 Label(AppTab.add.title, systemImage: AppTab.add.systemImage)

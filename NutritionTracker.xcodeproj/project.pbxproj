@@ -40,6 +40,9 @@
 		A3000000000000000000001F /* DailyNutritionGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */; };
 		A30000000000000000000020 /* NutritionTracker.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */; };
 		A30000000000000000000021 /* AddFoodFormStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000024 /* AddFoodFormStateTests.swift */; };
+		A30000000000000000000022 /* AddFoodFormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000025 /* AddFoodFormState.swift */; };
+		A30000000000000000000023 /* FoodSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000026 /* FoodSearchView.swift */; };
+		A30000000000000000000024 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000027 /* AddFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyNutritionGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A40000000000000000000023 /* NutritionTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NutritionTracker.xcdatamodel; sourceTree = "<group>"; };
 		A40000000000000000000024 /* AddFoodFormStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFormStateTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000025 /* AddFoodFormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFormState.swift; sourceTree = "<group>"; };
+		A40000000000000000000026 /* FoodSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchView.swift; sourceTree = "<group>"; };
+		A40000000000000000000027 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				A70000000000000000000009 /* Utilities */,
 				A7000000000000000000000A /* Services */,
 				A7000000000000000000000B /* Persistence */,
+				A7000000000000000000000C /* Features */,
 				A70000000000000000000004 /* Resources */,
 				A70000000000000000000005 /* Supporting */,
 			);
@@ -229,6 +236,24 @@
 				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A7000000000000000000000D /* Add */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000025 /* AddFoodFormState.swift */,
+				A40000000000000000000026 /* FoodSearchView.swift */,
+				A40000000000000000000027 /* AddFoodView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +379,9 @@
 				A3000000000000000000001D /* NutritionSettings+CoreDataProperties.swift in Sources */,
 				A3000000000000000000001E /* DailyNutritionGoal+CoreDataClass.swift in Sources */,
 				A3000000000000000000001F /* DailyNutritionGoal+CoreDataProperties.swift in Sources */,
+				A30000000000000000000022 /* AddFoodFormState.swift in Sources */,
+				A30000000000000000000023 /* FoodSearchView.swift in Sources */,
+				A30000000000000000000024 /* AddFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

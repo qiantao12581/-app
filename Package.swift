@@ -21,6 +21,7 @@ let package = Package(
                 "Models/FoodReference.swift",
                 "Models/MealType.swift",
                 "Models/InputMethod.swift",
+                "Features/Add/AddFoodFormState.swift",
                 "Services/FoodDatabaseService.swift",
                 "Utilities/NutritionCalculator.swift",
                 "Utilities/DailySummaryCalculator.swift",
