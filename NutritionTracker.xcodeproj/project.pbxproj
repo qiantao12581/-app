@@ -26,6 +26,9 @@
 		A30000000000000000000011 /* InputMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000014 /* InputMethod.swift */; };
 		A30000000000000000000012 /* FoodDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000015 /* FoodDatabaseService.swift */; };
 		A30000000000000000000013 /* foods.json in Resources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000016 /* foods.json */; };
+		A30000000000000000000014 /* DailySummaryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000017 /* DailySummaryCalculatorTests.swift */; };
+		A30000000000000000000015 /* DateDayBoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000018 /* DateDayBoundsTests.swift */; };
+		A30000000000000000000016 /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000019 /* PersistenceControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		A40000000000000000000014 /* InputMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMethod.swift; sourceTree = "<group>"; };
 		A40000000000000000000015 /* FoodDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseService.swift; sourceTree = "<group>"; };
 		A40000000000000000000016 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
+		A40000000000000000000017 /* DailySummaryCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryCalculatorTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000018 /* DateDayBoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDayBoundsTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000019 /* PersistenceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 				A4000000000000000000000A /* InputValidatorTests.swift */,
 				A4000000000000000000000B /* NutritionFormattersTests.swift */,
 				A40000000000000000000010 /* FoodDatabaseServiceTests.swift */,
+				A40000000000000000000017 /* DailySummaryCalculatorTests.swift */,
+				A40000000000000000000018 /* DateDayBoundsTests.swift */,
+				A40000000000000000000019 /* PersistenceControllerTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -306,6 +315,9 @@
 				A30000000000000000000007 /* InputValidatorTests.swift in Sources */,
 				A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */,
 				A3000000000000000000000D /* FoodDatabaseServiceTests.swift in Sources */,
+				A30000000000000000000014 /* DailySummaryCalculatorTests.swift in Sources */,
+				A30000000000000000000015 /* DateDayBoundsTests.swift in Sources */,
+				A30000000000000000000016 /* PersistenceControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
