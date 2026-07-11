@@ -49,6 +49,8 @@
 		A30000000000000000000028 /* DailyGoalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002B /* DailyGoalStore.swift */; };
 		A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002C /* DailyGoalEditorView.swift */; };
 		A3000000000000000000002A /* FoodRecordStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002D /* FoodRecordStoreTests.swift */; };
+		A3000000000000000000002B /* FoodRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002E /* FoodRecordStore.swift */; };
+		A3000000000000000000002C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000002F /* TodayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		A4000000000000000000002B /* DailyGoalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalStore.swift; sourceTree = "<group>"; };
 		A4000000000000000000002C /* DailyGoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalEditorView.swift; sourceTree = "<group>"; };
 		A4000000000000000000002D /* FoodRecordStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordStoreTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000002E /* FoodRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordStore.swift; sourceTree = "<group>"; };
+		A4000000000000000000002F /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,7 @@
 				A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */,
 				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
 				A4000000000000000000002B /* DailyGoalStore.swift */,
+				A4000000000000000000002E /* FoodRecordStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			children = (
 				A7000000000000000000000D /* Add */,
 				A7000000000000000000000E /* Goals */,
+				A7000000000000000000000F /* Today */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -280,6 +286,14 @@
 				A4000000000000000000002C /* DailyGoalEditorView.swift */,
 			);
 			path = Goals;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000F /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000002F /* TodayView.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +425,8 @@
 				A30000000000000000000027 /* DailyNutritionBalance.swift in Sources */,
 				A30000000000000000000028 /* DailyGoalStore.swift in Sources */,
 				A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */,
+				A3000000000000000000002B /* FoodRecordStore.swift in Sources */,
+				A3000000000000000000002C /* TodayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

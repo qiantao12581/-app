@@ -6,11 +6,7 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationStack {
-                WelcomeView(
-                    title: "今日营养",
-                    message: "记录每一餐，了解今天的营养摄入。",
-                    systemImage: "chart.pie.fill"
-                )
+                TodayView()
             }
             .tabItem {
                 Label(AppTab.today.title, systemImage: AppTab.today.systemImage)
