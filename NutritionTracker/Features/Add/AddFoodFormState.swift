@@ -11,18 +11,10 @@ struct AddFoodFormState {
 
     mutating func select(food: FoodReference) {
         foodName = food.name
-        caloriesPer100Grams = NutritionFormatters.oneDecimal(
-            food.caloriesPer100Grams
-        )
-        carbohydratesPer100Grams = NutritionFormatters.oneDecimal(
-            food.carbohydratesPer100Grams
-        )
-        proteinPer100Grams = NutritionFormatters.oneDecimal(
-            food.proteinPer100Grams
-        )
-        fatPer100Grams = NutritionFormatters.oneDecimal(
-            food.fatPer100Grams
-        )
+        caloriesPer100Grams = formatted(food.caloriesPer100Grams)
+        carbohydratesPer100Grams = formatted(food.carbohydratesPer100Grams)
+        proteinPer100Grams = formatted(food.proteinPer100Grams)
+        fatPer100Grams = formatted(food.fatPer100Grams)
     }
 
     var parsedWeight: Double? {
@@ -81,5 +73,9 @@ struct AddFoodFormState {
 
     mutating func reset() {
         self = AddFoodFormState()
+    }
+
+    private func formatted(_ value: Double?) -> String {
+        value.map { NutritionFormatters.oneDecimal($0) } ?? ""
     }
 }

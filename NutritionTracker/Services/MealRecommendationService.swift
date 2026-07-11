@@ -125,12 +125,17 @@ struct MealRecommendationService {
     }
 
     private func portions(for food: FoodReference) -> [Portion] {
-        guard food.hasValidNutritionAndPortion else { return [] }
+        guard
+            food.hasValidNutritionAndPortion,
+            let nutritionPer100Grams = food.nutritionPer100Grams
+        else {
+            return []
+        }
         var result: [Portion] = []
         var grams = food.minimumSuggestedGrams
         while grams <= food.maximumSuggestedGrams + 0.0001 {
             let nutrition = NutritionCalculator.actual(
-                per100Grams: food.nutritionPer100Grams,
+                per100Grams: nutritionPer100Grams,
                 weightGrams: grams
             )
             result.append(

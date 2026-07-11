@@ -21,7 +21,7 @@ struct FoodSearchView: View {
                             .foregroundStyle(.primary)
 
                         Text(
-                            "每100克：\(NutritionFormatters.oneDecimal(food.caloriesPer100Grams)) 千卡 · 碳水 \(NutritionFormatters.oneDecimal(food.carbohydratesPer100Grams)) 克 · 蛋白质 \(NutritionFormatters.oneDecimal(food.proteinPer100Grams)) 克 · 脂肪 \(NutritionFormatters.oneDecimal(food.fatPer100Grams)) 克"
+                            "每100克：\(formatted(food.caloriesPer100Grams, unit: "千卡")) · 碳水 \(formatted(food.carbohydratesPer100Grams, unit: "克")) · 蛋白质 \(formatted(food.proteinPer100Grams, unit: "克")) · 脂肪 \(formatted(food.fatPer100Grams, unit: "克"))"
                         )
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -39,5 +39,10 @@ struct FoodSearchView: View {
                 }
             }
         }
+    }
+
+    private func formatted(_ value: Double?, unit: String) -> String {
+        guard let value else { return "暂无官方数据" }
+        return "\(NutritionFormatters.oneDecimal(value)) \(unit)"
     }
 }

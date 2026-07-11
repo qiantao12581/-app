@@ -44,29 +44,31 @@ struct FoodReference: Codable, Identifiable, Equatable, Sendable {
 
     // MARK: - Temporary grams-only compatibility
 
-    var caloriesPer100Grams: Double {
+    var caloriesPer100Grams: Double? {
         valuePer100(nutrition.calories)
     }
 
-    var carbohydratesPer100Grams: Double {
+    var carbohydratesPer100Grams: Double? {
         valuePer100(nutrition.carbohydrates)
     }
 
-    var proteinPer100Grams: Double {
+    var proteinPer100Grams: Double? {
         valuePer100(nutrition.protein)
     }
 
-    var fatPer100Grams: Double {
+    var fatPer100Grams: Double? {
         valuePer100(nutrition.fat)
     }
 
-    var nutritionPer100Grams: NutritionValues {
-        NutritionValues(
-            calories: caloriesPer100Grams,
-            carbohydrates: carbohydratesPer100Grams,
-            protein: proteinPer100Grams,
-            fat: fatPer100Grams
-        )
+    var nutritionPer100Grams: NutritionValues? {
+        guard
+            let completeNutrition,
+            nutritionBasisAmount.isFinite,
+            nutritionBasisAmount > 0
+        else {
+            return nil
+        }
+        return completeNutrition.scaled(by: 100 / nutritionBasisAmount)
     }
 
     var hasValidNutritionAndPortion: Bool {
@@ -278,9 +280,9 @@ struct FoodReference: Codable, Identifiable, Equatable, Sendable {
         try container.encode(suggestionStepGrams, forKey: .suggestionStepGrams)
     }
 
-    private func valuePer100(_ value: Double?) -> Double {
+    private func valuePer100(_ value: Double?) -> Double? {
         guard let value, nutritionBasisAmount.isFinite, nutritionBasisAmount > 0 else {
-            return .nan
+            return nil
         }
         return value * 100 / nutritionBasisAmount
     }

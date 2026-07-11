@@ -41,7 +41,7 @@ final class FoodDatabaseServiceTests: XCTestCase {
 
         XCTAssertEqual(service.foods.count, 2)
         XCTAssertEqual(service.foods[0].name, "熟米饭")
-        XCTAssertEqual(service.foods[0].nutritionPer100Grams.carbohydrates, 25.9)
+        XCTAssertEqual(service.foods[0].nutritionPer100Grams?.carbohydrates, 25.9)
         XCTAssertEqual(service.foods[1].category, .protein)
     }
 
