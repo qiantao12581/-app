@@ -49,6 +49,17 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
+      - name: Build app and tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project NutritionTracker.xcodeproj \
+            -scheme NutritionTracker \
+            -destination "generic/platform=iOS Simulator" \
+            -derivedDataPath "$RUNNER_TEMP/TestDerivedData" \
+            build-for-testing
+
       - name: Prepare iOS simulator
         shell: bash
         run: |
@@ -97,7 +108,7 @@ jobs:
             -destination "platform=iOS Simulator,id=$SIMULATOR_ID" \
             -derivedDataPath "$RUNNER_TEMP/TestDerivedData" \
             -parallel-testing-enabled NO \
-            test
+            test-without-building
 
       - name: Build TrollStore IPA
         shell: bash

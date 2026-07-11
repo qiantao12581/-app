@@ -12,6 +12,9 @@
 		A30000000000000000000003 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000003 /* RootTabView.swift */; };
 		A30000000000000000000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000005 /* Assets.xcassets */; };
 		A30000000000000000000005 /* AppShellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000006 /* AppShellTests.swift */; };
+		A30000000000000000000006 /* NutritionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000009 /* NutritionCalculatorTests.swift */; };
+		A30000000000000000000007 /* InputValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000A /* InputValidatorTests.swift */; };
+		A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000B /* NutritionFormattersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		A40000000000000000000006 /* AppShellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShellTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000007 /* NutritionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40000000000000000000008 /* NutritionTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40000000000000000000009 /* NutritionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculatorTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000000A /* InputValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidatorTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000000B /* NutritionFormattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFormattersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				A40000000000000000000006 /* AppShellTests.swift */,
+				A40000000000000000000009 /* NutritionCalculatorTests.swift */,
+				A4000000000000000000000A /* InputValidatorTests.swift */,
+				A4000000000000000000000B /* NutritionFormattersTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -226,6 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30000000000000000000005 /* AppShellTests.swift in Sources */,
+				A30000000000000000000006 /* NutritionCalculatorTests.swift in Sources */,
+				A30000000000000000000007 /* InputValidatorTests.swift in Sources */,
+				A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
