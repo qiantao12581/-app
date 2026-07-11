@@ -17,6 +17,11 @@ let package = Package(
             exclude: ["App", "Resources", "Supporting"],
             sources: [
                 "Models/NutritionValues.swift",
+                "Models/FoodCategory.swift",
+                "Models/FoodReference.swift",
+                "Models/MealType.swift",
+                "Models/InputMethod.swift",
+                "Services/FoodDatabaseService.swift",
                 "Utilities/NutritionCalculator.swift",
                 "Utilities/InputValidator.swift",
                 "Utilities/NutritionFormatters.swift"

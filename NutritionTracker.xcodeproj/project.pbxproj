@@ -20,6 +20,12 @@
 		A3000000000000000000000B /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000E /* InputValidator.swift */; };
 		A3000000000000000000000C /* NutritionFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000000F /* NutritionFormatters.swift */; };
 		A3000000000000000000000D /* FoodDatabaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000010 /* FoodDatabaseServiceTests.swift */; };
+		A3000000000000000000000E /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000011 /* FoodCategory.swift */; };
+		A3000000000000000000000F /* FoodReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000012 /* FoodReference.swift */; };
+		A30000000000000000000010 /* MealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000013 /* MealType.swift */; };
+		A30000000000000000000011 /* InputMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000014 /* InputMethod.swift */; };
+		A30000000000000000000012 /* FoodDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000015 /* FoodDatabaseService.swift */; };
+		A30000000000000000000013 /* foods.json in Resources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000016 /* foods.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		A4000000000000000000000E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		A4000000000000000000000F /* NutritionFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFormatters.swift; sourceTree = "<group>"; };
 		A40000000000000000000010 /* FoodDatabaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseServiceTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000011 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		A40000000000000000000012 /* FoodReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReference.swift; sourceTree = "<group>"; };
+		A40000000000000000000013 /* MealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealType.swift; sourceTree = "<group>"; };
+		A40000000000000000000014 /* InputMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMethod.swift; sourceTree = "<group>"; };
+		A40000000000000000000015 /* FoodDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseService.swift; sourceTree = "<group>"; };
+		A40000000000000000000016 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 				A70000000000000000000003 /* App */,
 				A70000000000000000000008 /* Models */,
 				A70000000000000000000009 /* Utilities */,
+				A7000000000000000000000A /* Services */,
 				A70000000000000000000004 /* Resources */,
 				A70000000000000000000005 /* Supporting */,
 			);
@@ -104,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				A40000000000000000000005 /* Assets.xcassets */,
+				A40000000000000000000016 /* foods.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -141,6 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000000C /* NutritionValues.swift */,
+				A40000000000000000000011 /* FoodCategory.swift */,
+				A40000000000000000000012 /* FoodReference.swift */,
+				A40000000000000000000013 /* MealType.swift */,
+				A40000000000000000000014 /* InputMethod.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +171,14 @@
 				A4000000000000000000000F /* NutritionFormatters.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000015 /* FoodDatabaseService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30000000000000000000004 /* Assets.xcassets in Resources */,
+				A30000000000000000000013 /* foods.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +289,11 @@
 				A3000000000000000000000A /* NutritionCalculator.swift in Sources */,
 				A3000000000000000000000B /* InputValidator.swift in Sources */,
 				A3000000000000000000000C /* NutritionFormatters.swift in Sources */,
+				A3000000000000000000000E /* FoodCategory.swift in Sources */,
+				A3000000000000000000000F /* FoodReference.swift in Sources */,
+				A30000000000000000000010 /* MealType.swift in Sources */,
+				A30000000000000000000011 /* InputMethod.swift in Sources */,
+				A30000000000000000000012 /* FoodDatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
