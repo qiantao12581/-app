@@ -33,7 +33,7 @@ final class WeightGoalProjectionCalculatorTests: XCTestCase {
         )
     }
 
-    func testManualDeadlineCanRevealUnsafeRequiredRate() {
+    func testManualDeadlineCanRevealUnsafeRequiredRate() throws {
         let rate = WeightGoalProjectionCalculator.requiredMonthlyLossRate(
             currentWeightKilograms: 100,
             targetWeightKilograms: 90,
