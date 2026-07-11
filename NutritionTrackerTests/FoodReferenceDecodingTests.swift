@@ -109,6 +109,7 @@ final class FoodReferenceDecodingTests: XCTestCase {
 
         XCTAssertNil(food.nutrition.protein)
         XCTAssertNil(food.completeNutrition)
+        XCTAssertNil(food.proteinPer100Grams)
         XCTAssertEqual(food.dataCompleteness, .missingOfficialFields)
     }
 
