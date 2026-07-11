@@ -99,6 +99,7 @@
 		A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005D /* FoodReferenceDecodingTests.swift */; };
 		A3000000000000000000005B /* FoodSourceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005E /* FoodSourceMetadata.swift */; };
 		A3000000000000000000005C /* FoodDisplayMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005F /* FoodDisplayMetadata.swift */; };
+		A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000060 /* FoodCatalogAuditTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +206,7 @@
 		A4000000000000000000005B /* FoodPortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPortion.swift; sourceTree = "<group>"; };
 		A4000000000000000000005C /* PortionNutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000005D /* FoodReferenceDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReferenceDecodingTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000060 /* FoodCatalogAuditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCatalogAuditTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +305,7 @@
 				A40000000000000000000052 /* FoodRecognitionServiceTests.swift */,
 				A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */,
 				A4000000000000000000005D /* FoodReferenceDecodingTests.swift */,
+				A40000000000000000000060 /* FoodCatalogAuditTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */,
 				A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */,
 				A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */,
+				A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
