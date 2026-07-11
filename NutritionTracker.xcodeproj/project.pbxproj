@@ -96,6 +96,7 @@
 		A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005A /* FoodMeasurementUnit.swift */; };
 		A30000000000000000000058 /* FoodPortion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005B /* FoodPortion.swift */; };
 		A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005C /* PortionNutritionCalculator.swift */; };
+		A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005D /* FoodReferenceDecodingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +202,7 @@
 		A4000000000000000000005A /* FoodMeasurementUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMeasurementUnit.swift; sourceTree = "<group>"; };
 		A4000000000000000000005B /* FoodPortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPortion.swift; sourceTree = "<group>"; };
 		A4000000000000000000005C /* PortionNutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculator.swift; sourceTree = "<group>"; };
+		A4000000000000000000005D /* FoodReferenceDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReferenceDecodingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 				A4000000000000000000004F /* MealRecommendationServiceTests.swift */,
 				A40000000000000000000052 /* FoodRecognitionServiceTests.swift */,
 				A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */,
+				A4000000000000000000005D /* FoodReferenceDecodingTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				A3000000000000000000004C /* MealRecommendationServiceTests.swift in Sources */,
 				A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */,
 				A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */,
+				A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
