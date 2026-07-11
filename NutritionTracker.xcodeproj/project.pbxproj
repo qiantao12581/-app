@@ -85,6 +85,7 @@
 		A3000000000000000000004C /* MealRecommendationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004F /* MealRecommendationServiceTests.swift */; };
 		A3000000000000000000004D /* MealSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000050 /* MealSuggestion.swift */; };
 		A3000000000000000000004E /* MealRecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000051 /* MealRecommendationService.swift */; };
+		A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000052 /* FoodRecognitionServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		A4000000000000000000004F /* MealRecommendationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationServiceTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000050 /* MealSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestion.swift; sourceTree = "<group>"; };
 		A40000000000000000000051 /* MealRecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationService.swift; sourceTree = "<group>"; };
+		A40000000000000000000052 /* FoodRecognitionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecognitionServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */,
 				A40000000000000000000042 /* WeightPersistenceTests.swift */,
 				A4000000000000000000004F /* MealRecommendationServiceTests.swift */,
+				A40000000000000000000052 /* FoodRecognitionServiceTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				A30000000000000000000038 /* ProfileAndExerciseStoreTests.swift in Sources */,
 				A3000000000000000000003F /* WeightPersistenceTests.swift in Sources */,
 				A3000000000000000000004C /* MealRecommendationServiceTests.swift in Sources */,
+				A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
