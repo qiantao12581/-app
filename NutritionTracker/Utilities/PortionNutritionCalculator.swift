@@ -39,12 +39,21 @@ enum PortionNutritionCalculator {
         }
 
         let actualBaseAmount = quantity * portion.baseAmount
+        guard actualBaseAmount.isFinite, actualBaseAmount > 0 else {
+            throw PortionInputError.invalidQuantity
+        }
+
+        let scalingFactor = actualBaseAmount / basisAmount
+        guard scalingFactor.isFinite, scalingFactor > 0 else {
+            throw PortionInputError.invalidQuantity
+        }
+
         return PortionCalculationResult(
             quantity: quantity,
             portionName: portion.name,
             baseAmount: actualBaseAmount,
             baseUnit: portion.baseUnit,
-            nutrition: nutrition.scaled(by: actualBaseAmount / basisAmount)
+            nutrition: nutrition.scaled(by: scalingFactor)
         )
     }
 }
