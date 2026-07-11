@@ -83,6 +83,8 @@
 		A3000000000000000000004A /* UserProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004D /* UserProfileEditorView.swift */; };
 		A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004E /* WeightGoalEditorView.swift */; };
 		A3000000000000000000004C /* MealRecommendationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004F /* MealRecommendationServiceTests.swift */; };
+		A3000000000000000000004D /* MealSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000050 /* MealSuggestion.swift */; };
+		A3000000000000000000004E /* MealRecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000051 /* MealRecommendationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,8 @@
 		A4000000000000000000004D /* UserProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEditorView.swift; sourceTree = "<group>"; };
 		A4000000000000000000004E /* WeightGoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalEditorView.swift; sourceTree = "<group>"; };
 		A4000000000000000000004F /* MealRecommendationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationServiceTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000050 /* MealSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestion.swift; sourceTree = "<group>"; };
+		A40000000000000000000051 /* MealRecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +298,7 @@
 				A40000000000000000000037 /* ActivityLevel.swift */,
 				A40000000000000000000038 /* DailyEnergyBalance.swift */,
 				A40000000000000000000043 /* TargetDateMode.swift */,
+				A40000000000000000000050 /* MealSuggestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				A40000000000000000000015 /* FoodDatabaseService.swift */,
+				A40000000000000000000051 /* MealRecommendationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -564,6 +570,8 @@
 				A30000000000000000000049 /* AddWeightView.swift in Sources */,
 				A3000000000000000000004A /* UserProfileEditorView.swift in Sources */,
 				A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */,
+				A3000000000000000000004D /* MealSuggestion.swift in Sources */,
+				A3000000000000000000004E /* MealRecommendationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
