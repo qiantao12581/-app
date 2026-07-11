@@ -62,6 +62,7 @@
 		A30000000000000000000035 /* DailyEnergyBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000038 /* DailyEnergyBalance.swift */; };
 		A30000000000000000000036 /* MetabolismCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000039 /* MetabolismCalculator.swift */; };
 		A30000000000000000000037 /* WeightGoalProjectionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003A /* WeightGoalProjectionCalculator.swift */; };
+		A30000000000000000000038 /* ProfileAndExerciseStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		A40000000000000000000038 /* DailyEnergyBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEnergyBalance.swift; sourceTree = "<group>"; };
 		A40000000000000000000039 /* MetabolismCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetabolismCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000003A /* WeightGoalProjectionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalProjectionCalculator.swift; sourceTree = "<group>"; };
+		A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAndExerciseStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				A40000000000000000000033 /* MetabolismCalculatorTests.swift */,
 				A40000000000000000000034 /* EnergyBalanceCalculatorTests.swift */,
 				A40000000000000000000035 /* WeightGoalProjectionCalculatorTests.swift */,
+				A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				A30000000000000000000030 /* MetabolismCalculatorTests.swift in Sources */,
 				A30000000000000000000031 /* EnergyBalanceCalculatorTests.swift in Sources */,
 				A30000000000000000000032 /* WeightGoalProjectionCalculatorTests.swift in Sources */,
+				A30000000000000000000038 /* ProfileAndExerciseStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
