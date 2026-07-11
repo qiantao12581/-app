@@ -92,6 +92,10 @@
 		A30000000000000000000053 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000056 /* CameraPicker.swift */; };
 		A30000000000000000000054 /* PhotoFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000057 /* PhotoFoodView.swift */; };
 		A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */; };
+		A30000000000000000000056 /* PartialNutritionValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000059 /* PartialNutritionValues.swift */; };
+		A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005A /* FoodMeasurementUnit.swift */; };
+		A30000000000000000000058 /* FoodPortion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005B /* FoodPortion.swift */; };
+		A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005C /* PortionNutritionCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +197,10 @@
 		A40000000000000000000056 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		A40000000000000000000057 /* PhotoFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodView.swift; sourceTree = "<group>"; };
 		A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculatorTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000059 /* PartialNutritionValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialNutritionValues.swift; sourceTree = "<group>"; };
+		A4000000000000000000005A /* FoodMeasurementUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMeasurementUnit.swift; sourceTree = "<group>"; };
+		A4000000000000000000005B /* FoodPortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPortion.swift; sourceTree = "<group>"; };
+		A4000000000000000000005C /* PortionNutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionNutritionCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +313,9 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000000C /* NutritionValues.swift */,
+				A40000000000000000000059 /* PartialNutritionValues.swift */,
+				A4000000000000000000005A /* FoodMeasurementUnit.swift */,
+				A4000000000000000000005B /* FoodPortion.swift */,
 				A4000000000000000000002A /* DailyNutritionBalance.swift */,
 				A40000000000000000000011 /* FoodCategory.swift */,
 				A40000000000000000000012 /* FoodReference.swift */,
@@ -324,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000000D /* NutritionCalculator.swift */,
+				A4000000000000000000005C /* PortionNutritionCalculator.swift */,
 				A4000000000000000000000E /* InputValidator.swift */,
 				A4000000000000000000000F /* NutritionFormatters.swift */,
 				A4000000000000000000001A /* DailySummaryCalculator.swift */,
@@ -541,7 +553,11 @@
 				A30000000000000000000002 /* AppTab.swift in Sources */,
 				A30000000000000000000003 /* RootTabView.swift in Sources */,
 				A30000000000000000000009 /* NutritionValues.swift in Sources */,
+				A30000000000000000000056 /* PartialNutritionValues.swift in Sources */,
+				A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */,
+				A30000000000000000000058 /* FoodPortion.swift in Sources */,
 				A3000000000000000000000A /* NutritionCalculator.swift in Sources */,
+				A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */,
 				A3000000000000000000000B /* InputValidator.swift in Sources */,
 				A3000000000000000000000C /* NutritionFormatters.swift in Sources */,
 				A3000000000000000000000E /* FoodCategory.swift in Sources */,
