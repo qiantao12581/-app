@@ -23,6 +23,8 @@ let package = Package(
                 "Models/InputMethod.swift",
                 "Services/FoodDatabaseService.swift",
                 "Utilities/NutritionCalculator.swift",
+                "Utilities/DailySummaryCalculator.swift",
+                "Utilities/Date+DayBounds.swift",
                 "Utilities/InputValidator.swift",
                 "Utilities/NutritionFormatters.swift"
             ]

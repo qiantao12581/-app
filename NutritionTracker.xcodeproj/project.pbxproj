@@ -29,6 +29,16 @@
 		A30000000000000000000014 /* DailySummaryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000017 /* DailySummaryCalculatorTests.swift */; };
 		A30000000000000000000015 /* DateDayBoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000018 /* DateDayBoundsTests.swift */; };
 		A30000000000000000000016 /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000019 /* PersistenceControllerTests.swift */; };
+		A30000000000000000000017 /* DailySummaryCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001A /* DailySummaryCalculator.swift */; };
+		A30000000000000000000018 /* Date+DayBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001B /* Date+DayBounds.swift */; };
+		A30000000000000000000019 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001C /* PersistenceController.swift */; };
+		A3000000000000000000001A /* FoodRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001D /* FoodRecord+CoreDataClass.swift */; };
+		A3000000000000000000001B /* FoodRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001E /* FoodRecord+CoreDataProperties.swift */; };
+		A3000000000000000000001C /* NutritionSettings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000001F /* NutritionSettings+CoreDataClass.swift */; };
+		A3000000000000000000001D /* NutritionSettings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000020 /* NutritionSettings+CoreDataProperties.swift */; };
+		A3000000000000000000001E /* DailyNutritionGoal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */; };
+		A3000000000000000000001F /* DailyNutritionGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */; };
+		A30000000000000000000020 /* NutritionTracker.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,16 @@
 		A40000000000000000000017 /* DailySummaryCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryCalculatorTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000018 /* DateDayBoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDayBoundsTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000019 /* PersistenceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceControllerTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000001A /* DailySummaryCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryCalculator.swift; sourceTree = "<group>"; };
+		A4000000000000000000001B /* Date+DayBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DayBounds.swift"; sourceTree = "<group>"; };
+		A4000000000000000000001C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		A4000000000000000000001D /* FoodRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4000000000000000000001E /* FoodRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4000000000000000000001F /* NutritionSettings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionSettings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A40000000000000000000020 /* NutritionSettings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionSettings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyNutritionGoal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyNutritionGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000023 /* NutritionTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NutritionTracker.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +123,7 @@
 				A70000000000000000000008 /* Models */,
 				A70000000000000000000009 /* Utilities */,
 				A7000000000000000000000A /* Services */,
+				A7000000000000000000000B /* Persistence */,
 				A70000000000000000000004 /* Resources */,
 				A70000000000000000000005 /* Supporting */,
 			);
@@ -178,6 +199,8 @@
 				A4000000000000000000000D /* NutritionCalculator.swift */,
 				A4000000000000000000000E /* InputValidator.swift */,
 				A4000000000000000000000F /* NutritionFormatters.swift */,
+				A4000000000000000000001A /* DailySummaryCalculator.swift */,
+				A4000000000000000000001B /* Date+DayBounds.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -188,6 +211,21 @@
 				A40000000000000000000015 /* FoodDatabaseService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A7000000000000000000000B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */,
+				A4000000000000000000001C /* PersistenceController.swift */,
+				A4000000000000000000001D /* FoodRecord+CoreDataClass.swift */,
+				A4000000000000000000001E /* FoodRecord+CoreDataProperties.swift */,
+				A4000000000000000000001F /* NutritionSettings+CoreDataClass.swift */,
+				A40000000000000000000020 /* NutritionSettings+CoreDataProperties.swift */,
+				A40000000000000000000021 /* DailyNutritionGoal+CoreDataClass.swift */,
+				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +312,7 @@
 			files = (
 				A30000000000000000000004 /* Assets.xcassets in Resources */,
 				A30000000000000000000013 /* foods.json in Resources */,
+				A30000000000000000000020 /* NutritionTracker.xcdatamodeld in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +342,15 @@
 				A30000000000000000000010 /* MealType.swift in Sources */,
 				A30000000000000000000011 /* InputMethod.swift in Sources */,
 				A30000000000000000000012 /* FoodDatabaseService.swift in Sources */,
+				A30000000000000000000017 /* DailySummaryCalculator.swift in Sources */,
+				A30000000000000000000018 /* Date+DayBounds.swift in Sources */,
+				A30000000000000000000019 /* PersistenceController.swift in Sources */,
+				A3000000000000000000001A /* FoodRecord+CoreDataClass.swift in Sources */,
+				A3000000000000000000001B /* FoodRecord+CoreDataProperties.swift in Sources */,
+				A3000000000000000000001C /* NutritionSettings+CoreDataClass.swift in Sources */,
+				A3000000000000000000001D /* NutritionSettings+CoreDataProperties.swift in Sources */,
+				A3000000000000000000001E /* DailyNutritionGoal+CoreDataClass.swift in Sources */,
+				A3000000000000000000001F /* DailyNutritionGoal+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +581,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A40000000000000000000023 /* NutritionTracker.xcdatamodel */,
+			);
+			currentVersion = A40000000000000000000023 /* NutritionTracker.xcdatamodel */;
+			path = NutritionTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A10000000000000000000001 /* Project object */;
 }

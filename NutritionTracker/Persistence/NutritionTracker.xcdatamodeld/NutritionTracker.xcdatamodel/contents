@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="26300" systemVersion="26.0" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="NO" userDefinedModelVersionIdentifier="">
+    <entity name="DailyNutritionGoal" representedClassName="DailyNutritionGoal" syncable="YES">
+        <attribute name="carbohydrates" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fat" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="protein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="FoodRecord" representedClassName="FoodRecord" syncable="YES">
+        <attribute name="calories" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="carbohydrates" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fat" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="foodName" optional="NO" attributeType="String"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inputMethodRawValue" optional="NO" attributeType="String"/>
+        <attribute name="mealTypeRawValue" optional="NO" attributeType="String"/>
+        <attribute name="protein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weightGrams" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="NutritionSettings" representedClassName="NutritionSettings" syncable="YES">
+        <attribute name="defaultCarbohydrates" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="defaultFat" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="defaultProtein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>
