@@ -69,6 +69,7 @@
 		A3000000000000000000003C /* ExerciseRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */; };
 		A3000000000000000000003D /* UserProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000040 /* UserProfileStore.swift */; };
 		A3000000000000000000003E /* ExerciseRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000041 /* ExerciseRecordStore.swift */; };
+		A3000000000000000000003F /* WeightPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000042 /* WeightPersistenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A40000000000000000000040 /* UserProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000041 /* ExerciseRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRecordStore.swift; sourceTree = "<group>"; };
+		A40000000000000000000042 /* WeightPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPersistenceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 				A40000000000000000000034 /* EnergyBalanceCalculatorTests.swift */,
 				A40000000000000000000035 /* WeightGoalProjectionCalculatorTests.swift */,
 				A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */,
+				A40000000000000000000042 /* WeightPersistenceTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				A30000000000000000000031 /* EnergyBalanceCalculatorTests.swift in Sources */,
 				A30000000000000000000032 /* WeightGoalProjectionCalculatorTests.swift in Sources */,
 				A30000000000000000000038 /* ProfileAndExerciseStoreTests.swift in Sources */,
+				A3000000000000000000003F /* WeightPersistenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
