@@ -46,4 +46,21 @@
         <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="usesManualBMR" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
+    <entity name="WeightEntry" representedClassName="WeightEntry" syncable="YES">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="recordedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="weightKilograms" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="WeightGoal" representedClassName="WeightGoal" syncable="YES">
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isActive" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="monthlyLossRate" optional="NO" attributeType="Double" defaultValueString="0.03" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startWeightKilograms" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="targetDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="targetDateModeRawValue" optional="NO" attributeType="String"/>
+        <attribute name="targetWeightKilograms" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
 </model>

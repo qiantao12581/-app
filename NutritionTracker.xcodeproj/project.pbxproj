@@ -70,6 +70,13 @@
 		A3000000000000000000003D /* UserProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000040 /* UserProfileStore.swift */; };
 		A3000000000000000000003E /* ExerciseRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000041 /* ExerciseRecordStore.swift */; };
 		A3000000000000000000003F /* WeightPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000042 /* WeightPersistenceTests.swift */; };
+		A30000000000000000000040 /* TargetDateMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000043 /* TargetDateMode.swift */; };
+		A30000000000000000000041 /* WeightEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000044 /* WeightEntry+CoreDataClass.swift */; };
+		A30000000000000000000042 /* WeightEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000045 /* WeightEntry+CoreDataProperties.swift */; };
+		A30000000000000000000043 /* WeightGoal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000046 /* WeightGoal+CoreDataClass.swift */; };
+		A30000000000000000000044 /* WeightGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000047 /* WeightGoal+CoreDataProperties.swift */; };
+		A30000000000000000000045 /* WeightEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000048 /* WeightEntryStore.swift */; };
+		A30000000000000000000046 /* WeightGoalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000049 /* WeightGoalStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +156,13 @@
 		A40000000000000000000040 /* UserProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000041 /* ExerciseRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRecordStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000042 /* WeightPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPersistenceTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000043 /* TargetDateMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetDateMode.swift; sourceTree = "<group>"; };
+		A40000000000000000000044 /* WeightEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A40000000000000000000045 /* WeightEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000046 /* WeightGoal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightGoal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A40000000000000000000047 /* WeightGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000048 /* WeightEntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryStore.swift; sourceTree = "<group>"; };
+		A40000000000000000000049 /* WeightGoalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +280,7 @@
 				A40000000000000000000036 /* BiologicalSex.swift */,
 				A40000000000000000000037 /* ActivityLevel.swift */,
 				A40000000000000000000038 /* DailyEnergyBalance.swift */,
+				A40000000000000000000043 /* TargetDateMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +327,12 @@
 				A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */,
 				A40000000000000000000040 /* UserProfileStore.swift */,
 				A40000000000000000000041 /* ExerciseRecordStore.swift */,
+				A40000000000000000000044 /* WeightEntry+CoreDataClass.swift */,
+				A40000000000000000000045 /* WeightEntry+CoreDataProperties.swift */,
+				A40000000000000000000046 /* WeightGoal+CoreDataClass.swift */,
+				A40000000000000000000047 /* WeightGoal+CoreDataProperties.swift */,
+				A40000000000000000000048 /* WeightEntryStore.swift */,
+				A40000000000000000000049 /* WeightGoalStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -505,6 +526,13 @@
 				A3000000000000000000003C /* ExerciseRecord+CoreDataProperties.swift in Sources */,
 				A3000000000000000000003D /* UserProfileStore.swift in Sources */,
 				A3000000000000000000003E /* ExerciseRecordStore.swift in Sources */,
+				A30000000000000000000040 /* TargetDateMode.swift in Sources */,
+				A30000000000000000000041 /* WeightEntry+CoreDataClass.swift in Sources */,
+				A30000000000000000000042 /* WeightEntry+CoreDataProperties.swift in Sources */,
+				A30000000000000000000043 /* WeightGoal+CoreDataClass.swift in Sources */,
+				A30000000000000000000044 /* WeightGoal+CoreDataProperties.swift in Sources */,
+				A30000000000000000000045 /* WeightEntryStore.swift in Sources */,
+				A30000000000000000000046 /* WeightGoalStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
