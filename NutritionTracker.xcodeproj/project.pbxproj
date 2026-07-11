@@ -63,6 +63,12 @@
 		A30000000000000000000036 /* MetabolismCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000039 /* MetabolismCalculator.swift */; };
 		A30000000000000000000037 /* WeightGoalProjectionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003A /* WeightGoalProjectionCalculator.swift */; };
 		A30000000000000000000038 /* ProfileAndExerciseStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */; };
+		A30000000000000000000039 /* UserProfile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003C /* UserProfile+CoreDataClass.swift */; };
+		A3000000000000000000003A /* UserProfile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003D /* UserProfile+CoreDataProperties.swift */; };
+		A3000000000000000000003B /* ExerciseRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003E /* ExerciseRecord+CoreDataClass.swift */; };
+		A3000000000000000000003C /* ExerciseRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */; };
+		A3000000000000000000003D /* UserProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000040 /* UserProfileStore.swift */; };
+		A3000000000000000000003E /* ExerciseRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000041 /* ExerciseRecordStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +141,12 @@
 		A40000000000000000000039 /* MetabolismCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetabolismCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000003A /* WeightGoalProjectionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalProjectionCalculator.swift; sourceTree = "<group>"; };
 		A4000000000000000000003B /* ProfileAndExerciseStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAndExerciseStoreTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000003C /* UserProfile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4000000000000000000003D /* UserProfile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4000000000000000000003E /* ExerciseRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000040 /* UserProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStore.swift; sourceTree = "<group>"; };
+		A40000000000000000000041 /* ExerciseRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRecordStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +303,12 @@
 				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
 				A4000000000000000000002B /* DailyGoalStore.swift */,
 				A4000000000000000000002E /* FoodRecordStore.swift */,
+				A4000000000000000000003C /* UserProfile+CoreDataClass.swift */,
+				A4000000000000000000003D /* UserProfile+CoreDataProperties.swift */,
+				A4000000000000000000003E /* ExerciseRecord+CoreDataClass.swift */,
+				A4000000000000000000003F /* ExerciseRecord+CoreDataProperties.swift */,
+				A40000000000000000000040 /* UserProfileStore.swift */,
+				A40000000000000000000041 /* ExerciseRecordStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -478,6 +496,12 @@
 				A30000000000000000000035 /* DailyEnergyBalance.swift in Sources */,
 				A30000000000000000000036 /* MetabolismCalculator.swift in Sources */,
 				A30000000000000000000037 /* WeightGoalProjectionCalculator.swift in Sources */,
+				A30000000000000000000039 /* UserProfile+CoreDataClass.swift in Sources */,
+				A3000000000000000000003A /* UserProfile+CoreDataProperties.swift in Sources */,
+				A3000000000000000000003B /* ExerciseRecord+CoreDataClass.swift in Sources */,
+				A3000000000000000000003C /* ExerciseRecord+CoreDataProperties.swift in Sources */,
+				A3000000000000000000003D /* UserProfileStore.swift in Sources */,
+				A3000000000000000000003E /* ExerciseRecordStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

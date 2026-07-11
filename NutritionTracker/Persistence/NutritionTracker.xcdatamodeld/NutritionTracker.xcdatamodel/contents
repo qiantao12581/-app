@@ -21,11 +21,29 @@
         <attribute name="protein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="weightGrams" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="ExerciseRecord" representedClassName="ExerciseRecord" syncable="YES">
+        <attribute name="activeCalories" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="durationMinutes" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="NO" attributeType="String"/>
+    </entity>
     <entity name="NutritionSettings" representedClassName="NutritionSettings" syncable="YES">
         <attribute name="defaultCarbohydrates" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="defaultFat" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="defaultProtein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="UserProfile" representedClassName="UserProfile" syncable="YES">
+        <attribute name="activityLevelRawValue" optional="NO" attributeType="String"/>
+        <attribute name="biologicalSexRawValue" optional="YES" attributeType="String"/>
+        <attribute name="birthDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="customActivityFactor" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heightCentimeters" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="manualBMR" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="usesManualBMR" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
 </model>
