@@ -48,7 +48,7 @@ struct AddFoodView: View {
                 }
             }
 
-            Section("每100克营养") {
+            Section {
                 NutrientInputRow(
                     title: "热量",
                     unit: "千卡",
@@ -69,6 +69,8 @@ struct AddFoodView: View {
                     unit: "克",
                     text: $state.fatPer100Grams
                 )
+            } header: {
+                Text("每100克营养")
             } footer: {
                 Text("可选择内置食物自动填充，也可以手动修改。")
             }
