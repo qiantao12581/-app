@@ -14,7 +14,7 @@ struct RootTabView: View {
             .tag(AppTab.today)
 
             NavigationStack {
-                AddFoodView()
+                AddView()
             }
             .tabItem {
                 Label(AppTab.add.title, systemImage: AppTab.add.systemImage)

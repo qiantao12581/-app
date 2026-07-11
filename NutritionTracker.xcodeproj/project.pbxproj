@@ -77,6 +77,11 @@
 		A30000000000000000000044 /* WeightGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000047 /* WeightGoal+CoreDataProperties.swift */; };
 		A30000000000000000000045 /* WeightEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000048 /* WeightEntryStore.swift */; };
 		A30000000000000000000046 /* WeightGoalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000049 /* WeightGoalStore.swift */; };
+		A30000000000000000000047 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004A /* AddView.swift */; };
+		A30000000000000000000048 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004B /* AddExerciseView.swift */; };
+		A30000000000000000000049 /* AddWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004C /* AddWeightView.swift */; };
+		A3000000000000000000004A /* UserProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004D /* UserProfileEditorView.swift */; };
+		A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000004E /* WeightGoalEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +168,11 @@
 		A40000000000000000000047 /* WeightGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A40000000000000000000048 /* WeightEntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000049 /* WeightGoalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalStore.swift; sourceTree = "<group>"; };
+		A4000000000000000000004A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A4000000000000000000004B /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		A4000000000000000000004C /* AddWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightView.swift; sourceTree = "<group>"; };
+		A4000000000000000000004D /* UserProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEditorView.swift; sourceTree = "<group>"; };
+		A4000000000000000000004E /* WeightGoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +354,7 @@
 				A7000000000000000000000E /* Goals */,
 				A7000000000000000000000F /* Today */,
 				A70000000000000000000010 /* History */,
+				A70000000000000000000011 /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -354,6 +365,9 @@
 				A40000000000000000000025 /* AddFoodFormState.swift */,
 				A40000000000000000000026 /* FoodSearchView.swift */,
 				A40000000000000000000027 /* AddFoodView.swift */,
+				A4000000000000000000004A /* AddView.swift */,
+				A4000000000000000000004B /* AddExerciseView.swift */,
+				A4000000000000000000004C /* AddWeightView.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -362,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000002C /* DailyGoalEditorView.swift */,
+				A4000000000000000000004E /* WeightGoalEditorView.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -380,6 +395,14 @@
 				A40000000000000000000032 /* HistoryView.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		A70000000000000000000011 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000004D /* UserProfileEditorView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +556,11 @@
 				A30000000000000000000044 /* WeightGoal+CoreDataProperties.swift in Sources */,
 				A30000000000000000000045 /* WeightEntryStore.swift in Sources */,
 				A30000000000000000000046 /* WeightGoalStore.swift in Sources */,
+				A30000000000000000000047 /* AddView.swift in Sources */,
+				A30000000000000000000048 /* AddExerciseView.swift in Sources */,
+				A30000000000000000000049 /* AddWeightView.swift in Sources */,
+				A3000000000000000000004A /* UserProfileEditorView.swift in Sources */,
+				A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,27 @@ struct TodayView: View {
 
     @FetchRequest private var records: FetchedResults<FoodRecord>
     @FetchRequest private var goals: FetchedResults<DailyNutritionGoal>
+    @FetchRequest private var exercises: FetchedResults<ExerciseRecord>
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \UserProfile.updatedAt, ascending: false)
+        ]
+    ) private var profiles: FetchedResults<UserProfile>
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \WeightEntry.recordedAt, ascending: false)
+        ],
+        animation: .default
+    ) private var weightEntries: FetchedResults<WeightEntry>
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \WeightGoal.updatedAt, ascending: false)
+        ],
+        predicate: NSPredicate(format: "isActive == YES"),
+        animation: .default
+    ) private var weightGoals: FetchedResults<WeightGoal>
 
-    @State private var presentsGoalEditor = false
+    @State private var presentedSheet: TodaySheet?
     @State private var errorMessage: String?
 
     private let date: Date
@@ -23,6 +42,13 @@ struct TodayView: View {
         _records = FetchRequest(
             sortDescriptors: [
                 NSSortDescriptor(keyPath: \FoodRecord.createdAt, ascending: false)
+            ],
+            predicate: predicate,
+            animation: .default
+        )
+        _exercises = FetchRequest(
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \ExerciseRecord.createdAt, ascending: false)
             ],
             predicate: predicate,
             animation: .default
@@ -44,6 +70,40 @@ struct TodayView: View {
 
     private var consumed: NutritionValues {
         DailySummaryCalculator.total(records.map(\.nutritionValues))
+    }
+
+    private var currentWeight: Double? {
+        weightEntries.first?.weightKilograms
+    }
+
+    private var energyBalance: DailyEnergyBalance? {
+        guard let profile = profiles.first, let currentWeight else { return nil }
+        let estimated: Double
+        if let sex = profile.biologicalSex {
+            estimated = MetabolismCalculator.estimatedBMR(
+                weightKilograms: currentWeight,
+                heightCentimeters: profile.heightCentimeters,
+                age: MetabolismCalculator.age(
+                    on: date,
+                    birthDate: profile.birthDate
+                ),
+                sex: sex
+            )
+        } else if profile.usesManualBMR {
+            estimated = profile.manualBMR
+        } else {
+            return nil
+        }
+        let bmr = MetabolismCalculator.resolvedBMR(
+            manualBMR: profile.usesManualBMR ? profile.manualBMR : nil,
+            estimatedBMR: estimated
+        )
+        return DailyEnergyBalance(
+            basalMetabolicRate: bmr,
+            activityFactor: profile.resolvedActivityFactor,
+            exerciseCalories: exercises.reduce(0) { $0 + $1.activeCalories },
+            intakeCalories: consumed.calories
+        )
     }
 
     var body: some View {
@@ -95,7 +155,7 @@ struct TodayView: View {
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                         Button("现在设置") {
-                            presentsGoalEditor = true
+                            presentedSheet = .nutritionGoal
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(.green)
@@ -108,10 +168,56 @@ struct TodayView: View {
                     Spacer()
                     if !goals.isEmpty {
                         Button("修改目标") {
-                            presentsGoalEditor = true
+                            presentedSheet = .nutritionGoal
                         }
                         .textCase(nil)
                     }
+                }
+            }
+
+            Section("热量收支（估算）") {
+                if let energyBalance {
+                    EnergyBalanceCard(balance: energyBalance)
+                } else if profiles.isEmpty {
+                    SetupPrompt(
+                        title: "请先填写个人资料",
+                        message: "填写年龄、身高和日常活动类型后，才能估算基础代谢和热量缺口。",
+                        buttonTitle: "填写资料"
+                    ) {
+                        presentedSheet = .profile
+                    }
+                } else {
+                    SetupPrompt(
+                        title: "还没有当前体重",
+                        message: "请到“添加”页面记录体重，以计算基础代谢。",
+                        buttonTitle: nil,
+                        action: {}
+                    )
+                }
+            }
+
+            Section("减脂目标") {
+                if let goal = weightGoals.first, let currentWeight {
+                    WeightGoalCard(
+                        goal: goal,
+                        currentWeight: currentWeight,
+                        today: date
+                    )
+                } else if currentWeight != nil {
+                    SetupPrompt(
+                        title: "还没有减脂目标",
+                        message: "设置目标体重、每月减重比例和完成日期。",
+                        buttonTitle: "设置目标"
+                    ) {
+                        presentedSheet = .weightGoal
+                    }
+                } else {
+                    SetupPrompt(
+                        title: "记录体重后可设置目标",
+                        message: "请先到“添加”页面保存当前体重。",
+                        buttonTitle: nil,
+                        action: {}
+                    )
                 }
             }
 
@@ -128,14 +234,32 @@ struct TodayView: View {
         }
         .navigationTitle("今日")
         .toolbar {
-            if !records.isEmpty {
-                EditButton()
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Menu {
+                    Button("个人资料") { presentedSheet = .profile }
+                    Button("每日营养目标") { presentedSheet = .nutritionGoal }
+                    Button("减脂目标") { presentedSheet = .weightGoal }
+                } label: {
+                    Image(systemName: "slider.horizontal.3")
+                }
+            }
+            ToolbarItem(placement: .navigationBarLeading) {
+                if !records.isEmpty {
+                    EditButton()
+                }
             }
         }
         .onAppear(perform: createGoalSnapshotIfPossible)
-        .sheet(isPresented: $presentsGoalEditor) {
+        .sheet(item: $presentedSheet) { sheet in
             NavigationStack {
-                DailyGoalEditorView(date: date)
+                switch sheet {
+                case .nutritionGoal:
+                    DailyGoalEditorView(date: date)
+                case .profile:
+                    UserProfileEditorView()
+                case .weightGoal:
+                    WeightGoalEditorView()
+                }
             }
         }
         .alert(
@@ -170,6 +294,130 @@ struct TodayView: View {
             context.rollback()
             errorMessage = error.localizedDescription
         }
+    }
+}
+
+private enum TodaySheet: String, Identifiable {
+    case nutritionGoal
+    case profile
+    case weightGoal
+
+    var id: String { rawValue }
+}
+
+private struct SetupPrompt: View {
+    let title: String
+    let message: String
+    let buttonTitle: String?
+    let action: () -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            Text(title).font(.headline)
+            Text(message)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            if let buttonTitle {
+                Button(buttonTitle, action: action)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.green)
+            }
+        }
+        .padding(.vertical, 5)
+    }
+}
+
+private struct EnergyBalanceCard: View {
+    let balance: DailyEnergyBalance
+
+    var body: some View {
+        VStack(spacing: 9) {
+            EnergyValueRow(title: "基础代谢", value: balance.basalMetabolicRate)
+            EnergyValueRow(title: "日常基础消耗", value: balance.baselineExpenditure)
+            EnergyValueRow(title: "今日运动消耗", value: balance.exerciseCalories)
+            EnergyValueRow(title: "预计总消耗", value: balance.totalExpenditure)
+            EnergyValueRow(title: "食物摄入", value: balance.intakeCalories)
+            Divider()
+            HStack {
+                Text(balance.calorieDeficit >= 0 ? "今日热量缺口" : "今日热量盈余")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text("\(NutritionFormatters.oneDecimal(abs(balance.calorieDeficit))) 千卡")
+                    .fontWeight(.bold)
+                    .foregroundStyle(balance.calorieDeficit >= 0 ? Color.green : Color.red)
+            }
+        }
+    }
+}
+
+private struct EnergyValueRow: View {
+    let title: String
+    let value: Double
+
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Text("\(NutritionFormatters.oneDecimal(value)) 千卡")
+                .foregroundStyle(.secondary)
+        }
+        .font(.subheadline)
+    }
+}
+
+private struct WeightGoalCard: View {
+    @ObservedObject var goal: WeightGoal
+    let currentWeight: Double
+    let today: Date
+
+    private var progress: Double {
+        WeightGoalProjectionCalculator.progress(
+            startWeightKilograms: goal.startWeightKilograms,
+            currentWeightKilograms: currentWeight,
+            targetWeightKilograms: goal.targetWeightKilograms
+        )
+    }
+
+    private var remainingDays: Int {
+        WeightGoalProjectionCalculator.remainingDays(
+            from: today,
+            to: goal.targetDate
+        )
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text("\(NutritionFormatters.oneDecimal(currentWeight)) 公斤")
+                    .font(.title3.bold())
+                Spacer()
+                Text("目标 \(NutritionFormatters.oneDecimal(goal.targetWeightKilograms)) 公斤")
+                    .foregroundStyle(.secondary)
+            }
+            ProgressView(value: progress)
+                .tint(.green)
+            HStack {
+                Text("进度 \(NutritionFormatters.oneDecimal(progress * 100))%")
+                Spacer()
+                Text(goal.targetDate, format: .dateTime.year().month().day())
+            }
+            .font(.caption)
+            .foregroundStyle(.secondary)
+
+            if currentWeight <= goal.targetWeightKilograms {
+                Text("目标已完成")
+                    .font(.headline)
+                    .foregroundStyle(.green)
+            } else if remainingDays >= 0 {
+                Text("距离目标日期还有 \(remainingDays) 天")
+                    .font(.headline)
+            } else {
+                Text("已超过目标日期 \(abs(remainingDays)) 天")
+                    .font(.headline)
+                    .foregroundStyle(.red)
+            }
+        }
+        .padding(.vertical, 4)
     }
 }
 
