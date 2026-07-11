@@ -4,13 +4,24 @@ import SwiftUI
 struct AddFoodView: View {
     @Environment(\.managedObjectContext) private var context
 
-    @State private var state = AddFoodFormState()
+    @State private var state: AddFoodFormState
     @State private var presentedSheet: PresentedSheet?
     @State private var alertMessage: AlertMessage?
 
     private let databaseResult: Result<FoodDatabaseService, Error>
+    private let inputMethod: InputMethod
 
-    init(bundle: Bundle = .main) {
+    init(
+        bundle: Bundle = .main,
+        initialFood: FoodReference? = nil,
+        inputMethod: InputMethod = .manual
+    ) {
+        var initialState = AddFoodFormState()
+        if let initialFood {
+            initialState.select(food: initialFood)
+        }
+        _state = State(initialValue: initialState)
+        self.inputMethod = inputMethod
         databaseResult = Result {
             try FoodDatabaseService.loadBundled(bundle: bundle)
         }
@@ -19,6 +30,18 @@ struct AddFoodView: View {
     var body: some View {
         Form {
             Section("食物信息") {
+                if inputMethod == .manual {
+                    NavigationLink {
+                        PhotoFoodView()
+                    } label: {
+                        Label("拍照或从相册选择", systemImage: "camera.fill")
+                    }
+                } else {
+                    Label("照片添加：请核对所有数据", systemImage: "checkmark.circle")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+
                 Button {
                     switch databaseResult {
                     case .success:
@@ -141,7 +164,7 @@ struct AddFoodView: View {
             record.fat = nutrition.fat
             record.createdAt = Date()
             record.mealTypeRawValue = state.mealType.rawValue
-            record.inputMethodRawValue = InputMethod.manual.rawValue
+            record.inputMethodRawValue = inputMethod.rawValue
 
             do {
                 try context.save()

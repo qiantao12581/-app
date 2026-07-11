@@ -89,6 +89,8 @@
 		A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000053 /* RecognizedFoodCandidate.swift */; };
 		A30000000000000000000051 /* FoodRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000054 /* FoodRecognitionService.swift */; };
 		A30000000000000000000052 /* MockFoodRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000055 /* MockFoodRecognitionService.swift */; };
+		A30000000000000000000053 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000056 /* CameraPicker.swift */; };
+		A30000000000000000000054 /* PhotoFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000057 /* PhotoFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,8 @@
 		A40000000000000000000053 /* RecognizedFoodCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedFoodCandidate.swift; sourceTree = "<group>"; };
 		A40000000000000000000054 /* FoodRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecognitionService.swift; sourceTree = "<group>"; };
 		A40000000000000000000055 /* MockFoodRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFoodRecognitionService.swift; sourceTree = "<group>"; };
+		A40000000000000000000056 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		A40000000000000000000057 /* PhotoFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +393,8 @@
 				A4000000000000000000004A /* AddView.swift */,
 				A4000000000000000000004B /* AddExerciseView.swift */,
 				A4000000000000000000004C /* AddWeightView.swift */,
+				A40000000000000000000056 /* CameraPicker.swift */,
+				A40000000000000000000057 /* PhotoFoodView.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -587,6 +593,8 @@
 				A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */,
 				A30000000000000000000051 /* FoodRecognitionService.swift in Sources */,
 				A30000000000000000000052 /* MockFoodRecognitionService.swift in Sources */,
+				A30000000000000000000053 /* CameraPicker.swift in Sources */,
+				A30000000000000000000054 /* PhotoFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
