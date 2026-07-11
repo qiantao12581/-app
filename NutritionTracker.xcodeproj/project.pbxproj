@@ -86,6 +86,9 @@
 		A3000000000000000000004D /* MealSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000050 /* MealSuggestion.swift */; };
 		A3000000000000000000004E /* MealRecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000051 /* MealRecommendationService.swift */; };
 		A3000000000000000000004F /* FoodRecognitionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000052 /* FoodRecognitionServiceTests.swift */; };
+		A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000053 /* RecognizedFoodCandidate.swift */; };
+		A30000000000000000000051 /* FoodRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000054 /* FoodRecognitionService.swift */; };
+		A30000000000000000000052 /* MockFoodRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000055 /* MockFoodRecognitionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +184,9 @@
 		A40000000000000000000050 /* MealSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestion.swift; sourceTree = "<group>"; };
 		A40000000000000000000051 /* MealRecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationService.swift; sourceTree = "<group>"; };
 		A40000000000000000000052 /* FoodRecognitionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecognitionServiceTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000053 /* RecognizedFoodCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedFoodCandidate.swift; sourceTree = "<group>"; };
+		A40000000000000000000054 /* FoodRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecognitionService.swift; sourceTree = "<group>"; };
+		A40000000000000000000055 /* MockFoodRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFoodRecognitionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +308,7 @@
 				A40000000000000000000038 /* DailyEnergyBalance.swift */,
 				A40000000000000000000043 /* TargetDateMode.swift */,
 				A40000000000000000000050 /* MealSuggestion.swift */,
+				A40000000000000000000053 /* RecognizedFoodCandidate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +333,8 @@
 			children = (
 				A40000000000000000000015 /* FoodDatabaseService.swift */,
 				A40000000000000000000051 /* MealRecommendationService.swift */,
+				A40000000000000000000054 /* FoodRecognitionService.swift */,
+				A40000000000000000000055 /* MockFoodRecognitionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -575,6 +584,9 @@
 				A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */,
 				A3000000000000000000004D /* MealSuggestion.swift in Sources */,
 				A3000000000000000000004E /* MealRecommendationService.swift in Sources */,
+				A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */,
+				A30000000000000000000051 /* FoodRecognitionService.swift in Sources */,
+				A30000000000000000000052 /* MockFoodRecognitionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
