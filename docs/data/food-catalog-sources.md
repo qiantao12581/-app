@@ -7,7 +7,7 @@
 - Energy: official kJ values are retained in each specification; catalog kcal is computed with 1 kcal = 4.184 kJ and is not rounded during conversion.
 - Missingness: an unreported official calories/carbohydrates/protein/fat field is JSON null; the row is missingOfficialFields and is ineligible for complete-only recommendations.
 - Chain variants: each McDonald's size/product is an independent official serving record. No small/medium/large multiplier is used. KFC contributes zero rows because a current exact mainland official nutrition source could not be retrieved; no third-party or overseas values were substituted.
-- Current batch: 135 foods (115 China CDC generic, 20 mainland branded dairy, 0 McDonald's China, 0 KFC China).
+- Current batch: 150 foods (115 China CDC generic, 20 mainland branded dairy, 15 McDonald's China, 0 KFC China).
 
 ## Sources
 
@@ -148,3 +148,18 @@
 | yili-satine-organic-200 | 金典200mL有机纯牛奶 | 金典 | 200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
 | yili-satine-high-calcium-low-fat | 金典高钙低脂纯牛奶 | 金典 | 官网当前产品名；每100mL标示3.6g蛋白质、120mg钙并称脂肪减少50%；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
 | yili-satine-pure-200 | 金典200mL纯牛奶 | 金典 | 200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mcd-cn-big-mac | 巨无霸 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2146 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Big-Mac> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-hamburger | 汉堡包 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1039 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Hamburger> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-spicy-chicken-filet | 麦辣鸡腿汉堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Spicy-Chicken-Filet> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-grilled-chicken | 板烧鸡腿堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1638 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Grilled-Chicken-Sandwich> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-mcchicken | 麦香鸡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1546 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/McChicken> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-filet-o-fish | 麦香鱼 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1359 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Filet-O-Fish> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-cheeseburger | 吉士汉堡包 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1231 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Cheeseburger> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-double-cheeseburger | 双层吉士汉堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1796 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Double-Cheeseburger> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-beef-sausage | 不素之霸双层牛堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2062 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/beef-sausage> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-double-cod | 双层深海鳕鱼堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/double-fof> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-angus-bacon | 培根安格斯厚牛堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2959 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Thick-Angus-Beef-Burger-with-Bacon> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-angus-cheese | 芝士安格斯厚牛堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量2914 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Cheese-Angus> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-bacon-lettuce-tomato-double-beef | 培根蔬萃双层牛堡 | 麦当劳中国 | 1个；官网单份营养数据（原始能量1850 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Bacon-Lettuce-Tomato-Double-Beef-Burger> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-spicy-wings | 麦辣鸡翅 | 麦当劳中国 | 2块；官网单份营养数据（原始能量937 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Spicy-McWings> | 2026-07-12T00:00:00Z | complete | snack |
+| mcd-cn-mcnuggets-5 | 麦乐鸡（5块） | 麦当劳中国 | 5块；官网单份营养数据（原始能量890 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算） | officialMenu | <https://www.mcdonalds.com.cn/product/Chicken-McNuggets> | 2026-07-12T00:00:00Z | complete | snack |

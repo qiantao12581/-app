@@ -6707,5 +6707,785 @@
         "minimumSuggestedGrams":  200,
         "maximumSuggestedGrams":  200,
         "suggestionStepGrams":  200
+    },
+    {
+        "id":  "mcd-cn-big-mac",
+        "name":  "巨无霸",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  512.906309751434,
+                          "carbohydrates":  42,
+                          "protein":  27,
+                          "fat":  26
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Big-Mac",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2146 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-hamburger",
+        "name":  "汉堡包",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  248.32695984703631,
+                          "carbohydrates":  29,
+                          "protein":  13,
+                          "fat":  8
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Hamburger",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1039 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-spicy-chicken-filet",
+        "name":  "麦辣鸡腿汉堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  484.94263862332696,
+                          "carbohydrates":  42,
+                          "protein":  24,
+                          "fat":  24
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Spicy-Chicken-Filet",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-grilled-chicken",
+        "name":  "板烧鸡腿堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  391.491395793499,
+                          "carbohydrates":  35,
+                          "protein":  23,
+                          "fat":  17
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Grilled-Chicken-Sandwich",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1638 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-mcchicken",
+        "name":  "麦香鸡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  369.50286806883366,
+                          "carbohydrates":  39,
+                          "protein":  15,
+                          "fat":  17
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/McChicken",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1546 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-filet-o-fish",
+        "name":  "麦香鱼",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  324.80879541108987,
+                          "carbohydrates":  35,
+                          "protein":  16,
+                          "fat":  13
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Filet-O-Fish",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1359 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-cheeseburger",
+        "name":  "吉士汉堡包",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  294.21606118546845,
+                          "carbohydrates":  30,
+                          "protein":  16,
+                          "fat":  12
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Cheeseburger",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1231 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-double-cheeseburger",
+        "name":  "双层吉士汉堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  429.25430210325044,
+                          "carbohydrates":  31,
+                          "protein":  27,
+                          "fat":  22
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Double-Cheeseburger",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1796 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-beef-sausage",
+        "name":  "不素之霸双层牛堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  492.82982791586994,
+                          "carbohydrates":  34,
+                          "protein":  28,
+                          "fat":  27
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/beef-sausage",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2062 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-double-cod",
+        "name":  "双层深海鳕鱼堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  484.94263862332696,
+                          "carbohydrates":  46,
+                          "protein":  28,
+                          "fat":  21
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/double-fof",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-angus-bacon",
+        "name":  "培根安格斯厚牛堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  707.21797323135752,
+                          "carbohydrates":  43,
+                          "protein":  34,
+                          "fat":  44
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Thick-Angus-Beef-Burger-with-Bacon",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2959 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-angus-cheese",
+        "name":  "芝士安格斯厚牛堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  696.46271510516249,
+                          "carbohydrates":  43,
+                          "protein":  32,
+                          "fat":  44
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Cheese-Angus",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量2914 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-bacon-lettuce-tomato-double-beef",
+        "name":  "培根蔬萃双层牛堡",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  442.16061185468448,
+                          "carbohydrates":  34,
+                          "protein":  24,
+                          "fat":  23
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "1个",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Bacon-Lettuce-Tomato-Double-Beef-Burger",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "1个；官网单份营养数据（原始能量1850 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-spicy-wings",
+        "name":  "麦辣鸡翅",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  223.94837476099426,
+                          "carbohydrates":  9,
+                          "protein":  13,
+                          "fat":  15
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "2块",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Spicy-McWings",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "2块；官网单份营养数据（原始能量937 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mcd-cn-mcnuggets-5",
+        "name":  "麦乐鸡（5块）",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  212.71510516252388,
+                          "carbohydrates":  13,
+                          "protein":  12,
+                          "fat":  12
+                      },
+        "brandName":  "麦当劳中国",
+        "nutritionBasisAmount":  1,
+        "nutritionBasisUnit":  "serving",
+        "portions":  [
+                         {
+                             "id":  "serving",
+                             "name":  "5块",
+                             "baseAmount":  1,
+                             "baseUnit":  "serving",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "officialMenu",
+                       "name":  "麦当劳中国官网营养计算器",
+                       "url":  "https://www.mcdonalds.com.cn/product/Chicken-McNuggets",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "5块；官网单份营养数据（原始能量890 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "麦当劳中国",
+                                     "官方单份"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  1,
+        "suggestionStepGrams":  1
     }
 ]
