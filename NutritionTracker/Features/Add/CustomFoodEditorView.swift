@@ -70,7 +70,7 @@ struct CustomFoodEditorView: View {
                     TextField("别名，用逗号分隔", text: $aliases)
                 }
 
-                Section("营养基准") {
+                Section {
                     HStack {
                         TextField("基准数量", text: $basisAmount)
                             .keyboardType(.decimalPad)
@@ -84,6 +84,8 @@ struct CustomFoodEditorView: View {
                     optionalNutrientRow("碳水化合物", unit: "克", text: $carbohydrates)
                     optionalNutrientRow("蛋白质", unit: "克", text: $protein)
                     optionalNutrientRow("脂肪", unit: "克", text: $fat)
+                } header: {
+                    Text("营养基准")
                 } footer: {
                     Text("营养项可以留空，但至少填写一项；留空会在汇总中标记为部分数据。")
                 }
