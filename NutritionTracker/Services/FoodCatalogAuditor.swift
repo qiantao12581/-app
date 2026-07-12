@@ -22,7 +22,7 @@ struct FoodCatalogAuditor: Sendable {
             appendDisplayErrors(food, to: &errors)
             appendSourceErrors(food, to: &errors)
             appendCompletenessErrors(food, to: &errors)
-            appendMenuSizeErrors(food, to: &errors)
+            appendOfficialMenuServingErrors(food, to: &errors)
         }
 
         return FoodCatalogAuditReport(foodCount: foods.count, errors: errors)
@@ -159,26 +159,59 @@ struct FoodCatalogAuditor: Sendable {
             errors.append("food.unsupportedSourceType id=\(food.id) type=userProvided")
         }
 
-        if let url = food.source.url {
-            let scheme = url.scheme?.lowercased()
-            if (scheme != "https" && scheme != "http") || url.host == nil {
-                errors.append("food.invalidSourceURL id=\(food.id)")
-            }
-        }
-
-        guard food.brandName != nil else { return }
         if food.source.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            errors.append("food.brandedSource id=\(food.id) field=name")
+            errors.append("food.sourceMetadata id=\(food.id) field=name")
         }
-        if food.source.url == nil {
-            errors.append("food.brandedSource id=\(food.id) field=url")
+        if food.source.specification
+            .trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            errors.append("food.sourceMetadata id=\(food.id) field=specification")
         }
         if !food.source.verifiedAt.timeIntervalSince1970.isFinite
             || food.source.verifiedAt <= Date(timeIntervalSince1970: 0) {
-            errors.append("food.brandedSource id=\(food.id) field=verifiedAt")
+            errors.append("food.sourceMetadata id=\(food.id) field=verifiedAt")
         }
-        if food.source.specification.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            errors.append("food.brandedSource id=\(food.id) field=specification")
+
+        guard let url = food.source.url else {
+            errors.append("food.sourceMetadata id=\(food.id) field=url")
+            return
+        }
+
+        let scheme = url.scheme?.lowercased()
+        guard
+            (scheme == "https" || scheme == "http"),
+            let rawHost = url.host,
+            !rawHost.isEmpty
+        else {
+            errors.append("food.invalidSourceURL id=\(food.id)")
+            return
+        }
+
+        guard food.source.type != .userProvided else { return }
+        let host = rawHost.lowercased()
+        if !approvedHosts(for: food.source.type).contains(host) {
+            errors.append(
+                "food.unsupportedSourceHost id=\(food.id) "
+                    + "type=\(food.source.type.rawValue) host=\(host)"
+            )
+        }
+    }
+
+    private func approvedHosts(for sourceType: FoodSourceType) -> Set<String> {
+        switch sourceType {
+        case .chinaFoodComposition:
+            return ["nlc.chinanutri.cn"]
+        case .officialMenu:
+            return ["mcdonalds.com.cn", "www.mcdonalds.com.cn"]
+        case .brandWebsite, .packageLabel:
+            return [
+                "yili.com",
+                "www.yili.com",
+                "mengniu.com.cn",
+                "www.mengniu.com.cn",
+                "img.mengniu.com.cn"
+            ]
+        case .userProvided:
+            return []
         }
     }
 
@@ -198,19 +231,38 @@ struct FoodCatalogAuditor: Sendable {
         }
     }
 
-    private func appendMenuSizeErrors(
+    private func appendOfficialMenuServingErrors(
         _ food: FoodReference,
         to errors: inout [String]
     ) {
         guard food.source.type == .officialMenu else { return }
-        let sizeTerms = ["small", "medium", "large", "小份", "中份", "大份"]
-        let sizedServingPortions = food.portions.filter { portion in
-            guard portion.baseUnit == .serving else { return false }
-            let identity = normalized(portion.id + portion.name)
-            return sizeTerms.contains(where: { identity.contains(normalized($0)) })
+
+        if food.nutritionBasisUnit != .serving || food.nutritionBasisAmount != 1 {
+            errors.append("food.officialMenuServing id=\(food.id) reason=basis")
         }
-        if sizedServingPortions.count > 1 {
-            errors.append("food.unsupportedMenuSizeScaling id=\(food.id)")
+
+        if food.portions.count != 1 {
+            errors.append(
+                "food.officialMenuServing id=\(food.id) "
+                    + "reason=portionCount actual=\(food.portions.count)"
+            )
+        } else if let portion = food.portions.first {
+            if portion.baseUnit != .serving
+                || portion.baseAmount != food.nutritionBasisAmount {
+                errors.append("food.officialMenuServing id=\(food.id) reason=portionBasis")
+            }
+            if !portion.isDefault {
+                errors.append("food.officialMenuServing id=\(food.id) reason=defaultPortion")
+            }
+            if portion.allowsDecimalQuantity {
+                errors.append("food.officialMenuServing id=\(food.id) reason=decimalQuantity")
+            }
+        }
+
+        if food.minimumSuggestedGrams != 1
+            || food.maximumSuggestedGrams != 1
+            || food.suggestionStepGrams != 1 {
+            errors.append("food.officialMenuServing id=\(food.id) reason=recommendationRange")
         }
     }
 
