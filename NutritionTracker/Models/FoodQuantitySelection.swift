@@ -22,6 +22,24 @@ struct FoodQuantitySelection: Equatable, Sendable {
         preservedBaseAmount = nil
     }
 
+    private init(
+        quantity: String,
+        selectedPortionID: String,
+        portions: [FoodPortion],
+        nutrition: PartialNutritionValues,
+        nutritionBasisAmount: Double,
+        nutritionBasisUnit: FoodMeasurementUnit,
+        preservedBaseAmount: Double?
+    ) {
+        self.quantity = quantity
+        self.selectedPortionID = selectedPortionID
+        self.portions = portions
+        self.nutrition = nutrition
+        self.nutritionBasisAmount = nutritionBasisAmount
+        self.nutritionBasisUnit = nutritionBasisUnit
+        self.preservedBaseAmount = preservedBaseAmount
+    }
+
     static func manual() -> Self {
         Self(
             quantity: "100.0",
