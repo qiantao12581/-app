@@ -1,24 +1,1002 @@
 [
-  {"id":"rice-cooked","name":"熟米饭","aliases":["米饭","白饭"],"category":"staple","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":116,"carbohydratesPer100Grams":25.9,"proteinPer100Grams":2.6,"fatPer100Grams":0.3,"minimumSuggestedGrams":50,"maximumSuggestedGrams":300,"suggestionStepGrams":25},
-  {"id":"egg-boiled","name":"鸡蛋","aliases":["水煮蛋","鸡子","egg"],"category":"protein","suitableMeals":["breakfast","lunch","dinner","snack"],"caloriesPer100Grams":144,"carbohydratesPer100Grams":0.8,"proteinPer100Grams":13.3,"fatPer100Grams":9.5,"minimumSuggestedGrams":50,"maximumSuggestedGrams":150,"suggestionStepGrams":50},
-  {"id":"chicken-breast-cooked","name":"熟鸡胸肉","aliases":["鸡胸","鸡胸肉"],"category":"protein","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":165,"carbohydratesPer100Grams":0,"proteinPer100Grams":31,"fatPer100Grams":3.6,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"chicken-thigh-cooked","name":"熟鸡腿肉","aliases":["鸡腿","去皮鸡腿肉"],"category":"protein","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":209,"carbohydratesPer100Grams":0,"proteinPer100Grams":26,"fatPer100Grams":10.9,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"beef-lean-cooked","name":"熟瘦牛肉","aliases":["牛肉","瘦牛肉"],"category":"protein","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":250,"carbohydratesPer100Grams":0,"proteinPer100Grams":26,"fatPer100Grams":15,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"pork-lean-cooked","name":"熟瘦猪肉","aliases":["猪肉","瘦肉"],"category":"protein","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":242,"carbohydratesPer100Grams":0,"proteinPer100Grams":27.3,"fatPer100Grams":13.9,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"milk-whole","name":"全脂牛奶","aliases":["牛奶","纯牛奶"],"category":"dairy","suitableMeals":["breakfast","snack"],"caloriesPer100Grams":61,"carbohydratesPer100Grams":4.8,"proteinPer100Grams":3.2,"fatPer100Grams":3.3,"minimumSuggestedGrams":100,"maximumSuggestedGrams":300,"suggestionStepGrams":50},
-  {"id":"banana","name":"香蕉","aliases":["banana"],"category":"fruit","suitableMeals":["breakfast","snack"],"caloriesPer100Grams":89,"carbohydratesPer100Grams":22.8,"proteinPer100Grams":1.1,"fatPer100Grams":0.3,"minimumSuggestedGrams":50,"maximumSuggestedGrams":200,"suggestionStepGrams":25},
-  {"id":"apple","name":"苹果","aliases":["apple"],"category":"fruit","suitableMeals":["breakfast","snack"],"caloriesPer100Grams":52,"carbohydratesPer100Grams":13.8,"proteinPer100Grams":0.3,"fatPer100Grams":0.2,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"noodles-cooked","name":"熟面条","aliases":["面条","煮面"],"category":"staple","suitableMeals":["breakfast","lunch","dinner"],"caloriesPer100Grams":138,"carbohydratesPer100Grams":25,"proteinPer100Grams":4.5,"fatPer100Grams":2.1,"minimumSuggestedGrams":50,"maximumSuggestedGrams":350,"suggestionStepGrams":25},
-  {"id":"mantou","name":"馒头","aliases":["白馒头"],"category":"staple","suitableMeals":["breakfast","lunch","dinner"],"caloriesPer100Grams":223,"carbohydratesPer100Grams":47,"proteinPer100Grams":7,"fatPer100Grams":1.1,"minimumSuggestedGrams":50,"maximumSuggestedGrams":250,"suggestionStepGrams":25},
-  {"id":"sweet-potato-steamed","name":"蒸红薯","aliases":["红薯","地瓜","番薯"],"category":"staple","suitableMeals":["breakfast","lunch","dinner","snack"],"caloriesPer100Grams":86,"carbohydratesPer100Grams":20.1,"proteinPer100Grams":1.6,"fatPer100Grams":0.1,"minimumSuggestedGrams":50,"maximumSuggestedGrams":300,"suggestionStepGrams":25},
-  {"id":"potato-boiled","name":"煮土豆","aliases":["土豆","马铃薯"],"category":"staple","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":87,"carbohydratesPer100Grams":20.1,"proteinPer100Grams":1.9,"fatPer100Grams":0.1,"minimumSuggestedGrams":50,"maximumSuggestedGrams":300,"suggestionStepGrams":25},
-  {"id":"broccoli-cooked","name":"熟西兰花","aliases":["西兰花","青花菜"],"category":"vegetable","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":35,"carbohydratesPer100Grams":7.2,"proteinPer100Grams":2.4,"fatPer100Grams":0.4,"minimumSuggestedGrams":100,"maximumSuggestedGrams":400,"suggestionStepGrams":50},
-  {"id":"spinach","name":"菠菜","aliases":["熟菠菜"],"category":"vegetable","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":23,"carbohydratesPer100Grams":3.6,"proteinPer100Grams":2.9,"fatPer100Grams":0.4,"minimumSuggestedGrams":100,"maximumSuggestedGrams":400,"suggestionStepGrams":50},
-  {"id":"lettuce","name":"生菜","aliases":["莴苣叶"],"category":"vegetable","suitableMeals":["lunch","dinner"],"caloriesPer100Grams":15,"carbohydratesPer100Grams":2.9,"proteinPer100Grams":1.4,"fatPer100Grams":0.2,"minimumSuggestedGrams":100,"maximumSuggestedGrams":400,"suggestionStepGrams":50},
-  {"id":"tomato","name":"番茄","aliases":["西红柿"],"category":"vegetable","suitableMeals":["breakfast","lunch","dinner","snack"],"caloriesPer100Grams":18,"carbohydratesPer100Grams":3.9,"proteinPer100Grams":0.9,"fatPer100Grams":0.2,"minimumSuggestedGrams":100,"maximumSuggestedGrams":400,"suggestionStepGrams":50},
-  {"id":"cucumber","name":"黄瓜","aliases":["青瓜"],"category":"vegetable","suitableMeals":["lunch","dinner","snack"],"caloriesPer100Grams":15,"carbohydratesPer100Grams":3.6,"proteinPer100Grams":0.7,"fatPer100Grams":0.1,"minimumSuggestedGrams":100,"maximumSuggestedGrams":400,"suggestionStepGrams":50},
-  {"id":"carrot","name":"胡萝卜","aliases":["红萝卜"],"category":"vegetable","suitableMeals":["lunch","dinner","snack"],"caloriesPer100Grams":41,"carbohydratesPer100Grams":9.6,"proteinPer100Grams":0.9,"fatPer100Grams":0.2,"minimumSuggestedGrams":50,"maximumSuggestedGrams":300,"suggestionStepGrams":25},
-  {"id":"yogurt-plain","name":"原味无糖酸奶","aliases":["无糖酸奶","酸奶"],"category":"dairy","suitableMeals":["breakfast","snack"],"caloriesPer100Grams":61,"carbohydratesPer100Grams":4.7,"proteinPer100Grams":3.5,"fatPer100Grams":3.3,"minimumSuggestedGrams":100,"maximumSuggestedGrams":300,"suggestionStepGrams":50},
-  {"id":"oats-dry","name":"燕麦片","aliases":["燕麦","原味燕麦"],"category":"staple","suitableMeals":["breakfast","snack"],"caloriesPer100Grams":389,"carbohydratesPer100Grams":66.3,"proteinPer100Grams":16.9,"fatPer100Grams":6.9,"minimumSuggestedGrams":20,"maximumSuggestedGrams":100,"suggestionStepGrams":10},
-  {"id":"mixed-nuts","name":"原味混合坚果","aliases":["坚果","每日坚果"],"category":"snack","suitableMeals":["snack"],"caloriesPer100Grams":607,"carbohydratesPer100Grams":21,"proteinPer100Grams":20,"fatPer100Grams":54,"minimumSuggestedGrams":10,"maximumSuggestedGrams":40,"suggestionStepGrams":5}
+    {
+        "id":  "cfc-259",
+        "name":  "小麦粉(标准粉)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  353.25047801147224,
+                          "carbohydrates":  73.6,
+                          "protein":  11.2,
+                          "fat":  1.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/259.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1478kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-261",
+        "name":  "挂面(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  352.77246653919696,
+                          "carbohydrates":  75.6,
+                          "protein":  10.3,
+                          "fat":  0.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/261.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1476kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-264",
+        "name":  "面条(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  289.67495219885274,
+                          "carbohydrates":  61.9,
+                          "protein":  8.3,
+                          "fat":  0.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/264.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1212kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-269",
+        "name":  "花卷",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  217.0172084130019,
+                          "carbohydrates":  45.6,
+                          "protein":  6.4,
+                          "fat":  1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/269.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量908kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-272",
+        "name":  "馒头(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  226.33843212237093,
+                          "carbohydrates":  47,
+                          "protein":  7,
+                          "fat":  1.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/272.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量947kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-280",
+        "name":  "稻米(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  352.05544933078392,
+                          "carbohydrates":  77.9,
+                          "protein":  7.4,
+                          "fat":  0.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/280.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1473kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-283",
+        "name":  "香大米",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  352.53346080305926,
+                          "carbohydrates":  72.4,
+                          "protein":  12.7,
+                          "fat":  0.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/283.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1475kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-285",
+        "name":  "糯米[江米](均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  354.9235181644359,
+                          "carbohydrates":  78.3,
+                          "protein":  7.3,
+                          "fat":  1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/285.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1485kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-287",
+        "name":  "米饭(蒸)(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  117.82982791586997,
+                          "carbohydrates":  25.9,
+                          "protein":  2.6,
+                          "fat":  0.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量493kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-288",
+        "name":  "粳米粥",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  47.084130019120458,
+                          "carbohydrates":  9.9,
+                          "protein":  1.1,
+                          "fat":  0.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/288.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量197kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-289",
+        "name":  "籼米粉[排米粉]",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  361.37667304015292,
+                          "carbohydrates":  81.5,
+                          "protein":  7.4,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/289.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1512kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-292",
+        "name":  "玉米(鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  113.2887189292543,
+                          "carbohydrates":  22.8,
+                          "protein":  4,
+                          "fat":  1.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/292.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量474kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-295",
+        "name":  "玉米面(白)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  355.87954110898659,
+                          "carbohydrates":  73.1,
+                          "protein":  8,
+                          "fat":  4.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/295.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1489kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-296",
+        "name":  "玉米面(黄)",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  355.64053537284894,
+                          "carbohydrates":  75.2,
+                          "protein":  8.1,
+                          "fat":  3.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/296.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1488kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-301",
+        "name":  "小米",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  365.67877629063094,
+                          "carbohydrates":  75.1,
+                          "protein":  9,
+                          "fat":  3.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/301.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1530kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-303",
+        "name":  "小米粥",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  46.12810707456979,
+                          "carbohydrates":  8.4,
+                          "protein":  1.4,
+                          "fat":  0.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/303.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量193kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-309",
+        "name":  "荞麦",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  340.82217973231354,
+                          "carbohydrates":  73,
+                          "protein":  9.3,
+                          "fat":  2.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/309.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1426kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-311",
+        "name":  "薏米[薏仁米，苡米]",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  365.67877629063094,
+                          "carbohydrates":  71.1,
+                          "protein":  12.8,
+                          "fat":  3.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/311.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1530kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-313",
+        "name":  "马铃薯[土豆，洋芋]",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  78.393881453154876,
+                          "carbohydrates":  17.2,
+                          "protein":  2,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/313.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量328kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-316",
+        "name":  "甘薯(红心)[山芋，红薯]",
+        "aliases":  [
+
+                    ],
+        "category":  "staple",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  103.25047801147227,
+                          "carbohydrates":  24.7,
+                          "protein":  1.1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/316.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量432kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "takeoutbag.and.cup.and.straw",
+                        "colorKey":  "orange",
+                        "tags":  [
+                                     "主食与谷薯",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    }
 ]
