@@ -104,6 +104,7 @@
 		A3000000000000000000005F /* FoodQuantitySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000062 /* FoodQuantitySelection.swift */; };
 		A30000000000000000000060 /* FoodThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000063 /* FoodThumbnailView.swift */; };
 		A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000064 /* FoodQuantityInputView.swift */; };
+		A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,7 @@
 		A40000000000000000000062 /* FoodQuantitySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantitySelection.swift; sourceTree = "<group>"; };
 		A40000000000000000000063 /* FoodThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodThumbnailView.swift; sourceTree = "<group>"; };
 		A40000000000000000000064 /* FoodQuantityInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantityInputView.swift; sourceTree = "<group>"; };
+		A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantityPersistenceTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +316,7 @@
 				A40000000000000000000058 /* PortionNutritionCalculatorTests.swift */,
 				A4000000000000000000005D /* FoodReferenceDecodingTests.swift */,
 				A40000000000000000000060 /* FoodCatalogAuditTests.swift */,
+				A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				A30000000000000000000055 /* PortionNutritionCalculatorTests.swift in Sources */,
 				A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */,
 				A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */,
+				A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

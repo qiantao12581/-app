@@ -61,4 +61,33 @@ final class HistorySummaryCalculatorTests: XCTestCase {
     func testEmptyEntriesReturnNoSummaries() {
         XCTAssertTrue(HistorySummaryCalculator.summaries(entries: []).isEmpty)
     }
+
+    func testPartialSummariesKeepUnknownNutrientsIncompleteWithinTheirDay() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = try XCTUnwrap(TimeZone(secondsFromGMT: 0))
+        let date = try XCTUnwrap(
+            calendar.date(from: DateComponents(year: 2026, month: 7, day: 11, hour: 12))
+        )
+
+        let summaries = HistorySummaryCalculator.partialSummaries(
+            entries: [
+                DatedPartialNutritionValues(
+                    date: date,
+                    nutrition: PartialNutritionValues(
+                        calories: 350,
+                        carbohydrates: 40,
+                        protein: nil,
+                        fat: 10
+                    )
+                )
+            ],
+            calendar: calendar
+        )
+
+        XCTAssertEqual(summaries.count, 1)
+        XCTAssertEqual(summaries[0].nutrition.lowerBound.calories, 350)
+        XCTAssertEqual(summaries[0].nutrition.lowerBound.protein, 0)
+        XCTAssertFalse(summaries[0].nutrition.proteinComplete)
+        XCTAssertTrue(summaries[0].nutrition.hasMissingOfficialData)
+    }
 }

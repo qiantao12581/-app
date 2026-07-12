@@ -27,4 +27,31 @@ final class DailySummaryCalculatorTests: XCTestCase {
     func testEmptyValuesProduceZeroSummary() {
         XCTAssertEqual(DailySummaryCalculator.total([]), .zero)
     }
+
+    func testPartialTotalReturnsKnownLowerBoundAndCompletenessFlags() {
+        let total = DailySummaryCalculator.partialTotal([
+            PartialNutritionValues(
+                calories: 100,
+                carbohydrates: 10,
+                protein: 5,
+                fat: 2
+            ),
+            PartialNutritionValues(
+                calories: 200,
+                carbohydrates: 20,
+                protein: nil,
+                fat: 8
+            )
+        ])
+
+        XCTAssertEqual(total.lowerBound.calories, 300)
+        XCTAssertEqual(total.lowerBound.carbohydrates, 30)
+        XCTAssertEqual(total.lowerBound.protein, 5)
+        XCTAssertEqual(total.lowerBound.fat, 10)
+        XCTAssertTrue(total.caloriesComplete)
+        XCTAssertTrue(total.carbohydratesComplete)
+        XCTAssertFalse(total.proteinComplete)
+        XCTAssertTrue(total.fatComplete)
+        XCTAssertTrue(total.hasMissingOfficialData)
+    }
 }
