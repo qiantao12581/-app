@@ -34,6 +34,7 @@ let package = Package(
                 "Models/RecognizedFoodCandidate.swift",
                 "Features/Add/AddFoodFormState.swift",
                 "Services/FoodDatabaseService.swift",
+                "Services/FoodCatalogAuditor.swift",
                 "Services/MealRecommendationService.swift",
                 "Services/FoodRecognitionService.swift",
                 "Services/MockFoodRecognitionService.swift",
