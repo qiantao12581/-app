@@ -7,7 +7,7 @@
 - Energy: official kJ values are retained in each specification; catalog kcal is computed with 1 kcal = 4.184 kJ and is not rounded during conversion.
 - Missingness: an unreported official calories/carbohydrates/protein/fat field is JSON null; the row is missingOfficialFields and is ineligible for complete-only recommendations.
 - Chain variants: each McDonald's size/product is an independent official serving record. No small/medium/large multiplier is used. KFC contributes zero rows because a current exact mainland official nutrition source could not be retrieved; no third-party or overseas values were substituted.
-- Current batch: 115 foods (115 China CDC generic, 0 mainland branded dairy, 0 McDonald's China, 0 KFC China).
+- Current batch: 135 foods (115 China CDC generic, 20 mainland branded dairy, 0 McDonald's China, 0 KFC China).
 
 ## Sources
 
@@ -128,3 +128,23 @@
 | cfc-765 | 葵花子(生) | — | 中国食物成分表每100克可食部；原始能量2522kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/765.html> | 2026-07-12T00:00:00Z | complete | snack |
 | cfc-769 | 南瓜子(炒)[白瓜子] | — | 中国食物成分表每100克可食部；原始能量2415kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/769.html> | 2026-07-12T00:00:00Z | complete | snack |
 | cfc-773 | 芝麻籽(白) | — | 中国食物成分表每100克可食部；原始能量2225kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/773.html> | 2026-07-12T00:00:00Z | complete | snack |
+| mengniu-telunsu-organic-38 | 特仑苏有机纯牛奶（梦幻盖，3.8g蛋白） | 特仑苏 | 250mL/盒；官网产品图标示3.8g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s650424095cdac.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-desert-organic | 特仑苏沙漠有机纯牛奶 | 特仑苏 | 250mL/盒；官网产品图标示4.0g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042414f2ed5.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-organic-36 | 特仑苏有机纯牛奶（苗条砖，3.6g蛋白） | 特仑苏 | 250mL/盒；官网产品图标示3.6g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504241c771be.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-milk-supreme-6 | 奶爵6特乳优蛋白牛奶 | 奶爵6特乳 | 250mL/盒；官网当前官方产品图 | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042442b8da5.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-hi-milk-skim | 特仑苏嗨Milk 0脂肪纯牛奶 | 特仑苏 | 250mL/盒；官网产品图明确标示0脂肪 | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504245114c3c.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-grain-milk | 特仑苏谷粒牛奶 | 特仑苏 | 250mL/盒；官网当前官方产品图 | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504245bd90c7.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-cbp-calcium | 特仑苏CBP高钙牛奶 | 特仑苏 | 250mL/盒；官网产品图标示135mg钙/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s650424626a9a6.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-pure-36 | 特仑苏纯牛奶（3.6g蛋白） | 特仑苏 | 250mL/盒；官网产品图标示3.6g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042469a158f.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-pure-38 | 特仑苏纯牛奶（3.8g蛋白） | 特仑苏 | 250mL/盒；官网产品图标示3.8g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504246fd5a52.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-low-fat | 特仑苏低脂纯牛奶 | 特仑苏 | 250mL/盒；官网产品图明确标示低脂及脂肪减少60% | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504247b92c18.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| mengniu-telunsu-mplus | 特仑苏M-PLUS高蛋白牛奶 | 特仑苏 | 250mL/盒；官网产品图标示5.2g蛋白质/100mL | brandWebsite | <https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042482e617c.png> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-pure-cap-38 | 金典纯奶梦幻盖 | 金典 | 官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-jersey-organic | 金典娟姗有机纯牛奶 | 金典 | 官网当前产品名；每100mL标示4.0g蛋白质；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-organic-cap | 金典有机纯牛奶（梦幻盖） | 金典 | 官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-a2-organic | 金典A2β-酪蛋白有机纯牛奶 | 金典 | 官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-organic-slim | 金典有机纯牛奶（苗条砖） | 金典 | 官网当前产品名；每100mL标示3.6g蛋白质、120mg钙；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-organic-skim | 金典有机脱脂纯牛奶 | 金典 | 官网当前产品名；每100mL标示3.8g蛋白质并明确0脂肪；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-organic-200 | 金典200mL有机纯牛奶 | 金典 | 200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-high-calcium-low-fat | 金典高钙低脂纯牛奶 | 金典 | 官网当前产品名；每100mL标示3.6g蛋白质、120mg钙并称脂肪减少50%；官网未列单盒容量 | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |
+| yili-satine-pure-200 | 金典200mL纯牛奶 | 金典 | 200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL | brandWebsite | <https://www.yili.com/product/1155> | 2026-07-12T00:00:00Z | missingOfficialFields | dairy |

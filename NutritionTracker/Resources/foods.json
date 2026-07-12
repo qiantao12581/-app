@@ -5688,5 +5688,1022 @@
         "minimumSuggestedGrams":  1,
         "maximumSuggestedGrams":  500,
         "suggestionStepGrams":  1
+    },
+    {
+        "id":  "mengniu-telunsu-organic-38",
+        "name":  "特仑苏有机纯牛奶（梦幻盖，3.8g蛋白）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s650424095cdac.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示3.8g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "有机",
+                                     "梦幻盖"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-desert-organic",
+        "name":  "特仑苏沙漠有机纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  4,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042414f2ed5.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示4.0g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "沙漠有机"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-organic-36",
+        "name":  "特仑苏有机纯牛奶（苗条砖，3.6g蛋白）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504241c771be.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示3.6g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "有机",
+                                     "苗条砖"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-milk-supreme-6",
+        "name":  "奶爵6特乳优蛋白牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  null,
+                          "fat":  null
+                      },
+        "brandName":  "奶爵6特乳",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042442b8da5.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网当前官方产品图"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "奶爵6特乳",
+                                     "优蛋白"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-hi-milk-skim",
+        "name":  "特仑苏嗨Milk 0脂肪纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  null,
+                          "fat":  0
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504245114c3c.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图明确标示0脂肪"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "脱脂",
+                                     "0脂肪"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-grain-milk",
+        "name":  "特仑苏谷粒牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  null,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504245bd90c7.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网当前官方产品图"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "谷粒牛奶"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-cbp-calcium",
+        "name":  "特仑苏CBP高钙牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  null,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s650424626a9a6.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示135mg钙/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "高钙",
+                                     "CBP"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-pure-36",
+        "name":  "特仑苏纯牛奶（3.6g蛋白）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042469a158f.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示3.6g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "纯牛奶",
+                                     "常规全脂规格"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-pure-38",
+        "name":  "特仑苏纯牛奶（3.8g蛋白）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504246fd5a52.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示3.8g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "纯牛奶",
+                                     "常规全脂规格"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-low-fat",
+        "name":  "特仑苏低脂纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504247b92c18.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图明确标示低脂及脂肪减少60%"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "低脂"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "mengniu-telunsu-mplus",
+        "name":  "特仑苏M-PLUS高蛋白牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  5.2,
+                          "fat":  null
+                      },
+        "brandName":  "特仑苏",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-250",
+                             "name":  "盒",
+                             "baseAmount":  250,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "蒙牛官网特仑苏官方产品图",
+                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042482e617c.png",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "250mL/盒；官网产品图标示5.2g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "特仑苏",
+                                     "高蛋白",
+                                     "M-PLUS"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  250,
+        "maximumSuggestedGrams":  250,
+        "suggestionStepGrams":  250
+    },
+    {
+        "id":  "yili-satine-pure-cap-38",
+        "name":  "金典纯奶梦幻盖",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "纯牛奶",
+                                     "梦幻盖"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-jersey-organic",
+        "name":  "金典娟姗有机纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  4,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示4.0g蛋白质；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "娟姗",
+                                     "有机"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-organic-cap",
+        "name":  "金典有机纯牛奶（梦幻盖）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "有机",
+                                     "梦幻盖"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-a2-organic",
+        "name":  "金典A2β-酪蛋白有机纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "A2β-酪蛋白",
+                                     "有机"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-organic-slim",
+        "name":  "金典有机纯牛奶（苗条砖）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.6g蛋白质、120mg钙；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "有机",
+                                     "苗条砖"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-organic-skim",
+        "name":  "金典有机脱脂纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.8,
+                          "fat":  0
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质并明确0脂肪；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "有机",
+                                     "脱脂",
+                                     "0脂肪"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-organic-200",
+        "name":  "金典200mL有机纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-200",
+                             "name":  "盒",
+                             "baseAmount":  200,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "有机",
+                                     "小包装"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  200,
+        "maximumSuggestedGrams":  200,
+        "suggestionStepGrams":  200
+    },
+    {
+        "id":  "yili-satine-high-calcium-low-fat",
+        "name":  "金典高钙低脂纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "官网当前产品名；每100mL标示3.6g蛋白质、120mg钙并称脂肪减少50%；官网未列单盒容量"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "高钙",
+                                     "低脂"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
+    },
+    {
+        "id":  "yili-satine-pure-200",
+        "name":  "金典200mL纯牛奶",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  null,
+                          "carbohydrates":  null,
+                          "protein":  3.6,
+                          "fat":  null
+                      },
+        "brandName":  "金典",
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "milliliter",
+        "portions":  [
+                         {
+                             "id":  "carton-200",
+                             "name":  "盒",
+                             "baseAmount":  200,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "brandWebsite",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "200mL/盒；官网产品名标示容量及3.6g蛋白质/100mL"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "金典",
+                                     "纯牛奶",
+                                     "小包装"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  200,
+        "maximumSuggestedGrams":  200,
+        "suggestionStepGrams":  200
     }
 ]
