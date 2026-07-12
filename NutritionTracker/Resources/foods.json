@@ -5842,8 +5842,8 @@
         "suggestionStepGrams":  250
     },
     {
-        "id":  "mengniu-milk-supreme-6",
-        "name":  "奶爵6特乳优蛋白牛奶",
+        "id":  "yili-satine-ultrafiltered-high-protein",
+        "name":  "金典高蛋白超滤牛奶",
         "aliases":  [
 
                     ],
@@ -5855,17 +5855,17 @@
         "nutrition":  {
                           "calories":  null,
                           "carbohydrates":  null,
-                          "protein":  null,
+                          "protein":  4.4,
                           "fat":  null
                       },
-        "brandName":  "奶爵6特乳",
+        "brandName":  "金典",
         "nutritionBasisAmount":  100,
         "nutritionBasisUnit":  "milliliter",
         "portions":  [
                          {
-                             "id":  "carton-250",
-                             "name":  "盒",
-                             "baseAmount":  250,
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
@@ -5873,23 +5873,24 @@
                      ],
         "source":  {
                        "type":  "brandWebsite",
-                       "name":  "蒙牛官网特仑苏官方产品图",
-                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s65042442b8da5.png",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
                        "verifiedAt":  "2026-07-12T00:00:00Z",
-                       "specification":  "250mL/盒；官网当前官方产品图"
+                       "specification":  "官网当前产品名；每100mL标示4.4g蛋白质、135mg钙；官网未列单盒容量"
                    },
         "display":  {
                         "iconKey":  "drop",
                         "colorKey":  "blue",
                         "tags":  [
-                                     "奶爵6特乳",
-                                     "优蛋白"
+                                     "金典",
+                                     "高蛋白",
+                                     "超滤"
                                  ]
                     },
         "dataCompleteness":  "missingOfficialFields",
-        "minimumSuggestedGrams":  250,
-        "maximumSuggestedGrams":  250,
-        "suggestionStepGrams":  250
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
     },
     {
         "id":  "mengniu-telunsu-hi-milk-skim",
@@ -5943,8 +5944,8 @@
         "suggestionStepGrams":  250
     },
     {
-        "id":  "mengniu-telunsu-grain-milk",
-        "name":  "特仑苏谷粒牛奶",
+        "id":  "yili-satine-jersey-pure",
+        "name":  "金典娟姗纯牛奶",
         "aliases":  [
 
                     ],
@@ -5956,17 +5957,17 @@
         "nutrition":  {
                           "calories":  null,
                           "carbohydrates":  null,
-                          "protein":  null,
+                          "protein":  3.8,
                           "fat":  null
                       },
-        "brandName":  "特仑苏",
+        "brandName":  "金典",
         "nutritionBasisAmount":  100,
         "nutritionBasisUnit":  "milliliter",
         "portions":  [
                          {
-                             "id":  "carton-250",
-                             "name":  "盒",
-                             "baseAmount":  250,
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
@@ -5974,27 +5975,28 @@
                      ],
         "source":  {
                        "type":  "brandWebsite",
-                       "name":  "蒙牛官网特仑苏官方产品图",
-                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s6504245bd90c7.png",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
                        "verifiedAt":  "2026-07-12T00:00:00Z",
-                       "specification":  "250mL/盒；官网当前官方产品图"
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单盒容量"
                    },
         "display":  {
                         "iconKey":  "drop",
                         "colorKey":  "blue",
                         "tags":  [
-                                     "特仑苏",
-                                     "谷粒牛奶"
+                                     "金典",
+                                     "娟姗",
+                                     "纯牛奶"
                                  ]
                     },
         "dataCompleteness":  "missingOfficialFields",
-        "minimumSuggestedGrams":  250,
-        "maximumSuggestedGrams":  250,
-        "suggestionStepGrams":  250
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
     },
     {
-        "id":  "mengniu-telunsu-cbp-calcium",
-        "name":  "特仑苏CBP高钙牛奶",
+        "id":  "yili-satine-fresh-bottle",
+        "name":  "金典鲜活纯牛奶（夺目瓶）",
         "aliases":  [
 
                     ],
@@ -6006,17 +6008,17 @@
         "nutrition":  {
                           "calories":  null,
                           "carbohydrates":  null,
-                          "protein":  null,
+                          "protein":  3.8,
                           "fat":  null
                       },
-        "brandName":  "特仑苏",
+        "brandName":  "金典",
         "nutritionBasisAmount":  100,
         "nutritionBasisUnit":  "milliliter",
         "portions":  [
                          {
-                             "id":  "carton-250",
-                             "name":  "盒",
-                             "baseAmount":  250,
+                             "id":  "milliliter-100",
+                             "name":  "100毫升",
+                             "baseAmount":  100,
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
@@ -6024,24 +6026,24 @@
                      ],
         "source":  {
                        "type":  "brandWebsite",
-                       "name":  "蒙牛官网特仑苏官方产品图",
-                       "url":  "https://img.mengniu.com.cn/Uploads/Mnnew/Picture/2023/09/15/s650424626a9a6.png",
+                       "name":  "伊利官网金典产品页",
+                       "url":  "https://www.yili.com/product/1155",
                        "verifiedAt":  "2026-07-12T00:00:00Z",
-                       "specification":  "250mL/盒；官网产品图标示135mg钙/100mL"
+                       "specification":  "官网当前产品名；每100mL标示3.8g蛋白质、125mg钙；官网未列单瓶容量"
                    },
         "display":  {
                         "iconKey":  "drop",
                         "colorKey":  "blue",
                         "tags":  [
-                                     "特仑苏",
-                                     "高钙",
-                                     "CBP"
+                                     "金典",
+                                     "鲜活",
+                                     "夺目瓶"
                                  ]
                     },
         "dataCompleteness":  "missingOfficialFields",
-        "minimumSuggestedGrams":  250,
-        "maximumSuggestedGrams":  250,
-        "suggestionStepGrams":  250
+        "minimumSuggestedGrams":  100,
+        "maximumSuggestedGrams":  100,
+        "suggestionStepGrams":  100
     },
     {
         "id":  "mengniu-telunsu-pure-36",
