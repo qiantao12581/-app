@@ -7,7 +7,7 @@
 - Energy: official kJ values are retained in each specification; catalog kcal is computed with 1 kcal = 4.184 kJ and is not rounded during conversion.
 - Missingness: an unreported official calories/carbohydrates/protein/fat field is JSON null; the row is missingOfficialFields and is ineligible for complete-only recommendations.
 - Chain variants: each McDonald's size/product is an independent official serving record. No small/medium/large multiplier is used. KFC contributes zero rows because a current exact mainland official nutrition source could not be retrieved; no third-party or overseas values were substituted.
-- Current batch: 65 foods (65 China CDC generic, 0 mainland branded dairy, 0 McDonald's China, 0 KFC China).
+- Current batch: 115 foods (115 China CDC generic, 0 mainland branded dairy, 0 McDonald's China, 0 KFC China).
 
 ## Sources
 
@@ -78,3 +78,53 @@
 | cfc-1092 | 虾（河虾） | — | 中国食物成分表每100克可食部；原始能量368kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/1092.html> | 2026-07-12T00:00:00Z | missingOfficialFields | protein |
 | cfc-1103 | 蟹（河蟹） | — | 中国食物成分表每100克可食部；原始能量433kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/1103.html> | 2026-07-12T00:00:00Z | complete | protein |
 | cfc-1114 | 扇贝(鲜) | — | 中国食物成分表每100克可食部；原始能量255kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/1114.html> | 2026-07-12T00:00:00Z | complete | protein |
+| cfc-916 | 乳品（牛乳，均值) | — | 中国食物成分表每100克可食部；原始能量227kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/916.html> | 2026-07-12T00:00:00Z | complete | dairy |
+| cfc-934 | 乳品（鲜羊乳） | — | 中国食物成分表每100克可食部；原始能量247kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/934.html> | 2026-07-12T00:00:00Z | complete | dairy |
+| cfc-958 | 乳品（酸奶，均值) | — | 中国食物成分表每100克可食部；原始能量301kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/958.html> | 2026-07-12T00:00:00Z | complete | dairy |
+| cfc-959 | 酸奶(脱脂) | — | 中国食物成分表每100克可食部；原始能量241kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/959.html> | 2026-07-12T00:00:00Z | complete | dairy |
+| cfc-962 | 奶酪[干酪] | — | 中国食物成分表每100克可食部；原始能量1366kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/962.html> | 2026-07-12T00:00:00Z | complete | dairy |
+| cfc-371 | 白萝卜[莱菔](鲜) | — | 中国食物成分表每100克可食部；原始能量95kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/371.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-380 | 胡萝卜(红)[金笋，丁香萝卜] | — | 中国食物成分表每100克可食部；原始能量164kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/380.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-387 | 豆角 | — | 中国食物成分表每100克可食部；原始能量145kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/387.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-391 | 毛豆[青豆，菜用大豆](鲜) | — | 中国食物成分表每100克可食部；原始能量550kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/391.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-399 | 黄豆芽 | — | 中国食物成分表每100克可食部；原始能量199kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/399.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-400 | 绿豆芽 | — | 中国食物成分表每100克可食部；原始能量82kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/400.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-402 | 茄子(均值) | — | 中国食物成分表每100克可食部；原始能量98kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/402.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-405 | 番茄[西红柿] | — | 中国食物成分表每100克可食部；原始能量86kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/405.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-409 | 辣椒(青，尖) | — | 中国食物成分表每100克可食部；原始能量115kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/409.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-410 | 甜椒[灯笼椒，柿子椒] | — | 中国食物成分表每100克可食部；原始能量104kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/410.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-419 | 冬瓜 | — | 中国食物成分表每100克可食部；原始能量52kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/419.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-422 | 黄瓜[胡瓜](鲜) | — | 中国食物成分表每100克可食部；原始能量66kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/422.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-425 | 苦瓜[凉瓜，癞瓜](鲜) | — | 中国食物成分表每100克可食部；原始能量91kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/425.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-426 | 南瓜[倭瓜，番瓜](鲜) | — | 中国食物成分表每100克可食部；原始能量99kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/426.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-429 | 丝瓜 | — | 中国食物成分表每100克可食部；原始能量90kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/429.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-436 | 大蒜[蒜头](鲜) | — | 中国食物成分表每100克可食部；原始能量543kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/436.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-444 | 洋葱[葱头](鲜) | — | 中国食物成分表每100克可食部；原始能量171kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/444.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-450 | 大白菜(均值) | — | 中国食物成分表每100克可食部；原始能量76kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/450.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-465 | 西兰花[绿菜花] | — | 中国食物成分表每100克可食部；原始能量151kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/465.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-473 | 菠菜[赤根菜](鲜) | — | 中国食物成分表每100克可食部；原始能量116kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/473.html> | 2026-07-12T00:00:00Z | complete | vegetable |
+| cfc-613 | 苹果(均值) | — | 中国食物成分表每100克可食部；原始能量229kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/613.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-630 | 梨(均值) | — | 中国食物成分表每100克可食部；原始能量212kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/630.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-660 | 桃(均值) | — | 中国食物成分表每100克可食部；原始能量215kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/660.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-666 | 李子 | — | 中国食物成分表每100克可食部；原始能量159kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/666.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-674 | 枣(鲜) | — | 中国食物成分表每100克可食部；原始能量531kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/674.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-684 | 葡萄(均值) | — | 中国食物成分表每100克可食部；原始能量187kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/684.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-690 | 石榴(均值) | — | 中国食物成分表每100克可食部；原始能量306kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/690.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-700 | 中华猕猴桃[毛叶猕猴桃] | — | 中国食物成分表每100克可食部；原始能量259kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/700.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-701 | 草莓[洋莓，凤阳草莓] | — | 中国食物成分表每100克可食部；原始能量135kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/701.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-704 | 橙 | — | 中国食物成分表每100克可食部；原始能量204kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/704.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-705 | 柑桔(均值) | — | 中国食物成分表每100克可食部；原始能量218kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/705.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-716 | 菠萝[凤梨，地菠萝] | — | 中国食物成分表每100克可食部；原始能量184kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/716.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-723 | 芒果[抹猛果，望果] | — | 中国食物成分表每100克可食部；原始能量147kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/723.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-726 | 香蕉[甘蕉] | — | 中国食物成分表每100克可食部；原始能量394kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/726.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-739 | 西瓜(均值) | — | 中国食物成分表每100克可食部；原始能量110kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/739.html> | 2026-07-12T00:00:00Z | complete | fruit |
+| cfc-743 | 核桃(干)[胡桃] | — | 中国食物成分表每100克可食部；原始能量2668kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/743.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-746 | 栗子(鲜)[板栗] | — | 中国食物成分表每100克可食部；原始能量799kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/746.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-750 | 松子(炒) | — | 中国食物成分表每100克可食部；原始能量2656kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/750.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-756 | 腰果 | — | 中国食物成分表每100克可食部；原始能量2327kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/756.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-759 | 开心果(熟) | — | 中国食物成分表每100克可食部；原始能量2610kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/759.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-761 | 花生(鲜)[落花生，长生果] | — | 中国食物成分表每100克可食部；原始能量1296kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/761.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-762 | 花生(炒) | — | 中国食物成分表每100克可食部；原始能量2493kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/762.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-765 | 葵花子(生) | — | 中国食物成分表每100克可食部；原始能量2522kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/765.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-769 | 南瓜子(炒)[白瓜子] | — | 中国食物成分表每100克可食部；原始能量2415kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/769.html> | 2026-07-12T00:00:00Z | complete | snack |
+| cfc-773 | 芝麻籽(白) | — | 中国食物成分表每100克可食部；原始能量2225kJ，按1 kcal = 4.184 kJ换算 | chinaFoodComposition | <https://nlc.chinanutri.cn/fq/foodinfo/773.html> | 2026-07-12T00:00:00Z | complete | snack |

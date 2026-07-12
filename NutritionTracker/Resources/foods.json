@@ -3248,5 +3248,2445 @@
         "minimumSuggestedGrams":  1,
         "maximumSuggestedGrams":  500,
         "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-916",
+        "name":  "乳品（牛乳，均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  54.254302103250474,
+                          "carbohydrates":  3.4,
+                          "protein":  3,
+                          "fat":  3.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/916.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量227kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "通用乳制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-934",
+        "name":  "乳品（鲜羊乳）",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  59.03441682600382,
+                          "carbohydrates":  5.4,
+                          "protein":  1.5,
+                          "fat":  3.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/934.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量247kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "通用乳制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-958",
+        "name":  "乳品（酸奶，均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  71.940726577437857,
+                          "carbohydrates":  9.3,
+                          "protein":  2.5,
+                          "fat":  2.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/958.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量301kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "通用乳制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-959",
+        "name":  "酸奶(脱脂)",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  57.600382409177818,
+                          "carbohydrates":  10,
+                          "protein":  3.3,
+                          "fat":  0.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/959.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量241kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "通用乳制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-962",
+        "name":  "奶酪[干酪]",
+        "aliases":  [
+
+                    ],
+        "category":  "dairy",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  326.48183556405354,
+                          "carbohydrates":  3.5,
+                          "protein":  25.7,
+                          "fat":  23.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/962.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1366kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "drop",
+                        "colorKey":  "blue",
+                        "tags":  [
+                                     "通用乳制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-371",
+        "name":  "白萝卜[莱菔](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  22.705544933078393,
+                          "carbohydrates":  5,
+                          "protein":  0.9,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/371.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量95kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-380",
+        "name":  "胡萝卜(红)[金笋，丁香萝卜]",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  39.196940726577438,
+                          "carbohydrates":  8.8,
+                          "protein":  1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/380.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量164kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-387",
+        "name":  "豆角",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  34.655831739961755,
+                          "carbohydrates":  6.7,
+                          "protein":  2.5,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/387.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量145kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-391",
+        "name":  "毛豆[青豆，菜用大豆](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  131.45315487571702,
+                          "carbohydrates":  10.5,
+                          "protein":  13.1,
+                          "fat":  5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/391.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量550kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-399",
+        "name":  "黄豆芽",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  47.562141491395792,
+                          "carbohydrates":  4.5,
+                          "protein":  4.5,
+                          "fat":  1.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/399.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量199kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-400",
+        "name":  "绿豆芽",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  19.598470363288719,
+                          "carbohydrates":  2.9,
+                          "protein":  2.1,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/400.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量82kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-402",
+        "name":  "茄子(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  23.422562141491394,
+                          "carbohydrates":  4.9,
+                          "protein":  1.1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/402.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量98kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-405",
+        "name":  "番茄[西红柿]",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  20.554493307839387,
+                          "carbohydrates":  4,
+                          "protein":  0.9,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/405.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量86kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-409",
+        "name":  "辣椒(青，尖)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  27.485659655831739,
+                          "carbohydrates":  5.8,
+                          "protein":  1.4,
+                          "fat":  0.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/409.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量115kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-410",
+        "name":  "甜椒[灯笼椒，柿子椒]",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  24.8565965583174,
+                          "carbohydrates":  5.4,
+                          "protein":  1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/410.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量104kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-419",
+        "name":  "冬瓜",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  12.4282982791587,
+                          "carbohydrates":  2.6,
+                          "protein":  0.4,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/419.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量52kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-422",
+        "name":  "黄瓜[胡瓜](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  15.774378585086042,
+                          "carbohydrates":  2.9,
+                          "protein":  0.8,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/422.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量66kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-425",
+        "name":  "苦瓜[凉瓜，癞瓜](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  21.749521988527725,
+                          "carbohydrates":  4.9,
+                          "protein":  1,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/425.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量91kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-426",
+        "name":  "南瓜[倭瓜，番瓜](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  23.661567877629061,
+                          "carbohydrates":  5.3,
+                          "protein":  0.7,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/426.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量99kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-429",
+        "name":  "丝瓜",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  21.510516252390058,
+                          "carbohydrates":  4.2,
+                          "protein":  1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/429.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量90kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-436",
+        "name":  "大蒜[蒜头](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  129.78011472275335,
+                          "carbohydrates":  27.6,
+                          "protein":  4.5,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/436.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量543kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-444",
+        "name":  "洋葱[葱头](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  40.86998087954111,
+                          "carbohydrates":  9,
+                          "protein":  1.1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/444.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量171kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-450",
+        "name":  "大白菜(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  18.164435946462714,
+                          "carbohydrates":  3.2,
+                          "protein":  1.5,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/450.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量76kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-465",
+        "name":  "西兰花[绿菜花]",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  36.089866156787764,
+                          "carbohydrates":  4.3,
+                          "protein":  4.1,
+                          "fat":  0.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/465.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量151kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-473",
+        "name":  "菠菜[赤根菜](鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "vegetable",
+        "suitableMeals":  [
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  27.724665391969406,
+                          "carbohydrates":  4.5,
+                          "protein":  2.6,
+                          "fat":  0.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/473.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量116kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "leaf",
+                        "colorKey":  "green",
+                        "tags":  [
+                                     "蔬菜",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-613",
+        "name":  "苹果(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  54.732313575525808,
+                          "carbohydrates":  13.5,
+                          "protein":  0.2,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/613.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量229kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-630",
+        "name":  "梨(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  50.669216061185466,
+                          "carbohydrates":  13.3,
+                          "protein":  0.4,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/630.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量212kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-660",
+        "name":  "桃(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  51.38623326959847,
+                          "carbohydrates":  12.2,
+                          "protein":  0.9,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/660.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量215kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-666",
+        "name":  "李子",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  38.0019120458891,
+                          "carbohydrates":  8.7,
+                          "protein":  0.7,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/666.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量159kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-674",
+        "name":  "枣(鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  126.91204588910134,
+                          "carbohydrates":  30.5,
+                          "protein":  1.1,
+                          "fat":  0.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/674.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量531kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-684",
+        "name":  "葡萄(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  44.694072657743781,
+                          "carbohydrates":  10.3,
+                          "protein":  0.5,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/684.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量187kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-690",
+        "name":  "石榴(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  73.1357552581262,
+                          "carbohydrates":  18.7,
+                          "protein":  1.4,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/690.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量306kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-700",
+        "name":  "中华猕猴桃[毛叶猕猴桃]",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  61.902485659655831,
+                          "carbohydrates":  14.5,
+                          "protein":  0.8,
+                          "fat":  0.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/700.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量259kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-701",
+        "name":  "草莓[洋莓，凤阳草莓]",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  32.265774378585085,
+                          "carbohydrates":  7.1,
+                          "protein":  1,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/701.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量135kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-704",
+        "name":  "橙",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  48.75717017208413,
+                          "carbohydrates":  11.1,
+                          "protein":  0.8,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/704.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量204kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-705",
+        "name":  "柑桔(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  52.103250478011468,
+                          "carbohydrates":  11.9,
+                          "protein":  0.7,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/705.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量218kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-716",
+        "name":  "菠萝[凤梨，地菠萝]",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  43.977055449330784,
+                          "carbohydrates":  10.8,
+                          "protein":  0.5,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/716.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量184kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-723",
+        "name":  "芒果[抹猛果，望果]",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  35.133843212237089,
+                          "carbohydrates":  8.3,
+                          "protein":  0.6,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/723.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量147kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-726",
+        "name":  "香蕉[甘蕉]",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  94.168260038240916,
+                          "carbohydrates":  22,
+                          "protein":  1.4,
+                          "fat":  0.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/726.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量394kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-739",
+        "name":  "西瓜(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "fruit",
+        "suitableMeals":  [
+                              "breakfast",
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  26.2906309751434,
+                          "carbohydrates":  5.8,
+                          "protein":  0.6,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/739.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量110kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "circle.hexagongrid.fill",
+                        "colorKey":  "pink",
+                        "tags":  [
+                                     "水果",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-743",
+        "name":  "核桃(干)[胡桃]",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  637.66730401529639,
+                          "carbohydrates":  19.1,
+                          "protein":  14.9,
+                          "fat":  58.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/743.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2668kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-746",
+        "name":  "栗子(鲜)[板栗]",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  190.96558317399618,
+                          "carbohydrates":  42.2,
+                          "protein":  4.2,
+                          "fat":  0.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/746.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量799kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-750",
+        "name":  "松子(炒)",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  634.79923518164435,
+                          "carbohydrates":  21.4,
+                          "protein":  14.1,
+                          "fat":  58.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/750.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2656kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-756",
+        "name":  "腰果",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  556.1663479923518,
+                          "carbohydrates":  41.6,
+                          "protein":  17.3,
+                          "fat":  36.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/756.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2327kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-759",
+        "name":  "开心果(熟)",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  623.80497131931168,
+                          "carbohydrates":  21.9,
+                          "protein":  20.6,
+                          "fat":  53
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/759.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2610kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-761",
+        "name":  "花生(鲜)[落花生，长生果]",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  309.75143403441683,
+                          "carbohydrates":  13,
+                          "protein":  12,
+                          "fat":  25.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/761.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1296kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-762",
+        "name":  "花生(炒)",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  595.8413001912046,
+                          "carbohydrates":  23.8,
+                          "protein":  21.7,
+                          "fat":  48
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/762.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2493kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-765",
+        "name":  "葵花子(生)",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  602.7724665391969,
+                          "carbohydrates":  19.1,
+                          "protein":  23.9,
+                          "fat":  49.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/765.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2522kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-769",
+        "name":  "南瓜子(炒)[白瓜子]",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  577.19885277246647,
+                          "carbohydrates":  7.9,
+                          "protein":  36,
+                          "fat":  46.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/769.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2415kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-773",
+        "name":  "芝麻籽(白)",
+        "aliases":  [
+
+                    ],
+        "category":  "snack",
+        "suitableMeals":  [
+                              "snack"
+                          ],
+        "nutrition":  {
+                          "calories":  531.78776290630969,
+                          "carbohydrates":  31.5,
+                          "protein":  18.4,
+                          "fat":  39.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/773.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量2225kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "birthday.cake",
+                        "colorKey":  "purple",
+                        "tags":  [
+                                     "坚果与种子",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
     }
 ]
