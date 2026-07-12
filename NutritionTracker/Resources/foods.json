@@ -998,5 +998,2255 @@
         "minimumSuggestedGrams":  1,
         "maximumSuggestedGrams":  500,
         "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-326",
+        "name":  "黄豆[大豆]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  389.34034416826,
+                          "carbohydrates":  34.2,
+                          "protein":  35,
+                          "fat":  16
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/326.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1629kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-327",
+        "name":  "黑豆[黑大豆](干)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  401.52963671128106,
+                          "carbohydrates":  33.6,
+                          "protein":  36,
+                          "fat":  15.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/327.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1680kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-333",
+        "name":  "豆腐(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  81.73996175908222,
+                          "carbohydrates":  4.2,
+                          "protein":  8.1,
+                          "fat":  3.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/333.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量342kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-334",
+        "name":  "豆腐(北)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  99.187380497131926,
+                          "carbohydrates":  2,
+                          "protein":  12.2,
+                          "fat":  4.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/334.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量415kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-335",
+        "name":  "豆腐(南)[南豆腐]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  57.361376673040148,
+                          "carbohydrates":  2.6,
+                          "protein":  6.2,
+                          "fat":  2.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/335.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量240kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-336",
+        "name":  "豆腐(内酯)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  49.7131931166348,
+                          "carbohydrates":  3.3,
+                          "protein":  5,
+                          "fat":  1.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/336.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量208kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-338",
+        "name":  "豆浆",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  15.535372848948374,
+                          "carbohydrates":  1.1,
+                          "protein":  1.8,
+                          "fat":  0.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/338.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量65kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-342",
+        "name":  "豆腐皮",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  411.08986615678776,
+                          "carbohydrates":  18.8,
+                          "protein":  44.6,
+                          "fat":  17.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/342.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1720kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-344",
+        "name":  "腐竹",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  461.52007648183553,
+                          "carbohydrates":  22.3,
+                          "protein":  44.6,
+                          "fat":  21.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/344.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1931kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-350",
+        "name":  "绿豆(干)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  332.93499043977056,
+                          "carbohydrates":  62,
+                          "protein":  21.6,
+                          "fat":  0.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/350.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1393kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "豆类与豆制品",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-779",
+        "name":  "猪肉(肥瘦)(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  390.53537284894838,
+                          "carbohydrates":  2.4,
+                          "protein":  13.2,
+                          "fat":  37
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/779.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量1634kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-784",
+        "name":  "猪肉(里脊)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  154.87571701720842,
+                          "carbohydrates":  0.7,
+                          "protein":  20.2,
+                          "fat":  7.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/784.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量648kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-788",
+        "name":  "猪肉(瘦)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  143.40344168260037,
+                          "carbohydrates":  1.5,
+                          "protein":  20.3,
+                          "fat":  6.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/788.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量600kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-789",
+        "name":  "猪肉(腿)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  189.29254302103249,
+                          "carbohydrates":  0.8,
+                          "protein":  17.9,
+                          "fat":  12.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/789.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量792kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-823",
+        "name":  "牛肉(肥瘦)(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  126.19502868068834,
+                          "carbohydrates":  2,
+                          "protein":  19.9,
+                          "fat":  4.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/823.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量528kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-827",
+        "name":  "牛肉(里脊)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  107.79158699808795,
+                          "carbohydrates":  2.4,
+                          "protein":  22.2,
+                          "fat":  0.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/827.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量451kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-830",
+        "name":  "牛肉(瘦)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  107.31357552581261,
+                          "carbohydrates":  1.2,
+                          "protein":  20.2,
+                          "fat":  2.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/830.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量449kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-844",
+        "name":  "羊肉(肥瘦)(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  201.95984703632885,
+                          "carbohydrates":  null,
+                          "protein":  19,
+                          "fat":  14.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/844.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量845kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-847",
+        "name":  "羊肉(里脊)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  103.96749521988528,
+                          "carbohydrates":  1.6,
+                          "protein":  20.5,
+                          "fat":  1.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/847.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量435kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-850",
+        "name":  "羊肉(瘦)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  118.54684512428298,
+                          "carbohydrates":  0.2,
+                          "protein":  20.5,
+                          "fat":  3.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/850.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量496kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-875",
+        "name":  "兔肉",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  103.25047801147227,
+                          "carbohydrates":  0.9,
+                          "protein":  19.7,
+                          "fat":  2.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/875.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量432kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-876",
+        "name":  "鸡(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  166.82600382409177,
+                          "carbohydrates":  1.3,
+                          "protein":  19.3,
+                          "fat":  9.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/876.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量698kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-880",
+        "name":  "鸡胸脯肉",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  133.12619502868068,
+                          "carbohydrates":  2.5,
+                          "protein":  19.4,
+                          "fat":  5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/880.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量557kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-881",
+        "name":  "鸡翅",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  193.83365200764817,
+                          "carbohydrates":  4.6,
+                          "protein":  17.4,
+                          "fat":  11.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/881.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量811kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-882",
+        "name":  "鸡腿",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  179.97131931166348,
+                          "carbohydrates":  null,
+                          "protein":  16,
+                          "fat":  13
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/882.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量753kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-891",
+        "name":  "鸭(均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  238.04971319311662,
+                          "carbohydrates":  0.2,
+                          "protein":  15.5,
+                          "fat":  19.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/891.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量996kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-892",
+        "name":  "鸭胸脯肉",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  90.5831739961759,
+                          "carbohydrates":  4,
+                          "protein":  15,
+                          "fat":  1.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/892.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量379kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-978",
+        "name":  "蛋（鸡蛋，均值)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  143.1644359464627,
+                          "carbohydrates":  2.8,
+                          "protein":  13.3,
+                          "fat":  8.8
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量599kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-982",
+        "name":  "鸡蛋白",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  60.707456978967492,
+                          "carbohydrates":  3.1,
+                          "protein":  11.6,
+                          "fat":  0.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/982.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量254kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-990",
+        "name":  "蛋（鸭蛋）",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  178.77629063097513,
+                          "carbohydrates":  3.1,
+                          "protein":  12.6,
+                          "fat":  13
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/990.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量748kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "肉禽蛋",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1003",
+        "name":  "草鱼[白鲩，草包鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  113.52772466539197,
+                          "carbohydrates":  null,
+                          "protein":  16.6,
+                          "fat":  5.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1003.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量475kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1012",
+        "name":  "鲤鱼[鲤拐子]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  109.70363288718929,
+                          "carbohydrates":  0.5,
+                          "protein":  17.6,
+                          "fat":  4.1
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1012.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量459kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1013",
+        "name":  "罗非鱼",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  99.4263862332696,
+                          "carbohydrates":  2.8,
+                          "protein":  18.4,
+                          "fat":  1.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1013.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量416kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1021",
+        "name":  "鲫鱼[喜头鱼，海附鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  108.74760994263862,
+                          "carbohydrates":  3.8,
+                          "protein":  17.1,
+                          "fat":  2.7
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1021.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量455kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1023",
+        "name":  "鳊鱼[鲂鱼，武昌鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  135.03824091778202,
+                          "carbohydrates":  1.2,
+                          "protein":  18.3,
+                          "fat":  6.3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1023.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量565kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1025",
+        "name":  "鳙鱼[胖头鱼，摆佳鱼，花鲢鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  100.62141491395793,
+                          "carbohydrates":  4.7,
+                          "protein":  15.3,
+                          "fat":  2.2
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1025.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量421kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1030",
+        "name":  "带鱼[白带鱼，刀鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  127.868068833652,
+                          "carbohydrates":  3.1,
+                          "protein":  17.7,
+                          "fat":  4.9
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1030.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量535kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1037",
+        "name":  "黄鱼(大黄花鱼)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  97.27533460803059,
+                          "carbohydrates":  0.8,
+                          "protein":  17.7,
+                          "fat":  2.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1037.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量407kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1038",
+        "name":  "黄鱼(小黄花鱼)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  99.665391969407267,
+                          "carbohydrates":  0.1,
+                          "protein":  17.9,
+                          "fat":  3
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1038.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量417kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1050",
+        "name":  "鲈鱼[鲈花]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  105.64053537284894,
+                          "carbohydrates":  null,
+                          "protein":  18.6,
+                          "fat":  3.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1050.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量442kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1062",
+        "name":  "鳕鱼[鳕狭，明太鱼]",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  89.388145315487563,
+                          "carbohydrates":  0.5,
+                          "protein":  20.4,
+                          "fat":  0.5
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1062.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量374kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1091",
+        "name":  "虾（海虾）",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  79.588910133843214,
+                          "carbohydrates":  1.5,
+                          "protein":  16.8,
+                          "fat":  0.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1091.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量333kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1092",
+        "name":  "虾（河虾）",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  87.954110898661568,
+                          "carbohydrates":  null,
+                          "protein":  16.4,
+                          "fat":  2.4
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1092.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量368kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "missingOfficialFields",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1103",
+        "name":  "蟹（河蟹）",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  103.48948374760994,
+                          "carbohydrates":  2.3,
+                          "protein":  17.5,
+                          "fat":  2.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1103.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量433kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
+    },
+    {
+        "id":  "cfc-1114",
+        "name":  "扇贝(鲜)",
+        "aliases":  [
+
+                    ],
+        "category":  "protein",
+        "suitableMeals":  [
+                              "breakfast",
+                              "lunch",
+                              "dinner"
+                          ],
+        "nutrition":  {
+                          "calories":  60.946462715105163,
+                          "carbohydrates":  2.6,
+                          "protein":  11.1,
+                          "fat":  0.6
+                      },
+        "nutritionBasisAmount":  100,
+        "nutritionBasisUnit":  "gram",
+        "portions":  [
+                         {
+                             "id":  "gram",
+                             "name":  "克",
+                             "baseAmount":  1,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  true
+                         }
+                     ],
+        "source":  {
+                       "type":  "chinaFoodComposition",
+                       "name":  "中国疾控中心营养与健康所食物营养成分查询平台",
+                       "url":  "https://nlc.chinanutri.cn/fq/foodinfo/1114.html",
+                       "verifiedAt":  "2026-07-12T00:00:00Z",
+                       "specification":  "中国食物成分表每100克可食部；原始能量255kJ，按1 kcal = 4.184 kJ换算"
+                   },
+        "display":  {
+                        "iconKey":  "fish",
+                        "colorKey":  "red",
+                        "tags":  [
+                                     "鱼虾蟹贝",
+                                     "中国食物成分表"
+                                 ]
+                    },
+        "dataCompleteness":  "complete",
+        "minimumSuggestedGrams":  1,
+        "maximumSuggestedGrams":  500,
+        "suggestionStepGrams":  1
     }
 ]
