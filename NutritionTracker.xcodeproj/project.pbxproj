@@ -101,6 +101,9 @@
 		A3000000000000000000005C /* FoodDisplayMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000005F /* FoodDisplayMetadata.swift */; };
 		A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000060 /* FoodCatalogAuditTests.swift */; };
 		A3000000000000000000005E /* FoodCatalogAuditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000061 /* FoodCatalogAuditor.swift */; };
+		A3000000000000000000005F /* FoodQuantitySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000062 /* FoodQuantitySelection.swift */; };
+		A30000000000000000000060 /* FoodThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000063 /* FoodThumbnailView.swift */; };
+		A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000064 /* FoodQuantityInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +212,9 @@
 		A4000000000000000000005D /* FoodReferenceDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReferenceDecodingTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000060 /* FoodCatalogAuditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCatalogAuditTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000061 /* FoodCatalogAuditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCatalogAuditor.swift; sourceTree = "<group>"; };
+		A40000000000000000000062 /* FoodQuantitySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantitySelection.swift; sourceTree = "<group>"; };
+		A40000000000000000000063 /* FoodThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodThumbnailView.swift; sourceTree = "<group>"; };
+		A40000000000000000000064 /* FoodQuantityInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantityInputView.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +334,7 @@
 				A40000000000000000000059 /* PartialNutritionValues.swift */,
 				A4000000000000000000005A /* FoodMeasurementUnit.swift */,
 				A4000000000000000000005B /* FoodPortion.swift */,
+				A40000000000000000000062 /* FoodQuantitySelection.swift */,
 				A4000000000000000000002A /* DailyNutritionBalance.swift */,
 				A40000000000000000000011 /* FoodCategory.swift */,
 				A40000000000000000000012 /* FoodReference.swift */,
@@ -406,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				A7000000000000000000000D /* Add */,
+				A70000000000000000000012 /* Shared */,
 				A7000000000000000000000E /* Goals */,
 				A7000000000000000000000F /* Today */,
 				A70000000000000000000010 /* History */,
@@ -420,6 +428,7 @@
 				A40000000000000000000025 /* AddFoodFormState.swift */,
 				A40000000000000000000026 /* FoodSearchView.swift */,
 				A40000000000000000000027 /* AddFoodView.swift */,
+				A40000000000000000000064 /* FoodQuantityInputView.swift */,
 				A4000000000000000000004A /* AddView.swift */,
 				A4000000000000000000004B /* AddExerciseView.swift */,
 				A4000000000000000000004C /* AddWeightView.swift */,
@@ -427,6 +436,14 @@
 				A40000000000000000000057 /* PhotoFoodView.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		A70000000000000000000012 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000063 /* FoodThumbnailView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		A7000000000000000000000E /* Goals */ = {
@@ -571,6 +588,7 @@
 				A30000000000000000000056 /* PartialNutritionValues.swift in Sources */,
 				A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */,
 				A30000000000000000000058 /* FoodPortion.swift in Sources */,
+				A3000000000000000000005F /* FoodQuantitySelection.swift in Sources */,
 				A3000000000000000000000A /* NutritionCalculator.swift in Sources */,
 				A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */,
 				A3000000000000000000000B /* InputValidator.swift in Sources */,
@@ -595,6 +613,8 @@
 				A30000000000000000000022 /* AddFoodFormState.swift in Sources */,
 				A30000000000000000000023 /* FoodSearchView.swift in Sources */,
 				A30000000000000000000024 /* AddFoodView.swift in Sources */,
+				A30000000000000000000060 /* FoodThumbnailView.swift in Sources */,
+				A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */,
 				A30000000000000000000027 /* DailyNutritionBalance.swift in Sources */,
 				A30000000000000000000028 /* DailyGoalStore.swift in Sources */,
 				A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */,

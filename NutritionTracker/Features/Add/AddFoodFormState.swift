@@ -2,14 +2,53 @@ import Foundation
 
 struct AddFoodFormState {
     var foodName = ""
-    var weightGrams = ""
     var caloriesPer100Grams = ""
     var carbohydratesPer100Grams = ""
     var proteinPer100Grams = ""
     var fatPer100Grams = ""
     var mealType: MealType = .breakfast
 
+    private(set) var selectedFood: FoodReference?
+    private var quantitySelection = FoodQuantitySelection.manual()
+
+    var isCatalogFood: Bool {
+        selectedFood != nil
+    }
+
+    var quantity: String {
+        get { quantitySelection.quantity }
+        set { quantitySelection.updateQuantity(newValue) }
+    }
+
+    // Temporary compatibility for manual entry and the existing Core Data field.
+    var weightGrams: String {
+        get { quantity }
+        set { quantity = newValue }
+    }
+
+    var selectedPortionID: String {
+        quantitySelection.selectedPortionID
+    }
+
+    var portions: [FoodPortion] {
+        quantitySelection.portions
+    }
+
+    var convertedBaseAmount: Double? {
+        quantitySelection.convertedBaseAmount
+    }
+
+    var baseUnit: FoodMeasurementUnit? {
+        quantitySelection.baseUnit
+    }
+
+    var quantityValidationMessage: String? {
+        quantitySelection.validationMessage
+    }
+
     mutating func select(food: FoodReference) {
+        selectedFood = food
+        quantitySelection = FoodQuantitySelection(food: food)
         foodName = food.name
         caloriesPer100Grams = formatted(food.caloriesPer100Grams)
         carbohydratesPer100Grams = formatted(food.carbohydratesPer100Grams)
@@ -17,8 +56,12 @@ struct AddFoodFormState {
         fatPer100Grams = formatted(food.fatPer100Grams)
     }
 
+    mutating func selectPortion(id: String) {
+        quantitySelection.selectPortion(id: id)
+    }
+
     var parsedWeight: Double? {
-        NutritionFormatters.decimal(from: weightGrams)
+        convertedBaseAmount
     }
 
     var per100Nutrition: NutritionValues? {
@@ -41,34 +84,55 @@ struct AddFoodFormState {
         )
     }
 
-    var actualNutrition: NutritionValues? {
-        guard
-            let weight = parsedWeight,
-            weight.isFinite,
-            weight > 0,
-            let per100Nutrition,
-            per100Nutrition.isFiniteAndNonnegative
-        else {
+    var actualNutrition: PartialNutritionValues? {
+        if isCatalogFood {
+            return quantitySelection.actualNutrition
+        }
+
+        guard let per100Nutrition, per100Nutrition.isFiniteAndNonnegative else {
             return nil
         }
-        return NutritionCalculator.actual(
-            per100Grams: per100Nutrition,
-            weightGrams: weight
+        return quantitySelection.actualNutrition(
+            using: PartialNutritionValues(
+                calories: per100Nutrition.calories,
+                carbohydrates: per100Nutrition.carbohydrates,
+                protein: per100Nutrition.protein,
+                fat: per100Nutrition.fat
+            )
         )
     }
 
+    // Persistence is still all-or-nothing until Task 5 adds known-value flags.
+    var actualCompleteNutrition: NutritionValues? {
+        guard
+            let actualNutrition,
+            let calories = actualNutrition.calories,
+            let carbohydrates = actualNutrition.carbohydrates,
+            let protein = actualNutrition.protein,
+            let fat = actualNutrition.fat
+        else {
+            return nil
+        }
+
+        let complete = NutritionValues(
+            calories: calories,
+            carbohydrates: carbohydrates,
+            protein: protein,
+            fat: fat
+        )
+        return complete.isFiniteAndNonnegative ? complete : nil
+    }
+
     func validate() throws {
-        guard let weight = parsedWeight else {
+        guard !foodName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            throw FoodInputError.missingName
+        }
+        guard convertedBaseAmount != nil else {
             throw FoodInputError.invalidWeight
         }
-        guard let per100Nutrition else {
+        guard actualCompleteNutrition != nil else {
             throw FoodInputError.invalidNutrition
         }
-        try InputValidator.validateFood(
-            name: foodName,
-            weightGrams: weight,
-            per100Grams: per100Nutrition
-        )
     }
 
     mutating func reset() {

@@ -53,7 +53,11 @@ final class AddFoodFormStateTests: XCTestCase {
         state.selectPortion(id: "milliliter")
 
         XCTAssertEqual(state.quantity, "250.0")
-        XCTAssertEqual(state.convertedBaseAmount, 250, accuracy: 0.0001)
+        XCTAssertEqual(
+            try XCTUnwrap(state.convertedBaseAmount),
+            250,
+            accuracy: 0.0001
+        )
         XCTAssertEqual(state.baseUnit, .milliliter)
         XCTAssertEqual(state.actualNutrition, before)
     }
@@ -127,10 +131,10 @@ final class AddFoodFormStateTests: XCTestCase {
         state.fatPer100Grams = "6"
 
         let actual = try XCTUnwrap(state.actualNutrition)
-        XCTAssertEqual(actual.calories, 220)
-        XCTAssertEqual(actual.carbohydrates, 30)
-        XCTAssertEqual(actual.protein, 12)
-        XCTAssertEqual(actual.fat, 6)
+        XCTAssertEqual(try XCTUnwrap(actual.calories), 220)
+        XCTAssertEqual(try XCTUnwrap(actual.carbohydrates), 30)
+        XCTAssertEqual(try XCTUnwrap(actual.protein), 12)
+        XCTAssertEqual(try XCTUnwrap(actual.fat), 6)
         XCTAssertNotNil(state.actualCompleteNutrition)
     }
 

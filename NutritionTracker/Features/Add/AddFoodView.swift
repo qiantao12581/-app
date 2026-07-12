@@ -53,6 +53,11 @@ struct AddFoodView: View {
                     Label("从内置食物库选择", systemImage: "magnifyingglass")
                 }
 
+                if let selectedFood = state.selectedFood {
+                    FoodThumbnailView(food: selectedFood)
+                        .padding(.vertical, 3)
+                }
+
                 TextField("食物名称，例如：熟米饭", text: $state.foodName)
 
                 Picker("餐次", selection: $state.mealType) {
@@ -62,52 +67,35 @@ struct AddFoodView: View {
                 }
             }
 
-            Section("实际重量") {
-                HStack {
-                    TextField("请输入重量", text: $state.weightGrams)
-                        .keyboardType(.decimalPad)
-                    Text("克")
-                        .foregroundStyle(.secondary)
-                }
-            }
+            if state.isCatalogFood {
+                FoodQuantityInputView(state: $state)
+            } else {
+                manualQuantitySection
+                manualNutritionSection
 
-            Section {
-                NutrientInputRow(
-                    title: "热量",
-                    unit: "千卡",
-                    text: $state.caloriesPer100Grams
-                )
-                NutrientInputRow(
-                    title: "碳水化合物",
-                    unit: "克",
-                    text: $state.carbohydratesPer100Grams
-                )
-                NutrientInputRow(
-                    title: "蛋白质",
-                    unit: "克",
-                    text: $state.proteinPer100Grams
-                )
-                NutrientInputRow(
-                    title: "脂肪",
-                    unit: "克",
-                    text: $state.fatPer100Grams
-                )
-            } header: {
-                Text("每100克营养")
-            } footer: {
-                Text("可选择内置食物自动填充，也可以手动修改。")
-            }
-
-            if let actual = state.actualNutrition {
-                Section("本次实际摄入") {
-                    NutritionPreviewRow(title: "热量", value: actual.calories, unit: "千卡")
-                    NutritionPreviewRow(
-                        title: "碳水化合物",
-                        value: actual.carbohydrates,
-                        unit: "克"
-                    )
-                    NutritionPreviewRow(title: "蛋白质", value: actual.protein, unit: "克")
-                    NutritionPreviewRow(title: "脂肪", value: actual.fat, unit: "克")
+                if let actual = state.actualCompleteNutrition {
+                    Section("本次实际摄入") {
+                        NutritionPreviewRow(
+                            title: "热量",
+                            value: actual.calories,
+                            unit: "千卡"
+                        )
+                        NutritionPreviewRow(
+                            title: "碳水化合物",
+                            value: actual.carbohydrates,
+                            unit: "克"
+                        )
+                        NutritionPreviewRow(
+                            title: "蛋白质",
+                            value: actual.protein,
+                            unit: "克"
+                        )
+                        NutritionPreviewRow(
+                            title: "脂肪",
+                            value: actual.fat,
+                            unit: "克"
+                        )
+                    }
                 }
             }
 
@@ -122,6 +110,7 @@ struct AddFoodView: View {
                 .tint(.green)
             }
         }
+        .scrollDismissesKeyboard(.interactively)
         .navigationTitle("添加食物")
         .sheet(item: $presentedSheet) { sheet in
             switch sheet {
@@ -142,12 +131,52 @@ struct AddFoodView: View {
         }
     }
 
+    private var manualQuantitySection: some View {
+        Section("实际重量") {
+            HStack {
+                TextField("请输入重量", text: $state.weightGrams)
+                    .keyboardType(.decimalPad)
+                Text("克")
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private var manualNutritionSection: some View {
+        Section {
+            NutrientInputRow(
+                title: "热量",
+                unit: "千卡",
+                text: $state.caloriesPer100Grams
+            )
+            NutrientInputRow(
+                title: "碳水化合物",
+                unit: "克",
+                text: $state.carbohydratesPer100Grams
+            )
+            NutrientInputRow(
+                title: "蛋白质",
+                unit: "克",
+                text: $state.proteinPer100Grams
+            )
+            NutrientInputRow(
+                title: "脂肪",
+                unit: "克",
+                text: $state.fatPer100Grams
+            )
+        } header: {
+            Text("每 100 克营养")
+        } footer: {
+            Text("手动填写每 100 克的营养数据。")
+        }
+    }
+
     private func saveFood() {
         do {
             try state.validate()
             guard
-                let weight = state.parsedWeight,
-                let nutrition = state.actualNutrition
+                let amount = state.convertedBaseAmount,
+                let nutrition = state.actualCompleteNutrition
             else {
                 throw FoodInputError.invalidNutrition
             }
@@ -157,7 +186,9 @@ struct AddFoodView: View {
             record.foodName = state.foodName.trimmingCharacters(
                 in: .whitespacesAndNewlines
             )
-            record.weightGrams = weight
+            // Quantity/unit persistence follows in Task 5. Keep the legacy field
+            // populated with the converted basis amount until then.
+            record.weightGrams = amount
             record.calories = nutrition.calories
             record.carbohydrates = nutrition.carbohydrates
             record.protein = nutrition.protein
