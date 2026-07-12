@@ -78,6 +78,93 @@ final class FoodQuantityPersistenceTests: XCTestCase {
         XCTAssertEqual(record.presentedPortionName, "克")
     }
 
+    func testLegacySQLiteStoreLightweightMigratesWithFullyKnownDefaults() throws {
+        let currentModel = PersistenceController(inMemory: true)
+            .container.managedObjectModel
+        let archived = try NSKeyedArchiver.archivedData(
+            withRootObject: currentModel,
+            requiringSecureCoding: false
+        )
+        let legacyModel = try XCTUnwrap(
+            try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(archived)
+                as? NSManagedObjectModel
+        )
+        let newFoodRecordProperties: Set<String> = [
+            "quantity", "portionName", "baseAmount", "baseUnitRawValue",
+            "catalogFoodID", "caloriesKnown", "carbohydratesKnown",
+            "proteinKnown", "fatKnown"
+        ]
+        legacyModel.entities.removeAll { $0.name == "CustomFood" }
+        let legacyFoodRecord = try XCTUnwrap(
+            legacyModel.entitiesByName["FoodRecord"]
+        )
+        legacyFoodRecord.properties.removeAll {
+            newFoodRecordProperties.contains($0.name)
+        }
+
+        let directory = FileManager.default.temporaryDirectory
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        try FileManager.default.createDirectory(
+            at: directory,
+            withIntermediateDirectories: true
+        )
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let storeURL = directory.appendingPathComponent("legacy.sqlite")
+
+        let legacyCoordinator = NSPersistentStoreCoordinator(
+            managedObjectModel: legacyModel
+        )
+        try legacyCoordinator.addPersistentStore(
+            ofType: NSSQLiteStoreType,
+            configurationName: nil,
+            at: storeURL
+        )
+        let legacyContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        legacyContext.persistentStoreCoordinator = legacyCoordinator
+        let legacyRecord = NSEntityDescription.insertNewObject(
+            forEntityName: "FoodRecord",
+            into: legacyContext
+        )
+        legacyRecord.setValue(UUID(), forKey: "id")
+        legacyRecord.setValue("迁移旧记录", forKey: "foodName")
+        legacyRecord.setValue(88.0, forKey: "weightGrams")
+        legacyRecord.setValue(100.0, forKey: "calories")
+        legacyRecord.setValue(10.0, forKey: "carbohydrates")
+        legacyRecord.setValue(5.0, forKey: "protein")
+        legacyRecord.setValue(2.0, forKey: "fat")
+        legacyRecord.setValue(Date(), forKey: "createdAt")
+        legacyRecord.setValue(MealType.snack.rawValue, forKey: "mealTypeRawValue")
+        legacyRecord.setValue(InputMethod.manual.rawValue, forKey: "inputMethodRawValue")
+        try legacyContext.save()
+        try legacyCoordinator.remove(
+            try XCTUnwrap(legacyCoordinator.persistentStores.first)
+        )
+
+        let container = NSPersistentContainer(
+            name: "NutritionTracker",
+            managedObjectModel: currentModel
+        )
+        let description = NSPersistentStoreDescription(url: storeURL)
+        description.shouldAddStoreAsynchronously = false
+        description.shouldMigrateStoreAutomatically = true
+        description.shouldInferMappingModelAutomatically = true
+        container.persistentStoreDescriptions = [description]
+        var loadError: Error?
+        container.loadPersistentStores { _, error in loadError = error }
+        XCTAssertNil(loadError)
+
+        let migrated = try XCTUnwrap(
+            container.viewContext.fetch(FoodRecord.fetchRequest()).first
+        )
+        XCTAssertTrue(migrated.caloriesKnown)
+        XCTAssertTrue(migrated.carbohydratesKnown)
+        XCTAssertTrue(migrated.proteinKnown)
+        XCTAssertTrue(migrated.fatKnown)
+        XCTAssertEqual(migrated.presentedQuantity, 88)
+        XCTAssertEqual(migrated.presentedBaseAmount, 88)
+        XCTAssertEqual(migrated.baseUnit, .gram)
+    }
+
     func testCustomFoodCRUDUsesUUIDAndUpsertsInOneContext() throws {
         let context = PersistenceController(inMemory: true).container.viewContext
         let store = CustomFoodStore()

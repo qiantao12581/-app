@@ -85,7 +85,10 @@ struct FoodQuantityInputView: View {
         unit: String
     ) -> some View {
         LabeledContent(title) {
-            if let value {
+            if state.convertedBaseAmount == nil {
+                Text("无法计算")
+                    .foregroundStyle(.red)
+            } else if let value {
                 Text("\(NutritionFormatters.oneDecimal(value)) \(unit)")
                     .foregroundStyle(.secondary)
             } else {

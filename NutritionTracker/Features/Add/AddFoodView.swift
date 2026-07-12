@@ -53,6 +53,12 @@ struct AddFoodView: View {
                     Label("从内置食物库选择", systemImage: "magnifyingglass")
                 }
 
+                Button {
+                    presentedSheet = .customFood
+                } label: {
+                    Label("新建自定义食物", systemImage: "plus.circle")
+                }
+
                 if let selectedFood = state.selectedFood {
                     FoodThumbnailView(food: selectedFood)
                         .padding(.vertical, 3)
@@ -120,6 +126,8 @@ struct AddFoodView: View {
                         state.select(food: food)
                     }
                 }
+            case .customFood:
+                CustomFoodEditorView()
             }
         }
         .alert(item: $alertMessage) { message in
@@ -175,34 +183,26 @@ struct AddFoodView: View {
         do {
             try state.validate()
             guard
+                let quantity = state.quantityValue,
+                let portionName = state.selectedPortionName,
                 let amount = state.convertedBaseAmount,
-                let nutrition = state.actualCompleteNutrition
+                let baseUnit = state.baseUnit,
+                let nutrition = state.actualNutrition
             else {
                 throw FoodInputError.invalidNutrition
             }
-
-            let record = FoodRecord(context: context)
-            record.id = UUID()
-            record.foodName = state.foodName.trimmingCharacters(
-                in: .whitespacesAndNewlines
+            _ = try FoodRecordStore().save(
+                foodName: state.foodName,
+                mealType: state.mealType,
+                inputMethod: inputMethod,
+                quantity: quantity,
+                portionName: portionName,
+                baseAmount: amount,
+                baseUnit: baseUnit,
+                catalogFoodID: state.catalogFoodID,
+                nutrition: nutrition,
+                context: context
             )
-            // Quantity/unit persistence follows in Task 5. Keep the legacy field
-            // populated with the converted basis amount until then.
-            record.weightGrams = amount
-            record.calories = nutrition.calories
-            record.carbohydrates = nutrition.carbohydrates
-            record.protein = nutrition.protein
-            record.fat = nutrition.fat
-            record.createdAt = Date()
-            record.mealTypeRawValue = state.mealType.rawValue
-            record.inputMethodRawValue = inputMethod.rawValue
-
-            do {
-                try context.save()
-            } catch {
-                context.delete(record)
-                throw error
-            }
 
             state.reset()
             alertMessage = AlertMessage(
@@ -224,6 +224,7 @@ struct AddFoodView: View {
 
 private enum PresentedSheet: String, Identifiable {
     case foodSearch
+    case customFood
     var id: String { rawValue }
 }
 

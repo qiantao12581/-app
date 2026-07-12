@@ -10,12 +10,12 @@ struct HistoryView: View {
     )
     private var records: FetchedResults<FoodRecord>
 
-    private var summaries: [DailyNutritionSummary] {
-        HistorySummaryCalculator.summaries(
+    private var summaries: [DailyPartialNutritionSummary] {
+        HistorySummaryCalculator.partialSummaries(
             entries: records.map {
-                DatedNutritionValues(
+                DatedPartialNutritionValues(
                     date: $0.createdAt,
-                    nutrition: $0.nutritionValues
+                    nutrition: $0.partialNutritionValues
                 )
             }
         )
@@ -41,7 +41,7 @@ struct HistoryView: View {
 }
 
 private struct HistorySummaryRow: View {
-    let summary: DailyNutritionSummary
+    let summary: DailyPartialNutritionSummary
 
     var body: some View {
         VStack(alignment: .leading, spacing: 9) {
@@ -49,39 +49,59 @@ private struct HistorySummaryRow: View {
                 Text(summary.date, format: .dateTime.year().month().day().weekday())
                     .font(.headline)
                 Spacer()
-                Text("\(NutritionFormatters.oneDecimal(summary.nutrition.calories)) 千卡")
+                Text(
+                    partialText(
+                        value: summary.nutrition.lowerBound.calories,
+                        complete: summary.nutrition.caloriesComplete,
+                        unit: "千卡"
+                    )
+                )
                     .font(.subheadline.weight(.semibold))
             }
 
             HStack(spacing: 16) {
                 HistoryMacroLabel(
                     title: "碳水",
-                    value: summary.nutrition.carbohydrates
+                    value: summary.nutrition.lowerBound.carbohydrates,
+                    isComplete: summary.nutrition.carbohydratesComplete
                 )
                 HistoryMacroLabel(
                     title: "蛋白质",
-                    value: summary.nutrition.protein
+                    value: summary.nutrition.lowerBound.protein,
+                    isComplete: summary.nutrition.proteinComplete
                 )
                 HistoryMacroLabel(
                     title: "脂肪",
-                    value: summary.nutrition.fat
+                    value: summary.nutrition.lowerBound.fat,
+                    isComplete: summary.nutrition.fatComplete
                 )
+            }
+
+            if summary.nutrition.hasMissingOfficialData {
+                Text("部分记录缺少官方数据")
+                    .font(.caption)
+                    .foregroundStyle(.orange)
             }
         }
         .padding(.vertical, 5)
+    }
+
+    private func partialText(value: Double, complete: Bool, unit: String) -> String {
+        "\(complete ? "" : "至少 ")\(NutritionFormatters.oneDecimal(value)) \(unit)"
     }
 }
 
 private struct HistoryMacroLabel: View {
     let title: String
     let value: Double
+    let isComplete: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)
                 .font(.caption2)
                 .foregroundStyle(.secondary)
-            Text("\(NutritionFormatters.oneDecimal(value)) 克")
+            Text("\(isComplete ? "" : "至少 ")\(NutritionFormatters.oneDecimal(value)) 克")
                 .font(.caption.weight(.medium))
         }
     }
@@ -125,21 +145,44 @@ private struct HistoryDayView: View {
         )
     }
 
-    private var total: NutritionValues {
-        DailySummaryCalculator.total(records.map(\.nutritionValues))
+    private var total: PartialNutritionTotal {
+        DailySummaryCalculator.partialTotal(records.map(\.partialNutritionValues))
     }
 
     var body: some View {
         List {
             Section("当天汇总") {
-                HistoryDayTotalRow(title: "热量", value: total.calories, unit: "千卡")
+                HistoryDayTotalRow(
+                    title: "热量",
+                    value: total.lowerBound.calories,
+                    unit: "千卡",
+                    isComplete: total.caloriesComplete
+                )
                 HistoryDayTotalRow(
                     title: "碳水化合物",
-                    value: total.carbohydrates,
-                    unit: "克"
+                    value: total.lowerBound.carbohydrates,
+                    unit: "克",
+                    isComplete: total.carbohydratesComplete
                 )
-                HistoryDayTotalRow(title: "蛋白质", value: total.protein, unit: "克")
-                HistoryDayTotalRow(title: "脂肪", value: total.fat, unit: "克")
+                HistoryDayTotalRow(
+                    title: "蛋白质",
+                    value: total.lowerBound.protein,
+                    unit: "克",
+                    isComplete: total.proteinComplete
+                )
+                HistoryDayTotalRow(
+                    title: "脂肪",
+                    value: total.lowerBound.fat,
+                    unit: "克",
+                    isComplete: total.fatComplete
+                )
+                if total.hasMissingOfficialData {
+                    Label(
+                        "部分记录缺少官方数据",
+                        systemImage: "exclamationmark.triangle.fill"
+                    )
+                    .foregroundStyle(.orange)
+                }
             }
 
             Section("当天食物") {
@@ -157,12 +200,13 @@ private struct HistoryDayTotalRow: View {
     let title: String
     let value: Double
     let unit: String
+    let isComplete: Bool
 
     var body: some View {
         HStack {
             Text(title)
             Spacer()
-            Text("\(NutritionFormatters.oneDecimal(value)) \(unit)")
+            Text("\(isComplete ? "" : "至少 ")\(NutritionFormatters.oneDecimal(value)) \(unit)")
                 .foregroundStyle(.secondary)
         }
     }
@@ -180,19 +224,25 @@ private struct HistoryFoodRecordRow: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text("\(NutritionFormatters.oneDecimal(record.calories)) 千卡")
+                Text(nutrientText(record.partialNutritionValues.calories, unit: "千卡"))
                     .font(.subheadline.weight(.semibold))
             }
 
             Text(
-                "\(NutritionFormatters.oneDecimal(record.weightGrams)) 克 · "
-                + "碳水 \(NutritionFormatters.oneDecimal(record.carbohydrates)) · "
-                + "蛋白 \(NutritionFormatters.oneDecimal(record.protein)) · "
-                + "脂肪 \(NutritionFormatters.oneDecimal(record.fat))"
+                "\(NutritionFormatters.oneDecimal(record.presentedQuantity)) "
+                + "\(record.presentedPortionName) · "
+                + "碳水 \(nutrientText(record.partialNutritionValues.carbohydrates)) · "
+                + "蛋白 \(nutrientText(record.partialNutritionValues.protein)) · "
+                + "脂肪 \(nutrientText(record.partialNutritionValues.fat))"
             )
             .font(.caption)
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
+    }
+
+    private func nutrientText(_ value: Double?, unit: String = "") -> String {
+        guard let value else { return "暂无官方数据" }
+        return NutritionFormatters.oneDecimal(value) + (unit.isEmpty ? "" : " \(unit)")
     }
 }

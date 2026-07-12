@@ -105,6 +105,10 @@
 		A30000000000000000000060 /* FoodThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000063 /* FoodThumbnailView.swift */; };
 		A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000064 /* FoodQuantityInputView.swift */; };
 		A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */; };
+		A30000000000000000000063 /* CustomFood+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000066 /* CustomFood+CoreDataClass.swift */; };
+		A30000000000000000000064 /* CustomFood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000067 /* CustomFood+CoreDataProperties.swift */; };
+		A30000000000000000000065 /* CustomFoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000068 /* CustomFoodStore.swift */; };
+		A30000000000000000000066 /* CustomFoodEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000069 /* CustomFoodEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +221,10 @@
 		A40000000000000000000063 /* FoodThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodThumbnailView.swift; sourceTree = "<group>"; };
 		A40000000000000000000064 /* FoodQuantityInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantityInputView.swift; sourceTree = "<group>"; };
 		A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodQuantityPersistenceTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000066 /* CustomFood+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFood+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A40000000000000000000067 /* CustomFood+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFood+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A40000000000000000000068 /* CustomFoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodStore.swift; sourceTree = "<group>"; };
+		A40000000000000000000069 /* CustomFoodEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodEditorView.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -396,6 +404,9 @@
 				A40000000000000000000022 /* DailyNutritionGoal+CoreDataProperties.swift */,
 				A4000000000000000000002B /* DailyGoalStore.swift */,
 				A4000000000000000000002E /* FoodRecordStore.swift */,
+				A40000000000000000000066 /* CustomFood+CoreDataClass.swift */,
+				A40000000000000000000067 /* CustomFood+CoreDataProperties.swift */,
+				A40000000000000000000068 /* CustomFoodStore.swift */,
 				A4000000000000000000003C /* UserProfile+CoreDataClass.swift */,
 				A4000000000000000000003D /* UserProfile+CoreDataProperties.swift */,
 				A4000000000000000000003E /* ExerciseRecord+CoreDataClass.swift */,
@@ -432,6 +443,7 @@
 				A40000000000000000000026 /* FoodSearchView.swift */,
 				A40000000000000000000027 /* AddFoodView.swift */,
 				A40000000000000000000064 /* FoodQuantityInputView.swift */,
+				A40000000000000000000069 /* CustomFoodEditorView.swift */,
 				A4000000000000000000004A /* AddView.swift */,
 				A4000000000000000000004B /* AddExerciseView.swift */,
 				A4000000000000000000004C /* AddWeightView.swift */,
@@ -618,6 +630,10 @@
 				A30000000000000000000024 /* AddFoodView.swift in Sources */,
 				A30000000000000000000060 /* FoodThumbnailView.swift in Sources */,
 				A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */,
+				A30000000000000000000063 /* CustomFood+CoreDataClass.swift in Sources */,
+				A30000000000000000000064 /* CustomFood+CoreDataProperties.swift in Sources */,
+				A30000000000000000000065 /* CustomFoodStore.swift in Sources */,
+				A30000000000000000000066 /* CustomFoodEditorView.swift in Sources */,
 				A30000000000000000000027 /* DailyNutritionBalance.swift in Sources */,
 				A30000000000000000000028 /* DailyGoalStore.swift in Sources */,
 				A30000000000000000000029 /* DailyGoalEditorView.swift in Sources */,

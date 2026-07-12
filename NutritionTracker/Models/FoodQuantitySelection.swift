@@ -70,6 +70,11 @@ struct FoodQuantitySelection: Equatable, Sendable {
         portions.first { $0.id == selectedPortionID }
     }
 
+    var quantityValue: Double? {
+        guard let portion = selectedPortion else { return nil }
+        return resolvedQuantity(for: portion)
+    }
+
     var convertedBaseAmount: Double? {
         calculation?.baseAmount
     }

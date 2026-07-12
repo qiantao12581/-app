@@ -11,15 +11,50 @@
     </entity>
     <entity name="FoodRecord" representedClassName="FoodRecord" syncable="YES">
         <attribute name="calories" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="caloriesKnown" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="catalogFoodID" optional="YES" attributeType="String"/>
         <attribute name="carbohydrates" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="carbohydratesKnown" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="baseAmount" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="baseUnitRawValue" optional="YES" attributeType="String"/>
         <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="fat" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fatKnown" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
         <attribute name="foodName" optional="NO" attributeType="String"/>
         <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="inputMethodRawValue" optional="NO" attributeType="String"/>
         <attribute name="mealTypeRawValue" optional="NO" attributeType="String"/>
         <attribute name="protein" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proteinKnown" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="portionName" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="weightGrams" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CustomFood" representedClassName="CustomFood" syncable="YES">
+        <attribute name="aliasesJSON" optional="NO" attributeType="Binary"/>
+        <attribute name="brandName" optional="YES" attributeType="String"/>
+        <attribute name="calories" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="caloriesKnown" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="carbohydrates" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="carbohydratesKnown" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="colorKey" optional="NO" attributeType="String"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fat" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="fatKnown" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="iconKey" optional="NO" attributeType="String"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="NO" attributeType="String"/>
+        <attribute name="nutritionBasisAmount" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nutritionBasisUnitRawValue" optional="NO" attributeType="String"/>
+        <attribute name="portionsJSON" optional="NO" attributeType="Binary"/>
+        <attribute name="protein" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="proteinKnown" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="ExerciseRecord" representedClassName="ExerciseRecord" syncable="YES">
         <attribute name="activeCalories" optional="NO" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>

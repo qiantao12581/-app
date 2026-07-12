@@ -165,6 +165,17 @@ final class AddFoodFormStateTests: XCTestCase {
         }
     }
 
+    func testCatalogValidationUsesUnitNeutralQuantityError() {
+        var state = AddFoodFormState()
+        state.select(food: milkFixture)
+        state.quantity = "not-a-number"
+
+        XCTAssertThrowsError(try state.validate()) { error in
+            XCTAssertEqual(error as? FoodInputError, .invalidQuantity)
+            XCTAssertEqual(error.localizedDescription, "请输入有效的食用数量")
+        }
+    }
+
     func testResetClearsFoodAndRestoresManualDefaults() {
         var state = AddFoodFormState()
         state.select(food: rice)

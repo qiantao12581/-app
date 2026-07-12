@@ -42,6 +42,18 @@ struct AddFoodFormState {
         quantitySelection.baseUnit
     }
 
+    var quantityValue: Double? {
+        quantitySelection.quantityValue
+    }
+
+    var selectedPortionName: String? {
+        quantitySelection.selectedPortion?.name
+    }
+
+    var catalogFoodID: String? {
+        selectedFood?.id
+    }
+
     var quantityValidationMessage: String? {
         quantitySelection.validationMessage
     }
@@ -102,7 +114,7 @@ struct AddFoodFormState {
         )
     }
 
-    // Persistence is still all-or-nothing until Task 5 adds known-value flags.
+    // Kept for complete-only consumers such as legacy recommendation code.
     var actualCompleteNutrition: NutritionValues? {
         guard
             let actualNutrition,
@@ -127,11 +139,27 @@ struct AddFoodFormState {
         guard !foodName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw FoodInputError.missingName
         }
-        guard convertedBaseAmount != nil else {
-            throw FoodInputError.invalidWeight
+        guard convertedBaseAmount != nil, quantityValue != nil else {
+            throw isCatalogFood ? FoodInputError.invalidQuantity : FoodInputError.invalidWeight
         }
-        guard actualCompleteNutrition != nil else {
+        guard let actualNutrition else {
             throw FoodInputError.invalidNutrition
+        }
+        if isCatalogFood {
+            let knownValues = [
+                actualNutrition.calories,
+                actualNutrition.carbohydrates,
+                actualNutrition.protein,
+                actualNutrition.fat
+            ].compactMap { $0 }
+            guard !knownValues.isEmpty,
+                  knownValues.allSatisfy({ $0.isFinite && $0 >= 0 }) else {
+                throw FoodInputError.invalidNutrition
+            }
+        } else {
+            guard actualCompleteNutrition != nil else {
+                throw FoodInputError.invalidNutrition
+            }
         }
     }
 

@@ -54,7 +54,10 @@ let package = Package(
             name: "NutritionTrackerCoreTests",
             dependencies: ["NutritionTracker"],
             path: "NutritionTrackerTests",
-            exclude: ["AppShellTests.swift"],
+            exclude: [
+                "AppShellTests.swift",
+                "FoodQuantityPersistenceTests.swift"
+            ],
             sources: [
                 "NutritionCalculatorTests.swift",
                 "InputValidatorTests.swift",

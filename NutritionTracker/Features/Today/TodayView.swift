@@ -71,8 +71,12 @@ struct TodayView: View {
         )
     }
 
+    private var consumedTotal: PartialNutritionTotal {
+        DailySummaryCalculator.partialTotal(records.map(\.partialNutritionValues))
+    }
+
     private var consumed: NutritionValues {
-        DailySummaryCalculator.total(records.map(\.nutritionValues))
+        consumedTotal.lowerBound
     }
 
     private var currentWeight: Double? {
@@ -112,9 +116,20 @@ struct TodayView: View {
     var body: some View {
         List {
             Section {
-                CalorieSummaryCard(calories: consumed.calories)
+                CalorieSummaryCard(
+                    calories: consumed.calories,
+                    isComplete: consumedTotal.caloriesComplete
+                )
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
+                if consumedTotal.hasMissingOfficialData {
+                    Label(
+                        "部分记录缺少官方数据",
+                        systemImage: "exclamationmark.triangle.fill"
+                    )
+                    .font(.footnote)
+                    .foregroundStyle(.orange)
+                }
             }
 
             Section {
@@ -134,6 +149,7 @@ struct TodayView: View {
                         consumed: consumed.carbohydrates,
                         target: target.carbohydrates,
                         remaining: balance.remaining.carbohydrates,
+                        isComplete: consumedTotal.carbohydratesComplete,
                         color: .orange
                     )
                     MacroProgressRow(
@@ -141,6 +157,7 @@ struct TodayView: View {
                         consumed: consumed.protein,
                         target: target.protein,
                         remaining: balance.remaining.protein,
+                        isComplete: consumedTotal.proteinComplete,
                         color: .blue
                     )
                     MacroProgressRow(
@@ -148,6 +165,7 @@ struct TodayView: View {
                         consumed: consumed.fat,
                         target: target.fat,
                         remaining: balance.remaining.fat,
+                        isComplete: consumedTotal.fatComplete,
                         color: .purple
                     )
                 } else {
@@ -512,6 +530,7 @@ private struct MealSuggestionCard: View {
 
 private struct CalorieSummaryCard: View {
     let calories: Double
+    let isComplete: Bool
 
     var body: some View {
         HStack(spacing: 16) {
@@ -525,7 +544,10 @@ private struct CalorieSummaryCard: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                 HStack(alignment: .firstTextBaseline, spacing: 5) {
-                    Text(NutritionFormatters.oneDecimal(calories))
+                    Text(
+                        (isComplete ? "" : "至少 ")
+                            + NutritionFormatters.oneDecimal(calories)
+                    )
                         .font(.system(.largeTitle, design: .rounded).bold())
                     Text("千卡")
                         .foregroundStyle(.secondary)
@@ -547,6 +569,7 @@ private struct MacroProgressRow: View {
     let consumed: Double
     let target: Double
     let remaining: Double
+    let isComplete: Bool
     let color: Color
 
     private var progress: Double {
@@ -560,7 +583,11 @@ private struct MacroProgressRow: View {
                 Text(title)
                     .font(.subheadline.weight(.medium))
                 Spacer()
-                Text("\(NutritionFormatters.oneDecimal(consumed)) / \(NutritionFormatters.oneDecimal(target)) 克")
+                Text(
+                    "\(isComplete ? "" : "至少 ")"
+                        + "\(NutritionFormatters.oneDecimal(consumed)) / "
+                        + "\(NutritionFormatters.oneDecimal(target)) 克"
+                )
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -568,9 +595,11 @@ private struct MacroProgressRow: View {
             ProgressView(value: progress)
                 .tint(color)
 
-            Text(remaining >= 0
-                 ? "还需 \(NutritionFormatters.oneDecimal(remaining)) 克"
-                 : "已超出 \(NutritionFormatters.oneDecimal(abs(remaining))) 克")
+            Text(isComplete
+                 ? (remaining >= 0
+                    ? "还需 \(NutritionFormatters.oneDecimal(remaining)) 克"
+                    : "已超出 \(NutritionFormatters.oneDecimal(abs(remaining))) 克")
+                 : "已知摄入为下限，目标差额暂不确定")
                 .font(.caption)
                 .foregroundStyle(remaining >= 0 ? Color.secondary : Color.red)
         }
@@ -590,21 +619,33 @@ private struct FoodRecordRow: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text("\(NutritionFormatters.oneDecimal(record.calories)) 千卡")
+                Text(nutrientText(
+                    value: record.partialNutritionValues.calories,
+                    unit: "千卡"
+                ))
                     .font(.subheadline.weight(.semibold))
             }
 
             HStack {
-                Text("\(NutritionFormatters.oneDecimal(record.weightGrams)) 克")
+                Text(
+                    "\(NutritionFormatters.oneDecimal(record.presentedQuantity)) "
+                        + record.presentedPortionName
+                )
                 Spacer()
-                Text("碳水 \(NutritionFormatters.oneDecimal(record.carbohydrates))")
-                Text("蛋白 \(NutritionFormatters.oneDecimal(record.protein))")
-                Text("脂肪 \(NutritionFormatters.oneDecimal(record.fat))")
+                Text("碳水 \(nutrientText(value: record.partialNutritionValues.carbohydrates))")
+                Text("蛋白 \(nutrientText(value: record.partialNutritionValues.protein))")
+                Text("脂肪 \(nutrientText(value: record.partialNutritionValues.fat))")
             }
             .font(.caption)
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
+    }
+
+    private func nutrientText(value: Double?, unit: String = "") -> String {
+        guard let value else { return "暂无官方数据" }
+        let suffix = unit.isEmpty ? "" : " \(unit)"
+        return NutritionFormatters.oneDecimal(value) + suffix
     }
 }
 
