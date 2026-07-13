@@ -10,7 +10,8 @@
 - 相机拍照或相册选择图片；第一版使用明确标注的模拟识别结果，保存前必须手动确认。
 - Core Data 本机持久化食物、原始数量/份量、已知营养字段和自定义食物；支持今日汇总、滑动删除、按日期历史与当天详情。
 - 自定义每日碳水、蛋白质和脂肪目标，分别显示还需或超出量。
-- 根据已记录餐次和剩余三大营养素，离线生成午餐、晚餐和加餐建议。
+- 根据已记录餐次和剩余三大营养素，离线生成午餐、晚餐和加餐建议；建议使用食物默认的“克 / 个 / 盒 / 毫升 / 官方整份”单位和分类缩略图。
+- 点击建议可修改数量与单位、同类别或跨类别替换食物、添加/删除食物，并实时查看整餐营养及吃完后当天“还差 / 将超出”的三大营养素。确认后整餐只执行一次 Core Data 保存，任一项目或保存失败都会整餐回滚。
 - 个人资料、Mifflin–St Jeor 基础代谢、四档非锻炼活动系数和自定义系数。
 - 手动记录运动主动消耗，计算预计总消耗、热量缺口或盈余。
 - 体重记录、每月 3%–5% 复合减重目标、自动/手动目标日期、进度和倒计时。
@@ -29,9 +30,9 @@
 
 ## 自动化验证
 
-- 云端工作流 [Build TrollStore IPA](.github/workflows/build-trollstore-ipa.yml) 当前执行 96 个 Swift 快速核心测试和 122 个 iOS XCTest，并编译 App 与测试目标。
+- 云端工作流 [Build TrollStore IPA](.github/workflows/build-trollstore-ipa.yml) 当前执行 124 个 Swift 快速核心测试和 154 个 iOS XCTest，并编译 App 与测试目标。
 - 同一工作流使用 iPhoneOS Release 配置且关闭代码签名，生成 `Payload/NutritionTracker.app` 结构的 TrollStore IPA，校验压缩包后上传 IPA 和 `build-info` 两个构件。
-- 自动化覆盖目录审计、换算与份量切换、Core Data 持久化、缺失数据下限和布局配置；真实 iPhone、VoiceOver、键盘与 TrollStore 覆盖升级仍须按 [iPhone 最终验收清单](docs/testing/final-acceptance-checklist.md) 手工检查。
+- 自动化覆盖目录审计、换算与份量切换、餐次建议份量、实时营养影响文案、整餐原子保存/回滚、Core Data 持久化、缺失数据下限和布局配置；真实 iPhone、VoiceOver、键盘与 TrollStore 覆盖升级仍须按 [iPhone 最终验收清单](docs/testing/final-acceptance-checklist.md) 手工检查。
 
 ## 目录
 
