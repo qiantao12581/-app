@@ -8,6 +8,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         let egg = try food(id: "cfc-978", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let itemID = try XCTUnwrap(state.items.first?.id)
+        let eggCalories = try XCTUnwrap(egg.nutrition.calories)
 
         try state.updateQuantity(itemID: itemID, text: "2")
 
@@ -15,7 +16,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         XCTAssertEqual(state.items[0].calculation?.baseAmount, 100)
         XCTAssertEqual(
             try XCTUnwrap(state.mealNutrition.calories),
-            try XCTUnwrap(egg.nutrition.calories),
+            eggCalories,
             accuracy: 0.000_001
         )
         XCTAssertEqual(
@@ -35,7 +36,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         )
         XCTAssertEqual(
             try XCTUnwrap(state.remainingAfterMeal.calories),
-            100 - try XCTUnwrap(egg.nutrition.calories),
+            100 - eggCalories,
             accuracy: 0.000_001
         )
         XCTAssertEqual(
