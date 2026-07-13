@@ -138,6 +138,11 @@ struct MealSuggestionEditorState: Equatable, Sendable {
                 actual: replacement.category
             )
         }
+        guard !draft.items.contains(where: {
+            $0.id != itemID && $0.food.id == foodID
+        }) else {
+            throw MealSuggestionEditorError.duplicateItemID(foodID)
+        }
         guard let portion = replacement.defaultPortion else {
             throw MealSuggestionEditorError.missingDefaultPortion(foodID)
         }
@@ -155,16 +160,23 @@ struct MealSuggestionEditorState: Equatable, Sendable {
 
     mutating func add(foodID: String) throws {
         let food = try catalogFood(id: foodID)
-        guard !draft.items.contains(where: { $0.id == foodID }) else {
+        guard !draft.items.contains(where: { $0.food.id == foodID }) else {
             throw MealSuggestionEditorError.duplicateItemID(foodID)
         }
         guard let portion = food.defaultPortion else {
             throw MealSuggestionEditorError.missingDefaultPortion(foodID)
         }
 
+        var itemID = foodID
+        var suffix = 2
+        while draft.items.contains(where: { $0.id == itemID }) {
+            itemID = "\(foodID)-\(suffix)"
+            suffix += 1
+        }
+
         draft.items.append(
             MealSuggestionDraftItem(
-                id: foodID,
+                id: itemID,
                 food: food,
                 quantityText: "1",
                 selectedPortionID: portion.id,
