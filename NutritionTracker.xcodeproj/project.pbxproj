@@ -116,6 +116,8 @@
 		A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */; };
 		A3000000000000000000006C /* RecordFoodThumbnailResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006F /* RecordFoodThumbnailResolver.swift */; };
 		A3000000000000000000006D /* MealSuggestionEditorStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */; };
+		A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000071 /* MealSuggestionDraft.swift */; };
+		A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000072 /* MealSuggestionEditorState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +243,8 @@
 		A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFoodThumbnailResolverTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000006F /* RecordFoodThumbnailResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFoodThumbnailResolver.swift; sourceTree = "<group>"; };
 		A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorStateTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000071 /* MealSuggestionDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionDraft.swift; sourceTree = "<group>"; };
+		A40000000000000000000072 /* MealSuggestionEditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +382,7 @@
 				A40000000000000000000038 /* DailyEnergyBalance.swift */,
 				A40000000000000000000043 /* TargetDateMode.swift */,
 				A40000000000000000000050 /* MealSuggestion.swift */,
+				A40000000000000000000071 /* MealSuggestionDraft.swift */,
 				A40000000000000000000053 /* RecognizedFoodCandidate.swift */,
 			);
 			path = Models;
@@ -495,6 +500,7 @@
 			isa = PBXGroup;
 			children = (
 				A4000000000000000000002F /* TodayView.swift */,
+				A40000000000000000000072 /* MealSuggestionEditorState.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -690,6 +696,8 @@
 				A3000000000000000000004A /* UserProfileEditorView.swift in Sources */,
 				A3000000000000000000004B /* WeightGoalEditorView.swift in Sources */,
 				A3000000000000000000004D /* MealSuggestion.swift in Sources */,
+				A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */,
+				A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */,
 				A3000000000000000000004E /* MealRecommendationService.swift in Sources */,
 				A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */,
 				A30000000000000000000051 /* FoodRecognitionService.swift in Sources */,
