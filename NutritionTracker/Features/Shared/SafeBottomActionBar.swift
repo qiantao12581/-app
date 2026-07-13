@@ -1,5 +1,13 @@
 import SwiftUI
 
+struct SafeBottomActionBarLayout: Equatable {
+    let buttonLabelMaxWidth: CGFloat?
+
+    static let release = SafeBottomActionBarLayout(
+        buttonLabelMaxWidth: .infinity
+    )
+}
+
 struct SafeBottomActionBar: View {
     let title: String
     let isDisabled: Bool
@@ -16,8 +24,12 @@ struct SafeBottomActionBar: View {
     }
 
     var body: some View {
-        Button(title, action: action)
-            .frame(maxWidth: .infinity)
+        Button(action: action) {
+            Text(title)
+                .frame(
+                    maxWidth: SafeBottomActionBarLayout.release.buttonLabelMaxWidth
+                )
+        }
             .buttonStyle(.borderedProminent)
             .tint(.green)
             .disabled(isDisabled)
