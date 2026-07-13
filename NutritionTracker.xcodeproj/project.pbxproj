@@ -119,6 +119,7 @@
 		A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000071 /* MealSuggestionDraft.swift */; };
 		A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000072 /* MealSuggestionEditorState.swift */; };
 		A30000000000000000000070 /* MealSuggestionBatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */; };
+		A30000000000000000000071 /* MealSuggestionBatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000074 /* MealSuggestionBatchStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +248,7 @@
 		A40000000000000000000071 /* MealSuggestionDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionDraft.swift; sourceTree = "<group>"; };
 		A40000000000000000000072 /* MealSuggestionEditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorState.swift; sourceTree = "<group>"; };
 		A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBatchStoreTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000074 /* MealSuggestionBatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBatchStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +424,7 @@
 		A7000000000000000000000B /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				A40000000000000000000074 /* MealSuggestionBatchStore.swift */,
 				AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */,
 				A4000000000000000000001C /* PersistenceController.swift */,
 				A4000000000000000000001D /* FoodRecord+CoreDataClass.swift */,
@@ -701,6 +704,7 @@
 				A3000000000000000000004D /* MealSuggestion.swift in Sources */,
 				A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */,
 				A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */,
+				A30000000000000000000071 /* MealSuggestionBatchStore.swift in Sources */,
 				A3000000000000000000004E /* MealRecommendationService.swift in Sources */,
 				A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */,
 				A30000000000000000000051 /* FoodRecognitionService.swift in Sources */,
