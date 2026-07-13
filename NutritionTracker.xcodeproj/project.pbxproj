@@ -110,6 +110,7 @@
 		A30000000000000000000065 /* CustomFoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000068 /* CustomFoodStore.swift */; };
 		A30000000000000000000066 /* CustomFoodEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000069 /* CustomFoodEditorView.swift */; };
 		A30000000000000000000067 /* CustomFoodSerializedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006A /* CustomFoodSerializedContent.swift */; };
+		A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006B /* TabBarAppearanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		A4000000000000000000006A /* CustomFoodSerializedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodSerializedContent.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
+		A4000000000000000000006B /* TabBarAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +329,7 @@
 				A4000000000000000000005D /* FoodReferenceDecodingTests.swift */,
 				A40000000000000000000060 /* FoodCatalogAuditTests.swift */,
 				A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */,
+				A4000000000000000000006B /* TabBarAppearanceTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				A3000000000000000000005A /* FoodReferenceDecodingTests.swift in Sources */,
 				A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */,
 				A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */,
+				A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
