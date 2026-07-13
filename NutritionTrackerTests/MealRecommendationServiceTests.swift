@@ -123,6 +123,14 @@ final class MealRecommendationServiceTests: XCTestCase {
             ).map(\.mealType),
             [.dinner, .snack]
         )
+        XCTAssertEqual(
+            service.suggestions(
+                remaining: remaining,
+                completedMeals: [.breakfast, .lunch, .dinner],
+                foods: fixtureFoods
+            ).map(\.mealType),
+            [.snack]
+        )
     }
 
     func testReleasePieceMilliliterAndServingDefaultsAreReportedWithoutInventedSizes() throws {

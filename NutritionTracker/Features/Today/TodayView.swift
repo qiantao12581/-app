@@ -88,6 +88,40 @@ struct TodayView: View {
         TodayNutritionPresentation(total: consumedTotal)
     }
 
+    private var editableFoods: [FoodReference] {
+        recommendationFoods + customFoods.compactMap {
+            try? $0.decodedFoodReference()
+        }
+    }
+
+    private var editorDailyRemaining: PartialNutritionValues {
+        guard nutritionPresentation.canGenerateMealSuggestions,
+              let goal = goals.first else {
+            return PartialNutritionValues(
+                calories: nil,
+                carbohydrates: nil,
+                protein: nil,
+                fat: nil
+            )
+        }
+        let target = NutritionValues(
+            calories: 0,
+            carbohydrates: goal.carbohydrates,
+            protein: goal.protein,
+            fat: goal.fat
+        )
+        let remaining = DailyNutritionBalance(
+            target: target,
+            consumed: consumed
+        ).remaining
+        return PartialNutritionValues(
+            calories: nil,
+            carbohydrates: remaining.carbohydrates,
+            protein: remaining.protein,
+            fat: remaining.fat
+        )
+    }
+
     private var currentWeight: Double? {
         weightEntries.first?.weightKilograms
     }
@@ -288,7 +322,9 @@ struct TodayView: View {
                         MealSuggestionCard(
                             suggestion: suggestion,
                             catalog: recommendationFoods
-                        )
+                        ) {
+                            presentedSheet = .mealSuggestion(suggestion)
+                        }
                     }
                 }
             }
@@ -338,15 +374,26 @@ struct TodayView: View {
             refreshMealSuggestions()
         }
         .sheet(item: $presentedSheet) { sheet in
-            NavigationStack {
-                switch sheet {
-                case .nutritionGoal:
+            switch sheet {
+            case .nutritionGoal:
+                NavigationStack {
                     DailyGoalEditorView(date: date)
-                case .profile:
+                }
+            case .profile:
+                NavigationStack {
                     UserProfileEditorView()
-                case .weightGoal:
+                }
+            case .weightGoal:
+                NavigationStack {
                     WeightGoalEditorView()
                 }
+            case let .mealSuggestion(suggestion):
+                MealSuggestionEditorView(
+                    suggestion: suggestion,
+                    dailyRemaining: editorDailyRemaining,
+                    catalog: editableFoods,
+                    date: date
+                )
             }
         }
         .alert(
@@ -407,12 +454,21 @@ struct TodayView: View {
     }
 }
 
-private enum TodaySheet: String, Identifiable {
+private enum TodaySheet: Identifiable {
     case nutritionGoal
     case profile
     case weightGoal
+    case mealSuggestion(MealSuggestion)
 
-    var id: String { rawValue }
+    var id: String {
+        switch self {
+        case .nutritionGoal: return "nutrition-goal"
+        case .profile: return "profile"
+        case .weightGoal: return "weight-goal"
+        case let .mealSuggestion(suggestion):
+            return "meal-suggestion-\(suggestion.id)"
+        }
+    }
 }
 
 private struct SetupPrompt: View {
@@ -528,53 +584,6 @@ private struct WeightGoalCard: View {
             }
         }
         .padding(.vertical, 4)
-    }
-}
-
-private struct MealSuggestionCard: View {
-    let suggestion: MealSuggestion
-    let catalog: [FoodReference]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 9) {
-            Label(suggestion.mealType.title, systemImage: mealImage)
-                .font(.headline)
-                .foregroundStyle(.green)
-
-            ForEach(suggestion.items) { item in
-                HStack {
-                    Text(food(for: item)?.name ?? item.foodID)
-                    Spacer()
-                    Text(
-                        "\(NutritionFormatters.oneDecimal(item.quantity)) "
-                            + (portion(for: item)?.name ?? "份")
-                    )
-                        .foregroundStyle(.secondary)
-                }
-                .font(.subheadline)
-            }
-
-            Text(
-                "预计：碳水 \(NutritionFormatters.oneDecimal(suggestion.nutrition.carbohydrates)) 克 · "
-                + "蛋白质 \(NutritionFormatters.oneDecimal(suggestion.nutrition.protein)) 克 · "
-                + "脂肪 \(NutritionFormatters.oneDecimal(suggestion.nutrition.fat)) 克"
-            )
-            .font(.caption)
-            .foregroundStyle(.secondary)
-        }
-        .padding(.vertical, 5)
-    }
-
-    private var mealImage: String {
-        suggestion.mealType == .snack ? "takeoutbag.and.cup.and.straw" : "fork.knife"
-    }
-
-    private func food(for item: MealSuggestionItem) -> FoodReference? {
-        catalog.first { $0.id == item.foodID }
-    }
-
-    private func portion(for item: MealSuggestionItem) -> FoodPortion? {
-        food(for: item)?.portions.first { $0.id == item.portionID }
     }
 }
 
