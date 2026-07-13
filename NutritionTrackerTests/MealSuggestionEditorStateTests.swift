@@ -316,14 +316,29 @@ final class MealSuggestionEditorStateTests: XCTestCase {
     }
 
     private func suggestion(food: FoodReference, grams: Double) throws -> MealSuggestion {
-        let per100 = try XCTUnwrap(food.nutritionPer100Grams)
-        let nutrition = NutritionCalculator.actual(
-            per100Grams: per100,
-            weightGrams: grams
+        let portion = try XCTUnwrap(food.defaultPortion)
+        let calculation = try PortionNutritionCalculator.actual(
+            nutrition: food.nutrition,
+            basisAmount: food.nutritionBasisAmount,
+            basisUnit: food.nutritionBasisUnit,
+            quantity: grams / portion.baseAmount,
+            portion: portion
+        )
+        let nutrition = NutritionValues(
+            calories: try XCTUnwrap(calculation.nutrition.calories),
+            carbohydrates: try XCTUnwrap(calculation.nutrition.carbohydrates),
+            protein: try XCTUnwrap(calculation.nutrition.protein),
+            fat: try XCTUnwrap(calculation.nutrition.fat)
         )
         return MealSuggestion(
             mealType: .breakfast,
-            items: [MealSuggestionItem(food: food, grams: grams, nutrition: nutrition)],
+            items: [MealSuggestionItem(
+                id: food.id,
+                foodID: food.id,
+                quantity: calculation.quantity,
+                portionID: portion.id,
+                nutrition: calculation.nutrition
+            )],
             nutrition: nutrition,
             score: 0
         )

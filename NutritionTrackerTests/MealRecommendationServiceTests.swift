@@ -55,9 +55,146 @@ final class MealRecommendationServiceTests: XCTestCase {
             foods: fixtureFoods
         )
         let lunch = try XCTUnwrap(suggestions.first { $0.mealType == .lunch })
+        let foodsByID = Dictionary(uniqueKeysWithValues: fixtureFoods.map { ($0.id, $0) })
 
-        XCTAssertEqual(Set(lunch.items.map(\.food.category)), [.staple, .protein, .vegetable])
-        XCTAssertTrue(lunch.items.allSatisfy { $0.grams > 0 })
+        XCTAssertEqual(
+            Set(lunch.items.compactMap { foodsByID[$0.foodID]?.category }),
+            [.staple, .protein, .vegetable]
+        )
+        XCTAssertTrue(lunch.items.allSatisfy { $0.quantity.isFinite && $0.quantity > 0 })
+        XCTAssertEqual(Set(lunch.items.map(\.id)).count, lunch.items.count)
+    }
+
+    func testEveryAutomaticItemUsesItsCatalogDefaultPortionAndExactNutrition() throws {
+        let suggestions = MealRecommendationService().suggestions(
+            remaining: NutritionValues(
+                calories: 600,
+                carbohydrates: 100,
+                protein: 70,
+                fat: 30
+            ),
+            completedMeals: [.breakfast],
+            foods: fixtureFoods
+        )
+
+        XCTAssertFalse(suggestions.isEmpty)
+        for item in suggestions.flatMap(\.items) {
+            let food = try XCTUnwrap(fixtureFoods.first { $0.id == item.foodID })
+            let portion = try XCTUnwrap(food.portions.first { $0.id == item.portionID })
+            XCTAssertTrue(portion.isDefault)
+            XCTAssertNotNil(food.completeNutrition)
+            XCTAssertTrue(item.quantity.isFinite)
+            XCTAssertGreaterThan(item.quantity, 0)
+            XCTAssertTrue(item.nutrition.isComplete)
+
+            let expected = try PortionNutritionCalculator.actual(
+                nutrition: food.nutrition,
+                basisAmount: food.nutritionBasisAmount,
+                basisUnit: food.nutritionBasisUnit,
+                quantity: item.quantity,
+                portion: portion
+            )
+            XCTAssertEqual(item.nutrition, expected.nutrition)
+        }
+    }
+
+    func testAutomaticSuggestionsFollowCompletedMealProgress() {
+        let remaining = NutritionValues(
+            calories: 600,
+            carbohydrates: 100,
+            protein: 70,
+            fat: 30
+        )
+        let service = MealRecommendationService()
+
+        XCTAssertEqual(
+            service.suggestions(
+                remaining: remaining,
+                completedMeals: [.breakfast],
+                foods: fixtureFoods
+            ).map(\.mealType),
+            [.lunch, .dinner, .snack]
+        )
+        XCTAssertEqual(
+            service.suggestions(
+                remaining: remaining,
+                completedMeals: [.breakfast, .lunch],
+                foods: fixtureFoods
+            ).map(\.mealType),
+            [.dinner, .snack]
+        )
+    }
+
+    func testReleasePieceMilliliterAndServingDefaultsAreReportedWithoutInventedSizes() throws {
+        let releaseFoods = try loadReleaseFoods()
+        let egg = try releaseFood(id: "cfc-978", in: releaseFoods)
+        let milk = try releaseFood(id: "mengniu-telunsu-organic-38", in: releaseFoods)
+        let serving = try releaseFood(id: "mcd-cn-cheeseburger", in: releaseFoods)
+
+        let eggItem = try suggestedItem(
+            from: [fixtureFoods[0], egg, fixtureFoods[2]],
+            meal: .lunch,
+            foodID: egg.id
+        )
+        XCTAssertEqual(eggItem.portionID, "egg-piece")
+        XCTAssertEqual(eggItem.quantity.rounded(), eggItem.quantity)
+
+        let milkItem = try suggestedItem(
+            from: [milk],
+            meal: .snack,
+            foodID: milk.id
+        )
+        XCTAssertEqual(milkItem.portionID, milk.defaultPortion?.id)
+        XCTAssertEqual(milk.defaultPortion?.baseUnit, .milliliter)
+
+        let servingItem = try suggestedItem(
+            from: [serving],
+            meal: .snack,
+            foodID: serving.id
+        )
+        XCTAssertEqual(servingItem.portionID, serving.defaultPortion?.id)
+        XCTAssertEqual(serving.defaultPortion?.baseUnit, .serving)
+        XCTAssertEqual(servingItem.quantity, 1)
+    }
+
+    func testOveragePenaltyStillPrefersCandidateThatStaysWithinDailyRemaining() throws {
+        let risky = food(
+            id: "risky",
+            category: .snack,
+            meals: [.snack],
+            minimum: 100,
+            maximum: 100,
+            step: 100,
+            carbs: 15,
+            protein: 1.5,
+            fat: 11
+        )
+        let safe = food(
+            id: "safe",
+            category: .snack,
+            meals: [.snack],
+            minimum: 100,
+            maximum: 100,
+            step: 100,
+            carbs: 45,
+            protein: 1.5,
+            fat: 1.5
+        )
+
+        let snack = try XCTUnwrap(
+            MealRecommendationService().suggestions(
+                remaining: NutritionValues(
+                    calories: 0,
+                    carbohydrates: 100,
+                    protein: 10,
+                    fat: 10
+                ),
+                completedMeals: [.breakfast, .lunch],
+                foods: [risky, safe]
+            ).first { $0.mealType == .snack }
+        )
+
+        XCTAssertEqual(snack.items.single?.foodID, safe.id)
     }
 
     func testIncompleteFoodIsExcludedFromAutomaticRecommendations() {
@@ -118,7 +255,7 @@ final class MealRecommendationServiceTests: XCTestCase {
         XCTAssertTrue(
             suggestions
                 .flatMap(\.items)
-                .allSatisfy { $0.food.id != incompleteProtein.id }
+                .allSatisfy { $0.foodID != incompleteProtein.id }
         )
     }
 
@@ -142,6 +279,9 @@ final class MealRecommendationServiceTests: XCTestCase {
         id: String,
         category: FoodCategory,
         meals: [MealType] = [.lunch, .dinner],
+        minimum: Double = 50,
+        maximum: Double = 150,
+        step: Double = 50,
         carbs: Double,
         protein: Double,
         fat: Double
@@ -156,9 +296,57 @@ final class MealRecommendationServiceTests: XCTestCase {
             carbohydratesPer100Grams: carbs,
             proteinPer100Grams: protein,
             fatPer100Grams: fat,
-            minimumSuggestedGrams: 50,
-            maximumSuggestedGrams: 150,
-            suggestionStepGrams: 50
+            minimumSuggestedGrams: minimum,
+            maximumSuggestedGrams: maximum,
+            suggestionStepGrams: step
         )
+    }
+
+    private func suggestedItem(
+        from foods: [FoodReference],
+        meal: MealType,
+        foodID: String
+    ) throws -> MealSuggestionItem {
+        let completed = Set(MealType.allCases.filter { $0 != meal && $0 != .snack })
+        let suggestions = MealRecommendationService().suggestions(
+            remaining: NutritionValues(
+                calories: 600,
+                carbohydrates: 100,
+                protein: 70,
+                fat: 30
+            ),
+            completedMeals: completed,
+            foods: foods
+        )
+        let suggestion = try XCTUnwrap(suggestions.first { $0.mealType == meal })
+        return try XCTUnwrap(suggestion.items.first { $0.foodID == foodID })
+    }
+
+    private func loadReleaseFoods() throws -> [FoodReference] {
+        try FoodDatabaseService(
+            data: Data(contentsOf: releaseCatalogURL)
+        ).foods
+    }
+
+    private func releaseFood(
+        id: String,
+        in foods: [FoodReference]
+    ) throws -> FoodReference {
+        try XCTUnwrap(foods.first { $0.id == id })
+    }
+
+    private var releaseCatalogURL: URL {
+        URL(fileURLWithPath: #filePath)
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+            .appendingPathComponent("NutritionTracker")
+            .appendingPathComponent("Resources")
+            .appendingPathComponent("foods.json")
+    }
+}
+
+private extension Collection {
+    var single: Element? {
+        count == 1 ? first : nil
     }
 }
