@@ -104,19 +104,13 @@ struct AddFoodView: View {
                     }
                 }
             }
-
-            Section {
-                Button {
-                    saveFood()
-                } label: {
-                    Text("保存到今天")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(.green)
-            }
         }
         .scrollDismissesKeyboard(.interactively)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            SafeBottomActionBar(title: "保存到今天") {
+                saveFood()
+            }
+        }
         .navigationTitle("添加食物")
         .sheet(item: $presentedSheet) { sheet in
             switch sheet {

@@ -22,15 +22,13 @@ struct AddWeightView: View {
             } footer: {
                 Text("建议在每天相近的时间和条件下测量。")
             }
-
-            Section {
-                Button("保存体重") { save() }
-                    .frame(maxWidth: .infinity)
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
-            }
         }
         .scrollContentBackground(.hidden)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            SafeBottomActionBar(title: "保存体重") {
+                save()
+            }
+        }
         .alert(
             "体重记录",
             isPresented: Binding(

@@ -29,15 +29,13 @@ struct AddExerciseView: View {
             } footer: {
                 Text("只填写运动产生的主动消耗，不要包含静息消耗。")
             }
-
-            Section {
-                Button("保存到今天") { save() }
-                    .frame(maxWidth: .infinity)
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
-            }
         }
         .scrollContentBackground(.hidden)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            SafeBottomActionBar(title: "保存到今天") {
+                save()
+            }
+        }
         .alert(item: $alert) { alert in
             Alert(
                 title: Text(alert.title),

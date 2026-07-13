@@ -111,6 +111,8 @@
 		A30000000000000000000066 /* CustomFoodEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000069 /* CustomFoodEditorView.swift */; };
 		A30000000000000000000067 /* CustomFoodSerializedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006A /* CustomFoodSerializedContent.swift */; };
 		A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006B /* TabBarAppearanceTests.swift */; };
+		A30000000000000000000069 /* TabBarAppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006C /* TabBarAppearanceConfigurator.swift */; };
+		A3000000000000000000006A /* SafeBottomActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006D /* SafeBottomActionBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +233,8 @@
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000006B /* TabBarAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceTests.swift; sourceTree = "<group>"; };
+		A4000000000000000000006C /* TabBarAppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceConfigurator.swift; sourceTree = "<group>"; };
+		A4000000000000000000006D /* SafeBottomActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBottomActionBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +285,7 @@
 				A40000000000000000000001 /* NutritionTrackerApp.swift */,
 				A40000000000000000000002 /* AppTab.swift */,
 				A40000000000000000000003 /* RootTabView.swift */,
+				A4000000000000000000006C /* TabBarAppearanceConfigurator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				A40000000000000000000063 /* FoodThumbnailView.swift */,
+				A4000000000000000000006D /* SafeBottomActionBar.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -605,6 +611,7 @@
 				A30000000000000000000001 /* NutritionTrackerApp.swift in Sources */,
 				A30000000000000000000002 /* AppTab.swift in Sources */,
 				A30000000000000000000003 /* RootTabView.swift in Sources */,
+				A30000000000000000000069 /* TabBarAppearanceConfigurator.swift in Sources */,
 				A30000000000000000000009 /* NutritionValues.swift in Sources */,
 				A30000000000000000000056 /* PartialNutritionValues.swift in Sources */,
 				A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */,
@@ -636,6 +643,7 @@
 				A30000000000000000000023 /* FoodSearchView.swift in Sources */,
 				A30000000000000000000024 /* AddFoodView.swift in Sources */,
 				A30000000000000000000060 /* FoodThumbnailView.swift in Sources */,
+				A3000000000000000000006A /* SafeBottomActionBar.swift in Sources */,
 				A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */,
 				A30000000000000000000063 /* CustomFood+CoreDataClass.swift in Sources */,
 				A30000000000000000000064 /* CustomFood+CoreDataProperties.swift in Sources */,
