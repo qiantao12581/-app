@@ -143,3 +143,53 @@ final class FoodReferenceDecodingTests: XCTestCase {
         })
     }
 }
+
+final class CustomFoodSerializedContentTests: XCTestCase {
+    private let validAliasesJSON = Data("[\"燕麦\"]".utf8)
+    private var validPortionsJSON: Data {
+        try! JSONEncoder().encode([
+            FoodPortion(
+                id: "gram",
+                name: "克",
+                baseAmount: 1,
+                baseUnit: .gram,
+                allowsDecimalQuantity: true,
+                isDefault: true
+            )
+        ])
+    }
+
+    func testCorruptAliasesSurfaceChineseLoadErrorAndDisableSave() {
+        let state = CustomFoodContentLoadState.load(
+            aliasesJSON: Data("{not-json".utf8),
+            portionsJSON: validPortionsJSON
+        )
+
+        XCTAssertNil(state.content)
+        XCTAssertFalse(state.canSave)
+        XCTAssertEqual(state.errorMessage, "自定义食物的别名数据无法读取")
+    }
+
+    func testCorruptPortionsSurfaceChineseLoadErrorAndDisableSave() {
+        let state = CustomFoodContentLoadState.load(
+            aliasesJSON: validAliasesJSON,
+            portionsJSON: Data("[] trailing".utf8)
+        )
+
+        XCTAssertNil(state.content)
+        XCTAssertFalse(state.canSave)
+        XCTAssertEqual(state.errorMessage, "自定义食物的份量数据无法读取")
+    }
+
+    func testValidSerializedContentRemainsEditableWithoutSubstitution() throws {
+        let state = CustomFoodContentLoadState.load(
+            aliasesJSON: validAliasesJSON,
+            portionsJSON: validPortionsJSON
+        )
+
+        XCTAssertTrue(state.canSave)
+        XCTAssertNil(state.errorMessage)
+        XCTAssertEqual(try XCTUnwrap(state.content).aliases, ["燕麦"])
+        XCTAssertEqual(try XCTUnwrap(state.content).portions.first?.name, "克")
+    }
+}

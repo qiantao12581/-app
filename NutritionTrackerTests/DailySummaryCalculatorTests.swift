@@ -54,4 +54,74 @@ final class DailySummaryCalculatorTests: XCTestCase {
         XCTAssertTrue(total.fatComplete)
         XCTAssertTrue(total.hasMissingOfficialData)
     }
+
+    func testIncompleteCaloriesPresentLowerBoundAndDisableExactDeficit() {
+        let total = PartialNutritionTotal(
+            lowerBound: NutritionValues(
+                calories: 450,
+                carbohydrates: 40,
+                protein: 25,
+                fat: 12
+            ),
+            caloriesComplete: false,
+            carbohydratesComplete: true,
+            proteinComplete: true,
+            fatComplete: true
+        )
+
+        let presentation = TodayNutritionPresentation(total: total)
+
+        XCTAssertEqual(presentation.calorieIntake, .atLeast(450))
+        XCTAssertFalse(presentation.canPresentExactEnergyBalance)
+        XCTAssertEqual(
+            presentation.energyBalanceUnavailableMessage,
+            "部分食物记录缺少热量数据，暂时无法计算准确的热量缺口。"
+        )
+    }
+
+    func testIncompleteMacroDisablesPreciseMealSuggestions() {
+        let total = PartialNutritionTotal(
+            lowerBound: NutritionValues(
+                calories: 450,
+                carbohydrates: 40,
+                protein: 25,
+                fat: 12
+            ),
+            caloriesComplete: true,
+            carbohydratesComplete: true,
+            proteinComplete: false,
+            fatComplete: true
+        )
+
+        let presentation = TodayNutritionPresentation(total: total)
+
+        XCTAssertFalse(presentation.canGenerateMealSuggestions)
+        XCTAssertEqual(
+            presentation.mealSuggestionsUnavailableMessage,
+            "部分食物记录缺少三大营养素数据，暂时无法生成准确的餐次建议。"
+        )
+    }
+
+    func testCompleteTotalsRetainExactEnergyBalanceAndMealSuggestions() {
+        let total = PartialNutritionTotal(
+            lowerBound: NutritionValues(
+                calories: 450,
+                carbohydrates: 40,
+                protein: 25,
+                fat: 12
+            ),
+            caloriesComplete: true,
+            carbohydratesComplete: true,
+            proteinComplete: true,
+            fatComplete: true
+        )
+
+        let presentation = TodayNutritionPresentation(total: total)
+
+        XCTAssertEqual(presentation.calorieIntake, .exact(450))
+        XCTAssertTrue(presentation.canPresentExactEnergyBalance)
+        XCTAssertNil(presentation.energyBalanceUnavailableMessage)
+        XCTAssertTrue(presentation.canGenerateMealSuggestions)
+        XCTAssertNil(presentation.mealSuggestionsUnavailableMessage)
+    }
 }

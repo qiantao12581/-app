@@ -239,6 +239,31 @@ final class FoodQuantityPersistenceTests: XCTestCase {
         XCTAssertTrue(try context.fetch(CustomFood.fetchRequest()).isEmpty)
     }
 
+    func testCorruptCustomFoodCannotBeOverwrittenButCanBeDeleted() throws {
+        let context = PersistenceController(inMemory: true).container.viewContext
+        let store = CustomFoodStore()
+        let id = UUID()
+        let customFood = try store.save(
+            makeDraft(id: id, name: "原始名称"),
+            context: context
+        )
+        let corruptAliases = Data("{not-json".utf8)
+        customFood.aliasesJSON = corruptAliases
+        try context.save()
+
+        XCTAssertThrowsError(
+            try store.save(
+                makeDraft(id: id, name: "不应覆盖"),
+                context: context
+            )
+        )
+        XCTAssertEqual(customFood.name, "原始名称")
+        XCTAssertEqual(customFood.aliasesJSON, corruptAliases)
+
+        try store.delete(id: id, context: context)
+        XCTAssertTrue(try context.fetch(CustomFood.fetchRequest()).isEmpty)
+    }
+
     private func assertRejects(
         _ draft: CustomFoodDraft,
         using store: CustomFoodStore,
