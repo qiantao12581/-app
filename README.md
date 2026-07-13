@@ -30,7 +30,7 @@
 
 ## 自动化验证
 
-- 云端工作流 [Build TrollStore IPA](.github/workflows/build-trollstore-ipa.yml) 当前执行 124 个 Swift 快速核心测试和 154 个 iOS XCTest，并编译 App 与测试目标。
+- 云端工作流 [Build TrollStore IPA](.github/workflows/build-trollstore-ipa.yml) 当前执行 126 个 Swift 快速核心测试和 156 个 iOS XCTest，并编译 App 与测试目标。
 - 同一工作流使用 iPhoneOS Release 配置且关闭代码签名，生成 `Payload/NutritionTracker.app` 结构的 TrollStore IPA，校验压缩包后上传 IPA 和 `build-info` 两个构件。
 - 自动化覆盖目录审计、换算与份量切换、餐次建议份量、实时营养影响文案、整餐原子保存/回滚、Core Data 持久化、缺失数据下限和布局配置；真实 iPhone、VoiceOver、键盘与 TrollStore 覆盖升级仍须按 [iPhone 最终验收清单](docs/testing/final-acceptance-checklist.md) 手工检查。
 
