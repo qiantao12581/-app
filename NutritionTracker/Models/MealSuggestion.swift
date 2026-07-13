@@ -1,11 +1,11 @@
 import Foundation
 
 struct MealSuggestionItem: Equatable, Identifiable, Sendable {
-    let food: FoodReference
-    let grams: Double
-    let nutrition: NutritionValues
-
-    var id: String { "\(food.id)-\(grams)" }
+    let id: String
+    let foodID: String
+    let quantity: Double
+    let portionID: String
+    let nutrition: PartialNutritionValues
 }
 
 struct MealSuggestion: Equatable, Identifiable, Sendable {

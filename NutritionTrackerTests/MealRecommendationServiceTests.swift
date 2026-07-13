@@ -129,6 +129,7 @@ final class MealRecommendationServiceTests: XCTestCase {
         let releaseFoods = try loadReleaseFoods()
         let egg = try releaseFood(id: "cfc-978", in: releaseFoods)
         let milk = try releaseFood(id: "mengniu-telunsu-organic-38", in: releaseFoods)
+        let completeMilk = completeFixtureCopy(of: milk)
         let serving = try releaseFood(id: "mcd-cn-cheeseburger", in: releaseFoods)
 
         let eggItem = try suggestedItem(
@@ -140,7 +141,7 @@ final class MealRecommendationServiceTests: XCTestCase {
         XCTAssertEqual(eggItem.quantity.rounded(), eggItem.quantity)
 
         let milkItem = try suggestedItem(
-            from: [milk],
+            from: [completeMilk],
             meal: .snack,
             foodID: milk.id
         )
@@ -333,6 +334,32 @@ final class MealRecommendationServiceTests: XCTestCase {
         in foods: [FoodReference]
     ) throws -> FoodReference {
         try XCTUnwrap(foods.first { $0.id == id })
+    }
+
+    private func completeFixtureCopy(of food: FoodReference) -> FoodReference {
+        FoodReference(
+            id: food.id,
+            name: food.name,
+            aliases: food.aliases,
+            category: food.category,
+            suitableMeals: food.suitableMeals,
+            nutrition: PartialNutritionValues(
+                calories: 60,
+                carbohydrates: 5,
+                protein: 4,
+                fat: 3
+            ),
+            brandName: food.brandName,
+            nutritionBasisAmount: food.nutritionBasisAmount,
+            nutritionBasisUnit: food.nutritionBasisUnit,
+            portions: food.portions,
+            source: food.source,
+            display: food.display,
+            dataCompleteness: .complete,
+            minimumSuggestedGrams: food.minimumSuggestedGrams,
+            maximumSuggestedGrams: food.maximumSuggestedGrams,
+            suggestionStepGrams: food.suggestionStepGrams
+        )
     }
 
     private var releaseCatalogURL: URL {

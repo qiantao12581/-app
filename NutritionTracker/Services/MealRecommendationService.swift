@@ -126,31 +126,133 @@ struct MealRecommendationService {
 
     private func portions(for food: FoodReference) -> [Portion] {
         guard
-            food.hasValidNutritionAndPortion,
-            let nutritionPer100Grams = food.nutritionPer100Grams
+            let basisNutrition = food.completeNutrition,
+            basisNutrition.isFiniteAndNonnegative,
+            let defaultPortion = food.defaultPortion,
+            defaultPortion.baseAmount.isFinite,
+            defaultPortion.baseAmount > 0,
+            defaultPortion.baseUnit == food.nutritionBasisUnit
         else {
             return []
         }
-        var result: [Portion] = []
-        var grams = food.minimumSuggestedGrams
-        while grams <= food.maximumSuggestedGrams + 0.0001 {
-            let nutrition = NutritionCalculator.actual(
-                per100Grams: nutritionPer100Grams,
-                weightGrams: grams
+
+        // 自动建议只使用食物明确声明的默认份量，避免把“盒/个/整份”
+        // 猜成不存在的包装规格。数量仍保留 Double 精度，界面层才格式化。
+        return candidateQuantities(for: food, portion: defaultPortion).compactMap {
+            quantity in
+            guard
+                let calculation = try? PortionNutritionCalculator.actual(
+                    nutrition: food.nutrition,
+                    basisAmount: food.nutritionBasisAmount,
+                    basisUnit: food.nutritionBasisUnit,
+                    quantity: quantity,
+                    portion: defaultPortion
+                ),
+                let nutrition = completeNutrition(calculation.nutrition),
+                nutrition.isFiniteAndNonnegative
+            else {
+                return nil
+            }
+
+            return Portion(
+                item: MealSuggestionItem(
+                    id: food.id,
+                    foodID: food.id,
+                    quantity: quantity,
+                    portionID: defaultPortion.id,
+                    nutrition: calculation.nutrition
+                ),
+                nutrition: nutrition
             )
-            result.append(
-                Portion(
-                    item: MealSuggestionItem(
-                        food: food,
-                        grams: grams,
-                        nutrition: nutrition
-                    ),
-                    nutrition: nutrition
-                )
-            )
-            grams += food.suggestionStepGrams
         }
-        return result
+    }
+
+    private func candidateQuantities(
+        for food: FoodReference,
+        portion: FoodPortion
+    ) -> [Double] {
+        let minimum = food.minimumSuggestedGrams
+        let maximum = food.maximumSuggestedGrams
+        let step = food.suggestionStepGrams
+        guard
+            minimum.isFinite,
+            maximum.isFinite,
+            step.isFinite,
+            minimum > 0,
+            maximum >= minimum,
+            step > 0
+        else {
+            return validQuantities([1], for: portion)
+        }
+
+        let intervalCount = ((maximum - minimum) / step).rounded(.down)
+        let baseAmounts: [Double]
+        if intervalCount.isFinite, intervalCount >= 0, intervalCount < 12 {
+            baseAmounts = (0...Int(intervalCount)).map {
+                minimum + Double($0) * step
+            }
+        } else {
+            // 通用食物允许 1...500 克时，仅枚举常见摄入量，避免组合爆炸。
+            baseAmounts = canonicalBaseAmounts(for: food.category)
+                .filter { $0 >= minimum && $0 <= maximum }
+        }
+
+        let quantities = baseAmounts.map { $0 / portion.baseAmount }
+        let valid = validQuantities(quantities, for: portion)
+        return valid.isEmpty ? validQuantities([1], for: portion) : valid
+    }
+
+    private func canonicalBaseAmounts(for category: FoodCategory) -> [Double] {
+        switch category {
+        case .staple:
+            return [50, 100, 150, 200, 250, 300]
+        case .protein:
+            return [50, 100, 150, 200, 250]
+        case .vegetable:
+            return [100, 150, 200, 250, 300]
+        case .fruit:
+            return [80, 100, 150, 200]
+        case .dairy:
+            return [100, 200, 250, 300]
+        case .snack:
+            return [10, 20, 30, 40, 50, 100]
+        }
+    }
+
+    private func validQuantities(
+        _ quantities: [Double],
+        for portion: FoodPortion
+    ) -> [Double] {
+        quantities.reduce(into: []) { result, quantity in
+            guard
+                quantity.isFinite,
+                quantity > 0,
+                portion.allowsDecimalQuantity || quantity.rounded() == quantity,
+                !result.contains(quantity)
+            else {
+                return
+            }
+            result.append(quantity)
+        }
+    }
+
+    private func completeNutrition(
+        _ partial: PartialNutritionValues
+    ) -> NutritionValues? {
+        guard
+            let calories = partial.calories,
+            let carbohydrates = partial.carbohydrates,
+            let protein = partial.protein,
+            let fat = partial.fat
+        else {
+            return nil
+        }
+        return NutritionValues(
+            calories: calories,
+            carbohydrates: carbohydrates,
+            protein: protein,
+            fat: fat
+        )
     }
 
     private func score(

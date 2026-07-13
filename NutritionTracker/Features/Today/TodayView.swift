@@ -285,7 +285,10 @@ struct TodayView: View {
                     .foregroundStyle(.green)
                 } else {
                     ForEach(mealSuggestions) { suggestion in
-                        MealSuggestionCard(suggestion: suggestion)
+                        MealSuggestionCard(
+                            suggestion: suggestion,
+                            catalog: recommendationFoods
+                        )
                     }
                 }
             }
@@ -530,6 +533,7 @@ private struct WeightGoalCard: View {
 
 private struct MealSuggestionCard: View {
     let suggestion: MealSuggestion
+    let catalog: [FoodReference]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 9) {
@@ -539,9 +543,12 @@ private struct MealSuggestionCard: View {
 
             ForEach(suggestion.items) { item in
                 HStack {
-                    Text(item.food.name)
+                    Text(food(for: item)?.name ?? item.foodID)
                     Spacer()
-                    Text("\(NutritionFormatters.oneDecimal(item.grams)) 克")
+                    Text(
+                        "\(NutritionFormatters.oneDecimal(item.quantity)) "
+                            + (portion(for: item)?.name ?? "份")
+                    )
                         .foregroundStyle(.secondary)
                 }
                 .font(.subheadline)
@@ -560,6 +567,14 @@ private struct MealSuggestionCard: View {
 
     private var mealImage: String {
         suggestion.mealType == .snack ? "takeoutbag.and.cup.and.straw" : "fork.knife"
+    }
+
+    private func food(for item: MealSuggestionItem) -> FoodReference? {
+        catalog.first { $0.id == item.foodID }
+    }
+
+    private func portion(for item: MealSuggestionItem) -> FoodPortion? {
+        food(for: item)?.portions.first { $0.id == item.portionID }
     }
 }
 

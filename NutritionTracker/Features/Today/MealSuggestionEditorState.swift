@@ -64,18 +64,17 @@ struct MealSuggestionEditorState: Equatable, Sendable {
         self.catalog = catalog
         draft = MealSuggestionDraft(
             mealType: suggestion.mealType,
-            items: suggestion.items.map { suggestedItem in
-                let food = catalog.first { $0.id == suggestedItem.food.id }
-                    ?? suggestedItem.food
-                let portion = food.defaultPortion ?? food.portions.first
+            items: suggestion.items.compactMap { suggestedItem in
+                guard let food = catalog.first(where: {
+                    $0.id == suggestedItem.foodID
+                }) else {
+                    return nil
+                }
                 return MealSuggestionDraftItem(
                     id: suggestedItem.id,
                     food: food,
-                    quantityText: Self.quantityText(
-                        forBaseAmount: suggestedItem.grams,
-                        portion: portion
-                    ),
-                    selectedPortionID: portion?.id ?? "",
+                    quantityText: Self.roundTripText(suggestedItem.quantity),
+                    selectedPortionID: suggestedItem.portionID,
                     calculation: nil,
                     validationMessage: nil
                 )
@@ -259,14 +258,6 @@ struct MealSuggestionEditorState: Equatable, Sendable {
     private static func difference(_ remaining: Double?, _ meal: Double?) -> Double? {
         guard let remaining, let meal else { return nil }
         return remaining - meal
-    }
-
-    private static func quantityText(
-        forBaseAmount baseAmount: Double,
-        portion: FoodPortion?
-    ) -> String {
-        guard let portion else { return roundTripText(baseAmount) }
-        return roundTripText(baseAmount / portion.baseAmount)
     }
 
     private static func roundTripText(_ value: Double) -> String {
