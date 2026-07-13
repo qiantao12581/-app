@@ -118,6 +118,7 @@
 		A3000000000000000000006D /* MealSuggestionEditorStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */; };
 		A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000071 /* MealSuggestionDraft.swift */; };
 		A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000072 /* MealSuggestionEditorState.swift */; };
+		A30000000000000000000070 /* MealSuggestionBatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorStateTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000071 /* MealSuggestionDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionDraft.swift; sourceTree = "<group>"; };
 		A40000000000000000000072 /* MealSuggestionEditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorState.swift; sourceTree = "<group>"; };
+		A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBatchStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +349,7 @@
 				A4000000000000000000006B /* TabBarAppearanceTests.swift */,
 				A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */,
 				A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */,
+				A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 				A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */,
 				A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */,
 				A3000000000000000000006D /* MealSuggestionEditorStateTests.swift in Sources */,
+				A30000000000000000000070 /* MealSuggestionBatchStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
