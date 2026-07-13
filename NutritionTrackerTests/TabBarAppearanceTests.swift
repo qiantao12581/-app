@@ -11,3 +11,12 @@ final class TabBarAppearanceTests: XCTestCase {
         XCTAssertTrue(TabBarAppearanceStyle.release.isOpaque)
     }
 }
+
+final class SafeBottomActionBarTests: XCTestCase {
+    func testReleaseLayoutExpandsButtonLabelToFullWidth() {
+        XCTAssertEqual(
+            SafeBottomActionBarLayout.release.buttonLabelMaxWidth,
+            .infinity
+        )
+    }
+}
