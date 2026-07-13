@@ -35,6 +35,7 @@ let package = Package(
                 "Models/DailyEnergyBalance.swift",
                 "Models/MealSuggestion.swift",
                 "Models/MealSuggestionDraft.swift",
+                "Models/MealNutritionImpactPresentation.swift",
                 "Models/RecognizedFoodCandidate.swift",
                 "Features/Add/AddFoodFormState.swift",
                 "Features/Today/MealSuggestionEditorState.swift",

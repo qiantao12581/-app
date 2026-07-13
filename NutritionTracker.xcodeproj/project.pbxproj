@@ -121,6 +121,11 @@
 		A30000000000000000000070 /* MealSuggestionBatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */; };
 		A30000000000000000000071 /* MealSuggestionBatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000074 /* MealSuggestionBatchStore.swift */; };
 		A30000000000000000000072 /* MealNutritionImpactPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000075 /* MealNutritionImpactPresentationTests.swift */; };
+		A30000000000000000000073 /* MealNutritionImpactPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000076 /* MealNutritionImpactPresentation.swift */; };
+		A30000000000000000000074 /* MealSuggestionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000077 /* MealSuggestionEditorView.swift */; };
+		A30000000000000000000075 /* MealDraftItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000078 /* MealDraftItemRow.swift */; };
+		A30000000000000000000076 /* FoodReplacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000079 /* FoodReplacementView.swift */; };
+		A30000000000000000000077 /* MealNutritionImpactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007A /* MealNutritionImpactCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +256,11 @@
 		A40000000000000000000073 /* MealSuggestionBatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBatchStoreTests.swift; sourceTree = "<group>"; };
 		A40000000000000000000074 /* MealSuggestionBatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBatchStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000075 /* MealNutritionImpactPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealNutritionImpactPresentationTests.swift; sourceTree = "<group>"; };
+		A40000000000000000000076 /* MealNutritionImpactPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealNutritionImpactPresentation.swift; sourceTree = "<group>"; };
+		A40000000000000000000077 /* MealSuggestionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorView.swift; sourceTree = "<group>"; };
+		A40000000000000000000078 /* MealDraftItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDraftItemRow.swift; sourceTree = "<group>"; };
+		A40000000000000000000079 /* FoodReplacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReplacementView.swift; sourceTree = "<group>"; };
+		A4000000000000000000007A /* MealNutritionImpactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealNutritionImpactCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +381,7 @@
 		A70000000000000000000008 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A40000000000000000000076 /* MealNutritionImpactPresentation.swift */,
 				A4000000000000000000000C /* NutritionValues.swift */,
 				A40000000000000000000059 /* PartialNutritionValues.swift */,
 				A4000000000000000000005A /* FoodMeasurementUnit.swift */,
@@ -510,6 +521,10 @@
 			children = (
 				A4000000000000000000002F /* TodayView.swift */,
 				A40000000000000000000072 /* MealSuggestionEditorState.swift */,
+				A40000000000000000000077 /* MealSuggestionEditorView.swift */,
+				A40000000000000000000078 /* MealDraftItemRow.swift */,
+				A40000000000000000000079 /* FoodReplacementView.swift */,
+				A4000000000000000000007A /* MealNutritionImpactCard.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -708,6 +723,11 @@
 				A3000000000000000000006E /* MealSuggestionDraft.swift in Sources */,
 				A3000000000000000000006F /* MealSuggestionEditorState.swift in Sources */,
 				A30000000000000000000071 /* MealSuggestionBatchStore.swift in Sources */,
+				A30000000000000000000073 /* MealNutritionImpactPresentation.swift in Sources */,
+				A30000000000000000000074 /* MealSuggestionEditorView.swift in Sources */,
+				A30000000000000000000075 /* MealDraftItemRow.swift in Sources */,
+				A30000000000000000000076 /* FoodReplacementView.swift in Sources */,
+				A30000000000000000000077 /* MealNutritionImpactCard.swift in Sources */,
 				A3000000000000000000004E /* MealRecommendationService.swift in Sources */,
 				A30000000000000000000050 /* RecognizedFoodCandidate.swift in Sources */,
 				A30000000000000000000051 /* FoodRecognitionService.swift in Sources */,
