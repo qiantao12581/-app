@@ -82,7 +82,8 @@ let package = Package(
                 "FoodReferenceDecodingTests.swift",
                 "FoodCatalogAuditTests.swift",
                 "RecordFoodThumbnailResolverTests.swift",
-                "MealSuggestionEditorStateTests.swift"
+                "MealSuggestionEditorStateTests.swift",
+                "MealNutritionImpactPresentationTests.swift"
             ]
         )
     ]
