@@ -113,6 +113,7 @@
 		A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006B /* TabBarAppearanceTests.swift */; };
 		A30000000000000000000069 /* TabBarAppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006C /* TabBarAppearanceConfigurator.swift */; };
 		A3000000000000000000006A /* SafeBottomActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006D /* SafeBottomActionBar.swift */; };
+		A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +236,7 @@
 		A4000000000000000000006B /* TabBarAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000006C /* TabBarAppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceConfigurator.swift; sourceTree = "<group>"; };
 		A4000000000000000000006D /* SafeBottomActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBottomActionBar.swift; sourceTree = "<group>"; };
+		A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFoodThumbnailResolverTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +337,7 @@
 				A40000000000000000000060 /* FoodCatalogAuditTests.swift */,
 				A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */,
 				A4000000000000000000006B /* TabBarAppearanceTests.swift */,
+				A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				A3000000000000000000005D /* FoodCatalogAuditTests.swift in Sources */,
 				A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */,
 				A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */,
+				A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
