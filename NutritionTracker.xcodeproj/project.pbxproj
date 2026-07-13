@@ -115,6 +115,7 @@
 		A3000000000000000000006A /* SafeBottomActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006D /* SafeBottomActionBar.swift */; };
 		A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */; };
 		A3000000000000000000006C /* RecordFoodThumbnailResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006F /* RecordFoodThumbnailResolver.swift */; };
+		A3000000000000000000006D /* MealSuggestionEditorStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +240,7 @@
 		A4000000000000000000006D /* SafeBottomActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBottomActionBar.swift; sourceTree = "<group>"; };
 		A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFoodThumbnailResolverTests.swift; sourceTree = "<group>"; };
 		A4000000000000000000006F /* RecordFoodThumbnailResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFoodThumbnailResolver.swift; sourceTree = "<group>"; };
+		A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionEditorStateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 				A40000000000000000000065 /* FoodQuantityPersistenceTests.swift */,
 				A4000000000000000000006B /* TabBarAppearanceTests.swift */,
 				A4000000000000000000006E /* RecordFoodThumbnailResolverTests.swift */,
+				A40000000000000000000070 /* MealSuggestionEditorStateTests.swift */,
 			);
 			path = NutritionTrackerTests;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				A30000000000000000000062 /* FoodQuantityPersistenceTests.swift in Sources */,
 				A30000000000000000000068 /* TabBarAppearanceTests.swift in Sources */,
 				A3000000000000000000006B /* RecordFoodThumbnailResolverTests.swift in Sources */,
+				A3000000000000000000006D /* MealSuggestionEditorStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
