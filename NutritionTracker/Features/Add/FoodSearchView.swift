@@ -16,43 +16,72 @@ struct FoodSearchView: View {
     @State private var editorDestination: CustomFoodEditorDestination?
     @State private var errorMessage: String?
 
-    private var matchingCustomFoods: [(CustomFood, FoodReference)] {
-        customFoods.compactMap { customFood in
-            guard let reference = try? customFood.decodedFoodReference() else { return nil }
-            let normalized = query.trimmingCharacters(in: .whitespacesAndNewlines)
-                .lowercased()
-            guard !normalized.isEmpty else { return (customFood, reference) }
-            let values = [reference.name, reference.brandName ?? ""]
+    private var matchingCustomFoodRows: [CustomFoodSearchRow] {
+        var rows: [CustomFoodSearchRow] = []
+        let normalized = normalizedQuery
+
+        for customFood in customFoods {
+            let loadState = CustomFoodContentLoadState.load(
+                aliasesJSON: customFood.aliasesJSON,
+                portionsJSON: customFood.portionsJSON
+            )
+            guard let serializedContent = loadState.content else {
+                let searchableValues = [customFood.name, customFood.brandName ?? ""]
+                if matchesQuery(searchableValues, normalized: normalized) {
+                    rows.append(.unreadable(
+                        customFood,
+                        loadState.errorMessage ?? "自定义食物数据无法读取"
+                    ))
+                }
+                continue
+            }
+
+            let reference = customFood.foodReference(
+                serializedContent: serializedContent
+            )
+            let searchableValues = [reference.name, reference.brandName ?? ""]
                 + reference.aliases
                 + reference.display.tags
-            return values.contains { $0.lowercased().contains(normalized) }
-                ? (customFood, reference)
-                : nil
+            if matchesQuery(searchableValues, normalized: normalized) {
+                rows.append(.available(customFood, reference))
+            }
         }
+        return rows
+    }
+
+    private var normalizedQuery: String {
+        query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+    }
+
+    private func matchesQuery(_ values: [String], normalized: String) -> Bool {
+        normalized.isEmpty
+            || values.contains { $0.lowercased().contains(normalized) }
     }
 
     var body: some View {
         NavigationStack {
             List {
-                if !matchingCustomFoods.isEmpty {
+                if !matchingCustomFoodRows.isEmpty {
                     Section("我的食物") {
-                        ForEach(matchingCustomFoods, id: \.0.objectID) { pair in
-                            foodButton(pair.1)
-                                .swipeActions(edge: .trailing) {
-                                    Button(role: .destructive) {
-                                        delete(pair.0)
-                                    } label: {
-                                        Label("删除", systemImage: "trash")
+                        ForEach(matchingCustomFoodRows) { row in
+                            switch row {
+                            case let .available(customFood, reference):
+                                foodButton(reference)
+                                    .swipeActions(edge: .trailing) {
+                                        deleteButton(customFood)
+                                        Button {
+                                            openEditor(customFood)
+                                        } label: {
+                                            Label("编辑", systemImage: "pencil")
+                                        }
+                                        .tint(.blue)
                                     }
-                                    Button {
-                                        editorDestination = CustomFoodEditorDestination(
-                                            customFood: pair.0
-                                        )
-                                    } label: {
-                                        Label("编辑", systemImage: "pencil")
+                            case let .unreadable(customFood, message):
+                                unreadableFoodButton(customFood, message: message)
+                                    .swipeActions(edge: .trailing) {
+                                        deleteButton(customFood)
                                     }
-                                    .tint(.blue)
-                                }
+                            }
                         }
                     }
                 }
@@ -120,6 +149,43 @@ struct FoodSearchView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+    }
+
+    private func unreadableFoodButton(
+        _ customFood: CustomFood,
+        message: String
+    ) -> some View {
+        Button {
+            openEditor(customFood)
+        } label: {
+            VStack(alignment: .leading, spacing: 6) {
+                Label(customFood.name, systemImage: "exclamationmark.triangle.fill")
+                    .font(.headline)
+                    .foregroundStyle(.orange)
+                Text(message)
+                    .font(.subheadline)
+                    .foregroundStyle(.red)
+                Text("无法使用这条自定义食物；可打开后取消或删除。")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(.vertical, 5)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func openEditor(_ customFood: CustomFood) {
+        editorDestination = CustomFoodEditorDestination(customFood: customFood)
+    }
+
+    private func deleteButton(_ customFood: CustomFood) -> some View {
+        Button(role: .destructive) {
+            delete(customFood)
+        } label: {
+            Label("删除", systemImage: "trash")
+        }
     }
 
     private func delete(_ customFood: CustomFood) {
@@ -196,4 +262,16 @@ struct FoodSearchView: View {
 private struct CustomFoodEditorDestination: Identifiable {
     let id = UUID()
     let customFood: CustomFood?
+}
+
+private enum CustomFoodSearchRow: Identifiable {
+    case available(CustomFood, FoodReference)
+    case unreadable(CustomFood, String)
+
+    var id: NSManagedObjectID {
+        switch self {
+        case let .available(customFood, _), let .unreadable(customFood, _):
+            return customFood.objectID
+        }
+    }
 }

@@ -7,6 +7,7 @@ struct CustomFoodEditorView: View {
 
     private let id: UUID
     private let createdAt: Date?
+    private let serializedContentError: String?
 
     @State private var name: String
     @State private var brandName: String
@@ -25,21 +26,35 @@ struct CustomFoodEditorView: View {
     init(customFood: CustomFood? = nil) {
         id = customFood?.id ?? UUID()
         createdAt = customFood?.createdAt
-        let decodedAliases = customFood.flatMap {
-            try? JSONDecoder().decode([String].self, from: $0.aliasesJSON)
-        } ?? []
-        let decodedPortions = customFood.flatMap {
-            try? JSONDecoder().decode([FoodPortion].self, from: $0.portionsJSON)
-        } ?? [
-            FoodPortion(
-                id: "gram",
-                name: "克",
-                baseAmount: 1,
-                baseUnit: .gram,
-                allowsDecimalQuantity: true,
-                isDefault: true
+        let loadState = customFood.map {
+            CustomFoodContentLoadState.load(
+                aliasesJSON: $0.aliasesJSON,
+                portionsJSON: $0.portionsJSON
             )
-        ]
+        }
+        serializedContentError = loadState?.errorMessage
+        let decodedAliases: [String]
+        let decodedPortions: [FoodPortion]
+        if let serializedContent = loadState?.content {
+            decodedAliases = serializedContent.aliases
+            decodedPortions = serializedContent.portions
+        } else if customFood == nil {
+            decodedAliases = []
+            decodedPortions = [
+                FoodPortion(
+                    id: "gram",
+                    name: "克",
+                    baseAmount: 1,
+                    baseUnit: .gram,
+                    allowsDecimalQuantity: true,
+                    isDefault: true
+                )
+            ]
+        } else {
+            // Existing unreadable rows never expose these placeholders to editable UI.
+            decodedAliases = []
+            decodedPortions = []
+        }
 
         _name = State(initialValue: customFood?.name ?? "")
         _brandName = State(initialValue: customFood?.brandName ?? "")
@@ -64,74 +79,92 @@ struct CustomFoodEditorView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("基本信息") {
-                    TextField("名称", text: $name)
-                    TextField("品牌（可选）", text: $brandName)
-                    TextField("别名，用逗号分隔", text: $aliases)
-                }
-
-                Section {
-                    HStack {
-                        TextField("基准数量", text: $basisAmount)
-                            .keyboardType(.decimalPad)
-                        Picker("单位", selection: $basisUnit) {
-                            Text("克").tag(FoodMeasurementUnit.gram)
-                            Text("毫升").tag(FoodMeasurementUnit.milliliter)
-                            Text("份").tag(FoodMeasurementUnit.serving)
-                        }
-                    }
-                    optionalNutrientRow("热量", unit: "千卡", text: $calories)
-                    optionalNutrientRow("碳水化合物", unit: "克", text: $carbohydrates)
-                    optionalNutrientRow("蛋白质", unit: "克", text: $protein)
-                    optionalNutrientRow("脂肪", unit: "克", text: $fat)
-                } header: {
-                    Text("营养基准")
-                } footer: {
-                    Text("营养项可以留空，但至少填写一项；留空会在汇总中标记为部分数据。")
-                }
-
-                Section("份量") {
-                    ForEach($portions) { $portion in
-                        VStack(alignment: .leading, spacing: 8) {
-                            TextField("份量名称", text: $portion.name)
-                            HStack {
-                                TextField("换算数量", text: $portion.baseAmount)
-                                    .keyboardType(.decimalPad)
-                                Text(unitTitle(basisUnit))
-                                    .foregroundStyle(.secondary)
-                            }
-                            Toggle("默认份量", isOn: defaultBinding(for: portion.id))
-                            Toggle("允许小数数量", isOn: $portion.allowsDecimalQuantity)
-                        }
-                        .padding(.vertical, 4)
-                    }
-                    .onDelete { portions.remove(atOffsets: $0) }
-
-                    Button {
-                        portions.append(
-                            EditablePortion(
-                                id: UUID(),
-                                persistedID: UUID().uuidString.lowercased(),
-                                name: "份",
-                                baseAmount: "1.0",
-                                allowsDecimalQuantity: true,
-                                isDefault: portions.isEmpty
-                            )
+                if let serializedContentError {
+                    Section {
+                        Label(
+                            serializedContentError,
+                            systemImage: "exclamationmark.triangle.fill"
                         )
-                    } label: {
-                        Label("添加份量", systemImage: "plus.circle")
+                        .foregroundStyle(.red)
+                        Text("为避免覆盖无法读取的原始数据，编辑和保存已停用。你可以取消，或删除这条自定义食物。")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        Button("删除这条自定义食物", role: .destructive) {
+                            deleteCustomFood()
+                        }
+                    } header: {
+                        Text("无法载入自定义食物")
                     }
-                }
+                } else {
+                    Section("基本信息") {
+                        TextField("名称", text: $name)
+                        TextField("品牌（可选）", text: $brandName)
+                        TextField("别名，用逗号分隔", text: $aliases)
+                    }
 
-                Section("外观") {
-                    Picker("图标", selection: $iconKey) {
-                        ForEach(FoodCategory.allCases, id: \.rawValue) { category in
-                            Text(categoryTitle(category)).tag(category.rawValue)
+                    Section {
+                        HStack {
+                            TextField("基准数量", text: $basisAmount)
+                                .keyboardType(.decimalPad)
+                            Picker("单位", selection: $basisUnit) {
+                                Text("克").tag(FoodMeasurementUnit.gram)
+                                Text("毫升").tag(FoodMeasurementUnit.milliliter)
+                                Text("份").tag(FoodMeasurementUnit.serving)
+                            }
+                        }
+                        optionalNutrientRow("热量", unit: "千卡", text: $calories)
+                        optionalNutrientRow("碳水化合物", unit: "克", text: $carbohydrates)
+                        optionalNutrientRow("蛋白质", unit: "克", text: $protein)
+                        optionalNutrientRow("脂肪", unit: "克", text: $fat)
+                    } header: {
+                        Text("营养基准")
+                    } footer: {
+                        Text("营养项可以留空，但至少填写一项；留空会在汇总中标记为部分数据。")
+                    }
+
+                    Section("份量") {
+                        ForEach($portions) { $portion in
+                            VStack(alignment: .leading, spacing: 8) {
+                                TextField("份量名称", text: $portion.name)
+                                HStack {
+                                    TextField("换算数量", text: $portion.baseAmount)
+                                        .keyboardType(.decimalPad)
+                                    Text(unitTitle(basisUnit))
+                                        .foregroundStyle(.secondary)
+                                }
+                                Toggle("默认份量", isOn: defaultBinding(for: portion.id))
+                                Toggle("允许小数数量", isOn: $portion.allowsDecimalQuantity)
+                            }
+                            .padding(.vertical, 4)
+                        }
+                        .onDelete { portions.remove(atOffsets: $0) }
+
+                        Button {
+                            portions.append(
+                                EditablePortion(
+                                    id: UUID(),
+                                    persistedID: UUID().uuidString.lowercased(),
+                                    name: "份",
+                                    baseAmount: "1.0",
+                                    allowsDecimalQuantity: true,
+                                    isDefault: portions.isEmpty
+                                )
+                            )
+                        } label: {
+                            Label("添加份量", systemImage: "plus.circle")
                         }
                     }
-                    Picker("颜色", selection: $colorKey) {
-                        ForEach(FoodCategory.allCases, id: \.rawValue) { category in
-                            Text(categoryTitle(category)).tag(category.rawValue)
+
+                    Section("外观") {
+                        Picker("图标", selection: $iconKey) {
+                            ForEach(FoodCategory.allCases, id: \.rawValue) { category in
+                                Text(categoryTitle(category)).tag(category.rawValue)
+                            }
+                        }
+                        Picker("颜色", selection: $colorKey) {
+                            ForEach(FoodCategory.allCases, id: \.rawValue) { category in
+                                Text(categoryTitle(category)).tag(category.rawValue)
+                            }
                         }
                     }
                 }
@@ -152,6 +185,7 @@ struct CustomFoodEditorView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("保存") { save() }
+                        .disabled(serializedContentError != nil)
                 }
             }
         }
@@ -188,6 +222,10 @@ struct CustomFoodEditorView: View {
     }
 
     private func save() {
+        guard serializedContentError == nil else {
+            errorMessage = "原始数据无法读取，不能保存，以免覆盖这条自定义食物"
+            return
+        }
         do {
             let draft = CustomFoodDraft(
                 id: id,
@@ -216,6 +254,15 @@ struct CustomFoodEditorView: View {
                 colorKey: colorKey
             )
             _ = try CustomFoodStore().save(draft, context: context)
+            dismiss()
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    private func deleteCustomFood() {
+        do {
+            try CustomFoodStore().delete(id: id, context: context)
             dismiss()
         } catch {
             errorMessage = error.localizedDescription

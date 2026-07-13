@@ -93,12 +93,19 @@ struct CustomFoodStore {
     }
 
     func food(id: UUID, context: NSManagedObjectContext) throws -> CustomFood? {
+        let result = try storedFood(id: id, context: context)
+        if let result { _ = try result.decodedFoodReference() }
+        return result
+    }
+
+    private func storedFood(
+        id: UUID,
+        context: NSManagedObjectContext
+    ) throws -> CustomFood? {
         let request: NSFetchRequest<CustomFood> = CustomFood.fetchRequest()
         request.predicate = NSPredicate(format: "id == %@", id as NSUUID)
         request.fetchLimit = 1
-        let result = try context.fetch(request).first
-        if let result { _ = try result.decodedFoodReference() }
-        return result
+        return try context.fetch(request).first
     }
 
     func foods(context: NSManagedObjectContext) throws -> [CustomFood] {
@@ -112,7 +119,7 @@ struct CustomFoodStore {
     }
 
     func delete(id: UUID, context: NSManagedObjectContext) throws {
-        guard let customFood = try food(id: id, context: context) else { return }
+        guard let customFood = try storedFood(id: id, context: context) else { return }
         context.delete(customFood)
         do {
             try context.save()

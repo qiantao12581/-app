@@ -79,12 +79,18 @@ struct TodayView: View {
         consumedTotal.lowerBound
     }
 
+    private var nutritionPresentation: TodayNutritionPresentation {
+        TodayNutritionPresentation(total: consumedTotal)
+    }
+
     private var currentWeight: Double? {
         weightEntries.first?.weightKilograms
     }
 
     private var energyBalance: DailyEnergyBalance? {
-        guard let profile = profiles.first, let currentWeight else { return nil }
+        guard nutritionPresentation.canPresentExactEnergyBalance,
+              let profile = profiles.first,
+              let currentWeight else { return nil }
         let estimated: Double
         if let sex = profile.biologicalSex {
             estimated = MetabolismCalculator.estimatedBMR(
@@ -117,8 +123,7 @@ struct TodayView: View {
         List {
             Section {
                 CalorieSummaryCard(
-                    calories: consumed.calories,
-                    isComplete: consumedTotal.caloriesComplete
+                    intake: nutritionPresentation.calorieIntake
                 )
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
@@ -197,7 +202,14 @@ struct TodayView: View {
             }
 
             Section("热量收支（估算）") {
-                if let energyBalance {
+                if let message = nutritionPresentation.energyBalanceUnavailableMessage {
+                    SetupPrompt(
+                        title: "热量缺口暂不可用",
+                        message: message,
+                        buttonTitle: nil,
+                        action: {}
+                    )
+                } else if let energyBalance {
                     EnergyBalanceCard(balance: energyBalance)
                 } else if profiles.isEmpty {
                     SetupPrompt(
@@ -245,6 +257,10 @@ struct TodayView: View {
             Section("后续餐次建议") {
                 if goals.isEmpty {
                     Text("设置每日三大营养素目标后，才能生成餐次建议。")
+                        .foregroundStyle(.secondary)
+                } else if let message = nutritionPresentation
+                    .mealSuggestionsUnavailableMessage {
+                    Text(message)
                         .foregroundStyle(.secondary)
                 } else if recommendationFoods.isEmpty {
                     Text("内置食物数据库暂时无法读取，请使用手动添加。")
@@ -347,7 +363,8 @@ struct TodayView: View {
     }
 
     private func refreshMealSuggestions() {
-        guard let goal = goals.first else {
+        guard nutritionPresentation.canGenerateMealSuggestions,
+              let goal = goals.first else {
             mealSuggestions = []
             return
         }
@@ -529,8 +546,7 @@ private struct MealSuggestionCard: View {
 }
 
 private struct CalorieSummaryCard: View {
-    let calories: Double
-    let isComplete: Bool
+    let intake: NutritionAmountPresentation
 
     var body: some View {
         HStack(spacing: 16) {
@@ -545,8 +561,8 @@ private struct CalorieSummaryCard: View {
                     .foregroundStyle(.secondary)
                 HStack(alignment: .firstTextBaseline, spacing: 5) {
                     Text(
-                        (isComplete ? "" : "至少 ")
-                            + NutritionFormatters.oneDecimal(calories)
+                        intake.prefix
+                            + NutritionFormatters.oneDecimal(intake.value)
                     )
                         .font(.system(.largeTitle, design: .rounded).bold())
                     Text("千卡")

@@ -109,6 +109,7 @@
 		A30000000000000000000064 /* CustomFood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000067 /* CustomFood+CoreDataProperties.swift */; };
 		A30000000000000000000065 /* CustomFoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000068 /* CustomFoodStore.swift */; };
 		A30000000000000000000066 /* CustomFoodEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000069 /* CustomFoodEditorView.swift */; };
+		A30000000000000000000067 /* CustomFoodSerializedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000006A /* CustomFoodSerializedContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +226,7 @@
 		A40000000000000000000067 /* CustomFood+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFood+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A40000000000000000000068 /* CustomFoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodStore.swift; sourceTree = "<group>"; };
 		A40000000000000000000069 /* CustomFoodEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodEditorView.swift; sourceTree = "<group>"; };
+		A4000000000000000000006A /* CustomFoodSerializedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodSerializedContent.swift; sourceTree = "<group>"; };
 		A4000000000000000000005E /* FoodSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSourceMetadata.swift; sourceTree = "<group>"; };
 		A4000000000000000000005F /* FoodDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,6 +347,7 @@
 				A40000000000000000000059 /* PartialNutritionValues.swift */,
 				A4000000000000000000005A /* FoodMeasurementUnit.swift */,
 				A4000000000000000000005B /* FoodPortion.swift */,
+				A4000000000000000000006A /* CustomFoodSerializedContent.swift */,
 				A40000000000000000000062 /* FoodQuantitySelection.swift */,
 				A4000000000000000000002A /* DailyNutritionBalance.swift */,
 				A40000000000000000000011 /* FoodCategory.swift */,
@@ -603,6 +606,7 @@
 				A30000000000000000000056 /* PartialNutritionValues.swift in Sources */,
 				A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */,
 				A30000000000000000000058 /* FoodPortion.swift in Sources */,
+				A30000000000000000000067 /* CustomFoodSerializedContent.swift in Sources */,
 				A3000000000000000000005F /* FoodQuantitySelection.swift in Sources */,
 				A3000000000000000000000A /* NutritionCalculator.swift in Sources */,
 				A30000000000000000000059 /* PortionNutritionCalculator.swift in Sources */,

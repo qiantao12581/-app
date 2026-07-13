@@ -48,30 +48,33 @@ extension CustomFood {
     }
 
     func decodedFoodReference() throws -> FoodReference {
-        let aliases: [String]
-        let portions: [FoodPortion]
-        do {
-            aliases = try JSONDecoder().decode([String].self, from: aliasesJSON)
-        } catch {
-            throw CustomFoodError.invalidAliasesJSON
-        }
-        do {
-            portions = try JSONDecoder().decode([FoodPortion].self, from: portionsJSON)
-        } catch {
-            throw CustomFoodError.invalidPortionsJSON
+        let loadState = CustomFoodContentLoadState.load(
+            aliasesJSON: aliasesJSON,
+            portionsJSON: portionsJSON
+        )
+        guard let serializedContent = loadState.content else {
+            throw CustomFoodContentLoadError(
+                message: loadState.errorMessage ?? "自定义食物数据无法读取"
+            )
         }
 
-        return FoodReference(
+        return foodReference(serializedContent: serializedContent)
+    }
+
+    func foodReference(
+        serializedContent: CustomFoodSerializedContent
+    ) -> FoodReference {
+        FoodReference(
             id: "custom-\(id.uuidString.lowercased())",
             name: name,
-            aliases: aliases,
+            aliases: serializedContent.aliases,
             category: FoodCategory(rawValue: iconKey) ?? .snack,
             suitableMeals: MealType.allCases,
             nutrition: partialNutritionValues,
             brandName: brandName,
             nutritionBasisAmount: nutritionBasisAmount,
             nutritionBasisUnit: nutritionBasisUnit,
-            portions: portions,
+            portions: serializedContent.portions,
             source: FoodSourceMetadata(
                 type: .userProvided,
                 name: "我的食物",

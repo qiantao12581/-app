@@ -25,6 +25,7 @@ let package = Package(
                 "Models/FoodDisplayMetadata.swift",
                 "Models/FoodMeasurementUnit.swift",
                 "Models/FoodPortion.swift",
+                "Models/CustomFoodSerializedContent.swift",
                 "Models/FoodQuantitySelection.swift",
                 "Models/MealType.swift",
                 "Models/InputMethod.swift",
