@@ -106,6 +106,65 @@ final class FoodCatalogAuditTests: XCTestCase {
         })
     }
 
+    func testReleaseEggHasDefaultPieceAndGramAlternative() throws {
+        let egg = try XCTUnwrap(
+            loadReleaseFoods().first(where: { $0.id == "cfc-978" })
+        )
+        let piece = try XCTUnwrap(egg.portions.first(where: { $0.id == "egg-piece" }))
+        let gram = try XCTUnwrap(egg.portions.first(where: { $0.id == "gram" }))
+
+        XCTAssertEqual(piece.name, "个")
+        XCTAssertEqual(piece.baseAmount, 50)
+        XCTAssertEqual(piece.baseUnit, .gram)
+        XCTAssertFalse(piece.allowsDecimalQuantity)
+        XCTAssertTrue(piece.isDefault)
+        XCTAssertEqual(gram.name, "克")
+        XCTAssertEqual(gram.baseAmount, 1)
+        XCTAssertEqual(gram.baseUnit, .gram)
+        XCTAssertTrue(gram.allowsDecimalQuantity)
+        XCTAssertFalse(gram.isDefault)
+    }
+
+    func testEveryReleaseMilliliterFoodHasExactOneMilliliterAlternative() throws {
+        let milliliterFoods = try loadReleaseFoods().filter {
+            $0.nutritionBasisUnit == .milliliter
+        }
+
+        XCTAssertFalse(milliliterFoods.isEmpty)
+        for food in milliliterFoods {
+            let portion = try XCTUnwrap(
+                food.portions.first(where: { $0.id == "milliliter" }),
+                "Missing 1mL alternative for \(food.id)"
+            )
+            XCTAssertEqual(portion.name, "毫升", food.id)
+            XCTAssertEqual(portion.baseAmount, 1, food.id)
+            XCTAssertEqual(portion.baseUnit, .milliliter, food.id)
+            XCTAssertTrue(portion.allowsDecimalQuantity, food.id)
+            XCTAssertFalse(portion.isDefault, food.id)
+            XCTAssertNotEqual(food.defaultPortion?.id, portion.id, food.id)
+        }
+    }
+
+    func testReleaseTelunsuCartonSwitchPreservesAmountAndNutrition() throws {
+        let food = try XCTUnwrap(
+            loadReleaseFoods().first(where: { $0.id == "mengniu-telunsu-pure-36" })
+        )
+        var selection = FoodQuantitySelection(food: food)
+        let cartonNutrition = try XCTUnwrap(selection.actualNutrition)
+
+        XCTAssertEqual(selection.selectedPortionID, "carton-250")
+        XCTAssertEqual(selection.convertedBaseAmount, 250)
+        XCTAssertEqual(selection.baseUnit, .milliliter)
+
+        selection.selectPortion(id: "milliliter")
+
+        XCTAssertEqual(selection.selectedPortionID, "milliliter")
+        XCTAssertEqual(selection.quantityValue, 250)
+        XCTAssertEqual(selection.convertedBaseAmount, 250)
+        XCTAssertEqual(selection.baseUnit, .milliliter)
+        XCTAssertEqual(selection.actualNutrition, cartonNutrition)
+    }
+
     private func loadReleaseFoods() throws -> [FoodReference] {
         try FoodDatabaseService(data: Data(contentsOf: releaseCatalogURL)).foods
     }
