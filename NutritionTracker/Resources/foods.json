@@ -2371,12 +2371,20 @@
         "nutritionBasisUnit":  "gram",
         "portions":  [
                          {
+                             "id":  "egg-piece",
+                             "name":  "个",
+                             "baseAmount":  50,
+                             "baseUnit":  "gram",
+                             "allowsDecimalQuantity":  false,
+                             "isDefault":  true
+                         },
+                         {
                              "id":  "gram",
                              "name":  "克",
                              "baseAmount":  1,
                              "baseUnit":  "gram",
                              "allowsDecimalQuantity":  true,
-                             "isDefault":  true
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5717,6 +5725,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5768,6 +5784,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5818,6 +5842,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5869,6 +5901,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5920,6 +5960,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -5971,6 +6019,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6022,6 +6078,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6073,6 +6137,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6124,6 +6196,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6175,6 +6255,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6225,6 +6313,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6276,6 +6372,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6327,6 +6431,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6378,6 +6490,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6429,6 +6549,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6480,6 +6608,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6531,6 +6667,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6583,6 +6727,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6634,6 +6786,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {
@@ -6685,6 +6845,14 @@
                              "baseUnit":  "milliliter",
                              "allowsDecimalQuantity":  true,
                              "isDefault":  true
+                         },
+                         {
+                             "id":  "milliliter",
+                             "name":  "毫升",
+                             "baseAmount":  1,
+                             "baseUnit":  "milliliter",
+                             "allowsDecimalQuantity":  true,
+                             "isDefault":  false
                          }
                      ],
         "source":  {

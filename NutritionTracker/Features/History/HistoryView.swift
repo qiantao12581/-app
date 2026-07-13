@@ -9,6 +9,11 @@ struct HistoryView: View {
         animation: .default
     )
     private var records: FetchedResults<FoodRecord>
+    private let catalogFoods: [FoodReference]
+
+    init(bundle: Bundle = .main) {
+        catalogFoods = (try? FoodDatabaseService.loadBundled(bundle: bundle).foods) ?? []
+    }
 
     private var summaries: [DailyPartialNutritionSummary] {
         HistorySummaryCalculator.partialSummaries(
@@ -29,7 +34,10 @@ struct HistoryView: View {
             } else {
                 ForEach(summaries) { summary in
                     NavigationLink {
-                        HistoryDayView(date: summary.date)
+                        HistoryDayView(
+                            date: summary.date,
+                            catalogFoods: catalogFoods
+                        )
                     } label: {
                         HistorySummaryRow(summary: summary)
                     }
@@ -127,10 +135,17 @@ private struct EmptyHistoryView: View {
 
 private struct HistoryDayView: View {
     @FetchRequest private var records: FetchedResults<FoodRecord>
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \CustomFood.updatedAt, ascending: false)
+        ]
+    ) private var customFoods: FetchedResults<CustomFood>
     private let date: Date
+    private let catalogFoods: [FoodReference]
 
-    init(date: Date) {
+    init(date: Date, catalogFoods: [FoodReference]) {
         self.date = date
+        self.catalogFoods = catalogFoods
         let bounds = date.dayBounds()
         _records = FetchRequest(
             sortDescriptors: [
@@ -150,6 +165,13 @@ private struct HistoryDayView: View {
     }
 
     var body: some View {
+        let thumbnailResolver = RecordFoodThumbnailResolver(
+            builtInFoods: catalogFoods,
+            customFoods: customFoods.map {
+                RecordFoodThumbnailCustomFoodSource(customFood: $0)
+            }
+        )
+
         List {
             Section("当天汇总") {
                 HistoryDayTotalRow(
@@ -187,7 +209,13 @@ private struct HistoryDayView: View {
 
             Section("当天食物") {
                 ForEach(records, id: \.objectID) { record in
-                    HistoryFoodRecordRow(record: record)
+                    HistoryFoodRecordRow(
+                        record: record,
+                        thumbnail: thumbnailResolver.resolve(
+                            catalogFoodID: record.catalogFoodID,
+                            storedFoodName: record.foodName
+                        )
+                    )
                 }
             }
         }
@@ -214,18 +242,23 @@ private struct HistoryDayTotalRow: View {
 
 private struct HistoryFoodRecordRow: View {
     @ObservedObject var record: FoodRecord
+    let thumbnail: RecordFoodThumbnailDescriptor
 
     var body: some View {
         VStack(alignment: .leading, spacing: 7) {
-            HStack(alignment: .firstTextBaseline) {
-                Text(record.foodName)
-                    .font(.headline)
-                Text(record.mealType.title)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                Spacer()
-                Text(nutrientText(record.partialNutritionValues.calories, unit: "千卡"))
-                    .font(.subheadline.weight(.semibold))
+            HStack(alignment: .top, spacing: 10) {
+                FoodThumbnailView(descriptor: thumbnail)
+                Spacer(minLength: 8)
+                VStack(alignment: .trailing, spacing: 4) {
+                    Text(nutrientText(
+                        record.partialNutritionValues.calories,
+                        unit: "千卡"
+                    ))
+                        .font(.subheadline.weight(.semibold))
+                    Text(record.mealType.title)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
             }
 
             Text(

@@ -1,7 +1,24 @@
 import SwiftUI
 
 struct FoodThumbnailView: View {
-    let food: FoodReference
+    private let name: String
+    private let display: FoodDisplayMetadata
+    private let accessibilityText: String
+
+    init(food: FoodReference) {
+        name = food.name
+        display = food.display
+        accessibilityText = Self.accessibilityText(
+            name: food.name,
+            tags: food.display.tags
+        )
+    }
+
+    init(descriptor: RecordFoodThumbnailDescriptor) {
+        name = descriptor.name
+        display = descriptor.display
+        accessibilityText = descriptor.accessibilityLabel
+    }
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -15,14 +32,14 @@ struct FoodThumbnailView: View {
             .frame(width: 48, height: 48)
 
             VStack(alignment: .leading, spacing: 5) {
-                Text(food.name)
+                Text(name)
                     .font(.headline)
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
 
-                if !food.display.tags.isEmpty {
+                if !display.tags.isEmpty {
                     HStack(spacing: 5) {
-                        ForEach(Array(food.display.tags.prefix(2)), id: \.self) { tag in
+                        ForEach(Array(display.tags.prefix(2)), id: \.self) { tag in
                             Text(tag)
                                 .font(.caption2)
                                 .lineLimit(1)
@@ -38,13 +55,13 @@ struct FoodThumbnailView: View {
         .accessibilityLabel(accessibilityText)
     }
 
-    private var accessibilityText: String {
-        guard !food.display.tags.isEmpty else { return food.name }
-        return "\(food.name)，\(food.display.tags.joined(separator: "，"))"
+    private static func accessibilityText(name: String, tags: [String]) -> String {
+        guard !tags.isEmpty else { return name }
+        return "\(name)，\(tags.joined(separator: "，"))"
     }
 
     private var symbolName: String {
-        switch food.display.iconKey {
+        switch display.iconKey {
         case "takeoutbag.and.cup.and.straw":
             return "takeoutbag.and.cup.and.straw"
         case "fish":
@@ -63,14 +80,28 @@ struct FoodThumbnailView: View {
     }
 
     private var tileColor: Color {
-        switch food.display.colorKey {
+        switch display.colorKey {
         case "blue": return .blue
         case "green": return .green
         case "orange": return .orange
         case "pink": return .pink
         case "purple": return .purple
         case "red": return .red
+        case "gray": return .secondary
         default: return .accentColor
+        }
+    }
+}
+
+extension RecordFoodThumbnailCustomFoodSource {
+    init(customFood: CustomFood) {
+        do {
+            self = .available(try customFood.decodedFoodReference())
+        } catch {
+            self = .unreadable(
+                catalogFoodID: "custom-\(customFood.id.uuidString.lowercased())",
+                message: error.localizedDescription
+            )
         }
     }
 }

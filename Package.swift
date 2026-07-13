@@ -23,6 +23,7 @@ let package = Package(
                 "Models/FoodReference.swift",
                 "Models/FoodSourceMetadata.swift",
                 "Models/FoodDisplayMetadata.swift",
+                "Models/RecordFoodThumbnailResolver.swift",
                 "Models/FoodMeasurementUnit.swift",
                 "Models/FoodPortion.swift",
                 "Models/CustomFoodSerializedContent.swift",

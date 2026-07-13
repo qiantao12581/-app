@@ -9,6 +9,11 @@ struct TodayView: View {
     @FetchRequest private var exercises: FetchedResults<ExerciseRecord>
     @FetchRequest(
         sortDescriptors: [
+            NSSortDescriptor(keyPath: \CustomFood.updatedAt, ascending: false)
+        ]
+    ) private var customFoods: FetchedResults<CustomFood>
+    @FetchRequest(
+        sortDescriptors: [
             NSSortDescriptor(keyPath: \UserProfile.updatedAt, ascending: false)
         ]
     ) private var profiles: FetchedResults<UserProfile>
@@ -120,6 +125,13 @@ struct TodayView: View {
     }
 
     var body: some View {
+        let thumbnailResolver = RecordFoodThumbnailResolver(
+            builtInFoods: recommendationFoods,
+            customFoods: customFoods.map {
+                RecordFoodThumbnailCustomFoodSource(customFood: $0)
+            }
+        )
+
         List {
             Section {
                 CalorieSummaryCard(
@@ -283,7 +295,13 @@ struct TodayView: View {
                     EmptyFoodRecordsView()
                 } else {
                     ForEach(records, id: \.objectID) { record in
-                        FoodRecordRow(record: record)
+                        FoodRecordRow(
+                            record: record,
+                            thumbnail: thumbnailResolver.resolve(
+                                catalogFoodID: record.catalogFoodID,
+                                storedFoodName: record.foodName
+                            )
+                        )
                     }
                     .onDelete(perform: deleteRecords)
                 }
@@ -625,21 +643,23 @@ private struct MacroProgressRow: View {
 
 private struct FoodRecordRow: View {
     @ObservedObject var record: FoodRecord
+    let thumbnail: RecordFoodThumbnailDescriptor
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack(alignment: .firstTextBaseline) {
-                Text(record.foodName)
-                    .font(.headline)
-                Text(record.mealType.title)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                Spacer()
-                Text(nutrientText(
-                    value: record.partialNutritionValues.calories,
-                    unit: "千卡"
-                ))
-                    .font(.subheadline.weight(.semibold))
+            HStack(alignment: .top, spacing: 10) {
+                FoodThumbnailView(descriptor: thumbnail)
+                Spacer(minLength: 8)
+                VStack(alignment: .trailing, spacing: 4) {
+                    Text(nutrientText(
+                        value: record.partialNutritionValues.calories,
+                        unit: "千卡"
+                    ))
+                        .font(.subheadline.weight(.semibold))
+                    Text(record.mealType.title)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
             }
 
             HStack {

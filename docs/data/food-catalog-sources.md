@@ -6,6 +6,7 @@
 - Source priority: China CDC Institute of Nutrition and Health / China Food Composition Table first; then exact mainland brand product pages or official product images; then official mainland menu nutrition pages.
 - Energy: official kJ values are retained in each specification; catalog kcal is computed with 1 kcal = 4.184 kJ and is not rounded during conversion.
 - Missingness: an unreported official calories/carbohydrates/protein/fat field is JSON null; the row is missingOfficialFields and is ineligible for complete-only recommendations.
+- Portion conversions: `cfc-978` keeps its China Food Composition Table nutrients unchanged per 100g and adds a 50g-per-piece user-entry estimate. The China CDC Institute of Nutrition and Health [egg guidance](https://www.chinanutri.cn/yyjkzxpt/yyjkkpzx/hdjl/202011/t20201113_222711.html) describes the recommended 40–50g egg amount as approximately one egg; this supports only the standard portion estimate, not a new nutrient measurement. Every milliliter-basis food retains its reviewed default/package portion and adds an exact 1mL unit conversion against the existing 100mL basis; no unstated package size is introduced.
 - Chain variants: each McDonald's size/product is an independent official serving record. No small/medium/large multiplier is used. KFC contributes zero rows because a current exact mainland official nutrition source could not be retrieved; no third-party or overseas values were substituted.
 - Current batch: 150 foods (115 China CDC generic, 20 mainland branded dairy, 15 McDonald's China, 0 KFC China).
 
