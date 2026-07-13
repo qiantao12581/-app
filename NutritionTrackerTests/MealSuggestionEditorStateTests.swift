@@ -80,6 +80,43 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         XCTAssertEqual(replacement.quantityText, "1")
     }
 
+    func testAddingOriginalFoodAfterReplacementCreatesUniqueRowIdentity() throws {
+        let foods = try releaseFoods()
+        let egg = try food(id: "cfc-978", in: foods)
+        let soybean = try food(id: "cfc-326", in: foods)
+        var state = try editor(food: egg, grams: 50, catalog: foods)
+        let originalID = try XCTUnwrap(state.items.first?.id)
+
+        try state.replace(itemID: originalID, withFoodID: soybean.id)
+        try state.add(foodID: egg.id)
+
+        XCTAssertEqual(state.items.map(\.food.id), [soybean.id, egg.id])
+        XCTAssertEqual(Set(state.items.map(\.id)).count, 2)
+        XCTAssertEqual(state.items.first?.id, originalID)
+        XCTAssertNotEqual(state.items.last?.id, originalID)
+        XCTAssertTrue(state.canSave)
+    }
+
+    func testReplacingWithFoodAlreadyInDraftFailsWithoutPartialMutation() throws {
+        let foods = try releaseFoods()
+        let egg = try food(id: "cfc-978", in: foods)
+        let soybean = try food(id: "cfc-326", in: foods)
+        var state = try editor(food: egg, grams: 50, catalog: foods)
+        let eggItemID = try XCTUnwrap(state.items.first?.id)
+        try state.add(foodID: soybean.id)
+        let before = state
+
+        XCTAssertThrowsError(
+            try state.replace(itemID: eggItemID, withFoodID: soybean.id)
+        ) { error in
+            XCTAssertEqual(
+                error as? MealSuggestionEditorError,
+                .duplicateItemID(soybean.id)
+            )
+        }
+        XCTAssertEqual(state, before)
+    }
+
     func testReplacementEnforcesCategoryByDefaultWithoutPartialMutation() throws {
         let foods = try releaseFoods()
         let egg = try food(id: "cfc-978", in: foods)
