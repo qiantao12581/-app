@@ -100,6 +100,27 @@ class CatalogBuilderTests(unittest.TestCase):
         )
         self.assertNotIn("food.missingNonOfficialEvidence id=fixture", with_evidence)
 
+    def test_validator_rejects_official_food_with_merged_evidence(self):
+        row = valid_food()
+        row["source"] = {
+            "type": "governmentLaboratory",
+            "evidenceLevel": "official",
+            "name": "USDA FoodData Central",
+            "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/1",
+            "verifiedAt": "2026-07-14T00:00:00Z",
+            "specification": "每100克",
+        }
+        evidence = {
+            "schemaVersion": 1,
+            "recipes": [],
+            "mergedFoods": [{"foodID": "fixture", "samples": []}],
+        }
+        errors = CatalogBuilder(
+            {"governmentLaboratory": ["fdc.nal.usda.gov"]},
+            evidence=evidence,
+        ).validate_group("basicIngredient", [row])
+        self.assertIn("food.officialEstimate id=fixture", errors)
+
     def test_validator_requires_valid_matching_portions(self):
         row = valid_food()
         row["portions"] = [
@@ -171,17 +192,25 @@ class CatalogBuilderTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "catalog.groupNotArray"):
                 CatalogBuilder({}).load_group(path)
 
-    def test_release_writer_is_unicode_deterministic_with_one_final_newline(self):
+    def test_release_writer_sorts_rows_for_deterministic_unicode_output(self):
         rows = [valid_food("z-last"), valid_food("a-first")]
         with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "foods.json"
-            CatalogBuilder({}).write_release_catalog(rows, path)
-            content = path.read_bytes()
+            first_path = Path(directory) / "foods-first.json"
+            second_path = Path(directory) / "foods-second.json"
+            builder = CatalogBuilder({})
+            builder.write_release_catalog(rows, first_path)
+            builder.write_release_catalog(list(reversed(rows)), second_path)
+            content = first_path.read_bytes()
+            reversed_content = second_path.read_bytes()
 
+        self.assertEqual(content, reversed_content)
         self.assertTrue(content.endswith(b"\n"))
         self.assertFalse(content.endswith(b"\n\n"))
         self.assertIn("测试食物".encode("utf-8"), content)
-        self.assertEqual(json.loads(content), rows)
+        self.assertEqual(
+            [row["id"] for row in json.loads(content)],
+            ["a-first", "z-last"],
+        )
 
     def test_manifest_writer_sorts_rows_and_ends_with_one_newline(self):
         rows = [valid_food("z-last"), valid_food("a-first")]
