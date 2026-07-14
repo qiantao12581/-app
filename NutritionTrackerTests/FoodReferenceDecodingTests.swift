@@ -117,6 +117,23 @@ final class FoodReferenceDecodingTests: XCTestCase {
         XCTAssertEqual(source.evidenceLevel, .nonOfficial)
     }
 
+    func testEncodingPackageLabelSourceIncludesOfficialEvidenceLevel() throws {
+        let source = FoodSourceMetadata(
+            type: .packageLabel,
+            name: "Package label",
+            url: URL(string: "https://www.yili.com/product/1155"),
+            verifiedAt: Date(timeIntervalSince1970: 1),
+            specification: "100 milliliters"
+        )
+
+        let data = try JSONEncoder().encode(source)
+        let json = try XCTUnwrap(
+            JSONSerialization.jsonObject(with: data) as? [String: Any]
+        )
+
+        XCTAssertEqual(json["evidenceLevel"] as? String, "official")
+    }
+
     func testLegacyFoodGetsBackwardCompatibleDefaults() throws {
         let food = try JSONDecoder().decode(FoodReference.self, from: legacyRiceJSON)
 

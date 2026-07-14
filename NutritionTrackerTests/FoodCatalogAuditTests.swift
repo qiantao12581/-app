@@ -546,6 +546,25 @@ final class FoodCatalogAuditorRuleTests: XCTestCase {
         }
     }
 
+    func testRejectsGovernmentLaboratoryHostWithoutAnApprovedAuditPolicy() throws {
+        let errors = try auditor.audit([
+            fixture(
+                source: source(
+                    type: .governmentLaboratory,
+                    url: "https://www.cfs.gov.hk/english/nutrient/foodsearch.html"
+                )
+            )
+        ]).errors
+
+        XCTAssertTrue(
+            errors.contains(
+                "food.unsupportedSourceHost id=fixture "
+                    + "type=governmentLaboratory host=www.cfs.gov.hk"
+            ),
+            errors.joined(separator: "\n")
+        )
+    }
+
     func testReportsInvalidSourceURLAndUnsupportedReleaseSourceType() throws {
         let invalidURLSource = FoodSourceMetadata(
             type: .brandWebsite,
