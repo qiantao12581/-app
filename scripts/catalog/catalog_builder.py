@@ -90,7 +90,9 @@ class CatalogBuilder:
             if count > 1:
                 errors.add(f"food.duplicateID id={food_id} count={count}")
 
-        evidence_ids = self._evidence_ids()
+        recipe_evidence_ids = self._evidence_ids("recipes")
+        merged_evidence_ids = self._evidence_ids("mergedFoods")
+        evidence_ids = recipe_evidence_ids | merged_evidence_ids
         for row in rows:
             food_id = str(row.get("id", ""))
             nutrition = row.get("nutrition")
@@ -119,7 +121,11 @@ class CatalogBuilder:
             evidence_level = source.get("evidenceLevel")
             if evidence_level not in {"official", "nonOfficial"}:
                 errors.add(f"food.missingEvidenceLevel id={food_id}")
-            if source_type == "recipeEstimate" and evidence_level == "official":
+            if evidence_level == "official" and (
+                source_type == "recipeEstimate"
+                or food_id in recipe_evidence_ids
+                or food_id in merged_evidence_ids
+            ):
                 errors.add(f"food.officialEstimate id={food_id}")
             if evidence_level == "nonOfficial" and food_id not in evidence_ids:
                 errors.add(f"food.missingNonOfficialEvidence id={food_id}")
@@ -147,7 +153,7 @@ class CatalogBuilder:
         return sorted(rows, key=lambda row: str(row.get("id", "")))
 
     def write_release_catalog(self, rows, path):
-        _write_json(rows, path)
+        _write_json(sorted(rows, key=lambda row: str(row.get("id", ""))), path)
 
     def write_manifest(self, rows, path):
         lines = [
@@ -221,10 +227,9 @@ class CatalogBuilder:
                 f"type={source_type} host={host}"
             )
 
-    def _evidence_ids(self):
+    def _evidence_ids(self, key):
         return {
             item.get("foodID")
-            for key in ("recipes", "mergedFoods")
             for item in self.evidence.get(key, [])
             if isinstance(item, dict) and item.get("foodID")
         }
