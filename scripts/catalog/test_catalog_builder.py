@@ -92,7 +92,7 @@ class CatalogBuilderTests(unittest.TestCase):
             if row.get("source", {}).get("type") == "governmentLaboratory"
         ]
 
-        self.assertEqual(len(usda_rows), 80)
+        self.assertEqual(len(usda_rows), 82)
         for row in usda_rows:
             specification = row["source"]["specification"]
             self.assertIn("原始描述：", specification, row["id"])
