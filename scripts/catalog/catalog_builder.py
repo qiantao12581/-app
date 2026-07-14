@@ -351,6 +351,10 @@ class CatalogBuilder:
             row["id"]: row
             for row in json.loads(legacy_path.read_text(encoding="utf-8"))
         }
+        existing_recipes = {
+            item["foodID"]: item
+            for item in self.evidence.get("recipes", [])
+        }
         try:
             head_rows = json.loads(
                 subprocess.check_output(
@@ -386,7 +390,10 @@ class CatalogBuilder:
                 recipe = _prepared_recipe(target, index)
                 nutrition = _calculate_recipe_nutrition(recipe, basic)
                 recipes.append(recipe)
-                aliases = []
+                aliases = {
+                    "generic-vegetarian-dumpling": ["素饺子"],
+                    "generic-pan-fried-dumpling": ["煎饺子", "锅贴饺子"],
+                }.get(target["id"], [])
             prepared.append(
                 _prepared_row(target, nutrition, aliases=aliases)
             )
@@ -395,6 +402,8 @@ class CatalogBuilder:
         for target in mapping["brandedPackaged"]:
             original = legacy.get(target["id"])
             row, evidence = _branded_row(target, original)
+            if target.get("origin") == "reuse" and target["id"] in existing_recipes:
+                evidence = existing_recipes[target["id"]]
             branded.append(row)
             recipes.append(evidence)
 

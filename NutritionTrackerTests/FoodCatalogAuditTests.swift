@@ -130,7 +130,7 @@ final class FoodCatalogAuditTests: XCTestCase {
         let piece = try XCTUnwrap(egg.portions.first(where: { $0.id == "large-egg" }))
         let gram = try XCTUnwrap(egg.portions.first(where: { $0.id == "gram" }))
 
-        XCTAssertEqual(piece.name, "个")
+        XCTAssertEqual(piece.name, "个（大号）")
         XCTAssertEqual(piece.baseAmount, 50)
         XCTAssertEqual(piece.baseUnit, .gram)
         XCTAssertFalse(piece.allowsDecimalQuantity)

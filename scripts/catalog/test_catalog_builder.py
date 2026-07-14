@@ -129,6 +129,14 @@ class CatalogBuilderTests(unittest.TestCase):
         )
         self.assertIn("水饺", food["aliases"])
         self.assertIn("猪肉白菜水饺", food["aliases"])
+        self.assertIn(
+            "素饺子",
+            builder.food("generic-vegetarian-dumpling")["aliases"],
+        )
+        self.assertIn(
+            "煎饺子",
+            builder.food("generic-pan-fried-dumpling")["aliases"],
+        )
 
     def test_recipe_and_estimate_evidence_graph_is_valid(self):
         builder = CatalogBuilder.from_repository()

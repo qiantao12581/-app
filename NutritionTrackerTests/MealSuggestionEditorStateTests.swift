@@ -5,14 +5,15 @@ import XCTest
 final class MealSuggestionEditorStateTests: XCTestCase {
     func testChangingReleaseEggFromOneToTwoPiecesUpdatesMealAndSignedDayBalance() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let itemID = try XCTUnwrap(state.items.first?.id)
         let eggCalories = try XCTUnwrap(egg.nutrition.calories)
 
+        try state.selectPortion(itemID: itemID, portionID: "large-egg")
         try state.updateQuantity(itemID: itemID, text: "2")
 
-        XCTAssertEqual(state.items[0].selectedPortionID, "egg-piece")
+        XCTAssertEqual(state.items[0].selectedPortionID, "large-egg")
         XCTAssertEqual(state.items[0].calculation?.baseAmount, 100)
         XCTAssertEqual(
             try XCTUnwrap(state.mealNutrition.calories),
@@ -21,17 +22,17 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         )
         XCTAssertEqual(
             try XCTUnwrap(state.mealNutrition.carbohydrates),
-            2.8,
+            0.7,
             accuracy: 0.000_001
         )
         XCTAssertEqual(
             try XCTUnwrap(state.mealNutrition.protein),
-            13.3,
+            12.6,
             accuracy: 0.000_001
         )
         XCTAssertEqual(
             try XCTUnwrap(state.mealNutrition.fat),
-            8.8,
+            9.5,
             accuracy: 0.000_001
         )
         XCTAssertEqual(
@@ -41,7 +42,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         )
         XCTAssertEqual(
             try XCTUnwrap(state.remainingAfterMeal.protein),
-            6.7,
+            7.4,
             accuracy: 0.000_001
         )
         XCTAssertLessThan(try XCTUnwrap(state.remainingAfterMeal.calories), 0)
@@ -49,23 +50,23 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testSelectingCompatiblePortionPreservesActualIntake() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let itemID = try XCTUnwrap(state.items.first?.id)
         let before = try XCTUnwrap(state.items.first?.calculation)
 
-        try state.selectPortion(itemID: itemID, portionID: "gram")
+        try state.selectPortion(itemID: itemID, portionID: "large-egg")
 
         let item = try XCTUnwrap(state.items.first)
-        XCTAssertEqual(item.selectedPortionID, "gram")
-        XCTAssertEqual(Double(item.quantityText), 50)
+        XCTAssertEqual(item.selectedPortionID, "large-egg")
+        XCTAssertEqual(Double(item.quantityText), 1)
         XCTAssertEqual(item.calculation?.baseAmount, before.baseAmount)
         XCTAssertEqual(item.calculation?.nutrition, before.nutrition)
     }
 
     func testReplacingProteinKeepsIdentityAndUsesReplacementDefaultPortion() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let soybean = try food(id: "cfc-326", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let originalID = try XCTUnwrap(state.items.first?.id)
@@ -82,7 +83,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testAddingOriginalFoodAfterReplacementCreatesUniqueRowIdentity() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let soybean = try food(id: "cfc-326", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let originalID = try XCTUnwrap(state.items.first?.id)
@@ -99,7 +100,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testReplacingWithFoodAlreadyInDraftFailsWithoutPartialMutation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let soybean = try food(id: "cfc-326", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let eggItemID = try XCTUnwrap(state.items.first?.id)
@@ -119,7 +120,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testReplacementEnforcesCategoryByDefaultWithoutPartialMutation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let vegetable = try XCTUnwrap(foods.first { $0.category == .vegetable })
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let before = state
@@ -138,7 +139,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testReplacementCanIntentionallyChangeCategory() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let vegetable = try XCTUnwrap(foods.first { $0.category == .vegetable })
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let itemID = try XCTUnwrap(state.items.first?.id)
@@ -156,7 +157,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testAddingAndRemovingItemRecalculatesThroughSharedTotals() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let vegetable = try XCTUnwrap(foods.first { $0.category == .vegetable })
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let caloriesBefore = try XCTUnwrap(state.mealNutrition.calories)
@@ -176,7 +177,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testInvalidQuantitiesSetChineseValidationAndClearCalculation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let invalidTexts = ["", "0", "-1", "nan", "inf", "1.5"]
 
         for text in invalidTexts {
@@ -195,8 +196,8 @@ final class MealSuggestionEditorStateTests: XCTestCase {
     }
 
     func testIncompleteOfficialFoodPreservesMissingFieldsWithoutContributingZero() throws {
-        let foods = try releaseFoods()
-        let incompleteMilk = try food(id: "mengniu-telunsu-pure-36", in: foods)
+        let incompleteMilk = incompleteOfficialMilk
+        let foods = [incompleteMilk]
         var state = emptyEditor(catalog: foods)
 
         try state.add(foodID: incompleteMilk.id)
@@ -236,7 +237,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testUnknownFoodReplacementFailsWithoutPartialMutation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let before = state
         let itemID = try XCTUnwrap(state.items.first?.id)
@@ -251,7 +252,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testUnknownPortionFailsWithoutPartialMutation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         var state = try editor(food: egg, grams: 50, catalog: foods)
         let before = state
         let itemID = try XCTUnwrap(state.items.first?.id)
@@ -269,7 +270,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testDuplicateAddedItemIDFailsWithoutPartialMutation() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         var state = emptyEditor(catalog: foods)
         try state.add(foodID: egg.id)
         let before = state
@@ -299,7 +300,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
         XCTAssertTrue(state.items.isEmpty)
         XCTAssertFalse(state.canSave)
 
-        try state.add(foodID: "cfc-978")
+        try state.add(foodID: "egg-chicken-whole")
 
         XCTAssertTrue(state.canSave)
         XCTAssertFalse(state.hasIncompleteNutrition)
@@ -309,7 +310,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     func testMissingDailyFieldStaysNilWhileKnownFieldsRemainSigned() throws {
         let foods = try releaseFoods()
-        let egg = try food(id: "cfc-978", in: foods)
+        let egg = try food(id: "egg-chicken-whole", in: foods)
         let suggestion = try suggestion(food: egg, grams: 50)
         let state = MealSuggestionEditorState(
             suggestion: suggestion,
@@ -383,6 +384,48 @@ final class MealSuggestionEditorStateTests: XCTestCase {
 
     private func releaseFoods() throws -> [FoodReference] {
         try FoodDatabaseService(data: Data(contentsOf: releaseCatalogURL)).foods
+    }
+
+    private var incompleteOfficialMilk: FoodReference {
+        FoodReference(
+            id: "incomplete-official-milk",
+            name: "官方营养字段不完整牛奶",
+            aliases: [],
+            category: .dairy,
+            suitableMeals: [.breakfast, .snack],
+            nutrition: PartialNutritionValues(
+                calories: nil,
+                carbohydrates: nil,
+                protein: 3.6,
+                fat: nil
+            ),
+            nutritionBasisAmount: 100,
+            nutritionBasisUnit: .milliliter,
+            portions: [FoodPortion(
+                id: "carton-250",
+                name: "盒",
+                baseAmount: 250,
+                baseUnit: .milliliter,
+                allowsDecimalQuantity: false,
+                isDefault: true
+            )],
+            source: FoodSourceMetadata(
+                type: .officialMenu,
+                name: "官方营养说明",
+                url: nil,
+                verifiedAt: Date(timeIntervalSince1970: 0),
+                specification: "每100毫升"
+            ),
+            display: FoodDisplayMetadata(
+                iconKey: "drop.fill",
+                colorKey: "blue",
+                tags: []
+            ),
+            dataCompleteness: .missingOfficialFields,
+            minimumSuggestedGrams: 250,
+            maximumSuggestedGrams: 250,
+            suggestionStepGrams: 250
+        )
     }
 
     private func food(id: String, in foods: [FoodReference]) throws -> FoodReference {

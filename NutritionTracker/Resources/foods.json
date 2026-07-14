@@ -11454,7 +11454,10 @@
   {
     "id": "generic-pan-fried-dumpling",
     "name": "煎饺／锅贴",
-    "aliases": [],
+    "aliases": [
+      "煎饺子",
+      "锅贴饺子"
+    ],
     "category": "staple",
     "suitableMeals": [
       "breakfast",
@@ -11570,7 +11573,9 @@
   {
     "id": "generic-vegetarian-dumpling",
     "name": "素馅水饺",
-    "aliases": [],
+    "aliases": [
+      "素饺子"
+    ],
     "category": "staple",
     "suitableMeals": [
       "breakfast",

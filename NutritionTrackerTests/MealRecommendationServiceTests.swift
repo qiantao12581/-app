@@ -133,9 +133,9 @@ final class MealRecommendationServiceTests: XCTestCase {
         )
     }
 
-    func testReleasePieceMilliliterAndServingDefaultsAreReportedWithoutInventedSizes() throws {
+    func testReleaseDefaultPortionsAreReportedWithoutInventedSizes() throws {
         let releaseFoods = try loadReleaseFoods()
-        let egg = try releaseFood(id: "cfc-978", in: releaseFoods)
+        let egg = try releaseFood(id: "egg-chicken-whole", in: releaseFoods)
         let milk = try releaseFood(id: "mengniu-telunsu-organic-38", in: releaseFoods)
         let completeMilk = completeFixtureCopy(of: milk)
         let serving = try releaseFood(id: "mcd-cn-cheeseburger", in: releaseFoods)
@@ -145,8 +145,8 @@ final class MealRecommendationServiceTests: XCTestCase {
             meal: .lunch,
             foodID: egg.id
         )
-        XCTAssertEqual(eggItem.portionID, "egg-piece")
-        XCTAssertEqual(eggItem.quantity.rounded(), eggItem.quantity)
+        XCTAssertEqual(eggItem.portionID, egg.defaultPortion?.id)
+        XCTAssertEqual(egg.defaultPortion?.baseUnit, .gram)
 
         let milkItem = try suggestedItem(
             from: [completeMilk],
