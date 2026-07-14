@@ -24,6 +24,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      - name: Run catalog builder tests
+        shell: bash
+        run: python3 -m unittest scripts.catalog.test_catalog_builder -v
+
       - name: Run Swift core tests
         shell: bash
         run: swift test
