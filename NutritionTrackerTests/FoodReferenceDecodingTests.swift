@@ -81,6 +81,42 @@ final class FoodReferenceDecodingTests: XCTestCase {
         XCTAssertEqual(food.completeNutrition?.protein, 3.6)
     }
 
+    func testExplicitRecipeEstimateDecodesAsNonOfficial() throws {
+        let json = String(data: officialMilkJSON, encoding: .utf8)!
+            .replacingOccurrences(of: "\"packageLabel\"", with: "\"recipeEstimate\"")
+            .replacingOccurrences(
+                of: "\"source\": {",
+                with: "\"source\": { \"evidenceLevel\": \"nonOfficial\","
+            )
+        let food = try XCTUnwrap(
+            FoodDatabaseService(data: Data(json.utf8)).foods.first
+        )
+
+        XCTAssertEqual(food.source.evidenceLevel, .nonOfficial)
+        XCTAssertEqual(food.source.badgeText, "非官方")
+    }
+
+    func testLegacySourceDerivesEvidenceWithoutChangingPayload() throws {
+        let food = try XCTUnwrap(
+            FoodDatabaseService(data: officialMilkJSON).foods.first
+        )
+
+        XCTAssertEqual(food.source.evidenceLevel, .official)
+        XCTAssertEqual(food.source.badgeText, "官方")
+    }
+
+    func testUserProvidedSourceDefaultsToNonOfficial() {
+        let source = FoodSourceMetadata(
+            type: .userProvided,
+            name: "用户数据",
+            url: nil,
+            verifiedAt: Date(timeIntervalSince1970: 1),
+            specification: "每100克"
+        )
+
+        XCTAssertEqual(source.evidenceLevel, .nonOfficial)
+    }
+
     func testLegacyFoodGetsBackwardCompatibleDefaults() throws {
         let food = try JSONDecoder().decode(FoodReference.self, from: legacyRiceJSON)
 
