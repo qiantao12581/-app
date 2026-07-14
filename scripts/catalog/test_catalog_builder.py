@@ -14,6 +14,32 @@ from scripts.catalog.catalog_builder import (
 
 
 class CatalogBuilderTests(unittest.TestCase):
+    def test_basic_and_generic_groups_have_exact_counts_and_required_foods(self):
+        builder = CatalogBuilder.from_repository()
+        basic = builder.load_group("basicIngredient")
+        generic = builder.load_group("genericSnackDrink")
+
+        self.assertEqual(len(basic), 160)
+        self.assertEqual(len(generic), 30)
+        required = {
+            "cooked-white-rice",
+            "wheat-noodles-cooked",
+            "steamed-sweet-potato",
+            "potato-boiled",
+            "egg-chicken-whole",
+            "chicken-breast-cooked",
+            "pork-lean-cooked",
+            "beef-lean-cooked",
+            "milk-whole",
+            "banana",
+            "apple",
+            "bok-choy",
+            "broccoli",
+        }
+        self.assertTrue(required.issubset({row["id"] for row in basic}))
+        self.assertEqual(builder.validate_group("basicIngredient", basic), [])
+        self.assertEqual(builder.validate_group("genericSnackDrink", generic), [])
+
     def test_group_files_define_exact_release_partitions(self):
         self.assertEqual(
             GROUP_FILES,
