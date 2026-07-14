@@ -1,22 +1,33 @@
 import SwiftUI
 
+enum FoodThumbnailStyle: Equatable {
+    case standard
+    case iconOnly
+}
+
 struct FoodThumbnailView: View {
     private let name: String
     private let display: FoodDisplayMetadata
     private let accessibilityText: String
+    private let style: FoodThumbnailStyle
 
-    init(food: FoodReference) {
+    init(food: FoodReference, style: FoodThumbnailStyle = .standard) {
         name = food.name
         display = food.display
+        self.style = style
         accessibilityText = Self.accessibilityText(
             name: food.name,
             tags: food.display.tags
         )
     }
 
-    init(descriptor: RecordFoodThumbnailDescriptor) {
+    init(
+        descriptor: RecordFoodThumbnailDescriptor,
+        style: FoodThumbnailStyle = .standard
+    ) {
         name = descriptor.name
         display = descriptor.display
+        self.style = style
         accessibilityText = descriptor.accessibilityLabel
     }
 
@@ -26,26 +37,28 @@ struct FoodThumbnailView: View {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     .fill(tileColor.opacity(0.18))
                 Image(systemName: symbolName)
-                    .font(.title2.weight(.semibold))
+                    .font(iconFont)
                     .foregroundStyle(tileColor)
             }
-            .frame(width: 48, height: 48)
+            .frame(width: iconSize, height: iconSize)
 
-            VStack(alignment: .leading, spacing: 5) {
-                Text(name)
-                    .font(.headline)
-                    .foregroundStyle(.primary)
-                    .fixedSize(horizontal: false, vertical: true)
+            if style == .standard {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(name)
+                        .font(.headline)
+                        .foregroundStyle(.primary)
+                        .fixedSize(horizontal: false, vertical: true)
 
-                if !display.tags.isEmpty {
-                    HStack(spacing: 5) {
-                        ForEach(Array(display.tags.prefix(2)), id: \.self) { tag in
-                            Text(tag)
-                                .font(.caption2)
-                                .lineLimit(1)
-                                .padding(.horizontal, 7)
-                                .padding(.vertical, 3)
-                                .background(.secondary.opacity(0.12), in: Capsule())
+                    if !display.tags.isEmpty {
+                        HStack(spacing: 5) {
+                            ForEach(Array(display.tags.prefix(2)), id: \.self) { tag in
+                                Text(tag)
+                                    .font(.caption2)
+                                    .lineLimit(1)
+                                    .padding(.horizontal, 7)
+                                    .padding(.vertical, 3)
+                                    .background(.secondary.opacity(0.12), in: Capsule())
+                            }
                         }
                     }
                 }
@@ -58,6 +71,14 @@ struct FoodThumbnailView: View {
     private static func accessibilityText(name: String, tags: [String]) -> String {
         guard !tags.isEmpty else { return name }
         return "\(name)，\(tags.joined(separator: "，"))"
+    }
+
+    private var iconSize: CGFloat {
+        style == .iconOnly ? 40 : 48
+    }
+
+    private var iconFont: Font {
+        style == .iconOnly ? .body.weight(.semibold) : .title2.weight(.semibold)
     }
 
     private var symbolName: String {

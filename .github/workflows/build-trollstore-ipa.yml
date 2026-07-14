@@ -28,6 +28,10 @@ jobs:
         shell: bash
         run: python3 -m unittest scripts.catalog.test_catalog_builder -v
 
+      - name: Enforce exact 500-food release gate
+        shell: bash
+        run: python3 scripts/catalog/catalog_builder.py --check-release
+
       - name: Run Swift core tests
         shell: bash
         run: swift test

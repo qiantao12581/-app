@@ -54,17 +54,7 @@ struct FoodReplacementView: View {
                                 onSelect(food)
                                 dismiss()
                             } label: {
-                                VStack(alignment: .leading, spacing: 8) {
-                                    FoodThumbnailView(food: food)
-                                    if !food.nutrition.isComplete {
-                                        Label(
-                                            "部分营养素暂无官方数据",
-                                            systemImage: "exclamationmark.triangle.fill"
-                                        )
-                                        .font(.caption)
-                                        .foregroundStyle(.orange)
-                                    }
-                                }
+                                CompactFoodNutritionRow(food: food)
                                 .padding(.vertical, 4)
                                 .contentShape(Rectangle())
                             }
@@ -86,20 +76,14 @@ struct FoodReplacementView: View {
     }
 
     private var matchingFoods: [FoodReference] {
-        let normalized = query
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .lowercased()
-        return catalog.filter { food in
+        let eligible = catalog.filter { food in
             guard food.defaultPortion != nil else { return false }
             guard !excludedFoodIDs.contains(food.id) else { return false }
             guard showsAllCategories || food.category == initialCategory else {
                 return false
             }
-            guard !normalized.isEmpty else { return true }
-            let values = [food.name, food.brandName ?? ""]
-                + food.aliases
-                + food.display.tags
-            return values.contains { $0.lowercased().contains(normalized) }
+            return true
         }
+        return FoodDatabaseService.rankedSearch(query, in: eligible)
     }
 }

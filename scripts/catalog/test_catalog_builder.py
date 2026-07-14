@@ -75,11 +75,180 @@ class CatalogBuilderTests(unittest.TestCase):
     def test_repository_catalog_text_has_no_encoding_replacement_markers(self):
         builder = CatalogBuilder.from_repository()
 
-        for group in ("basicIngredient", "genericSnackDrink"):
+        for group in GROUP_FILES:
             for row in builder.load_group(group):
                 for text in nested_strings(row):
                     self.assertNotIn("??", text, f"{group}:{row.get('id')}")
                     self.assertNotIn("\ufffd", text, f"{group}:{row.get('id')}")
+
+        for text in nested_strings(builder.evidence):
+            self.assertNotIn("??", text, "recipe evidence")
+            self.assertNotIn("\ufffd", text, "recipe evidence")
+
+    def test_prepared_group_has_exact_count_and_chinese_staple_coverage(self):
+        builder = CatalogBuilder.from_repository()
+        rows = builder.load_group("preparedFood")
+        self.assertEqual(len(rows), 190)
+        ids = {row["id"] for row in rows}
+        required = {
+            "generic-meat-dumpling",
+            "generic-vegetarian-dumpling",
+            "generic-pan-fried-dumpling",
+            "shrimp-dim-sum",
+            "generic-meat-bun",
+            "generic-vegetarian-bun",
+            "wonton-boiled",
+            "fried-rice-egg",
+            "tomato-scrambled-egg",
+            "mapo-tofu",
+            "kung-pao-chicken",
+            "braised-pork",
+            "beef-noodle-soup",
+        }
+        self.assertTrue(required.issubset(ids))
+        self.assertEqual(builder.validate_group("preparedFood", rows), [])
+        self.assertEqual(builder.validate_nonofficial_evidence(rows), [])
+
+    def test_generic_meat_dumpling_evidence_respects_merge_threshold(self):
+        builder = CatalogBuilder.from_repository()
+        evidence = builder.merged_food("generic-meat-dumpling")
+        self.assertGreaterEqual(len(evidence["samples"]), 2)
+        self.assertTrue(
+            can_merge([sample["nutrition"] for sample in evidence["samples"]])
+        )
+        food = builder.food("generic-meat-dumpling")
+        self.assertEqual(food["source"]["evidenceLevel"], "nonOfficial")
+        self.assertEqual(
+            food["nutrition"],
+            {
+                "calories": 245.7,
+                "carbohydrates": 26.6,
+                "protein": 8.8,
+                "fat": 12.3,
+            },
+        )
+        self.assertIn("水饺", food["aliases"])
+        self.assertIn("猪肉白菜水饺", food["aliases"])
+
+    def test_recipe_and_estimate_evidence_graph_is_valid(self):
+        builder = CatalogBuilder.from_repository()
+        self.assertEqual(builder.validate_recipes(), [])
+        prepared = builder.load_group("preparedFood")
+        branded = builder.load_group("brandedPackaged")
+        chains = builder.load_group("chainRestaurant")
+        nonofficial = [
+            row
+            for row in prepared + branded + chains
+            if row["source"]["evidenceLevel"] == "nonOfficial"
+        ]
+        evidence_ids = {
+            item["foodID"]
+            for key in ("recipes", "mergedFoods")
+            for item in builder.evidence[key]
+        }
+        self.assertEqual({row["id"] for row in nonofficial}, evidence_ids)
+
+    def test_brand_and_chain_groups_have_exact_counts(self):
+        builder = CatalogBuilder.from_repository()
+        branded = builder.load_group("brandedPackaged")
+        chains = builder.load_group("chainRestaurant")
+        self.assertEqual(len(branded), 80)
+        self.assertEqual(len(chains), 40)
+        self.assertEqual(builder.validate_group("brandedPackaged", branded), [])
+        self.assertEqual(builder.validate_group("chainRestaurant", chains), [])
+
+    def test_required_china_market_products_and_chains_are_present(self):
+        builder = CatalogBuilder.from_repository()
+        branded = {row["id"]: row for row in builder.load_group("brandedPackaged")}
+        chains = {row["id"]: row for row in builder.load_group("chainRestaurant")}
+        self.assertTrue(
+            {
+                "mengniu-telunsu-pure-36",
+                "milk-skimmed-branded",
+                "yogurt-plain-branded",
+                "sanquan-celery-pork-dumpling",
+            }.issubset(branded)
+        )
+        self.assertIn("mcd-cn-big-mac", chains)
+        self.assertIn("kfc-cn-original-chicken", chains)
+        self.assertEqual(
+            branded["mengniu-telunsu-pure-36"]["source"]["evidenceLevel"],
+            "nonOfficial",
+        )
+        self.assertEqual(
+            chains["mcd-cn-big-mac"]["source"]["evidenceLevel"], "official"
+        )
+        self.assertEqual(
+            chains["kfc-cn-original-chicken"]["source"]["evidenceLevel"],
+            "nonOfficial",
+        )
+
+    def test_release_catalog_is_exact_complete_and_deterministic(self):
+        builder = CatalogBuilder.from_repository()
+        groups = builder.all_groups()
+        self.assertEqual(
+            [len(groups[name]) for name in GROUP_FILES], [160, 190, 80, 40, 30]
+        )
+        release = builder.load_group("NutritionTracker/Resources/foods.json")
+        self.assertEqual(len(release), 500)
+        self.assertEqual(release, builder.assemble(groups))
+        self.assertEqual(builder.check_release(), [])
+        self.assertTrue(
+            all(
+                row["source"]["evidenceLevel"] in {"official", "nonOfficial"}
+                and all(
+                    isinstance(row["nutrition"][field], (int, float))
+                    and math.isfinite(row["nutrition"][field])
+                    and row["nutrition"][field] >= 0
+                    for field in ("calories", "carbohydrates", "protein", "fat")
+                )
+                for row in release
+            )
+        )
+        normalized_names = [
+            "".join(character for character in row["name"] if character.isalnum())
+            for row in release
+        ]
+        self.assertEqual(len(normalized_names), len(set(normalized_names)))
+
+    def test_release_gate_rejects_duplicate_normalized_names(self):
+        first = valid_food("first")
+        second = valid_food("second")
+        first["name"] = "小米粥"
+        second["name"] = "小 米 粥"
+
+        errors = CatalogBuilder({}).validate_release_rows([first, second])
+
+        self.assertEqual(
+            errors,
+            ["food.duplicateNormalizedName name=小米粥 ids=first,second"],
+        )
+
+    def test_mapping_has_exact_counts_unique_ids_and_clean_utf8(self):
+        root = Path(__file__).resolve().parents[2]
+        mapping = json.loads(
+            (root / ".superpowers/sdd/fast-data-mapping.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(
+            [
+                len(mapping["preparedFood"]),
+                len(mapping["brandedPackaged"]),
+                len(mapping["chainRestaurant"]),
+            ],
+            [190, 80, 40],
+        )
+        ids = [
+            row["id"]
+            for key in ("preparedFood", "brandedPackaged", "chainRestaurant")
+            for row in mapping[key]
+        ]
+        self.assertEqual(len(ids), len(set(ids)))
+        for text in nested_strings(mapping):
+            self.assertNotIn("??", text)
+            self.assertNotIn("\ufffd", text)
+        self.assertEqual(mapping["preparedFood"][60]["name"], "肉馅水饺")
 
     def test_usda_rows_have_chinese_source_metadata(self):
         builder = CatalogBuilder.from_repository()
@@ -320,7 +489,7 @@ class CatalogBuilderTests(unittest.TestCase):
         self.assertLess(content.index("a-first"), content.index("z-last"))
         self.assertTrue(content.endswith("\n"))
         self.assertFalse(content.endswith("\n\n"))
-        self.assertIn("| Food ID | Name | Source Type | Evidence | URL |", content)
+        self.assertIn("| ID | Chinese name | Brand | Specification | Source type | Evidence | URL |", content)
 
 
 def valid_food(food_id="fixture"):

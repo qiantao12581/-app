@@ -76,6 +76,11 @@ final class FoodQuantityPersistenceTests: XCTestCase {
         XCTAssertEqual(record.presentedBaseAmount, 175)
         XCTAssertEqual(record.baseUnit, .gram)
         XCTAssertEqual(record.presentedPortionName, "克")
+        XCTAssertNil(record.catalogFoodID)
+        XCTAssertEqual(record.calories, 200)
+        XCTAssertEqual(record.carbohydrates, 30)
+        XCTAssertEqual(record.protein, 10)
+        XCTAssertEqual(record.fat, 4)
     }
 
     func testLegacySQLiteStoreLightweightMigratesWithFullyKnownDefaults() throws {

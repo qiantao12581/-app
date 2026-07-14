@@ -1,1 +1,2067 @@
-[]
+[
+  {
+    "id": "burger-king-cn-double-whopper",
+    "name": "汉堡王双层皇堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 518.9,
+      "carbohydrates": 46.2,
+      "protein": 25.6,
+      "fat": 24.9
+    },
+    "brandName": "汉堡王中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "汉堡王中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "burger-king-cn-whopper",
+    "name": "汉堡王皇堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 523.5,
+      "carbohydrates": 47.0,
+      "protein": 26.0,
+      "fat": 25.2
+    },
+    "brandName": "汉堡王中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "汉堡王中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "dicos-cn-crispy-chicken-burger",
+    "name": "德克士脆皮炸鸡堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 544.2,
+      "carbohydrates": 50.6,
+      "protein": 27.8,
+      "fat": 26.6
+    },
+    "brandName": "德克士中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "德克士中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "heytea-cn-cheese-grape",
+    "name": "喜茶多肉葡萄",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 390.0,
+      "carbohydrates": 62.0,
+      "protein": 4.0,
+      "fat": 14.0
+    },
+    "brandName": "喜茶中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "喜茶中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-breakfast-porridge",
+    "name": "肯德基香菇鸡肉粥",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 175.8,
+      "carbohydrates": 29.4,
+      "protein": 7.2,
+      "fat": 2.9
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-chicken-wrap",
+    "name": "肯德基老北京鸡肉卷",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 450.8,
+      "carbohydrates": 46.4,
+      "protein": 22.2,
+      "fat": 18.4
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-congee-preserved-egg",
+    "name": "肯德基皮蛋瘦肉粥",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 203.4,
+      "carbohydrates": 34.2,
+      "protein": 9.6,
+      "fat": 4.7
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-corn-cup",
+    "name": "肯德基香甜粟米棒",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 128.9,
+      "carbohydrates": 28.2,
+      "protein": 2.6,
+      "fat": 0.9
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-egg-tart",
+    "name": "肯德基葡式蛋挞",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 251.1,
+      "carbohydrates": 25.8,
+      "protein": 5.4,
+      "fat": 15.1
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-fries-medium",
+    "name": "肯德基中份薯条",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 349.6,
+      "carbohydrates": 44.8,
+      "protein": 5.4,
+      "fat": 17.3
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-hot-wings",
+    "name": "肯德基香辣鸡翅",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 336.1,
+      "carbohydrates": 16.8,
+      "protein": 25.4,
+      "fat": 20.1
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-mashed-potato",
+    "name": "肯德基土豆泥",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 150.0,
+      "carbohydrates": 24.0,
+      "protein": 3.0,
+      "fat": 5.0
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-new-orleans-burger",
+    "name": "肯德基新奥尔良烤鸡腿堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 518.9,
+      "carbohydrates": 46.2,
+      "protein": 25.6,
+      "fat": 24.9
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-new-orleans-wings",
+    "name": "肯德基新奥尔良烤翅",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 336.1,
+      "carbohydrates": 16.8,
+      "protein": 25.4,
+      "fat": 20.1
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-original-chicken",
+    "name": "肯德基吮指原味鸡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 380.8,
+      "carbohydrates": 23.4,
+      "protein": 28.2,
+      "fat": 19.4
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-popcorn-chicken",
+    "name": "肯德基劲爆鸡米花",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 373.9,
+      "carbohydrates": 22.2,
+      "protein": 27.6,
+      "fat": 18.9
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-soy-milk",
+    "name": "肯德基醇豆浆",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 139.6,
+      "carbohydrates": 18.8,
+      "protein": 6.4,
+      "fat": 4.3
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-spicy-chicken-burger",
+    "name": "肯德基香辣鸡腿堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 525.8,
+      "carbohydrates": 47.4,
+      "protein": 26.2,
+      "fat": 25.4
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "kfc-cn-zinger-double",
+    "name": "肯德基劲脆鸡腿堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 544.2,
+      "carbohydrates": 50.6,
+      "protein": 27.8,
+      "fat": 26.6
+    },
+    "brandName": "肯德基中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "肯德基中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "luckin-cn-coconut-latte",
+    "name": "瑞幸生椰拿铁",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 212.3,
+      "carbohydrates": 24.4,
+      "protein": 8.2,
+      "fat": 9.2
+    },
+    "brandName": "瑞幸中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "瑞幸中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-angus-bacon",
+    "name": "培根安格斯厚牛堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 707.2179732313575,
+      "carbohydrates": 43,
+      "protein": 34,
+      "fat": 44
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Thick-Angus-Beef-Burger-with-Bacon",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2959 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-angus-cheese",
+    "name": "芝士安格斯厚牛堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 696.4627151051625,
+      "carbohydrates": 43,
+      "protein": 32,
+      "fat": 44
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Cheese-Angus",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2914 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-bacon-lettuce-tomato-double-beef",
+    "name": "培根蔬萃双层牛堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 442.1606118546845,
+      "carbohydrates": 34,
+      "protein": 24,
+      "fat": 23
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Bacon-Lettuce-Tomato-Double-Beef-Burger",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1850 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-beef-sausage",
+    "name": "不素之霸双层牛堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 492.82982791586994,
+      "carbohydrates": 34,
+      "protein": 28,
+      "fat": 27
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/beef-sausage",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2062 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-big-mac",
+    "name": "巨无霸",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 512.906309751434,
+      "carbohydrates": 42,
+      "protein": 27,
+      "fat": 26
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Big-Mac",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2146 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-cheeseburger",
+    "name": "吉士汉堡包",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 294.21606118546845,
+      "carbohydrates": 30,
+      "protein": 16,
+      "fat": 12
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Cheeseburger",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1231 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-double-cheeseburger",
+    "name": "双层吉士汉堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 429.25430210325044,
+      "carbohydrates": 31,
+      "protein": 27,
+      "fat": 22
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Double-Cheeseburger",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1796 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-double-cod",
+    "name": "双层深海鳕鱼堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.94263862332696,
+      "carbohydrates": 46,
+      "protein": 28,
+      "fat": 21
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/double-fof",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-filet-o-fish",
+    "name": "麦香鱼",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 324.8087954110899,
+      "carbohydrates": 35,
+      "protein": 16,
+      "fat": 13
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Filet-O-Fish",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1359 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-grilled-chicken",
+    "name": "板烧鸡腿堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 391.491395793499,
+      "carbohydrates": 35,
+      "protein": 23,
+      "fat": 17
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Grilled-Chicken-Sandwich",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1638 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-hamburger",
+    "name": "汉堡包",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 248.3269598470363,
+      "carbohydrates": 29,
+      "protein": 13,
+      "fat": 8
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Hamburger",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1039 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-mcchicken",
+    "name": "麦香鸡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 369.50286806883366,
+      "carbohydrates": 39,
+      "protein": 15,
+      "fat": 17
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/McChicken",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量1546 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-mcnuggets-5",
+    "name": "麦乐鸡（5块）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 212.71510516252388,
+      "carbohydrates": 13,
+      "protein": 12,
+      "fat": 12
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "5块",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Chicken-McNuggets",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "5块；官网单份营养数据（原始能量890 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-spicy-chicken-filet",
+    "name": "麦辣鸡腿汉堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.94263862332696,
+      "carbohydrates": 42,
+      "protein": 24,
+      "fat": 24
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1个",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Spicy-Chicken-Filet",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "1个；官网单份营养数据（原始能量2029 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "mcd-cn-spicy-wings",
+    "name": "麦辣鸡翅",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 223.94837476099426,
+      "carbohydrates": 9,
+      "protein": 13,
+      "fat": 15
+    },
+    "brandName": "麦当劳中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "2块",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "officialMenu",
+      "name": "麦当劳中国官网营养计算器",
+      "url": "https://www.mcdonalds.com.cn/product/Spicy-McWings",
+      "verifiedAt": "2026-07-12T00:00:00Z",
+      "specification": "2块；官网单份营养数据（原始能量937 kJ，2025年4月更新，按1 kcal = 4.184 kJ换算）",
+      "evidenceLevel": "official"
+    },
+    "display": {
+      "iconKey": "birthday.cake",
+      "colorKey": "purple",
+      "tags": [
+        "麦当劳中国",
+        "官方单份"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 1,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "pizza-hut-cn-hawaiian",
+    "name": "必胜客夏威夷风光比萨",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 770.8,
+      "carbohydrates": 86.4,
+      "protein": 33.2,
+      "fat": 31.4
+    },
+    "brandName": "必胜客中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "必胜客中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "pizza-hut-cn-spaghetti-bolognese",
+    "name": "必胜客经典肉酱意面",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 510.8,
+      "carbohydrates": 73.4,
+      "protein": 20.2,
+      "fat": 14.4
+    },
+    "brandName": "必胜客中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "必胜客中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "pizza-hut-cn-super-supreme",
+    "name": "必胜客超级至尊比萨",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 768.5,
+      "carbohydrates": 86.0,
+      "protein": 33.0,
+      "fat": 31.2
+    },
+    "brandName": "必胜客中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "必胜客中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "starbucks-cn-latte-grande",
+    "name": "星巴克大杯拿铁",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 193.9,
+      "carbohydrates": 21.2,
+      "protein": 6.6,
+      "fat": 8.0
+    },
+    "brandName": "星巴克中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "星巴克中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "wallace-cn-chicken-burger",
+    "name": "华莱士香辣鸡腿堡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 516.6,
+      "carbohydrates": 45.8,
+      "protein": 25.4,
+      "fat": 24.8
+    },
+    "brandName": "华莱士中国",
+    "nutritionBasisAmount": 1,
+    "nutritionBasisUnit": "serving",
+    "portions": [
+      {
+        "id": "serving",
+        "name": "1份",
+        "baseAmount": 1,
+        "baseUnit": "serving",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "连锁菜单与标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆门店常见单份；官方未同时提供四项营养时按同类标准配方补齐"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "red",
+      "tags": [
+        "华莱士中国",
+        "中国大陆门店",
+        "单份估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 2,
+    "suggestionStepGrams": 1
+  }
+]

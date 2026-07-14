@@ -35,18 +35,96 @@ struct FoodDatabaseService: Sendable {
     }
 
     func search(_ query: String) -> [FoodReference] {
-        let term = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        Self.rankedSearch(query, in: foods)
+    }
+
+    static func rankedSearch(
+        _ query: String,
+        in foods: [FoodReference]
+    ) -> [FoodReference] {
+        let term = Self.normalizedSearchText(query)
         guard !term.isEmpty else { return foods }
 
-        return foods.filter { food in
-            food.name.localizedCaseInsensitiveContains(term)
-                || food.aliases.contains {
-                    $0.localizedCaseInsensitiveContains(term)
-                }
-                || food.brandName?.localizedCaseInsensitiveContains(term) == true
-                || food.display.tags.contains {
-                    $0.localizedCaseInsensitiveContains(term)
-                }
+        return foods.compactMap { food -> FoodSearchResult? in
+            guard let tier = Self.matchTier(for: food, term: term) else {
+                return nil
+            }
+            return FoodSearchResult(food: food, tier: tier)
         }
+        .sorted { lhs, rhs in
+            if lhs.tier != rhs.tier {
+                return lhs.tier < rhs.tier
+            }
+
+            let lhsIsGeneric = lhs.food.brandName == nil
+            let rhsIsGeneric = rhs.food.brandName == nil
+            if lhsIsGeneric != rhsIsGeneric {
+                return lhsIsGeneric
+            }
+
+            let nameOrder = lhs.food.name.localizedStandardCompare(rhs.food.name)
+            if nameOrder != .orderedSame {
+                return nameOrder == .orderedAscending
+            }
+            return lhs.food.id < rhs.food.id
+        }
+        .map(\.food)
     }
+
+    private static func matchTier(
+        for food: FoodReference,
+        term: String
+    ) -> FoodSearchMatchTier? {
+        let name = normalizedSearchText(food.name)
+        let aliases = food.aliases.map(normalizedSearchText)
+
+        if name == term { return .exactName }
+        if aliases.contains(term) { return .exactAlias }
+        if name.hasPrefix(term) { return .namePrefix }
+        if aliases.contains(where: { $0.hasPrefix(term) }) {
+            return .aliasPrefix
+        }
+        if name.contains(term) || aliases.contains(where: { $0.contains(term) }) {
+            return .nameOrAliasContains
+        }
+
+        let brand = food.brandName.map(normalizedSearchText)
+        let tags = food.display.tags.map(normalizedSearchText)
+        if brand?.contains(term) == true
+            || tags.contains(where: { $0.contains(term) }) {
+            return .brandOrTag
+        }
+        return nil
+    }
+
+    private static func normalizedSearchText(_ value: String) -> String {
+        let folded = value.folding(
+            options: [.caseInsensitive, .diacriticInsensitive, .widthInsensitive],
+            locale: Locale(identifier: "zh_Hans_CN")
+        )
+        let ignored = CharacterSet.whitespacesAndNewlines
+            .union(.punctuationCharacters)
+        return folded.unicodeScalars
+            .filter { !ignored.contains($0) }
+            .map(String.init)
+            .joined()
+    }
+}
+
+private enum FoodSearchMatchTier: Int, Comparable {
+    case exactName = 0
+    case exactAlias = 1
+    case namePrefix = 2
+    case aliasPrefix = 3
+    case nameOrAliasContains = 4
+    case brandOrTag = 5
+
+    static func < (lhs: Self, rhs: Self) -> Bool {
+        lhs.rawValue < rhs.rawValue
+    }
+}
+
+private struct FoodSearchResult {
+    let food: FoodReference
+    let tier: FoodSearchMatchTier
 }

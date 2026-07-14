@@ -268,6 +268,90 @@ final class MealRecommendationServiceTests: XCTestCase {
         )
     }
 
+    func testCompleteNonOfficialFoodCanBeRecommended() throws {
+        let food = FoodReference(
+            id: "non-official-snack",
+            name: "非官方完整食物",
+            aliases: [],
+            category: .snack,
+            suitableMeals: [.snack],
+            nutrition: PartialNutritionValues(
+                calories: 180,
+                carbohydrates: 25,
+                protein: 6,
+                fat: 6
+            ),
+            nutritionBasisAmount: 100,
+            nutritionBasisUnit: .gram,
+            portions: [FoodPortion(
+                id: "gram",
+                name: "克",
+                baseAmount: 1,
+                baseUnit: .gram,
+                allowsDecimalQuantity: true,
+                isDefault: true
+            )],
+            source: FoodSourceMetadata(
+                type: .recipeEstimate,
+                evidenceLevel: .nonOfficial,
+                name: "标准配方估算",
+                url: nil,
+                verifiedAt: Date(timeIntervalSince1970: 0),
+                specification: "每100克"
+            ),
+            display: FoodDisplayMetadata(
+                iconKey: "fork.knife",
+                colorKey: "orange",
+                tags: []
+            ),
+            dataCompleteness: .complete,
+            minimumSuggestedGrams: 50,
+            maximumSuggestedGrams: 100,
+            suggestionStepGrams: 50
+        )
+        XCTAssertEqual(food.source.evidenceLevel, .nonOfficial)
+        XCTAssertNotNil(food.completeNutrition)
+        XCTAssertNotNil(food.defaultPortion)
+
+        let suggestions = MealRecommendationService().suggestions(
+            remaining: NutritionValues(
+                calories: 300,
+                carbohydrates: 40,
+                protein: 15,
+                fat: 10
+            ),
+            completedMeals: [.breakfast, .lunch, .dinner],
+            foods: [food]
+        )
+
+        XCTAssertEqual(suggestions.single?.items.single?.foodID, food.id)
+    }
+
+    func testCompleteReleaseNonOfficialFoodCanBeRecommended() throws {
+        let releaseFoods = try loadReleaseFoods()
+        let meatDumpling = try releaseFood(
+            id: "generic-meat-dumpling",
+            in: releaseFoods
+        )
+        XCTAssertEqual(meatDumpling.source.evidenceLevel, .nonOfficial)
+        XCTAssertNotNil(meatDumpling.completeNutrition)
+        XCTAssertNotNil(meatDumpling.defaultPortion)
+
+        let suggestions = MealRecommendationService().suggestions(
+            remaining: NutritionValues(
+                calories: 500,
+                carbohydrates: 70,
+                protein: 25,
+                fat: 20
+            ),
+            completedMeals: [.breakfast, .lunch, .dinner],
+            foods: [meatDumpling]
+        )
+
+        XCTAssertFalse(suggestions.isEmpty)
+        XCTAssertEqual(suggestions.single?.items.single?.foodID, meatDumpling.id)
+    }
+
     private var fixtureFoods: [FoodReference] {
         [
             food(id: "rice", category: .staple, carbs: 26, protein: 3, fat: 0.3),

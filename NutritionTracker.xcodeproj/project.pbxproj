@@ -127,6 +127,10 @@
 		A30000000000000000000076 /* FoodReplacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000079 /* FoodReplacementView.swift */; };
 		A30000000000000000000077 /* MealNutritionImpactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007A /* MealNutritionImpactCard.swift */; };
 		A30000000000000000000078 /* MealSuggestionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007B /* MealSuggestionCard.swift */; };
+		A30000000000000000000079 /* FoodNutritionRowPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007C /* FoodNutritionRowPresentation.swift */; };
+		A3000000000000000000007A /* CompactFoodNutritionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007D /* CompactFoodNutritionRow.swift */; };
+		A3000000000000000000007B /* FoodDataSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007E /* FoodDataSourceView.swift */; };
+		A3000000000000000000007C /* FoodNutritionRowPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007F /* FoodNutritionRowPresentationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +267,10 @@
 		A40000000000000000000079 /* FoodReplacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReplacementView.swift; sourceTree = "<group>"; };
 		A4000000000000000000007A /* MealNutritionImpactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealNutritionImpactCard.swift; sourceTree = "<group>"; };
 		A4000000000000000000007B /* MealSuggestionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionCard.swift; sourceTree = "<group>"; };
+		A4000000000000000000007C /* FoodNutritionRowPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionRowPresentation.swift; sourceTree = "<group>"; };
+		A4000000000000000000007D /* CompactFoodNutritionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactFoodNutritionRow.swift; sourceTree = "<group>"; };
+		A4000000000000000000007E /* FoodDataSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSourceView.swift; sourceTree = "<group>"; };
+		A4000000000000000000007F /* FoodNutritionRowPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionRowPresentationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +351,7 @@
 				A4000000000000000000000A /* InputValidatorTests.swift */,
 				A4000000000000000000000B /* NutritionFormattersTests.swift */,
 				A40000000000000000000010 /* FoodDatabaseServiceTests.swift */,
+				A4000000000000000000007F /* FoodNutritionRowPresentationTests.swift */,
 				A40000000000000000000017 /* DailySummaryCalculatorTests.swift */,
 				A40000000000000000000018 /* DateDayBoundsTests.swift */,
 				A40000000000000000000019 /* PersistenceControllerTests.swift */,
@@ -387,6 +396,7 @@
 				A4000000000000000000000C /* NutritionValues.swift */,
 				A40000000000000000000059 /* PartialNutritionValues.swift */,
 				A4000000000000000000005A /* FoodMeasurementUnit.swift */,
+				A4000000000000000000007C /* FoodNutritionRowPresentation.swift */,
 				A4000000000000000000005B /* FoodPortion.swift */,
 				A4000000000000000000006A /* CustomFoodSerializedContent.swift */,
 				A40000000000000000000062 /* FoodQuantitySelection.swift */,
@@ -504,6 +514,8 @@
 			isa = PBXGroup;
 			children = (
 				A40000000000000000000063 /* FoodThumbnailView.swift */,
+				A4000000000000000000007D /* CompactFoodNutritionRow.swift */,
+				A4000000000000000000007E /* FoodDataSourceView.swift */,
 				A4000000000000000000006D /* SafeBottomActionBar.swift */,
 			);
 			path = Shared;
@@ -657,6 +669,7 @@
 				A30000000000000000000009 /* NutritionValues.swift in Sources */,
 				A30000000000000000000056 /* PartialNutritionValues.swift in Sources */,
 				A30000000000000000000057 /* FoodMeasurementUnit.swift in Sources */,
+				A30000000000000000000079 /* FoodNutritionRowPresentation.swift in Sources */,
 				A30000000000000000000058 /* FoodPortion.swift in Sources */,
 				A30000000000000000000067 /* CustomFoodSerializedContent.swift in Sources */,
 				A3000000000000000000005F /* FoodQuantitySelection.swift in Sources */,
@@ -686,6 +699,8 @@
 				A30000000000000000000023 /* FoodSearchView.swift in Sources */,
 				A30000000000000000000024 /* AddFoodView.swift in Sources */,
 				A30000000000000000000060 /* FoodThumbnailView.swift in Sources */,
+				A3000000000000000000007A /* CompactFoodNutritionRow.swift in Sources */,
+				A3000000000000000000007B /* FoodDataSourceView.swift in Sources */,
 				A3000000000000000000006A /* SafeBottomActionBar.swift in Sources */,
 				A30000000000000000000061 /* FoodQuantityInputView.swift in Sources */,
 				A30000000000000000000063 /* CustomFood+CoreDataClass.swift in Sources */,
@@ -750,6 +765,7 @@
 				A30000000000000000000007 /* InputValidatorTests.swift in Sources */,
 				A30000000000000000000008 /* NutritionFormattersTests.swift in Sources */,
 				A3000000000000000000000D /* FoodDatabaseServiceTests.swift in Sources */,
+				A3000000000000000000007C /* FoodNutritionRowPresentationTests.swift in Sources */,
 				A30000000000000000000014 /* DailySummaryCalculatorTests.swift in Sources */,
 				A30000000000000000000015 /* DateDayBoundsTests.swift in Sources */,
 				A30000000000000000000016 /* PersistenceControllerTests.swift in Sources */,

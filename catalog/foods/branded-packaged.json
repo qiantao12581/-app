@@ -1,1 +1,4802 @@
-[]
+[
+  {
+    "id": "ad-calcium-milk-drink",
+    "name": "娃哈哈AD钙奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 71.7,
+      "carbohydrates": 15.1,
+      "protein": 1.1,
+      "fat": 0.8
+    },
+    "brandName": "娃哈哈",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "娃哈哈",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "ankei-fish-ball",
+    "name": "安井鱼丸",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 227.4,
+      "carbohydrates": 29.8,
+      "protein": 9.4,
+      "fat": 7.7
+    },
+    "brandName": "安井",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "安井",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "baixiang-beef-noodles",
+    "name": "白象红烧牛肉面",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.4,
+      "carbohydrates": 63.8,
+      "protein": 9.9,
+      "fat": 17.9
+    },
+    "brandName": "白象",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "白象",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "bestore-beef-jerky",
+    "name": "良品铺子牛肉干",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 324.7,
+      "carbohydrates": 14.9,
+      "protein": 23.9,
+      "fat": 18.9
+    },
+    "brandName": "良品铺子",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "良品铺子",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "bright-momchilovtsi-plain",
+    "name": "光明莫斯利安原味酸奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 86.3,
+      "carbohydrates": 11.9,
+      "protein": 3.2,
+      "fat": 3.0
+    },
+    "brandName": "光明",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "光明",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "coca-cola-classic-cn",
+    "name": "可口可乐经典款",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.3,
+      "carbohydrates": 10.5,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "可口可乐",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "可口可乐",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "coca-cola-zero-cn",
+    "name": "可口可乐零度",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 0.3,
+      "carbohydrates": 0.1,
+      "protein": 0.1,
+      "fat": 0.1
+    },
+    "brandName": "可口可乐",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "可口可乐",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "daliyuan-soft-bread",
+    "name": "达利园法式软面包",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.7,
+      "carbohydrates": 63.9,
+      "protein": 9.9,
+      "fat": 17.9
+    },
+    "brandName": "达利园",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "达利园",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "eastroc-super-drink",
+    "name": "东鹏特饮",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.6,
+      "carbohydrates": 10.6,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "东鹏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "东鹏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "fanta-orange-cn",
+    "name": "芬达橙味汽水",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.1,
+      "carbohydrates": 10.1,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "芬达",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "芬达",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "genki-forest-sparkling",
+    "name": "元气森林白桃气泡水",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.9,
+      "carbohydrates": 10.7,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "元气森林",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "元气森林",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "haidilao-self-heating-beef",
+    "name": "海底捞麻辣嫩牛自热火锅",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 190.6,
+      "carbohydrates": 25.2,
+      "protein": 7.6,
+      "fat": 6.6
+    },
+    "brandName": "海底捞",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "海底捞",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "haochidian-soda-cracker",
+    "name": "好吃点香脆腰果饼",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.7,
+      "carbohydrates": 61.9,
+      "protein": 7.5,
+      "fat": 22.9
+    },
+    "brandName": "好吃点",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "好吃点",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "jiaduobao-herbal-tea",
+    "name": "加多宝凉茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "加多宝",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "加多宝",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "jinmailang-steamed-noodles",
+    "name": "今麦郎老坛酸菜牛肉面",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.1,
+      "carbohydrates": 63.7,
+      "protein": 9.8,
+      "fat": 17.9
+    },
+    "brandName": "今麦郎",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "今麦郎",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "lay-potato-chips-original",
+    "name": "乐事原味薯片",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 485.6,
+      "carbohydrates": 62.2,
+      "protein": 7.6,
+      "fat": 23.1
+    },
+    "brandName": "乐事",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "乐事",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "luosifen-haohuanluo",
+    "name": "好欢螺螺蛳粉",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.7,
+      "carbohydrates": 63.9,
+      "protein": 9.9,
+      "fat": 17.9
+    },
+    "brandName": "好欢螺",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "好欢螺",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "luosifen-liziqui",
+    "name": "李子柒螺蛳粉",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.7,
+      "carbohydrates": 63.9,
+      "protein": 9.9,
+      "fat": 17.9
+    },
+    "brandName": "李子柒",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "李子柒",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "master-kong-beef-noodles",
+    "name": "康师傅红烧牛肉面",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 455.3,
+      "carbohydrates": 64.1,
+      "protein": 10.1,
+      "fat": 18.1
+    },
+    "brandName": "康师傅",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "康师傅",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "master-kong-ice-tea",
+    "name": "康师傅冰红茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.9,
+      "carbohydrates": 10.7,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "康师傅",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "康师傅",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "mengniu-chunzhen-plain",
+    "name": "蒙牛纯甄原味酸奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 86.0,
+      "carbohydrates": 11.8,
+      "protein": 3.2,
+      "fat": 3.0
+    },
+    "brandName": "蒙牛",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "蒙牛",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "mengniu-future-star-kids",
+    "name": "蒙牛未来星儿童牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.3,
+      "carbohydrates": 5.4,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "蒙牛",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "蒙牛",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-desert-organic",
+    "name": "特仑苏沙漠有机纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.0,
+      "carbohydrates": 5.3,
+      "protein": 4,
+      "fat": 3.6
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-hi-milk-skim",
+    "name": "特仑苏嗨Milk 0脂肪纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 36.3,
+      "carbohydrates": 5.2,
+      "protein": 3.5,
+      "fat": 0
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-low-fat",
+    "name": "特仑苏低脂纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.7,
+      "carbohydrates": 5.2,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-mplus",
+    "name": "特仑苏M-PLUS高蛋白牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.4,
+      "carbohydrates": 5.1,
+      "protein": 5.2,
+      "fat": 3.5
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-organic-36",
+    "name": "特仑苏有机纯牛奶（苗条砖，3.6g蛋白）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.6,
+      "fat": 3.7
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-organic-38",
+    "name": "特仑苏有机纯牛奶（梦幻盖，3.8g蛋白）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.4,
+      "carbohydrates": 5.1,
+      "protein": 3.8,
+      "fat": 3.5
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-pure-36",
+    "name": "特仑苏纯牛奶（3.6g蛋白）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.3,
+      "carbohydrates": 5.4,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "mengniu-telunsu-pure-38",
+    "name": "特仑苏纯牛奶（3.8g蛋白）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.4,
+      "carbohydrates": 5.1,
+      "protein": 3.8,
+      "fat": 3.5
+    },
+    "brandName": "特仑苏",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-250",
+        "name": "盒",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "特仑苏",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 250,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "milk-skimmed-branded",
+    "name": "品牌脱脂纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 36.0,
+      "carbohydrates": 5.1,
+      "protein": 3.5,
+      "fat": 0.2
+    },
+    "brandName": "中国常见品牌",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "中国常见品牌",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "nescafe-ready-latte",
+    "name": "雀巢即饮拿铁咖啡",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "雀巢",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "雀巢",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "nongfu-orchard-orange",
+    "name": "农夫果园橙汁饮料",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.4,
+      "carbohydrates": 10.2,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "中国常见品牌",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "中国常见品牌",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "nongfu-spring-water",
+    "name": "农夫山泉饮用天然水",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 0,
+      "carbohydrates": 0,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "农夫山泉",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "农夫山泉",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "oreo-original",
+    "name": "奥利奥原味夹心饼干",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 485.3,
+      "carbohydrates": 62.1,
+      "protein": 7.5,
+      "fat": 23.1
+    },
+    "brandName": "奥利奥",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "奥利奥",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "orion-choco-pie",
+    "name": "好丽友巧克力派",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.1,
+      "carbohydrates": 61.7,
+      "protein": 7.3,
+      "fat": 22.9
+    },
+    "brandName": "好丽友",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "好丽友",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "panpan-copper-gong-cake",
+    "name": "盼盼铜锣烧",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 485.6,
+      "carbohydrates": 62.2,
+      "protein": 7.6,
+      "fat": 23.1
+    },
+    "brandName": "盼盼",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "盼盼",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "pepsi-classic-cn",
+    "name": "百事可乐经典款",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.6,
+      "carbohydrates": 10.6,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "百事",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "百事",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "qiaqia-sunflower-seeds",
+    "name": "洽洽香瓜子",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 609.4,
+      "carbohydrates": 19.8,
+      "protein": 18.9,
+      "fat": 49.9
+    },
+    "brandName": "洽洽",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "洽洽",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "red-bull-vitamin-cn",
+    "name": "红牛维生素功能饮料",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.6,
+      "carbohydrates": 10.6,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "红牛",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "红牛",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "sanquan-celery-pork-dumpling",
+    "name": "三全芹菜猪肉水饺",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.4,
+      "carbohydrates": 10.2,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "三全",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三全",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "sanquan-leek-pork-dumpling",
+    "name": "三全韭菜猪肉水饺",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.9,
+      "carbohydrates": 10.7,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "三全",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三全",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "sanquan-sesame-tangyuan",
+    "name": "三全凌黑芝麻汤圆",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 317.4,
+      "carbohydrates": 58.8,
+      "protein": 4.9,
+      "fat": 7.1
+    },
+    "brandName": "三全",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三全",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "sanquan-shrimp-dumpling",
+    "name": "三全虾仁三鲜水饺",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.4,
+      "carbohydrates": 10.2,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "三全",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三全",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "shuanghui-ham-sausage",
+    "name": "双汇王中王火腿肠",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 324.7,
+      "carbohydrates": 14.9,
+      "protein": 23.9,
+      "fat": 18.9
+    },
+    "brandName": "双汇",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "双汇",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "sprite-cn",
+    "name": "雪碧",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "雪碧",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "雪碧",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "starbucks-frappuccino-bottle",
+    "name": "星巴克星冰乐咖啡饮料",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "星巴克",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "星巴克",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "suntory-oolong-unsweetened",
+    "name": "三得利无糖乌龙茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 0,
+      "carbohydrates": 0,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "三得利",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三得利",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "synear-pork-cabbage-dumpling",
+    "name": "思念猪肉白菜水饺",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.3,
+      "carbohydrates": 10.5,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "思念",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "思念",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "synear-sesame-tangyuan",
+    "name": "思念黑芝麻汤圆",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 317.1,
+      "carbohydrates": 58.7,
+      "protein": 4.8,
+      "fat": 7.0
+    },
+    "brandName": "思念",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "思念",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "taoli-sliced-bread",
+    "name": "桃李醇熟切片面包",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 455.3,
+      "carbohydrates": 64.1,
+      "protein": 10.1,
+      "fat": 18.1
+    },
+    "brandName": "桃李",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "桃李",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "three-squirrels-mixed-nuts",
+    "name": "三只松鼠每日坚果",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 609.1,
+      "carbohydrates": 19.7,
+      "protein": 18.9,
+      "fat": 49.9
+    },
+    "brandName": "三只松鼠",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "三只松鼠",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "uni-president-beef-noodles",
+    "name": "统一红烧牛肉面",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 454.1,
+      "carbohydrates": 63.7,
+      "protein": 9.8,
+      "fat": 17.9
+    },
+    "brandName": "统一",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "统一",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "uni-president-green-tea",
+    "name": "统一绿茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.4,
+      "carbohydrates": 10.2,
+      "protein": 0,
+      "fat": 0
+    },
+    "brandName": "统一",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "统一",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "vita-lemon-tea",
+    "name": "维他柠檬茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "维他",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "维他",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "wan-chai-ferry-pork-dumpling",
+    "name": "湾仔码头猪肉水饺",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.9,
+      "carbohydrates": 10.7,
+      "protein": 0.2,
+      "fat": 0.1
+    },
+    "brandName": "湾仔码头",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "湾仔码头",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "wanglaoji-herbal-tea",
+    "name": "王老吉凉茶",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 41.7,
+      "carbohydrates": 10.3,
+      "protein": 0.1,
+      "fat": 0
+    },
+    "brandName": "王老吉",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "王老吉",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "wangzai-milk-can",
+    "name": "旺仔牛奶罐装",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.3,
+      "carbohydrates": 5.4,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "旺仔",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "旺仔",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "want-want-rice-cracker",
+    "name": "旺旺雪饼",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.4,
+      "carbohydrates": 61.8,
+      "protein": 7.4,
+      "fat": 22.9
+    },
+    "brandName": "旺旺",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "旺旺",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "xu-fuji-shachima",
+    "name": "徐福记沙琪玛",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 484.1,
+      "carbohydrates": 61.7,
+      "protein": 7.3,
+      "fat": 22.9
+    },
+    "brandName": "徐福记",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "徐福记",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "yakult-cn",
+    "name": "养乐多活菌型乳酸菌乳饮品",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 72.9,
+      "carbohydrates": 15.5,
+      "protein": 1.2,
+      "fat": 1.0
+    },
+    "brandName": "养乐多",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "养乐多",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "yili-ambrosial-plain",
+    "name": "伊利安慕希原味酸奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 85.7,
+      "carbohydrates": 11.7,
+      "protein": 3.2,
+      "fat": 3.0
+    },
+    "brandName": "伊利",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "伊利",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "yili-probiotic-drink",
+    "name": "伊利每益添乳酸菌饮品",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 71.1,
+      "carbohydrates": 14.9,
+      "protein": 1.0,
+      "fat": 0.7
+    },
+    "brandName": "伊利",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 500,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "伊利",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 500,
+    "maximumSuggestedGrams": 1000,
+    "suggestionStepGrams": 500
+  },
+  {
+    "id": "yili-satine-a2-organic",
+    "name": "金典A2β-酪蛋白有机纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.3,
+      "carbohydrates": 5.4,
+      "protein": 3.8,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-fresh-bottle",
+    "name": "金典鲜活纯牛奶（夺目瓶）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.8,
+      "fat": 3.7
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-high-calcium-low-fat",
+    "name": "金典高钙低脂纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.6,
+      "fat": 3.7
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-jersey-organic",
+    "name": "金典娟姗有机纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.9,
+      "carbohydrates": 5.6,
+      "protein": 4,
+      "fat": 3.8
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-jersey-pure",
+    "name": "金典娟姗纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.3,
+      "carbohydrates": 5.4,
+      "protein": 3.8,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-organic-200",
+    "name": "金典200mL有机纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.0,
+      "carbohydrates": 5.3,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-200",
+        "name": "盒",
+        "baseAmount": 200,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 200,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "yili-satine-organic-cap",
+    "name": "金典有机纯牛奶（梦幻盖）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.8,
+      "fat": 3.7
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-organic-skim",
+    "name": "金典有机脱脂纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 36.9,
+      "carbohydrates": 5.4,
+      "protein": 3.8,
+      "fat": 0
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-organic-slim",
+    "name": "金典有机纯牛奶（苗条砖）",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.1,
+      "carbohydrates": 5.0,
+      "protein": 3.6,
+      "fat": 3.5
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-pure-200",
+    "name": "金典200mL纯牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.7,
+      "carbohydrates": 5.2,
+      "protein": 3.6,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "carton-200",
+        "name": "盒",
+        "baseAmount": 200,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 200,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "yili-satine-pure-cap-38",
+    "name": "金典纯奶梦幻盖",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.0,
+      "carbohydrates": 5.3,
+      "protein": 3.8,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-satine-ultrafiltered-high-protein",
+    "name": "金典高蛋白超滤牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 66.7,
+      "carbohydrates": 5.2,
+      "protein": 4.4,
+      "fat": 3.6
+    },
+    "brandName": "金典",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "milliliter-100",
+        "name": "100毫升",
+        "baseAmount": 100,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "金典",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 100,
+    "maximumSuggestedGrams": 100,
+    "suggestionStepGrams": 100
+  },
+  {
+    "id": "yili-shuhua-lactose-free",
+    "name": "伊利舒化无乳糖牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.7,
+      "fat": 3.7
+    },
+    "brandName": "伊利",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "伊利",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "yili-youngfun-kids",
+    "name": "伊利QQ星儿童牛奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 67.6,
+      "carbohydrates": 5.5,
+      "protein": 3.7,
+      "fat": 3.7
+    },
+    "brandName": "伊利",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "milliliter",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 250,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "milliliter",
+        "name": "毫升",
+        "baseAmount": 1,
+        "baseUnit": "milliliter",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100毫升；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "伊利",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 250,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 250
+  },
+  {
+    "id": "yogurt-plain-branded",
+    "name": "品牌原味酸奶",
+    "aliases": [],
+    "category": "dairy",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 86.3,
+      "carbohydrates": 11.9,
+      "protein": 3.2,
+      "fat": 3.0
+    },
+    "brandName": "中国常见品牌",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "blue",
+      "tags": [
+        "中国常见品牌",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "youchen-meat-floss-cake",
+    "name": "友臣肉松饼",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 485.3,
+      "carbohydrates": 62.1,
+      "protein": 7.5,
+      "fat": 23.1
+    },
+    "brandName": "友臣",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "友臣",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  },
+  {
+    "id": "zihaiguo-self-heating-rice",
+    "name": "自嗨锅广式香肠煲仔饭",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 190.3,
+      "carbohydrates": 25.1,
+      "protein": 7.5,
+      "fat": 6.5
+    },
+    "brandName": "自嗨锅",
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "package",
+        "name": "包装",
+        "baseAmount": 200,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": false,
+        "isDefault": true
+      },
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": false
+      }
+    ],
+    "source": {
+      "type": "recipeEstimate",
+      "evidenceLevel": "nonOfficial",
+      "name": "原产品标示与同类标准配方综合估算",
+      "url": null,
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "中国大陆常见规格；每100克；凡有字段补算，整条标记为非官方"
+    },
+    "display": {
+      "iconKey": "cart",
+      "colorKey": "purple",
+      "tags": [
+        "自嗨锅",
+        "中国大陆常见包装",
+        "完整营养估算"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 200,
+    "maximumSuggestedGrams": 400,
+    "suggestionStepGrams": 200
+  }
+]

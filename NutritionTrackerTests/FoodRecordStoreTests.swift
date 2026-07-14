@@ -39,6 +39,50 @@ final class FoodRecordStoreTests: XCTestCase {
         XCTAssertTrue(try context.fetch(FoodRecord.fetchRequest()).isEmpty)
     }
 
+    func testStoredNutritionSnapshotIsUnchangedWhenCatalogValuesChange() throws {
+        let controller = PersistenceController(inMemory: true)
+        let context = controller.container.viewContext
+        _ = try FoodRecordStore().save(
+            foodName: "快照食物",
+            mealType: .lunch,
+            inputMethod: .manual,
+            quantity: 2,
+            portionName: "份",
+            baseAmount: 200,
+            baseUnit: .gram,
+            catalogFoodID: "snapshot-food",
+            nutrition: PartialNutritionValues(
+                calories: 240,
+                carbohydrates: 30,
+                protein: 12,
+                fat: 8
+            ),
+            context: context
+        )
+
+        let changedCatalog = try FoodDatabaseService(
+            data: catalogData(
+                id: "snapshot-food",
+                name: "快照食物",
+                calories: 999,
+                carbohydrates: 88,
+                protein: 77,
+                fat: 66
+            )
+        )
+        XCTAssertEqual(changedCatalog.foods.first?.nutrition.calories, 999)
+
+        context.reset()
+        let record = try XCTUnwrap(
+            context.fetch(FoodRecord.fetchRequest()).first
+        )
+        XCTAssertEqual(record.catalogFoodID, "snapshot-food")
+        XCTAssertEqual(record.calories, 240)
+        XCTAssertEqual(record.carbohydrates, 30)
+        XCTAssertEqual(record.protein, 12)
+        XCTAssertEqual(record.fat, 8)
+    }
+
     @discardableResult
     private func makeRecord(
         name: String,
@@ -57,5 +101,31 @@ final class FoodRecordStoreTests: XCTestCase {
         record.mealTypeRawValue = MealType.snack.rawValue
         record.inputMethodRawValue = InputMethod.manual.rawValue
         return record
+    }
+
+    private func catalogData(
+        id: String,
+        name: String,
+        calories: Double,
+        carbohydrates: Double,
+        protein: Double,
+        fat: Double
+    ) -> Data {
+        """
+        [{
+          "id":"\(id)",
+          "name":"\(name)",
+          "aliases":[],
+          "category":"staple",
+          "suitableMeals":["lunch"],
+          "caloriesPer100Grams":\(calories),
+          "carbohydratesPer100Grams":\(carbohydrates),
+          "proteinPer100Grams":\(protein),
+          "fatPer100Grams":\(fat),
+          "minimumSuggestedGrams":50,
+          "maximumSuggestedGrams":300,
+          "suggestionStepGrams":25
+        }]
+        """.data(using: .utf8)!
     }
 }

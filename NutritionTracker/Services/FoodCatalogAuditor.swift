@@ -6,11 +6,17 @@ struct FoodCatalogAuditReport: Equatable, Sendable {
 }
 
 struct FoodCatalogAuditor: Sendable {
+    let expectedCount: Int
+
+    init(expectedCount: Int = 500) {
+        self.expectedCount = expectedCount
+    }
+
     func audit(_ foods: [FoodReference]) throws -> FoodCatalogAuditReport {
         var errors: [String] = []
 
-        if foods.count != 150 {
-            errors.append("catalog.count expected=150 actual=\(foods.count)")
+        if foods.count != expectedCount {
+            errors.append("catalog.count expected=\(expectedCount) actual=\(foods.count)")
         }
 
         appendDuplicateErrors(foods, to: &errors)
@@ -84,8 +90,13 @@ struct FoodCatalogAuditor: Sendable {
             ("fat", food.nutrition.fat)
         ]
         for (field, value) in nutrients {
-            guard let value, !value.isFinite || value < 0 else { continue }
-            errors.append("food.invalidNutrient id=\(food.id) field=\(field)")
+            guard let value else {
+                errors.append("food.missingNutrient id=\(food.id) field=\(field)")
+                continue
+            }
+            if !value.isFinite || value < 0 {
+                errors.append("food.invalidNutrient id=\(food.id) field=\(field)")
+            }
         }
 
         if !food.nutritionBasisAmount.isFinite || food.nutritionBasisAmount <= 0 {
@@ -159,6 +170,20 @@ struct FoodCatalogAuditor: Sendable {
             errors.append("food.unsupportedSourceType id=\(food.id) type=userProvided")
         }
 
+        switch food.source.type {
+        case .recipeEstimate:
+            if food.source.evidenceLevel != .nonOfficial {
+                errors.append("food.sourceEvidenceMismatch id=\(food.id)")
+            }
+        case .chinaFoodComposition, .governmentLaboratory, .brandWebsite,
+             .packageLabel, .officialMenu:
+            if food.source.evidenceLevel != .official {
+                errors.append("food.sourceEvidenceMismatch id=\(food.id)")
+            }
+        case .userProvided:
+            break
+        }
+
         if food.source.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             errors.append("food.sourceMetadata id=\(food.id) field=name")
         }
@@ -172,7 +197,9 @@ struct FoodCatalogAuditor: Sendable {
         }
 
         guard let url = food.source.url else {
-            errors.append("food.sourceMetadata id=\(food.id) field=url")
+            if food.source.type != .recipeEstimate {
+                errors.append("food.sourceMetadata id=\(food.id) field=url")
+            }
             return
         }
 
@@ -201,7 +228,7 @@ struct FoodCatalogAuditor: Sendable {
         case .chinaFoodComposition:
             return ["nlc.chinanutri.cn"]
         case .governmentLaboratory:
-            return []
+            return ["www.cfs.gov.hk", "fdc.nal.usda.gov"]
         case .officialMenu:
             return ["mcdonalds.com.cn", "www.mcdonalds.com.cn"]
         case .brandWebsite, .packageLabel:
@@ -221,15 +248,8 @@ struct FoodCatalogAuditor: Sendable {
         _ food: FoodReference,
         to errors: inout [String]
     ) {
-        switch (food.nutrition.isComplete, food.dataCompleteness) {
-        case (true, .missingOfficialFields):
+        if food.dataCompleteness != .complete || !food.nutrition.isComplete {
             errors.append("food.completenessMismatch id=\(food.id) expected=complete")
-        case (false, .complete):
-            errors.append(
-                "food.completenessMismatch id=\(food.id) expected=missingOfficialFields"
-            )
-        default:
-            break
         }
     }
 

@@ -3,22 +3,39 @@ import XCTest
 @testable import NutritionTracker
 
 final class FoodCatalogAuditTests: XCTestCase {
-    func testReleaseCatalogHasExactly150ReviewedFoods() throws {
-        let report = try FoodCatalogAuditor().audit(loadReleaseFoods())
+    func testReleaseCatalogHasExactly500CompleteFoods() throws {
+        let foods = try loadReleaseFoods()
+        let report = try FoodCatalogAuditor(expectedCount: 500).audit(foods)
 
-        XCTAssertEqual(report.foodCount, 150)
+        XCTAssertEqual(report.foodCount, 500)
         XCTAssertTrue(report.errors.isEmpty, report.errors.joined(separator: "\n"))
+        XCTAssertTrue(foods.allSatisfy { $0.completeNutrition != nil })
     }
 
-    func testEveryFoodHasTraceableOfficialSourceMetadata() throws {
+    func testEveryFoodHasTraceableSourceMetadata() throws {
         let foods = try loadReleaseFoods()
 
         XCTAssertTrue(foods.allSatisfy {
             !$0.source.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                && $0.source.url != nil
+                && ($0.source.type == .recipeEstimate || $0.source.url != nil)
                 && !$0.source.specification
                     .trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
                 && $0.source.verifiedAt > Date(timeIntervalSince1970: 0)
+        })
+    }
+
+    func testEveryReleaseFoodHasExplicitEvidenceLevel() throws {
+        let foods = try loadReleaseFoods()
+        let data = try Data(contentsOf: releaseCatalogURL)
+        let objects = try XCTUnwrap(
+            JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+        )
+
+        XCTAssertEqual(foods.count, objects.count)
+        XCTAssertTrue(objects.allSatisfy { row in
+            let source = row["source"] as? [String: Any]
+            return source?["evidenceLevel"] as? String == "official"
+                || source?["evidenceLevel"] as? String == "nonOfficial"
         })
     }
 
@@ -36,7 +53,7 @@ final class FoodCatalogAuditTests: XCTestCase {
             FoodCatalogManifestChecker.audit(
                 markdown: markdown,
                 foods: foods,
-                expectedCount: 150
+                expectedCount: 500
             ),
             []
         )
@@ -106,23 +123,23 @@ final class FoodCatalogAuditTests: XCTestCase {
         })
     }
 
-    func testReleaseEggHasDefaultPieceAndGramAlternative() throws {
+    func testReleaseEggHasDefaultGramAndPieceAlternative() throws {
         let egg = try XCTUnwrap(
-            loadReleaseFoods().first(where: { $0.id == "cfc-978" })
+            loadReleaseFoods().first(where: { $0.id == "egg-chicken-whole" })
         )
-        let piece = try XCTUnwrap(egg.portions.first(where: { $0.id == "egg-piece" }))
+        let piece = try XCTUnwrap(egg.portions.first(where: { $0.id == "large-egg" }))
         let gram = try XCTUnwrap(egg.portions.first(where: { $0.id == "gram" }))
 
         XCTAssertEqual(piece.name, "个")
         XCTAssertEqual(piece.baseAmount, 50)
         XCTAssertEqual(piece.baseUnit, .gram)
         XCTAssertFalse(piece.allowsDecimalQuantity)
-        XCTAssertTrue(piece.isDefault)
+        XCTAssertFalse(piece.isDefault)
         XCTAssertEqual(gram.name, "克")
         XCTAssertEqual(gram.baseAmount, 1)
         XCTAssertEqual(gram.baseUnit, .gram)
         XCTAssertTrue(gram.allowsDecimalQuantity)
-        XCTAssertFalse(gram.isDefault)
+        XCTAssertTrue(gram.isDefault)
     }
 
     func testEveryReleaseMilliliterFoodHasExactOneMilliliterAlternative() throws {
@@ -184,8 +201,8 @@ final class FoodCatalogAuditTests: XCTestCase {
 
     private func manifest(rows: [String]) -> String {
         ([
-            "| ID | Chinese name | brand | official specification | source type | official URL | verified date | completeness | catalog category |",
-            "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+            "| ID | Chinese name | Brand | Specification | Source type | Evidence | URL | Verified at | Completeness | Catalog category |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
         ] + rows).joined(separator: "\n")
     }
 }
@@ -238,7 +255,7 @@ private enum FoodCatalogManifestChecker {
 
     static func markdownRow(for food: FoodReference) -> String {
         "| " + expectedFields(for: food).enumerated().map { index, value in
-            index == 5 ? "<\(value)>" : value
+            index == 6 && !value.isEmpty ? "<\(value)>" : value
         }.joined(separator: " | ") + " |"
     }
 
@@ -260,7 +277,7 @@ private enum FoodCatalogManifestChecker {
                 continue
             }
             var fields = columns
-            fields[5] = fields[5].trimmingCharacters(in: CharacterSet(charactersIn: "<>"))
+            fields[6] = fields[6].trimmingCharacters(in: CharacterSet(charactersIn: "<>"))
             rows.append(Row(fields: fields))
         }
         return rows
@@ -273,6 +290,7 @@ private enum FoodCatalogManifestChecker {
             food.brandName ?? "—",
             food.source.specification,
             food.source.type.rawValue,
+            food.source.evidenceLevel.rawValue,
             food.source.url?.absoluteString ?? "",
             utcString(food.source.verifiedAt),
             food.dataCompleteness.rawValue,
@@ -281,7 +299,7 @@ private enum FoodCatalogManifestChecker {
     }
 
     private static let fieldNames = [
-        "id", "name", "brand", "specification", "sourceType",
+        "id", "name", "brand", "specification", "sourceType", "evidence",
         "url", "verifiedAt", "completeness", "category"
     ]
 
@@ -332,12 +350,12 @@ private enum RawFoodCatalogChecker {
 }
 
 final class FoodCatalogAuditorRuleTests: XCTestCase {
-    private let auditor = FoodCatalogAuditor()
+    private let auditor = FoodCatalogAuditor(expectedCount: 1)
 
     func testReportsUnexpectedFoodCount() throws {
         XCTAssertEqual(
-            try auditor.audit([fixture()]).errors.first,
-            "catalog.count expected=150 actual=1"
+            try FoodCatalogAuditor(expectedCount: 2).audit([fixture()]).errors.first,
+            "catalog.count expected=2 actual=1"
         )
     }
 
@@ -499,6 +517,35 @@ final class FoodCatalogAuditorRuleTests: XCTestCase {
         XCTAssertTrue(errors.contains("food.sourceMetadata id=fixture field=specification"))
     }
 
+    func testRecipeEstimateAllowsNilURLAndRequiresNonOfficialEvidence() throws {
+        let source = FoodSourceMetadata(
+            type: .recipeEstimate,
+            evidenceLevel: .nonOfficial,
+            name: "标准配方估算",
+            url: nil,
+            verifiedAt: Date(timeIntervalSince1970: 1),
+            specification: "每100克熟制成品"
+        )
+
+        let errors = try auditor.audit([fixture(source: source)]).errors
+        XCTAssertFalse(errors.contains("food.sourceMetadata id=fixture field=url"))
+        XCTAssertFalse(errors.contains("food.sourceEvidenceMismatch id=fixture"))
+    }
+
+    func testDirectSourceRequiresOfficialEvidence() throws {
+        let source = FoodSourceMetadata(
+            type: .packageLabel,
+            evidenceLevel: .nonOfficial,
+            name: "包装标签",
+            url: URL(string: "https://img.mengniu.com.cn/Uploads/product.png"),
+            verifiedAt: Date(timeIntervalSince1970: 1),
+            specification: "每100毫升"
+        )
+
+        let errors = try auditor.audit([fixture(source: source)]).errors
+        XCTAssertTrue(errors.contains("food.sourceEvidenceMismatch id=fixture"))
+    }
+
     func testRejectsArbitrarySpoofedAndSourceTypeMismatchedHosts() throws {
         let sources: [(String, FoodSourceMetadata, String)] = [
             (
@@ -546,23 +593,32 @@ final class FoodCatalogAuditorRuleTests: XCTestCase {
         }
     }
 
-    func testRejectsGovernmentLaboratoryHostWithoutAnApprovedAuditPolicy() throws {
-        let errors = try auditor.audit([
+    func testAcceptsExactGovernmentLaboratoryHostsAndRejectsSuffixSpoof() throws {
+        for url in [
+            "https://www.cfs.gov.hk/english/nutrient/foodsearch.html",
+            "https://fdc.nal.usda.gov/fdc-app.html"
+        ] {
+            let errors = try auditor.audit([
+                fixture(source: source(type: .governmentLaboratory, url: url))
+            ]).errors
+            XCTAssertFalse(
+                errors.contains(where: { $0.contains("unsupportedSourceHost") }),
+                errors.joined(separator: "\n")
+            )
+        }
+
+        let spoofed = try auditor.audit([
             fixture(
                 source: source(
                     type: .governmentLaboratory,
-                    url: "https://www.cfs.gov.hk/english/nutrient/foodsearch.html"
+                    url: "https://fdc.nal.usda.gov.evil.example/food"
                 )
             )
         ]).errors
-
-        XCTAssertTrue(
-            errors.contains(
-                "food.unsupportedSourceHost id=fixture "
-                    + "type=governmentLaboratory host=www.cfs.gov.hk"
-            ),
-            errors.joined(separator: "\n")
-        )
+        XCTAssertTrue(spoofed.contains(
+            "food.unsupportedSourceHost id=fixture "
+                + "type=governmentLaboratory host=fdc.nal.usda.gov.evil.example"
+        ))
     }
 
     func testReportsInvalidSourceURLAndUnsupportedReleaseSourceType() throws {
@@ -602,7 +658,7 @@ final class FoodCatalogAuditorRuleTests: XCTestCase {
         XCTAssertTrue(
             try auditor.audit([
                 fixture(nutrition: incompleteValues, dataCompleteness: .complete)
-            ]).errors.contains("food.completenessMismatch id=fixture expected=missingOfficialFields")
+            ]).errors.contains("food.completenessMismatch id=fixture expected=complete")
         )
         XCTAssertTrue(
             try auditor.audit([

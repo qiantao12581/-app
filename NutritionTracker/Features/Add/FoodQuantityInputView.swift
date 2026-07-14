@@ -3,9 +3,24 @@ import SwiftUI
 struct FoodQuantityInputView: View {
     @Binding var state: AddFoodFormState
     @FocusState private var isQuantityFocused: Bool
+    @State private var dataSourceFood: FoodReference?
 
     var body: some View {
         Section("食用数量") {
+            if let selectedFood = state.selectedFood {
+                HStack {
+                    Text(selectedFood.name)
+                        .font(.headline)
+                    Spacer()
+                    Button {
+                        dataSourceFood = selectedFood
+                    } label: {
+                        Label("数据说明", systemImage: "info.circle")
+                    }
+                    .buttonStyle(.borderless)
+                }
+            }
+
             VStack(alignment: .leading, spacing: 10) {
                 Text("数量")
                     .font(.subheadline)
@@ -69,6 +84,9 @@ struct FoodQuantityInputView: View {
                 }
             }
         }
+        .sheet(item: $dataSourceFood) { food in
+            FoodDataSourceView(food: food)
+        }
     }
 
     private var portionBinding: Binding<String> {
@@ -92,17 +110,13 @@ struct FoodQuantityInputView: View {
                 Text("\(NutritionFormatters.oneDecimal(value)) \(unit)")
                     .foregroundStyle(.secondary)
             } else {
-                Text("暂无官方数据")
+                Text("暂无数据")
                     .foregroundStyle(.orange)
             }
         }
     }
 
     private func unitName(_ unit: FoodMeasurementUnit) -> String {
-        switch unit {
-        case .gram: return "克"
-        case .milliliter: return "毫升"
-        case .serving: return "份"
-        }
+        unit.chineseName
     }
 }
