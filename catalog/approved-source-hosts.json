@@ -1,0 +1,20 @@
+{
+  "chinaFoodComposition": [
+    "nlc.chinanutri.cn"
+  ],
+  "governmentLaboratory": [
+    "www.cfs.gov.hk",
+    "fdc.nal.usda.gov"
+  ],
+  "brandWebsite": [
+    "www.yili.com",
+    "www.mengniu.com.cn"
+  ],
+  "packageLabel": [
+    "nlc.chinanutri.cn",
+    "img.mengniu.com.cn"
+  ],
+  "officialMenu": [
+    "www.mcdonalds.com.cn"
+  ]
+}
