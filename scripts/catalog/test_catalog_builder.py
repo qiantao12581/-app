@@ -81,6 +81,37 @@ class CatalogBuilderTests(unittest.TestCase):
                     self.assertNotIn("??", text, f"{group}:{row.get('id')}")
                     self.assertNotIn("\ufffd", text, f"{group}:{row.get('id')}")
 
+    def test_usda_rows_have_chinese_source_metadata(self):
+        builder = CatalogBuilder.from_repository()
+        rows = builder.load_group("basicIngredient") + builder.load_group(
+            "genericSnackDrink"
+        )
+        usda_rows = [
+            row
+            for row in rows
+            if row.get("source", {}).get("type") == "governmentLaboratory"
+        ]
+
+        self.assertEqual(len(usda_rows), 80)
+        for row in usda_rows:
+            specification = row["source"]["specification"]
+            self.assertIn("原始描述：", specification, row["id"])
+            self.assertIn("每100克", specification, row["id"])
+            self.assertIn("政府实验室数据", row["display"]["tags"], row["id"])
+
+    def test_basic_group_prefers_specific_egg_and_milk_and_includes_livers(self):
+        builder = CatalogBuilder.from_repository()
+        basic = builder.load_group("basicIngredient")
+        ids = {row["id"] for row in basic}
+
+        self.assertNotIn("cfc-978", ids)
+        self.assertNotIn("cfc-916", ids)
+        self.assertIn("egg-chicken-whole", ids)
+        self.assertIn("milk-whole", ids)
+        self.assertIn("chicken-liver-simmered", ids)
+        self.assertIn("pork-liver-braised", ids)
+        self.assertEqual(builder.validate_group("basicIngredient", basic), [])
+
     def test_group_files_define_exact_release_partitions(self):
         self.assertEqual(
             GROUP_FILES,
