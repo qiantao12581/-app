@@ -201,7 +201,7 @@ struct FoodCatalogAuditor: Sendable {
         case .chinaFoodComposition:
             return ["nlc.chinanutri.cn"]
         case .governmentLaboratory:
-            return ["www.cfs.gov.hk", "fdc.nal.usda.gov"]
+            return []
         case .officialMenu:
             return ["mcdonalds.com.cn", "www.mcdonalds.com.cn"]
         case .brandWebsite, .packageLabel:
