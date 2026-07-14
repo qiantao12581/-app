@@ -2209,63 +2209,6 @@
     "suggestionStepGrams": 1
   },
   {
-    "id": "cfc-978",
-    "name": "蛋（鸡蛋，均值)",
-    "aliases": [],
-    "category": "protein",
-    "suitableMeals": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "nutrition": {
-      "calories": 143.2,
-      "carbohydrates": 2.8,
-      "protein": 13.3,
-      "fat": 8.8
-    },
-    "nutritionBasisAmount": 100,
-    "nutritionBasisUnit": "gram",
-    "portions": [
-      {
-        "id": "egg-piece",
-        "name": "个",
-        "baseAmount": 50,
-        "baseUnit": "gram",
-        "allowsDecimalQuantity": false,
-        "isDefault": true
-      },
-      {
-        "id": "gram",
-        "name": "克",
-        "baseAmount": 1,
-        "baseUnit": "gram",
-        "allowsDecimalQuantity": true,
-        "isDefault": false
-      }
-    ],
-    "source": {
-      "type": "chinaFoodComposition",
-      "name": "中国疾控中心营养与健康所食物营养成分查询平台",
-      "url": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
-      "verifiedAt": "2026-07-12T00:00:00Z",
-      "specification": "中国食物成分表每100克可食部；原始能量599kJ，按1 kcal = 4.184 kJ换算",
-      "evidenceLevel": "official"
-    },
-    "display": {
-      "iconKey": "fish",
-      "colorKey": "red",
-      "tags": [
-        "肉禽蛋",
-        "中国食物成分表"
-      ]
-    },
-    "dataCompleteness": "complete",
-    "minimumSuggestedGrams": 1,
-    "maximumSuggestedGrams": 500,
-    "suggestionStepGrams": 1
-  },
-  {
     "id": "cfc-982",
     "name": "鸡蛋白",
     "aliases": [],
@@ -2943,54 +2886,6 @@
       "colorKey": "red",
       "tags": [
         "鱼虾蟹贝",
-        "中国食物成分表"
-      ]
-    },
-    "dataCompleteness": "complete",
-    "minimumSuggestedGrams": 1,
-    "maximumSuggestedGrams": 500,
-    "suggestionStepGrams": 1
-  },
-  {
-    "id": "cfc-916",
-    "name": "乳品（牛乳，均值)",
-    "aliases": [],
-    "category": "dairy",
-    "suitableMeals": [
-      "breakfast",
-      "snack"
-    ],
-    "nutrition": {
-      "calories": 54.3,
-      "carbohydrates": 3.4,
-      "protein": 3.0,
-      "fat": 3.2
-    },
-    "nutritionBasisAmount": 100,
-    "nutritionBasisUnit": "gram",
-    "portions": [
-      {
-        "id": "gram",
-        "name": "克",
-        "baseAmount": 1,
-        "baseUnit": "gram",
-        "allowsDecimalQuantity": true,
-        "isDefault": true
-      }
-    ],
-    "source": {
-      "type": "chinaFoodComposition",
-      "name": "中国疾控中心营养与健康所食物营养成分查询平台",
-      "url": "https://nlc.chinanutri.cn/fq/foodinfo/916.html",
-      "verifiedAt": "2026-07-12T00:00:00Z",
-      "specification": "中国食物成分表每100克可食部；原始能量227kJ，按1 kcal = 4.184 kJ换算",
-      "evidenceLevel": "official"
-    },
-    "display": {
-      "iconKey": "drop",
-      "colorKey": "blue",
-      "tags": [
-        "通用乳制品",
         "中国食物成分表"
       ]
     },
@@ -5384,14 +5279,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168919/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168919; source description: Noodles, egg, cooked, enriched, with added salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168919；原始描述：Noodles, egg, cooked, enriched, with added salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5434,14 +5329,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168484/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168484; source description: Sweet potato, cooked, boiled, without skin; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168484；原始描述：Sweet potato, cooked, boiled, without skin；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5484,14 +5379,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170440/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170440; source description: Potatoes, boiled, cooked without skin, flesh, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170440；原始描述：Potatoes, boiled, cooked without skin, flesh, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5542,14 +5437,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171287/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171287; source description: Egg, whole, raw, fresh; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171287；原始描述：Egg, whole, raw, fresh；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5592,14 +5487,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171477/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171477; source description: Chicken, broilers or fryers, breast, meat only, cooked, roasted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171477；原始描述：Chicken, broilers or fryers, breast, meat only, cooked, roasted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5642,14 +5537,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168250/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168250; source description: Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168250；原始描述：Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5692,14 +5587,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168634/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168634; source description: Beef, top sirloin, steak, separable lean only, trimmed to 0\" fat, all grades, cooked, broiled; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168634；原始描述：Beef, top sirloin, steak, separable lean only, trimmed to 0\" fat, all grades, cooked, broiled；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5750,14 +5645,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171265/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171265; source description: Milk, whole, 3.25% milkfat, with added vitamin D; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171265；原始描述：Milk, whole, 3.25% milkfat, with added vitamin D；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5800,14 +5695,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170390/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170390; source description: Cabbage, chinese (pak-choi), raw; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170390；原始描述：Cabbage, chinese (pak-choi), raw；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5850,14 +5745,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169704/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169704; source description: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169704；原始描述：Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5900,14 +5795,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170285/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170285; source description: Barley, pearled, cooked; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170285；原始描述：Barley, pearled, cooked；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -5950,14 +5845,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168917/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168917; source description: Quinoa, cooked; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168917；原始描述：Quinoa, cooked；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6000,14 +5895,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173905/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173905; source description: Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173905；原始描述：Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6050,14 +5945,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168928/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168928; source description: Pasta, cooked, unenriched, without added salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168928；原始描述：Pasta, cooked, unenriched, without added salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6100,14 +5995,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168910/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168910; source description: Pasta, whole-wheat, cooked (Includes foods for USDA's Food Distribution Program); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168910；原始描述：Pasta, whole-wheat, cooked (Includes foods for USDA's Food Distribution Program)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6150,14 +6045,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168914/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168914; source description: Rice noodles, cooked; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168914；原始描述：Rice noodles, cooked；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6200,14 +6095,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171672/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171672; source description: Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171672；原始描述：Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6250,14 +6145,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170686/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170686; source description: Buckwheat groats, roasted, cooked; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170686；原始描述：Buckwheat groats, roasted, cooked；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "orange",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6300,14 +6195,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173757/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173757; source description: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173757；原始描述：Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6350,14 +6245,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172421/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172421; source description: Lentils, mature seeds, cooked, boiled, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172421；原始描述：Lentils, mature seeds, cooked, boiled, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6400,14 +6295,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173735/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173735; source description: Beans, black, mature seeds, cooked, boiled, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173735；原始描述：Beans, black, mature seeds, cooked, boiled, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6450,14 +6345,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173740/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173740; source description: Beans, kidney, all types, mature seeds, cooked, boiled, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173740；原始描述：Beans, kidney, all types, mature seeds, cooked, boiled, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6500,14 +6395,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170420/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170420; source description: Peas, green, cooked, boiled, drained, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170420；原始描述：Peas, green, cooked, boiled, drained, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6550,14 +6445,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172499/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172499; source description: Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4\" fat, choice, cooked, roasted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172499；原始描述：Lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4\" fat, choice, cooked, roasted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6600,14 +6495,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172388/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172388; source description: Chicken, broilers or fryers, thigh, meat only, cooked, roasted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172388；原始描述：Chicken, broilers or fryers, thigh, meat only, cooked, roasted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6650,14 +6545,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171998/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171998; source description: Fish, salmon, Atlantic, wild, cooked, dry heat; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171998；原始描述：Fish, salmon, Atlantic, wild, cooked, dry heat；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6700,14 +6595,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173709/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173709; source description: Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173709；原始描述：Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6750,14 +6645,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175139/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 175139; source description: Fish, sardine, Atlantic, canned in oil, drained solids with bone; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 175139；原始描述：Fish, sardine, Atlantic, canned in oil, drained solids with bone；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6800,14 +6695,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171990/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171990; source description: Fish, cod, Pacific, cooked, dry heat (may contain additives to retain moisture); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171990；原始描述：Fish, cod, Pacific, cooked, dry heat (may contain additives to retain moisture)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6850,14 +6745,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175180/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 175180; source description: Crustaceans, shrimp, cooked; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 175180；原始描述：Crustaceans, shrimp, cooked；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6900,14 +6795,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174185/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174185; source description: Fish, carp, cooked, dry heat; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174185；原始描述：Fish, carp, cooked, dry heat；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -6950,14 +6845,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173694/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173694; source description: Fish, sea bass, mixed species, cooked, dry heat; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173694；原始描述：Fish, sea bass, mixed species, cooked, dry heat；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7000,14 +6895,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171971/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171971; source description: Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171971；原始描述：Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "circle.grid.cross",
       "colorKey": "red",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7050,14 +6945,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171284/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171284; source description: Yogurt, plain, whole milk; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171284；原始描述：Yogurt, plain, whole milk；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7100,14 +6995,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171269/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171269; source description: Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171269；原始描述：Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7150,14 +7045,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172182/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172182; source description: Cheese, cottage, lowfat, 2% milkfat; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172182；原始描述：Cheese, cottage, lowfat, 2% milkfat；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7200,14 +7095,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170847/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170847; source description: Cheese, mozzarella, part skim milk; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170847；原始描述：Cheese, mozzarella, part skim milk；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7250,14 +7145,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173410/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173410; source description: Butter, salted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173410；原始描述：Butter, salted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "drop.fill",
       "colorKey": "blue",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7300,14 +7195,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170397/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170397; source description: Cauliflower, cooked, boiled, drained, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170397；原始描述：Cauliflower, cooked, boiled, drained, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7350,14 +7245,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168390/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168390; source description: Asparagus, cooked, boiled, drained; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168390；原始描述：Asparagus, cooked, boiled, drained；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7400,14 +7295,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169252/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169252; source description: Mushrooms, white, cooked, boiled, drained, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169252；原始描述：Mushrooms, white, cooked, boiled, drained, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7450,14 +7345,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169238/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169238; source description: Kale, cooked, boiled, drained, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169238；原始描述：Kale, cooked, boiled, drained, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7500,14 +7395,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169999/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169999; source description: Corn, sweet, yellow, cooked, boiled, drained, without salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169999；原始描述：Corn, sweet, yellow, cooked, boiled, drained, without salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "leaf.fill",
       "colorKey": "green",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7550,14 +7445,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171705/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171705; source description: Avocados, raw, all commercial varieties; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171705；原始描述：Avocados, raw, all commercial varieties；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "apple.logo",
       "colorKey": "yellow",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7600,14 +7495,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171711/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171711; source description: Blueberries, raw; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171711；原始描述：Blueberries, raw；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "apple.logo",
       "colorKey": "yellow",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7650,14 +7545,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167755/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167755; source description: Raspberries, raw; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167755；原始描述：Raspberries, raw；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "apple.logo",
       "colorKey": "yellow",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7700,14 +7595,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174673/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174673; source description: Grapefruit, raw, pink and red, all areas; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174673；原始描述：Grapefruit, raw, pink and red, all areas；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "apple.logo",
       "colorKey": "yellow",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7750,14 +7645,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170567/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170567; source description: Nuts, almonds; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170567；原始描述：Nuts, almonds；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7800,14 +7695,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171413/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171413; source description: Oil, olive, salad or cooking; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171413；原始描述：Oil, olive, salad or cooking；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -7850,14 +7745,114 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167746/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167746; source description: Lemons, raw, without peel; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167746；原始描述：Lemons, raw, without peel；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "apple.logo",
       "colorKey": "yellow",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "chicken-liver-simmered",
+    "name": "鸡肝（水煮熟）",
+    "aliases": [],
+    "category": "protein",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 167.0,
+      "carbohydrates": 0.9,
+      "protein": 24.5,
+      "fat": 6.5
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171061/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 171061；原始描述：Chicken, liver, all classes, cooked, simmered；发布日期：4/1/2019；每100克"
+    },
+    "display": {
+      "iconKey": "circle.grid.cross",
+      "colorKey": "red",
+      "tags": [
+        "USDA FoodData Central",
+        "政府实验室数据"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "pork-liver-braised",
+    "name": "猪肝（炖熟）",
+    "aliases": [],
+    "category": "protein",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 165.0,
+      "carbohydrates": 3.8,
+      "protein": 26.0,
+      "fat": 4.4
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167863/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167863；原始描述：Pork, fresh, variety meats and by-products, liver, cooked, braised；发布日期：4/1/2019；每100克"
+    },
+    "display": {
+      "iconKey": "circle.grid.cross",
+      "colorKey": "red",
+      "tags": [
+        "USDA FoodData Central",
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",

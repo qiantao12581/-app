@@ -34,14 +34,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167959/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167959; source description: Snacks, popcorn, air-popped; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167959；原始描述：Snacks, popcorn, air-popped；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -84,14 +84,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170247/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170247; source description: Snacks, popcorn, oil-popped, white popcorn, salt added; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170247；原始描述：Snacks, popcorn, oil-popped, white popcorn, salt added；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -134,14 +134,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169677/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169677; source description: Snacks, potato chips, plain, salted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169677；原始描述：Snacks, potato chips, plain, salted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -184,14 +184,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167558/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167558; source description: Snacks, tortilla chips, plain, white corn, salted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167558；原始描述：Snacks, tortilla chips, plain, white corn, salted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -234,14 +234,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167555/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167555; source description: Snacks, pretzels, hard, plain, salted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167555；原始描述：Snacks, pretzels, hard, plain, salted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -284,14 +284,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172746/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172746; source description: Crackers, saltines (includes oyster, soda, soup); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172746；原始描述：Crackers, saltines (includes oyster, soda, soup)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -334,14 +334,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174957/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174957; source description: Cookies, graham crackers, plain or honey (includes cinnamon); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174957；原始描述：Cookies, graham crackers, plain or honey (includes cinnamon)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -384,14 +384,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170250/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170250; source description: Snacks, rice cakes, brown rice, plain, unsalted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170250；原始描述：Snacks, rice cakes, brown rice, plain, unsalted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -434,14 +434,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171646/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171646; source description: Cereals ready-to-eat, granola, homemade; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171646；原始描述：Cereals ready-to-eat, granola, homemade；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -484,14 +484,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170654/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170654; source description: Snacks, trail mix, regular, unsalted; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170654；原始描述：Snacks, trail mix, regular, unsalted；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -534,14 +534,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174262/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174262; source description: Peanuts, all types, dry-roasted, with salt; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174262；原始描述：Peanuts, all types, dry-roasted, with salt；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -584,14 +584,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168596/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168596; source description: Nuts, almonds, dry roasted, with salt added; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168596；原始描述：Nuts, almonds, dry roasted, with salt added；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -634,14 +634,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169418/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169418; source description: Seeds, sunflower seed kernels, dry roasted, with salt added; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169418；原始描述：Seeds, sunflower seed kernels, dry roasted, with salt added；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -684,14 +684,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172716/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172716; source description: Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172716；原始描述：Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -734,14 +734,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172725/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172725; source description: Cookies, oatmeal, commercially prepared, regular; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172725；原始描述：Cookies, oatmeal, commercially prepared, regular；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -784,14 +784,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174971/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174971; source description: Cookies, sugar, commercially prepared, regular (includes vanilla); publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174971；原始描述：Cookies, sugar, commercially prepared, regular (includes vanilla)；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -834,14 +834,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172713/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172713; source description: Cookies, brownies, commercially prepared; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172713；原始描述：Cookies, brownies, commercially prepared；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -884,14 +884,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172694/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 172694; source description: Cake, angelfood, commercially prepared; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 172694；原始描述：Cake, angelfood, commercially prepared；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -934,14 +934,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170273/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 170273; source description: Chocolate, dark, 70-85% cacao solids; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 170273；原始描述：Chocolate, dark, 70-85% cacao solids；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -984,14 +984,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167587/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167587; source description: Candies, milk chocolate; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167587；原始描述：Candies, milk chocolate；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1034,14 +1034,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167990/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167990; source description: Candies, hard; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167990；原始描述：Candies, hard；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1084,14 +1084,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167991/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167991; source description: Candies, jellybeans; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167991；原始描述：Candies, jellybeans；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1134,14 +1134,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167995/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167995; source description: Candies, marshmallows; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167995；原始描述：Candies, marshmallows；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1184,14 +1184,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169596/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 169596; source description: Gelatin desserts, dry mix, prepared with water; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 169596；原始描述：Gelatin desserts, dry mix, prepared with water；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1234,14 +1234,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167575/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 167575; source description: Ice creams, vanilla; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 167575；原始描述：Ice creams, vanilla；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1284,14 +1284,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168815/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 168815; source description: Frozen yogurts, vanilla, soft-serve; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 168815；原始描述：Frozen yogurts, vanilla, soft-serve；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1334,14 +1334,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171890/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 171890; source description: Beverages, coffee, brewed, prepared with tap water; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 171890；原始描述：Beverages, coffee, brewed, prepared with tap water；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1384,14 +1384,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173227/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173227; source description: Beverages, tea, black, brewed, prepared with tap water; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173227；原始描述：Beverages, tea, black, brewed, prepared with tap water；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1434,14 +1434,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174852/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 174852; source description: Beverages, carbonated, cola, regular; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 174852；原始描述：Beverages, carbonated, cola, regular；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
@@ -1484,14 +1484,14 @@
       "name": "USDA FoodData Central SR Legacy",
       "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173667/nutrients",
       "verifiedAt": "2026-07-14T00:00:00Z",
-      "specification": "USDA SR Legacy FDC ID 173667; source description: Beverages, lemonade, frozen concentrate, pink, prepared with water; publicationDate: 4/1/2019; basis: per 100 g"
+      "specification": "USDA SR Legacy FDC ID 173667；原始描述：Beverages, lemonade, frozen concentrate, pink, prepared with water；发布日期：4/1/2019；每100克"
     },
     "display": {
       "iconKey": "takeoutbag.and.cup.and.straw",
       "colorKey": "purple",
       "tags": [
         "USDA FoodData Central",
-        "government laboratory data"
+        "政府实验室数据"
       ]
     },
     "dataCompleteness": "complete",
