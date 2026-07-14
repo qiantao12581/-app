@@ -1,0 +1,1375 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-14T00:00:00Z",
+  "counts": {
+    "preparedFood": 190,
+    "brandedPackaged": 80,
+    "chainRestaurant": 40
+  },
+  "preparedFood": [
+    {
+      "id": "fried-rice-egg",
+      "name": "蛋炒饭"
+    },
+    {
+      "id": "fried-rice-yangzhou",
+      "name": "扬州炒饭"
+    },
+    {
+      "id": "fried-rice-soy-sauce",
+      "name": "酱油炒饭"
+    },
+    {
+      "id": "fried-rice-pineapple",
+      "name": "菠萝炒饭"
+    },
+    {
+      "id": "rice-claypot-sausage",
+      "name": "腊味煲仔饭"
+    },
+    {
+      "id": "rice-claypot-chicken",
+      "name": "香菇滑鸡煲仔饭"
+    },
+    {
+      "id": "rice-braised-pork",
+      "name": "卤肉饭"
+    },
+    {
+      "id": "rice-hainan-chicken",
+      "name": "海南鸡饭"
+    },
+    {
+      "id": "rice-pork-cutlet",
+      "name": "猪排饭"
+    },
+    {
+      "id": "rice-chicken-curry",
+      "name": "咖喱鸡饭"
+    },
+    {
+      "id": "rice-beef-curry",
+      "name": "咖喱牛肉饭"
+    },
+    {
+      "id": "rice-mixed-vegetable",
+      "name": "什锦蔬菜饭"
+    },
+    {
+      "id": "rice-lotus-leaf",
+      "name": "荷叶糯米饭"
+    },
+    {
+      "id": "rice-glutinous-eight-treasure",
+      "name": "八宝糯米饭"
+    },
+    {
+      "id": "rice-glutinous-mushroom",
+      "name": "香菇糯米饭"
+    },
+    {
+      "id": "rice-ball-seaweed",
+      "name": "海苔饭团"
+    },
+    {
+      "id": "rice-roll-cantonese",
+      "name": "广式肠粉"
+    },
+    {
+      "id": "rice-noodle-roll-egg",
+      "name": "鸡蛋肠粉"
+    },
+    {
+      "id": "rice-baked-cheese",
+      "name": "芝士焗饭"
+    },
+    {
+      "id": "rice-stone-pot-mixed",
+      "name": "石锅拌饭"
+    },
+    {
+      "id": "noodles-scallion-oil",
+      "name": "葱油拌面"
+    },
+    {
+      "id": "noodles-sesame-paste",
+      "name": "麻酱拌面"
+    },
+    {
+      "id": "noodles-zhajiang",
+      "name": "炸酱面"
+    },
+    {
+      "id": "noodles-hot-dry",
+      "name": "热干面"
+    },
+    {
+      "id": "noodles-dandan",
+      "name": "担担面"
+    },
+    {
+      "id": "noodles-braised-bean",
+      "name": "豆角焖面"
+    },
+    {
+      "id": "noodles-tomato-egg",
+      "name": "西红柿鸡蛋面"
+    },
+    {
+      "id": "noodles-shredded-pork",
+      "name": "雪菜肉丝面"
+    },
+    {
+      "id": "noodles-beef-braised",
+      "name": "红烧牛肉面"
+    },
+    {
+      "id": "beef-noodle-soup",
+      "name": "牛肉汤面"
+    },
+    {
+      "id": "noodles-lanzhou-beef",
+      "name": "兰州牛肉面"
+    },
+    {
+      "id": "noodles-chongqing-small",
+      "name": "重庆小面"
+    },
+    {
+      "id": "noodles-wuhan-beef",
+      "name": "牛肉热干面"
+    },
+    {
+      "id": "noodles-chicken-mushroom",
+      "name": "香菇鸡丝面"
+    },
+    {
+      "id": "noodles-seafood-soup",
+      "name": "海鲜汤面"
+    },
+    {
+      "id": "noodles-cold-sesame",
+      "name": "麻酱凉面"
+    },
+    {
+      "id": "noodles-cold-chicken",
+      "name": "鸡丝凉面"
+    },
+    {
+      "id": "rice-noodles-guilin",
+      "name": "桂林米粉"
+    },
+    {
+      "id": "rice-noodles-crossing-bridge",
+      "name": "过桥米线"
+    },
+    {
+      "id": "rice-noodles-sour-spicy",
+      "name": "酸辣粉"
+    },
+    {
+      "id": "rice-noodles-beef",
+      "name": "牛肉米粉"
+    },
+    {
+      "id": "rice-noodles-snail",
+      "name": "螺蛳粉"
+    },
+    {
+      "id": "rice-noodles-changsha",
+      "name": "长沙米粉"
+    },
+    {
+      "id": "vermicelli-duck-blood",
+      "name": "鸭血粉丝汤"
+    },
+    {
+      "id": "vermicelli-glass-mixed",
+      "name": "凉拌粉丝"
+    },
+    {
+      "id": "congee-white",
+      "name": "白粥"
+    },
+    {
+      "id": "pumpkin-millet-congee",
+      "name": "南瓜小米粥"
+    },
+    {
+      "id": "congee-eight-treasure",
+      "name": "八宝粥"
+    },
+    {
+      "id": "congee-century-egg-pork",
+      "name": "皮蛋瘦肉粥"
+    },
+    {
+      "id": "congee-chicken-mushroom",
+      "name": "香菇鸡肉粥"
+    },
+    {
+      "id": "congee-seafood",
+      "name": "海鲜粥"
+    },
+    {
+      "id": "congee-pumpkin",
+      "name": "南瓜粥"
+    },
+    {
+      "id": "congee-red-bean",
+      "name": "红豆粥"
+    },
+    {
+      "id": "soup-tomato-egg",
+      "name": "番茄蛋汤"
+    },
+    {
+      "id": "soup-seaweed-egg",
+      "name": "紫菜蛋花汤"
+    },
+    {
+      "id": "soup-winter-melon-rib",
+      "name": "冬瓜排骨汤"
+    },
+    {
+      "id": "soup-lotus-root-rib",
+      "name": "莲藕排骨汤"
+    },
+    {
+      "id": "soup-corn-rib",
+      "name": "玉米排骨汤"
+    },
+    {
+      "id": "soup-chicken-mushroom",
+      "name": "香菇鸡汤"
+    },
+    {
+      "id": "soup-hot-sour",
+      "name": "酸辣汤"
+    },
+    {
+      "id": "generic-meat-dumpling",
+      "name": "肉馅水饺"
+    },
+    {
+      "id": "generic-vegetarian-dumpling",
+      "name": "素馅水饺"
+    },
+    {
+      "id": "generic-pan-fried-dumpling",
+      "name": "煎饺／锅贴"
+    },
+    {
+      "id": "shrimp-dim-sum",
+      "name": "虾饺"
+    },
+    {
+      "id": "dumpling-fish",
+      "name": "鱼肉水饺"
+    },
+    {
+      "id": "dumpling-beef",
+      "name": "牛肉水饺"
+    },
+    {
+      "id": "wonton-boiled",
+      "name": "鲜肉馄饨"
+    },
+    {
+      "id": "wonton-shrimp",
+      "name": "虾仁馄饨"
+    },
+    {
+      "id": "wonton-fried",
+      "name": "炸云吞"
+    },
+    {
+      "id": "generic-meat-bun",
+      "name": "肉包子"
+    },
+    {
+      "id": "generic-vegetarian-bun",
+      "name": "素包子"
+    },
+    {
+      "id": "bun-char-siu",
+      "name": "叉烧包"
+    },
+    {
+      "id": "bun-bean-paste",
+      "name": "豆沙包"
+    },
+    {
+      "id": "bun-custard",
+      "name": "奶黄包"
+    },
+    {
+      "id": "bun-mushroom-chicken",
+      "name": "香菇鸡肉包"
+    },
+    {
+      "id": "steamed-bread-plain",
+      "name": "白馒头"
+    },
+    {
+      "id": "steamed-bread-wholewheat",
+      "name": "全麦馒头"
+    },
+    {
+      "id": "steamed-roll-scallion",
+      "name": "葱花卷"
+    },
+    {
+      "id": "shaomai-pork",
+      "name": "猪肉烧卖"
+    },
+    {
+      "id": "shaomai-glutinous-rice",
+      "name": "糯米烧卖"
+    },
+    {
+      "id": "spring-roll-vegetable",
+      "name": "素春卷"
+    },
+    {
+      "id": "spring-roll-meat",
+      "name": "肉春卷"
+    },
+    {
+      "id": "turnip-cake-pan-fried",
+      "name": "香煎萝卜糕"
+    },
+    {
+      "id": "taro-cake-pan-fried",
+      "name": "香煎芋头糕"
+    },
+    {
+      "id": "sesame-ball-fried",
+      "name": "炸芝麻球"
+    },
+    {
+      "id": "rice-dumpling-meat",
+      "name": "鲜肉粽子"
+    },
+    {
+      "id": "rice-dumpling-red-bean",
+      "name": "红豆粽子"
+    },
+    {
+      "id": "rice-dumpling-date",
+      "name": "红枣粽子"
+    },
+    {
+      "id": "pancake-chinese-scallion",
+      "name": "葱油饼"
+    },
+    {
+      "id": "pancake-stuffed-meat",
+      "name": "肉馅饼"
+    },
+    {
+      "id": "tomato-scrambled-egg",
+      "name": "西红柿炒鸡蛋"
+    },
+    {
+      "id": "egg-scrambled-chive",
+      "name": "韭菜炒鸡蛋"
+    },
+    {
+      "id": "egg-steamed",
+      "name": "蒸水蛋"
+    },
+    {
+      "id": "egg-tea",
+      "name": "茶叶蛋"
+    },
+    {
+      "id": "egg-scallion-omelet",
+      "name": "葱花煎蛋"
+    },
+    {
+      "id": "mapo-tofu",
+      "name": "麻婆豆腐"
+    },
+    {
+      "id": "tofu-home-style",
+      "name": "家常豆腐"
+    },
+    {
+      "id": "tofu-braised",
+      "name": "红烧豆腐"
+    },
+    {
+      "id": "tofu-cold-scallion",
+      "name": "小葱拌豆腐"
+    },
+    {
+      "id": "tofu-crispy",
+      "name": "脆皮豆腐"
+    },
+    {
+      "id": "tofu-egg-braised",
+      "name": "鸡蛋烧豆腐"
+    },
+    {
+      "id": "tofu-dried-celery",
+      "name": "芹菜炒香干"
+    },
+    {
+      "id": "eggplant-garlic",
+      "name": "鱼香茄子"
+    },
+    {
+      "id": "eggplant-braised",
+      "name": "红烧茄子"
+    },
+    {
+      "id": "eggplant-steamed-garlic",
+      "name": "蒜蓉蒸茄子"
+    },
+    {
+      "id": "potato-shredded-vinegar",
+      "name": "酸辣土豆丝"
+    },
+    {
+      "id": "potato-braised",
+      "name": "红烧土豆"
+    },
+    {
+      "id": "green-bean-dry-fried",
+      "name": "干煸四季豆"
+    },
+    {
+      "id": "green-bean-garlic",
+      "name": "蒜蓉四季豆"
+    },
+    {
+      "id": "cabbage-hand-torn",
+      "name": "手撕包菜"
+    },
+    {
+      "id": "bok-choy-garlic",
+      "name": "蒜蓉小白菜"
+    },
+    {
+      "id": "spinach-garlic",
+      "name": "蒜蓉菠菜"
+    },
+    {
+      "id": "broccoli-garlic",
+      "name": "蒜蓉西兰花"
+    },
+    {
+      "id": "cauliflower-dry-pot",
+      "name": "干锅花菜"
+    },
+    {
+      "id": "lotus-root-stir-fried",
+      "name": "清炒藕片"
+    },
+    {
+      "id": "mushroom-shanghai-greens",
+      "name": "香菇青菜"
+    },
+    {
+      "id": "celery-lily-bulb",
+      "name": "西芹百合"
+    },
+    {
+      "id": "bitter-melon-egg",
+      "name": "苦瓜炒蛋"
+    },
+    {
+      "id": "pepper-potato-eggplant",
+      "name": "地三鲜"
+    },
+    {
+      "id": "cucumber-garlic-cold",
+      "name": "凉拌黄瓜"
+    },
+    {
+      "id": "kung-pao-chicken",
+      "name": "宫保鸡丁"
+    },
+    {
+      "id": "chicken-diced-chili",
+      "name": "辣子鸡丁"
+    },
+    {
+      "id": "chicken-three-cup",
+      "name": "三杯鸡"
+    },
+    {
+      "id": "chicken-braised-mushroom",
+      "name": "小鸡炖蘑菇"
+    },
+    {
+      "id": "chicken-braised-potato",
+      "name": "土豆烧鸡"
+    },
+    {
+      "id": "chicken-white-cut",
+      "name": "白切鸡"
+    },
+    {
+      "id": "chicken-salt-baked",
+      "name": "盐焗鸡"
+    },
+    {
+      "id": "chicken-cola-wings",
+      "name": "可乐鸡翅"
+    },
+    {
+      "id": "chicken-braised-wings",
+      "name": "红烧鸡翅"
+    },
+    {
+      "id": "chicken-steamed-mushroom",
+      "name": "香菇蒸鸡"
+    },
+    {
+      "id": "duck-roast",
+      "name": "烤鸭"
+    },
+    {
+      "id": "duck-beer",
+      "name": "啤酒鸭"
+    },
+    {
+      "id": "duck-salted",
+      "name": "盐水鸭"
+    },
+    {
+      "id": "duck-braised",
+      "name": "红烧鸭"
+    },
+    {
+      "id": "braised-pork",
+      "name": "红烧肉"
+    },
+    {
+      "id": "pork-twice-cooked",
+      "name": "回锅肉"
+    },
+    {
+      "id": "pork-shredded-garlic-sauce",
+      "name": "鱼香肉丝"
+    },
+    {
+      "id": "pork-sweet-sour",
+      "name": "糖醋里脊"
+    },
+    {
+      "id": "pork-pepper-stir-fry",
+      "name": "辣椒炒肉"
+    },
+    {
+      "id": "pork-celery-stir-fry",
+      "name": "芹菜炒肉"
+    },
+    {
+      "id": "pork-rib-sweet-sour",
+      "name": "糖醋排骨"
+    },
+    {
+      "id": "pork-rib-braised",
+      "name": "红烧排骨"
+    },
+    {
+      "id": "pork-rib-steamed-black-bean",
+      "name": "豉汁蒸排骨"
+    },
+    {
+      "id": "pork-lion-head",
+      "name": "红烧狮子头"
+    },
+    {
+      "id": "pork-meatball-steamed",
+      "name": "清蒸肉丸"
+    },
+    {
+      "id": "beef-black-pepper",
+      "name": "黑椒牛柳"
+    },
+    {
+      "id": "beef-cumin",
+      "name": "孜然牛肉"
+    },
+    {
+      "id": "beef-scallion",
+      "name": "葱爆牛肉"
+    },
+    {
+      "id": "beef-tomato-stew",
+      "name": "番茄炖牛腩"
+    },
+    {
+      "id": "beef-potato-stew",
+      "name": "土豆炖牛肉"
+    },
+    {
+      "id": "beef-water-boiled-spicy",
+      "name": "水煮牛肉"
+    },
+    {
+      "id": "lamb-cumin",
+      "name": "孜然羊肉"
+    },
+    {
+      "id": "lamb-scallion",
+      "name": "葱爆羊肉"
+    },
+    {
+      "id": "lamb-stew-radish",
+      "name": "萝卜炖羊肉"
+    },
+    {
+      "id": "lamb-skewer-grilled",
+      "name": "烤羊肉串"
+    },
+    {
+      "id": "fish-steamed-sea-bass",
+      "name": "清蒸鲈鱼"
+    },
+    {
+      "id": "fish-braised-carp",
+      "name": "红烧鲤鱼"
+    },
+    {
+      "id": "fish-sweet-sour",
+      "name": "糖醋鱼"
+    },
+    {
+      "id": "fish-water-boiled-spicy",
+      "name": "水煮鱼"
+    },
+    {
+      "id": "fish-pickled-cabbage",
+      "name": "酸菜鱼"
+    },
+    {
+      "id": "fish-grilled-spicy",
+      "name": "香辣烤鱼"
+    },
+    {
+      "id": "fish-squirrel-mandarin",
+      "name": "松鼠桂鱼"
+    },
+    {
+      "id": "fish-steamed-black-bean",
+      "name": "豉汁蒸鱼"
+    },
+    {
+      "id": "fish-croaker-braised",
+      "name": "红烧黄花鱼"
+    },
+    {
+      "id": "fish-hairtail-braised",
+      "name": "红烧带鱼"
+    },
+    {
+      "id": "shrimp-boiled",
+      "name": "白灼虾"
+    },
+    {
+      "id": "shrimp-garlic-steamed",
+      "name": "蒜蓉蒸虾"
+    },
+    {
+      "id": "shrimp-stir-fried",
+      "name": "清炒虾仁"
+    },
+    {
+      "id": "shrimp-kung-pao",
+      "name": "宫保虾球"
+    },
+    {
+      "id": "shrimp-salt-pepper",
+      "name": "椒盐虾"
+    },
+    {
+      "id": "squid-celery-stir-fry",
+      "name": "西芹炒鱿鱼"
+    },
+    {
+      "id": "squid-iron-plate",
+      "name": "铁板鱿鱼"
+    },
+    {
+      "id": "clam-spicy-stir-fry",
+      "name": "辣炒花蛤"
+    },
+    {
+      "id": "scallop-garlic-vermicelli",
+      "name": "蒜蓉粉丝蒸扇贝"
+    },
+    {
+      "id": "crab-ginger-scallion",
+      "name": "姜葱炒蟹"
+    },
+    {
+      "id": "jianbing-guozi",
+      "name": "煎饼果子"
+    },
+    {
+      "id": "youtiao",
+      "name": "油条"
+    },
+    {
+      "id": "soy-milk-sweetened",
+      "name": "甜豆浆"
+    },
+    {
+      "id": "tofu-pudding-savory",
+      "name": "咸豆腐脑"
+    },
+    {
+      "id": "egg-pancake",
+      "name": "鸡蛋灌饼"
+    },
+    {
+      "id": "roujiamo",
+      "name": "肉夹馍"
+    },
+    {
+      "id": "liangpi-mixed",
+      "name": "凉皮"
+    },
+    {
+      "id": "rice-cake-brown-sugar",
+      "name": "红糖糍粑"
+    },
+    {
+      "id": "pumpkin-cake-fried",
+      "name": "南瓜饼"
+    },
+    {
+      "id": "mooncake-lotus-egg-yolk",
+      "name": "莲蓉蛋黄月饼"
+    },
+    {
+      "id": "mooncake-five-kernel",
+      "name": "五仁月饼"
+    },
+    {
+      "id": "green-bean-cake",
+      "name": "绿豆糕"
+    },
+    {
+      "id": "red-bean-cake",
+      "name": "红豆糕"
+    },
+    {
+      "id": "tangyuan-black-sesame",
+      "name": "黑芝麻汤圆"
+    },
+    {
+      "id": "tangyuan-peanut",
+      "name": "花生汤圆"
+    }
+  ],
+  "brandedPackaged": [
+    {
+      "id": "mengniu-telunsu-organic-38",
+      "name": "特仑苏有机纯牛奶（梦幻盖，3.8g蛋白）",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-desert-organic",
+      "name": "特仑苏沙漠有机纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-organic-36",
+      "name": "特仑苏有机纯牛奶（苗条砖，3.6g蛋白）",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-ultrafiltered-high-protein",
+      "name": "金典高蛋白超滤牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-hi-milk-skim",
+      "name": "特仑苏嗨Milk 0脂肪纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-jersey-pure",
+      "name": "金典娟姗纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-fresh-bottle",
+      "name": "金典鲜活纯牛奶（夺目瓶）",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-pure-36",
+      "name": "特仑苏纯牛奶（3.6g蛋白）",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-pure-38",
+      "name": "特仑苏纯牛奶（3.8g蛋白）",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-low-fat",
+      "name": "特仑苏低脂纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "mengniu-telunsu-mplus",
+      "name": "特仑苏M-PLUS高蛋白牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-pure-cap-38",
+      "name": "金典纯奶梦幻盖",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-jersey-organic",
+      "name": "金典娟姗有机纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-organic-cap",
+      "name": "金典有机纯牛奶（梦幻盖）",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-a2-organic",
+      "name": "金典A2β-酪蛋白有机纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-organic-slim",
+      "name": "金典有机纯牛奶（苗条砖）",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-organic-skim",
+      "name": "金典有机脱脂纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-organic-200",
+      "name": "金典200mL有机纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-high-calcium-low-fat",
+      "name": "金典高钙低脂纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "yili-satine-pure-200",
+      "name": "金典200mL纯牛奶",
+      "origin": "reuse"
+    },
+    {
+      "id": "milk-skimmed-branded",
+      "name": "品牌脱脂纯牛奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "yogurt-plain-branded",
+      "name": "品牌原味酸奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "mengniu-chunzhen-plain",
+      "name": "蒙牛纯甄原味酸奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "yili-ambrosial-plain",
+      "name": "伊利安慕希原味酸奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "bright-momchilovtsi-plain",
+      "name": "光明莫斯利安原味酸奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "yili-shuhua-lactose-free",
+      "name": "伊利舒化无乳糖牛奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "mengniu-future-star-kids",
+      "name": "蒙牛未来星儿童牛奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "yili-youngfun-kids",
+      "name": "伊利QQ星儿童牛奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "wangzai-milk-can",
+      "name": "旺仔牛奶罐装",
+      "origin": "estimate"
+    },
+    {
+      "id": "ad-calcium-milk-drink",
+      "name": "娃哈哈AD钙奶",
+      "origin": "estimate"
+    },
+    {
+      "id": "sanquan-celery-pork-dumpling",
+      "name": "三全芹菜猪肉水饺",
+      "origin": "estimate"
+    },
+    {
+      "id": "sanquan-leek-pork-dumpling",
+      "name": "三全韭菜猪肉水饺",
+      "origin": "estimate"
+    },
+    {
+      "id": "sanquan-shrimp-dumpling",
+      "name": "三全虾仁三鲜水饺",
+      "origin": "estimate"
+    },
+    {
+      "id": "synear-pork-cabbage-dumpling",
+      "name": "思念猪肉白菜水饺",
+      "origin": "estimate"
+    },
+    {
+      "id": "synear-sesame-tangyuan",
+      "name": "思念黑芝麻汤圆",
+      "origin": "estimate"
+    },
+    {
+      "id": "sanquan-sesame-tangyuan",
+      "name": "三全凌黑芝麻汤圆",
+      "origin": "estimate"
+    },
+    {
+      "id": "wan-chai-ferry-pork-dumpling",
+      "name": "湾仔码头猪肉水饺",
+      "origin": "estimate"
+    },
+    {
+      "id": "master-kong-beef-noodles",
+      "name": "康师傅红烧牛肉面",
+      "origin": "estimate"
+    },
+    {
+      "id": "uni-president-beef-noodles",
+      "name": "统一红烧牛肉面",
+      "origin": "estimate"
+    },
+    {
+      "id": "baixiang-beef-noodles",
+      "name": "白象红烧牛肉面",
+      "origin": "estimate"
+    },
+    {
+      "id": "luosifen-haohuanluo",
+      "name": "好欢螺螺蛳粉",
+      "origin": "estimate"
+    },
+    {
+      "id": "luosifen-liziqui",
+      "name": "李子柒螺蛳粉",
+      "origin": "estimate"
+    },
+    {
+      "id": "haochidian-soda-cracker",
+      "name": "好吃点香脆腰果饼",
+      "origin": "estimate"
+    },
+    {
+      "id": "oreo-original",
+      "name": "奥利奥原味夹心饼干",
+      "origin": "estimate"
+    },
+    {
+      "id": "xu-fuji-shachima",
+      "name": "徐福记沙琪玛",
+      "origin": "estimate"
+    },
+    {
+      "id": "taoli-sliced-bread",
+      "name": "桃李醇熟切片面包",
+      "origin": "estimate"
+    },
+    {
+      "id": "daliyuan-soft-bread",
+      "name": "达利园法式软面包",
+      "origin": "estimate"
+    },
+    {
+      "id": "panpan-copper-gong-cake",
+      "name": "盼盼铜锣烧",
+      "origin": "estimate"
+    },
+    {
+      "id": "youchen-meat-floss-cake",
+      "name": "友臣肉松饼",
+      "origin": "estimate"
+    },
+    {
+      "id": "lay-potato-chips-original",
+      "name": "乐事原味薯片",
+      "origin": "estimate"
+    },
+    {
+      "id": "orion-choco-pie",
+      "name": "好丽友巧克力派",
+      "origin": "estimate"
+    },
+    {
+      "id": "want-want-rice-cracker",
+      "name": "旺旺雪饼",
+      "origin": "estimate"
+    },
+    {
+      "id": "qiaqia-sunflower-seeds",
+      "name": "洽洽香瓜子",
+      "origin": "estimate"
+    },
+    {
+      "id": "three-squirrels-mixed-nuts",
+      "name": "三只松鼠每日坚果",
+      "origin": "estimate"
+    },
+    {
+      "id": "bestore-beef-jerky",
+      "name": "良品铺子牛肉干",
+      "origin": "estimate"
+    },
+    {
+      "id": "shuanghui-ham-sausage",
+      "name": "双汇王中王火腿肠",
+      "origin": "estimate"
+    },
+    {
+      "id": "jinmailang-steamed-noodles",
+      "name": "今麦郎老坛酸菜牛肉面",
+      "origin": "estimate"
+    },
+    {
+      "id": "haidilao-self-heating-beef",
+      "name": "海底捞麻辣嫩牛自热火锅",
+      "origin": "estimate"
+    },
+    {
+      "id": "zihaiguo-self-heating-rice",
+      "name": "自嗨锅广式香肠煲仔饭",
+      "origin": "estimate"
+    },
+    {
+      "id": "ankei-fish-ball",
+      "name": "安井鱼丸",
+      "origin": "estimate"
+    },
+    {
+      "id": "coca-cola-classic-cn",
+      "name": "可口可乐经典款",
+      "origin": "estimate"
+    },
+    {
+      "id": "coca-cola-zero-cn",
+      "name": "可口可乐零度",
+      "origin": "estimate"
+    },
+    {
+      "id": "pepsi-classic-cn",
+      "name": "百事可乐经典款",
+      "origin": "estimate"
+    },
+    {
+      "id": "sprite-cn",
+      "name": "雪碧",
+      "origin": "estimate"
+    },
+    {
+      "id": "fanta-orange-cn",
+      "name": "芬达橙味汽水",
+      "origin": "estimate"
+    },
+    {
+      "id": "nongfu-spring-water",
+      "name": "农夫山泉饮用天然水",
+      "origin": "estimate"
+    },
+    {
+      "id": "nongfu-orchard-orange",
+      "name": "农夫果园橙汁饮料",
+      "origin": "estimate"
+    },
+    {
+      "id": "master-kong-ice-tea",
+      "name": "康师傅冰红茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "uni-president-green-tea",
+      "name": "统一绿茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "vita-lemon-tea",
+      "name": "维他柠檬茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "wanglaoji-herbal-tea",
+      "name": "王老吉凉茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "jiaduobao-herbal-tea",
+      "name": "加多宝凉茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "red-bull-vitamin-cn",
+      "name": "红牛维生素功能饮料",
+      "origin": "estimate"
+    },
+    {
+      "id": "eastroc-super-drink",
+      "name": "东鹏特饮",
+      "origin": "estimate"
+    },
+    {
+      "id": "suntory-oolong-unsweetened",
+      "name": "三得利无糖乌龙茶",
+      "origin": "estimate"
+    },
+    {
+      "id": "genki-forest-sparkling",
+      "name": "元气森林白桃气泡水",
+      "origin": "estimate"
+    },
+    {
+      "id": "yili-probiotic-drink",
+      "name": "伊利每益添乳酸菌饮品",
+      "origin": "estimate"
+    },
+    {
+      "id": "yakult-cn",
+      "name": "养乐多活菌型乳酸菌乳饮品",
+      "origin": "estimate"
+    },
+    {
+      "id": "starbucks-frappuccino-bottle",
+      "name": "星巴克星冰乐咖啡饮料",
+      "origin": "estimate"
+    },
+    {
+      "id": "nescafe-ready-latte",
+      "name": "雀巢即饮拿铁咖啡",
+      "origin": "estimate"
+    }
+  ],
+  "chainRestaurant": [
+    {
+      "id": "mcd-cn-big-mac",
+      "name": "巨无霸",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-hamburger",
+      "name": "汉堡包",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-spicy-chicken-filet",
+      "name": "麦辣鸡腿汉堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-grilled-chicken",
+      "name": "板烧鸡腿堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-mcchicken",
+      "name": "麦香鸡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-filet-o-fish",
+      "name": "麦香鱼",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-cheeseburger",
+      "name": "吉士汉堡包",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-double-cheeseburger",
+      "name": "双层吉士汉堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-beef-sausage",
+      "name": "不素之霸双层牛堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-double-cod",
+      "name": "双层深海鳕鱼堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-angus-bacon",
+      "name": "培根安格斯厚牛堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-angus-cheese",
+      "name": "芝士安格斯厚牛堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-bacon-lettuce-tomato-double-beef",
+      "name": "培根蔬萃双层牛堡",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-spicy-wings",
+      "name": "麦辣鸡翅",
+      "origin": "reuse"
+    },
+    {
+      "id": "mcd-cn-mcnuggets-5",
+      "name": "麦乐鸡（5块）",
+      "origin": "reuse"
+    },
+    {
+      "id": "kfc-cn-original-chicken",
+      "name": "肯德基吮指原味鸡",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-spicy-chicken-burger",
+      "name": "肯德基香辣鸡腿堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-new-orleans-burger",
+      "name": "肯德基新奥尔良烤鸡腿堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-zinger-double",
+      "name": "肯德基劲脆鸡腿堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-chicken-wrap",
+      "name": "肯德基老北京鸡肉卷",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-new-orleans-wings",
+      "name": "肯德基新奥尔良烤翅",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-hot-wings",
+      "name": "肯德基香辣鸡翅",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-popcorn-chicken",
+      "name": "肯德基劲爆鸡米花",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-egg-tart",
+      "name": "肯德基葡式蛋挞",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-mashed-potato",
+      "name": "肯德基土豆泥",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-corn-cup",
+      "name": "肯德基香甜粟米棒",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-congee-preserved-egg",
+      "name": "肯德基皮蛋瘦肉粥",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-breakfast-porridge",
+      "name": "肯德基香菇鸡肉粥",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-soy-milk",
+      "name": "肯德基醇豆浆",
+      "origin": "estimate"
+    },
+    {
+      "id": "kfc-cn-fries-medium",
+      "name": "肯德基中份薯条",
+      "origin": "estimate"
+    },
+    {
+      "id": "pizza-hut-cn-super-supreme",
+      "name": "必胜客超级至尊比萨",
+      "origin": "estimate"
+    },
+    {
+      "id": "pizza-hut-cn-hawaiian",
+      "name": "必胜客夏威夷风光比萨",
+      "origin": "estimate"
+    },
+    {
+      "id": "pizza-hut-cn-spaghetti-bolognese",
+      "name": "必胜客经典肉酱意面",
+      "origin": "estimate"
+    },
+    {
+      "id": "burger-king-cn-whopper",
+      "name": "汉堡王皇堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "burger-king-cn-double-whopper",
+      "name": "汉堡王双层皇堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "dicos-cn-crispy-chicken-burger",
+      "name": "德克士脆皮炸鸡堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "wallace-cn-chicken-burger",
+      "name": "华莱士香辣鸡腿堡",
+      "origin": "estimate"
+    },
+    {
+      "id": "starbucks-cn-latte-grande",
+      "name": "星巴克大杯拿铁",
+      "origin": "estimate"
+    },
+    {
+      "id": "heytea-cn-cheese-grape",
+      "name": "喜茶多肉葡萄",
+      "origin": "estimate"
+    },
+    {
+      "id": "luckin-cn-coconut-latte",
+      "name": "瑞幸生椰拿铁",
+      "origin": "estimate"
+    }
+  ]
+}

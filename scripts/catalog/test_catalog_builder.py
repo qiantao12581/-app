@@ -227,7 +227,7 @@ class CatalogBuilderTests(unittest.TestCase):
     def test_mapping_has_exact_counts_unique_ids_and_clean_utf8(self):
         root = Path(__file__).resolve().parents[2]
         mapping = json.loads(
-            (root / ".superpowers/sdd/fast-data-mapping.json").read_text(
+            (root / "catalog/remaining-food-mapping.json").read_text(
                 encoding="utf-8"
             )
         )

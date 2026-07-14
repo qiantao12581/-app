@@ -336,7 +336,7 @@ class CatalogBuilder:
         return sorted(errors)
 
     def generate_remaining_data(self):
-        mapping_path = self.repository_root / ".superpowers/sdd/fast-data-mapping.json"
+        mapping_path = self.repository_root / "catalog/remaining-food-mapping.json"
         mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
         bad = [
             value
