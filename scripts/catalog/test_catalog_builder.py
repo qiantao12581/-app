@@ -1,5 +1,7 @@
 import json
 import math
+import subprocess
+import sys
 import tempfile
 import unittest
 from copy import deepcopy
@@ -39,6 +41,36 @@ class CatalogBuilderTests(unittest.TestCase):
         self.assertTrue(required.issubset({row["id"] for row in basic}))
         self.assertEqual(builder.validate_group("basicIngredient", basic), [])
         self.assertEqual(builder.validate_group("genericSnackDrink", generic), [])
+
+    def test_group_validator_cli_reports_expected_counts(self):
+        repository_root = Path(__file__).resolve().parents[2]
+        script = repository_root / "scripts" / "catalog" / "catalog_builder.py"
+
+        for group, expected in (
+            ("basicIngredient", 160),
+            ("genericSnackDrink", 30),
+        ):
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    "-B",
+                    str(script),
+                    "--validate-group",
+                    group,
+                    "--expected",
+                    str(expected),
+                ],
+                cwd=repository_root,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stderr)
+            self.assertIn(f"group={group}", completed.stdout)
+            self.assertIn(f"count={expected}", completed.stdout)
+            self.assertIn("missingNutrients=0", completed.stdout)
+            self.assertIn("duplicateIDs=0", completed.stdout)
 
     def test_group_files_define_exact_release_partitions(self):
         self.assertEqual(
