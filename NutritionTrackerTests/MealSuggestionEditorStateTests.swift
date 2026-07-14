@@ -184,6 +184,7 @@ final class MealSuggestionEditorStateTests: XCTestCase {
             var state = try editor(food: egg, grams: 50, catalog: foods)
             let itemID = try XCTUnwrap(state.items.first?.id)
 
+            try state.selectPortion(itemID: itemID, portionID: "large-egg")
             try state.updateQuantity(itemID: itemID, text: text)
 
             XCTAssertEqual(state.items.first?.quantityText, text)
