@@ -200,6 +200,8 @@ struct FoodCatalogAuditor: Sendable {
         switch sourceType {
         case .chinaFoodComposition:
             return ["nlc.chinanutri.cn"]
+        case .governmentLaboratory:
+            return ["www.cfs.gov.hk", "fdc.nal.usda.gov"]
         case .officialMenu:
             return ["mcdonalds.com.cn", "www.mcdonalds.com.cn"]
         case .brandWebsite, .packageLabel:
@@ -210,7 +212,7 @@ struct FoodCatalogAuditor: Sendable {
                 "www.mengniu.com.cn",
                 "img.mengniu.com.cn"
             ]
-        case .userProvided:
+        case .recipeEstimate, .userProvided:
             return []
         }
     }

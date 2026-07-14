@@ -243,9 +243,11 @@ struct FoodSearchView: View {
     private func sourceTypeName(_ type: FoodSourceType) -> String {
         switch type {
         case .chinaFoodComposition: return "中国食物成分"
+        case .governmentLaboratory: return "政府检测"
         case .brandWebsite: return "品牌官网"
         case .packageLabel: return "官方包装"
         case .officialMenu: return "官方菜单"
+        case .recipeEstimate: return "非官方估算"
         case .userProvided: return "用户提供"
         }
     }
