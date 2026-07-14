@@ -1,6 +1,8 @@
+import argparse
 import json
 import math
 import re
+import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -62,6 +64,19 @@ class CatalogBuilder:
             "recipes": [],
             "mergedFoods": [],
         }
+
+    @classmethod
+    def from_repository(cls, repository_root=None):
+        root = Path(repository_root or Path(__file__).resolve().parents[2])
+        with (root / "catalog" / "approved-source-hosts.json").open(
+            encoding="utf-8"
+        ) as handle:
+            approved_hosts = json.load(handle)
+        with (root / "docs" / "data" / "food-estimate-recipes.json").open(
+            encoding="utf-8"
+        ) as handle:
+            evidence = json.load(handle)
+        return cls(approved_hosts, evidence=evidence, repository_root=root)
 
     def load_group(self, path):
         if isinstance(path, str) and path in GROUP_FILES:
@@ -275,3 +290,49 @@ def _write_text(value, path):
     with destination.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(value.rstrip("\r\n"))
         handle.write("\n")
+
+
+def _validate_group_command(group_name, expected):
+    builder = CatalogBuilder.from_repository()
+    rows = builder.load_group(group_name)
+    errors = builder.validate_group(group_name, rows)
+    if len(rows) != expected:
+        errors = sorted(
+            set(errors)
+            | {
+                f"catalog.commandCount group={group_name} "
+                f"expected={expected} actual={len(rows)}"
+            }
+        )
+
+    missing_nutrients = sum(
+        error.startswith(("food.missingNutrient", "food.invalidNutrient"))
+        for error in errors
+    )
+    duplicate_ids = sum(error.startswith("food.duplicateID") for error in errors)
+    evidence_counts = Counter(
+        row.get("source", {}).get("evidenceLevel", "missing") for row in rows
+    )
+    print(
+        f"group={group_name} count={len(rows)} "
+        f"missingNutrients={missing_nutrients} duplicateIDs={duplicate_ids} "
+        f"official={evidence_counts['official']} "
+        f"nonOfficial={evidence_counts['nonOfficial']} errors={len(errors)}"
+    )
+    for error in errors:
+        print(error, file=sys.stderr)
+    return 0 if not errors else 1
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Validate food catalog groups")
+    parser.add_argument("--validate-group", choices=sorted(GROUP_FILES))
+    parser.add_argument("--expected", type=int)
+    arguments = parser.parse_args(argv)
+    if arguments.validate_group is None or arguments.expected is None:
+        parser.error("--validate-group and --expected are required")
+    return _validate_group_command(arguments.validate_group, arguments.expected)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

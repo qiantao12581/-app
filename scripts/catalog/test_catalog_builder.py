@@ -72,6 +72,15 @@ class CatalogBuilderTests(unittest.TestCase):
             self.assertIn("missingNutrients=0", completed.stdout)
             self.assertIn("duplicateIDs=0", completed.stdout)
 
+    def test_repository_catalog_text_has_no_encoding_replacement_markers(self):
+        builder = CatalogBuilder.from_repository()
+
+        for group in ("basicIngredient", "genericSnackDrink"):
+            for row in builder.load_group(group):
+                for text in nested_strings(row):
+                    self.assertNotIn("??", text, f"{group}:{row.get('id')}")
+                    self.assertNotIn("\ufffd", text, f"{group}:{row.get('id')}")
+
     def test_group_files_define_exact_release_partitions(self):
         self.assertEqual(
             GROUP_FILES,
@@ -322,6 +331,17 @@ def valid_food(food_id="fixture"):
         "maximumSuggestedGrams": 300.0,
         "suggestionStepGrams": 25.0,
     }
+
+
+def nested_strings(value):
+    if isinstance(value, str):
+        yield value
+    elif isinstance(value, dict):
+        for child in value.values():
+            yield from nested_strings(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from nested_strings(child)
 
 
 if __name__ == "__main__":

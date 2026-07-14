@@ -1,1 +1,1502 @@
-[]
+[
+  {
+    "id": "popcorn-air-popped",
+    "name": "爆米花（空气爆制）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 387.0,
+      "carbohydrates": 77.8,
+      "protein": 12.9,
+      "fat": 4.5
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167959/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167959; source description: Snacks, popcorn, air-popped; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "popcorn-oil-popped-salted",
+    "name": "爆米花（油爆加盐）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 500.0,
+      "carbohydrates": 57.2,
+      "protein": 9.0,
+      "fat": 28.1
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170247/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 170247; source description: Snacks, popcorn, oil-popped, white popcorn, salt added; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "potato-chips-plain-salted",
+    "name": "原味盐味薯片",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 532.0,
+      "carbohydrates": 53.8,
+      "protein": 6.4,
+      "fat": 34.0
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169677/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 169677; source description: Snacks, potato chips, plain, salted; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "tortilla-chips-plain-salted",
+    "name": "原味盐味玉米片",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 472.0,
+      "carbohydrates": 67.8,
+      "protein": 7.1,
+      "fat": 20.7
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167558/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167558; source description: Snacks, tortilla chips, plain, white corn, salted; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "pretzels-hard-salted",
+    "name": "硬脆椒盐卷饼",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 384.0,
+      "carbohydrates": 80.4,
+      "protein": 10.0,
+      "fat": 2.9
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167555/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167555; source description: Snacks, pretzels, hard, plain, salted; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "saltine-crackers",
+    "name": "苏打盐味饼干",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 418.0,
+      "carbohydrates": 74.0,
+      "protein": 9.5,
+      "fat": 8.6
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172746/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 172746; source description: Crackers, saltines (includes oyster, soda, soup); publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "graham-crackers",
+    "name": "全麦蜂蜜饼干",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 430.0,
+      "carbohydrates": 77.7,
+      "protein": 6.7,
+      "fat": 10.6
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174957/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 174957; source description: Cookies, graham crackers, plain or honey (includes cinnamon); publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "rice-cakes-plain",
+    "name": "原味糙米饼（无盐）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 387.0,
+      "carbohydrates": 81.5,
+      "protein": 8.2,
+      "fat": 2.8
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170250/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 170250; source description: Snacks, rice cakes, brown rice, plain, unsalted; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "granola-homemade",
+    "name": "格兰诺拉麦片（家庭制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 489.0,
+      "carbohydrates": 53.9,
+      "protein": 13.7,
+      "fat": 24.3
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171646/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 171646; source description: Cereals ready-to-eat, granola, homemade; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "trail-mix-regular-unsalted",
+    "name": "综合果仁果干（无盐）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 462.0,
+      "carbohydrates": 44.9,
+      "protein": 13.8,
+      "fat": 29.4
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170654/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 170654; source description: Snacks, trail mix, regular, unsalted; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "peanuts-dry-roasted-salted",
+    "name": "盐味干烤花生",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 587.0,
+      "carbohydrates": 21.3,
+      "protein": 24.4,
+      "fat": 49.7
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174262/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 174262; source description: Peanuts, all types, dry-roasted, with salt; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "almonds-dry-roasted-salted",
+    "name": "盐味干烤扁桃仁",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 598.0,
+      "carbohydrates": 21.0,
+      "protein": 21.0,
+      "fat": 52.5
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168596/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 168596; source description: Nuts, almonds, dry roasted, with salt added; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "sunflower-seeds-roasted-salted",
+    "name": "盐味干烤葵花籽仁",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 582.0,
+      "carbohydrates": 24.1,
+      "protein": 19.3,
+      "fat": 49.8
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169418/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 169418; source description: Seeds, sunflower seed kernels, dry roasted, with salt added; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "cookies-chocolate-chip",
+    "name": "巧克力豆曲奇（商业制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 492.0,
+      "carbohydrates": 65.4,
+      "protein": 5.1,
+      "fat": 24.7
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172716/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 172716; source description: Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "cookies-oatmeal",
+    "name": "燕麦曲奇（商业制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 450.0,
+      "carbohydrates": 68.7,
+      "protein": 6.2,
+      "fat": 18.1
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172725/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 172725; source description: Cookies, oatmeal, commercially prepared, regular; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "cookies-sugar",
+    "name": "原味甜曲奇（商业制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 464.0,
+      "carbohydrates": 67.3,
+      "protein": 5.3,
+      "fat": 19.6
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174971/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 174971; source description: Cookies, sugar, commercially prepared, regular (includes vanilla); publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "brownies-commercial",
+    "name": "布朗尼（商业制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 405.0,
+      "carbohydrates": 63.9,
+      "protein": 4.8,
+      "fat": 16.3
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172713/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 172713; source description: Cookies, brownies, commercially prepared; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "angel-food-cake-commercial",
+    "name": "天使蛋糕（商业制备）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 258.0,
+      "carbohydrates": 57.8,
+      "protein": 5.9,
+      "fat": 0.8
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172694/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 172694; source description: Cake, angelfood, commercially prepared; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "dark-chocolate-70-85",
+    "name": "黑巧克力（可可固形物70%–85%）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 598.0,
+      "carbohydrates": 45.9,
+      "protein": 7.8,
+      "fat": 42.6
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170273/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 170273; source description: Chocolate, dark, 70-85% cacao solids; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "milk-chocolate",
+    "name": "牛奶巧克力",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 535.0,
+      "carbohydrates": 59.4,
+      "protein": 7.7,
+      "fat": 29.7
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167587/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167587; source description: Candies, milk chocolate; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "hard-candy",
+    "name": "硬糖",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 394.0,
+      "carbohydrates": 98.0,
+      "protein": 0.0,
+      "fat": 0.2
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167990/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167990; source description: Candies, hard; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "jellybeans",
+    "name": "软心豆形糖",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 375.0,
+      "carbohydrates": 93.6,
+      "protein": 0.0,
+      "fat": 0.1
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167991/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167991; source description: Candies, jellybeans; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "marshmallows",
+    "name": "棉花糖",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 318.0,
+      "carbohydrates": 81.3,
+      "protein": 1.8,
+      "fat": 0.2
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167995/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167995; source description: Candies, marshmallows; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "gelatin-dessert-prepared",
+    "name": "明胶甜品（加水制成）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 60.0,
+      "carbohydrates": 14.2,
+      "protein": 1.2,
+      "fat": 0.0
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169596/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 169596; source description: Gelatin desserts, dry mix, prepared with water; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "ice-cream-vanilla",
+    "name": "香草冰淇淋",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 207.0,
+      "carbohydrates": 23.6,
+      "protein": 3.5,
+      "fat": 11.0
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/167575/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 167575; source description: Ice creams, vanilla; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "frozen-yogurt-vanilla",
+    "name": "香草冻酸奶（软质）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 159.0,
+      "carbohydrates": 24.2,
+      "protein": 4.0,
+      "fat": 5.6
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168815/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 168815; source description: Frozen yogurts, vanilla, soft-serve; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "coffee-black-brewed",
+    "name": "黑咖啡（自来水冲煮）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 1.0,
+      "carbohydrates": 0.0,
+      "protein": 0.1,
+      "fat": 0.0
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171890/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 171890; source description: Beverages, coffee, brewed, prepared with tap water; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "tea-black-brewed",
+    "name": "红茶（自来水冲泡）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 1.0,
+      "carbohydrates": 0.3,
+      "protein": 0.0,
+      "fat": 0.0
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173227/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 173227; source description: Beverages, tea, black, brewed, prepared with tap water; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "cola-regular",
+    "name": "普通可乐",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 42.0,
+      "carbohydrates": 10.4,
+      "protein": 0.0,
+      "fat": 0.2
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174852/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 174852; source description: Beverages, carbonated, cola, regular; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  },
+  {
+    "id": "lemonade-pink-prepared",
+    "name": "粉红柠檬饮料（浓缩液加水）",
+    "aliases": [],
+    "category": "snack",
+    "suitableMeals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "nutrition": {
+      "calories": 43.0,
+      "carbohydrates": 10.8,
+      "protein": 0.1,
+      "fat": 0.1
+    },
+    "nutritionBasisAmount": 100,
+    "nutritionBasisUnit": "gram",
+    "portions": [
+      {
+        "id": "gram",
+        "name": "克",
+        "baseAmount": 1,
+        "baseUnit": "gram",
+        "allowsDecimalQuantity": true,
+        "isDefault": true
+      }
+    ],
+    "source": {
+      "type": "governmentLaboratory",
+      "evidenceLevel": "official",
+      "name": "USDA FoodData Central SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173667/nutrients",
+      "verifiedAt": "2026-07-14T00:00:00Z",
+      "specification": "USDA SR Legacy FDC ID 173667; source description: Beverages, lemonade, frozen concentrate, pink, prepared with water; publicationDate: 4/1/2019; basis: per 100 g"
+    },
+    "display": {
+      "iconKey": "takeoutbag.and.cup.and.straw",
+      "colorKey": "purple",
+      "tags": [
+        "USDA FoodData Central",
+        "government laboratory data"
+      ]
+    },
+    "dataCompleteness": "complete",
+    "minimumSuggestedGrams": 1,
+    "maximumSuggestedGrams": 500,
+    "suggestionStepGrams": 1
+  }
+]
