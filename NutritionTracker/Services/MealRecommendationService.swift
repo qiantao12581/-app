@@ -1,6 +1,15 @@
 import Foundation
 
 struct MealRecommendationService {
+    private let maximumMainMealCandidatesPerCategory: Int
+
+    init(maximumMainMealCandidatesPerCategory: Int = 32) {
+        self.maximumMainMealCandidatesPerCategory = max(
+            maximumMainMealCandidatesPerCategory,
+            1
+        )
+    }
+
     func remainingMealTypes(
         completedMeals: Set<MealType>,
         remaining: NutritionValues
@@ -53,9 +62,24 @@ struct MealRecommendationService {
         dailyRemaining: NutritionValues,
         foods: [FoodReference]
     ) -> MealSuggestion? {
-        let staples = portions(for: .staple, meal: meal, foods: foods)
-        let proteins = portions(for: .protein, meal: meal, foods: foods)
-        let vegetables = portions(for: .vegetable, meal: meal, foods: foods)
+        // 500 种食物会产生数千万个三层组合。先为每类保留最接近
+        // 该餐三分之一目标的候选，避免在主线程上穷举导致整个 App 假死。
+        let categoryTarget = target.scaled(by: 1 / 3)
+        let staples = boundedMainMealPortions(
+            portions(for: .staple, meal: meal, foods: foods),
+            target: categoryTarget,
+            dailyRemaining: dailyRemaining
+        )
+        let proteins = boundedMainMealPortions(
+            portions(for: .protein, meal: meal, foods: foods),
+            target: categoryTarget,
+            dailyRemaining: dailyRemaining
+        )
+        let vegetables = boundedMainMealPortions(
+            portions(for: .vegetable, meal: meal, foods: foods),
+            target: categoryTarget,
+            dailyRemaining: dailyRemaining
+        )
         guard !staples.isEmpty, !proteins.isEmpty, !vegetables.isEmpty else {
             return nil
         }
@@ -85,6 +109,34 @@ struct MealRecommendationService {
             }
         }
         return best
+    }
+
+    private func boundedMainMealPortions(
+        _ portions: [Portion],
+        target: NutritionValues,
+        dailyRemaining: NutritionValues
+    ) -> [Portion] {
+        portions.sorted { lhs, rhs in
+            let lhsScore = score(
+                lhs.nutrition,
+                target: target,
+                dailyRemaining: dailyRemaining
+            )
+            let rhsScore = score(
+                rhs.nutrition,
+                target: target,
+                dailyRemaining: dailyRemaining
+            )
+            if lhsScore != rhsScore {
+                return lhsScore < rhsScore
+            }
+            if lhs.item.foodID != rhs.item.foodID {
+                return lhs.item.foodID < rhs.item.foodID
+            }
+            return lhs.item.quantity < rhs.item.quantity
+        }
+        .prefix(maximumMainMealCandidatesPerCategory)
+        .map { $0 }
     }
 
     private func bestSnack(
