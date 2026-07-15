@@ -131,6 +131,20 @@
 		A3000000000000000000007A /* CompactFoodNutritionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007D /* CompactFoodNutritionRow.swift */; };
 		A3000000000000000000007B /* FoodDataSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007E /* FoodDataSourceView.swift */; };
 		A3000000000000000000007C /* FoodNutritionRowPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4000000000000000000007F /* FoodNutritionRowPresentationTests.swift */; };
+		B30000000000000000000001 /* FoodRecordSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000001 /* FoodRecordSnapshot.swift */; };
+		B30000000000000000000002 /* FrequentFoodCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000002 /* FrequentFoodCandidate.swift */; };
+		B30000000000000000000003 /* FrequentFoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000003 /* FrequentFoodService.swift */; };
+		B30000000000000000000004 /* QuickFoodQuantityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000004 /* QuickFoodQuantityState.swift */; };
+		B30000000000000000000005 /* MealSuggestionDisplayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000005 /* MealSuggestionDisplayState.swift */; };
+		B30000000000000000000006 /* TodayMealSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000006 /* TodayMealSection.swift */; };
+		B30000000000000000000007 /* QuickAddFoodFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000007 /* QuickAddFoodFlowView.swift */; };
+		B30000000000000000000008 /* QuickFoodPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000008 /* QuickFoodPickerView.swift */; };
+		B30000000000000000000009 /* QuickFoodQuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40000000000000000000009 /* QuickFoodQuantityView.swift */; };
+		B3000000000000000000000A /* FoodRecord+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4000000000000000000000A /* FoodRecord+Snapshot.swift */; };
+		B3000000000000000000000B /* FoodRecordSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4000000000000000000000B /* FoodRecordSnapshotTests.swift */; };
+		B3000000000000000000000C /* FrequentFoodServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4000000000000000000000C /* FrequentFoodServiceTests.swift */; };
+		B3000000000000000000000D /* QuickFoodQuantityStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4000000000000000000000D /* QuickFoodQuantityStateTests.swift */; };
+		B3000000000000000000000E /* MealSuggestionDisplayStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4000000000000000000000E /* MealSuggestionDisplayStateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +285,20 @@
 		A4000000000000000000007D /* CompactFoodNutritionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactFoodNutritionRow.swift; sourceTree = "<group>"; };
 		A4000000000000000000007E /* FoodDataSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSourceView.swift; sourceTree = "<group>"; };
 		A4000000000000000000007F /* FoodNutritionRowPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionRowPresentationTests.swift; sourceTree = "<group>"; };
+		B40000000000000000000001 /* FoodRecordSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordSnapshot.swift; sourceTree = "<group>"; };
+		B40000000000000000000002 /* FrequentFoodCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentFoodCandidate.swift; sourceTree = "<group>"; };
+		B40000000000000000000003 /* FrequentFoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentFoodService.swift; sourceTree = "<group>"; };
+		B40000000000000000000004 /* QuickFoodQuantityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFoodQuantityState.swift; sourceTree = "<group>"; };
+		B40000000000000000000005 /* MealSuggestionDisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionDisplayState.swift; sourceTree = "<group>"; };
+		B40000000000000000000006 /* TodayMealSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMealSection.swift; sourceTree = "<group>"; };
+		B40000000000000000000007 /* QuickAddFoodFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddFoodFlowView.swift; sourceTree = "<group>"; };
+		B40000000000000000000008 /* QuickFoodPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFoodPickerView.swift; sourceTree = "<group>"; };
+		B40000000000000000000009 /* QuickFoodQuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFoodQuantityView.swift; sourceTree = "<group>"; };
+		B4000000000000000000000A /* FoodRecord+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodRecord+Snapshot.swift"; sourceTree = "<group>"; };
+		B4000000000000000000000B /* FoodRecordSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordSnapshotTests.swift; sourceTree = "<group>"; };
+		B4000000000000000000000C /* FrequentFoodServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentFoodServiceTests.swift; sourceTree = "<group>"; };
+		B4000000000000000000000D /* QuickFoodQuantityStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFoodQuantityStateTests.swift; sourceTree = "<group>"; };
+		B4000000000000000000000E /* MealSuggestionDisplayStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionDisplayStateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +374,10 @@
 		A70000000000000000000006 /* NutritionTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4000000000000000000000B /* FoodRecordSnapshotTests.swift */,
+				B4000000000000000000000C /* FrequentFoodServiceTests.swift */,
+				B4000000000000000000000D /* QuickFoodQuantityStateTests.swift */,
+				B4000000000000000000000E /* MealSuggestionDisplayStateTests.swift */,
 				A40000000000000000000006 /* AppShellTests.swift */,
 				A40000000000000000000009 /* NutritionCalculatorTests.swift */,
 				A4000000000000000000000A /* InputValidatorTests.swift */,
@@ -392,6 +424,8 @@
 		A70000000000000000000008 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B40000000000000000000001 /* FoodRecordSnapshot.swift */,
+				B40000000000000000000002 /* FrequentFoodCandidate.swift */,
 				A40000000000000000000076 /* MealNutritionImpactPresentation.swift */,
 				A4000000000000000000000C /* NutritionValues.swift */,
 				A40000000000000000000059 /* PartialNutritionValues.swift */,
@@ -438,6 +472,7 @@
 		A7000000000000000000000A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B40000000000000000000003 /* FrequentFoodService.swift */,
 				A40000000000000000000015 /* FoodDatabaseService.swift */,
 				A40000000000000000000051 /* MealRecommendationService.swift */,
 				A40000000000000000000054 /* FoodRecognitionService.swift */,
@@ -450,6 +485,7 @@
 		A7000000000000000000000B /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				B4000000000000000000000A /* FoodRecord+Snapshot.swift */,
 				A40000000000000000000074 /* MealSuggestionBatchStore.swift */,
 				AD0000000000000000000001 /* NutritionTracker.xcdatamodeld */,
 				A4000000000000000000001C /* PersistenceController.swift */,
@@ -533,6 +569,12 @@
 		A7000000000000000000000F /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				B40000000000000000000004 /* QuickFoodQuantityState.swift */,
+				B40000000000000000000005 /* MealSuggestionDisplayState.swift */,
+				B40000000000000000000006 /* TodayMealSection.swift */,
+				B40000000000000000000007 /* QuickAddFoodFlowView.swift */,
+				B40000000000000000000008 /* QuickFoodPickerView.swift */,
+				B40000000000000000000009 /* QuickFoodQuantityView.swift */,
 				A4000000000000000000002F /* TodayView.swift */,
 				A40000000000000000000072 /* MealSuggestionEditorState.swift */,
 				A40000000000000000000077 /* MealSuggestionEditorView.swift */,
@@ -662,6 +704,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30000000000000000000001 /* FoodRecordSnapshot.swift in Sources */,
+				B30000000000000000000002 /* FrequentFoodCandidate.swift in Sources */,
+				B30000000000000000000003 /* FrequentFoodService.swift in Sources */,
+				B30000000000000000000004 /* QuickFoodQuantityState.swift in Sources */,
+				B30000000000000000000005 /* MealSuggestionDisplayState.swift in Sources */,
+				B30000000000000000000006 /* TodayMealSection.swift in Sources */,
+				B30000000000000000000007 /* QuickAddFoodFlowView.swift in Sources */,
+				B30000000000000000000008 /* QuickFoodPickerView.swift in Sources */,
+				B30000000000000000000009 /* QuickFoodQuantityView.swift in Sources */,
+				B3000000000000000000000A /* FoodRecord+Snapshot.swift in Sources */,
 				A30000000000000000000001 /* NutritionTrackerApp.swift in Sources */,
 				A30000000000000000000002 /* AppTab.swift in Sources */,
 				A30000000000000000000003 /* RootTabView.swift in Sources */,
@@ -760,6 +812,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3000000000000000000000B /* FoodRecordSnapshotTests.swift in Sources */,
+				B3000000000000000000000C /* FrequentFoodServiceTests.swift in Sources */,
+				B3000000000000000000000D /* QuickFoodQuantityStateTests.swift in Sources */,
+				B3000000000000000000000E /* MealSuggestionDisplayStateTests.swift in Sources */,
 				A30000000000000000000005 /* AppShellTests.swift in Sources */,
 				A30000000000000000000006 /* NutritionCalculatorTests.swift in Sources */,
 				A30000000000000000000007 /* InputValidatorTests.swift in Sources */,

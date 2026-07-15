@@ -11,15 +11,26 @@ struct PhotoFoodView: View {
     @State private var presentsCamera = false
     @State private var errorMessage: String?
 
+    private let bundle: Bundle
     private let foods: [FoodReference]
     private let recognitionService: any FoodRecognitionService
+    private let initialMealType: MealType
+    private let saveDate: Date
+    private let onSaved: (() -> Void)?
 
     init(
         bundle: Bundle = .main,
-        recognitionService: any FoodRecognitionService = MockFoodRecognitionService()
+        recognitionService: any FoodRecognitionService = MockFoodRecognitionService(),
+        initialMealType: MealType = .breakfast,
+        saveDate: Date = Date(),
+        onSaved: (() -> Void)? = nil
     ) {
+        self.bundle = bundle
         foods = (try? FoodDatabaseService.loadBundled(bundle: bundle).foods) ?? []
         self.recognitionService = recognitionService
+        self.initialMealType = initialMealType
+        self.saveDate = saveDate
+        self.onSaved = onSaved
     }
 
     var body: some View {
@@ -86,8 +97,12 @@ struct PhotoFoodView: View {
 
                     NavigationLink {
                         AddFoodView(
+                            bundle: bundle,
                             initialFood: recognizedFood,
-                            inputMethod: .photo
+                            initialMealType: initialMealType,
+                            saveDate: saveDate,
+                            inputMethod: .photo,
+                            onSaved: onSaved
                         )
                     } label: {
                         Text("确认食物名称和重量")

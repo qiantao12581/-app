@@ -83,6 +83,61 @@ final class FoodRecordStoreTests: XCTestCase {
         XCTAssertEqual(record.fat, 8)
     }
 
+    func testQuickAddPayloadPersistsSelectedMealQuantityAndNutrition() throws {
+        let controller = PersistenceController(inMemory: true)
+        let context = controller.container.viewContext
+        let food = FoodReference(
+            id: "quick-rice",
+            name: "熟米饭",
+            aliases: [],
+            category: .staple,
+            suitableMeals: [.lunch, .dinner],
+            caloriesPer100Grams: 116,
+            carbohydratesPer100Grams: 25.9,
+            proteinPer100Grams: 2.6,
+            fatPer100Grams: 0.3,
+            minimumSuggestedGrams: 50,
+            maximumSuggestedGrams: 400,
+            suggestionStepGrams: 25
+        )
+        var state = QuickFoodQuantityState(
+            selection: .catalog(food: food, remembered: nil),
+            mealType: .dinner
+        )
+        state.updateQuantity("180")
+        try state.validate()
+
+        let quantity = try XCTUnwrap(state.quantityValue)
+        let portionName = try XCTUnwrap(state.portionName)
+        let baseAmount = try XCTUnwrap(state.baseAmount)
+        let baseUnit = try XCTUnwrap(state.baseUnit)
+        let nutrition = try XCTUnwrap(state.nutrition)
+        let record = try FoodRecordStore().save(
+            foodName: state.food.name,
+            mealType: state.mealType,
+            inputMethod: .manual,
+            quantity: quantity,
+            portionName: portionName,
+            baseAmount: baseAmount,
+            baseUnit: baseUnit,
+            catalogFoodID: state.catalogFoodIDForSave,
+            nutrition: nutrition,
+            context: context
+        )
+
+        XCTAssertEqual(record.mealType, .dinner)
+        XCTAssertEqual(record.inputMethod, .manual)
+        XCTAssertEqual(record.presentedQuantity, 180)
+        XCTAssertEqual(record.presentedPortionName, "克")
+        XCTAssertEqual(record.presentedBaseAmount, 180)
+        XCTAssertEqual(record.baseUnit, .gram)
+        XCTAssertEqual(record.catalogFoodID, "quick-rice")
+        XCTAssertEqual(record.calories, 208.8, accuracy: 0.000_001)
+        XCTAssertEqual(record.carbohydrates, 46.62, accuracy: 0.000_001)
+        XCTAssertEqual(record.protein, 4.68, accuracy: 0.000_001)
+        XCTAssertEqual(record.fat, 0.54, accuracy: 0.000_001)
+    }
+
     @discardableResult
     private func makeRecord(
         name: String,

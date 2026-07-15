@@ -8,20 +8,30 @@ struct AddFoodView: View {
     @State private var presentedSheet: PresentedSheet?
     @State private var alertMessage: AlertMessage?
 
+    private let bundle: Bundle
     private let databaseResult: Result<FoodDatabaseService, Error>
     private let inputMethod: InputMethod
+    private let saveDate: Date
+    private let onSaved: (() -> Void)?
 
     init(
         bundle: Bundle = .main,
         initialFood: FoodReference? = nil,
-        inputMethod: InputMethod = .manual
+        initialMealType: MealType = .breakfast,
+        saveDate: Date = Date(),
+        inputMethod: InputMethod = .manual,
+        onSaved: (() -> Void)? = nil
     ) {
         var initialState = AddFoodFormState()
+        initialState.mealType = initialMealType
         if let initialFood {
             initialState.select(food: initialFood)
         }
         _state = State(initialValue: initialState)
+        self.bundle = bundle
         self.inputMethod = inputMethod
+        self.saveDate = saveDate
+        self.onSaved = onSaved
         databaseResult = Result {
             try FoodDatabaseService.loadBundled(bundle: bundle)
         }
@@ -32,7 +42,12 @@ struct AddFoodView: View {
             Section("食物信息") {
                 if inputMethod == .manual {
                     NavigationLink {
-                        PhotoFoodView()
+                        PhotoFoodView(
+                            bundle: bundle,
+                            initialMealType: state.mealType,
+                            saveDate: saveDate,
+                            onSaved: onSaved
+                        )
                     } label: {
                         Label("拍照或从相册选择", systemImage: "camera.fill")
                     }
@@ -195,14 +210,19 @@ struct AddFoodView: View {
                 baseUnit: baseUnit,
                 catalogFoodID: state.catalogFoodID,
                 nutrition: nutrition,
+                date: saveDate,
                 context: context
             )
 
-            state.reset()
-            alertMessage = AlertMessage(
-                title: "保存成功",
-                message: "食物已经加入今天的记录。"
-            )
+            if let onSaved {
+                onSaved()
+            } else {
+                state.reset()
+                alertMessage = AlertMessage(
+                    title: "保存成功",
+                    message: "食物已经加入今天的记录。"
+                )
+            }
         } catch {
             showError(error)
         }

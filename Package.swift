@@ -31,6 +31,8 @@ let package = Package(
                 "Models/FoodQuantitySelection.swift",
                 "Models/MealType.swift",
                 "Models/InputMethod.swift",
+                "Models/FoodRecordSnapshot.swift",
+                "Models/FrequentFoodCandidate.swift",
                 "Models/BiologicalSex.swift",
                 "Models/ActivityLevel.swift",
                 "Models/DailyEnergyBalance.swift",
@@ -39,8 +41,11 @@ let package = Package(
                 "Models/MealNutritionImpactPresentation.swift",
                 "Models/RecognizedFoodCandidate.swift",
                 "Features/Add/AddFoodFormState.swift",
+                "Features/Today/QuickFoodQuantityState.swift",
+                "Features/Today/MealSuggestionDisplayState.swift",
                 "Features/Today/MealSuggestionEditorState.swift",
                 "Services/FoodDatabaseService.swift",
+                "Services/FrequentFoodService.swift",
                 "Services/FoodCatalogAuditor.swift",
                 "Services/MealRecommendationService.swift",
                 "Services/FoodRecognitionService.swift",
@@ -63,6 +68,7 @@ let package = Package(
             exclude: [
                 "AppShellTests.swift",
                 "FoodQuantityPersistenceTests.swift",
+                "FoodRecordSnapshotTests.swift",
                 "TabBarAppearanceTests.swift"
             ],
             sources: [
@@ -85,6 +91,9 @@ let package = Package(
                 "FoodReferenceDecodingTests.swift",
                 "FoodCatalogAuditTests.swift",
                 "RecordFoodThumbnailResolverTests.swift",
+                "FrequentFoodServiceTests.swift",
+                "QuickFoodQuantityStateTests.swift",
+                "MealSuggestionDisplayStateTests.swift",
                 "MealSuggestionEditorStateTests.swift",
                 "MealNutritionImpactPresentationTests.swift"
             ]

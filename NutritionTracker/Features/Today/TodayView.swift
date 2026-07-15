@@ -5,6 +5,7 @@ struct TodayView: View {
     @Environment(\.managedObjectContext) private var context
 
     @FetchRequest private var records: FetchedResults<FoodRecord>
+    @FetchRequest private var recentRecords: FetchedResults<FoodRecord>
     @FetchRequest private var goals: FetchedResults<DailyNutritionGoal>
     @FetchRequest private var exercises: FetchedResults<ExerciseRecord>
     @FetchRequest(
@@ -33,7 +34,7 @@ struct TodayView: View {
 
     @State private var presentedSheet: TodaySheet?
     @State private var errorMessage: String?
-    @State private var mealSuggestions: [MealSuggestion] = []
+    @State private var suggestionState = MealSuggestionDisplayState()
 
     private let date: Date
     private let recommendationFoods: [FoodReference]
@@ -53,6 +54,25 @@ struct TodayView: View {
             ],
             predicate: predicate,
             animation: .default
+        )
+        let calendar = Calendar.current
+        let recentStartDate = calendar.date(
+            byAdding: .day,
+            value: -29,
+            to: date
+        ) ?? date
+        let recentLowerBound = calendar.startOfDay(for: recentStartDate)
+        let recentUpperBound = bounds.upperBound
+        _recentRecords = FetchRequest(
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \FoodRecord.createdAt, ascending: false)
+            ],
+            predicate: NSPredicate(
+                format: "createdAt >= %@ AND createdAt < %@",
+                recentLowerBound as NSDate,
+                recentUpperBound as NSDate
+            ),
+            animation: nil
         )
         _exercises = FetchRequest(
             sortDescriptors: [
@@ -165,6 +185,7 @@ struct TodayView: View {
                 RecordFoodThumbnailCustomFoodSource(customFood: $0)
             }
         )
+        let recentSnapshots = recentRecords.map(FoodRecordSnapshot.init(record:))
 
         List {
             Section {
@@ -311,39 +332,50 @@ struct TodayView: View {
                 } else if recommendationFoods.isEmpty {
                     Text("内置食物数据库暂时无法读取，请使用手动添加。")
                         .foregroundStyle(.secondary)
-                } else if mealSuggestions.isEmpty {
-                    Label(
-                        "今天三大营养素已达标，无需额外加餐",
-                        systemImage: "checkmark.circle.fill"
-                    )
-                    .foregroundStyle(.green)
-                } else {
-                    ForEach(mealSuggestions) { suggestion in
-                        MealSuggestionCard(
-                            suggestion: suggestion,
-                            catalog: recommendationFoods
-                        ) {
-                            presentedSheet = .mealSuggestion(suggestion)
+                } else if let suggestions = suggestionState.suggestions {
+                    if suggestions.isEmpty {
+                        Label(
+                            "今天三大营养素已达标，无需额外加餐",
+                            systemImage: "checkmark.circle.fill"
+                        )
+                        .foregroundStyle(.green)
+                    } else {
+                        ForEach(suggestions) { suggestion in
+                            MealSuggestionCard(
+                                suggestion: suggestion,
+                                catalog: recommendationFoods
+                            ) {
+                                presentedSheet = .mealSuggestion(suggestion)
+                            }
                         }
                     }
+
+                    Button {
+                        generateMealSuggestions()
+                    } label: {
+                        Label("重新生成", systemImage: "arrow.clockwise")
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(.green)
+                } else {
+                    Button {
+                        generateMealSuggestions()
+                    } label: {
+                        Label("生成后续餐次建议", systemImage: "sparkles")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.green)
                 }
             }
 
-            Section("今日食物") {
-                if records.isEmpty {
-                    EmptyFoodRecordsView()
-                } else {
-                    ForEach(records, id: \.objectID) { record in
-                        FoodRecordRow(
-                            record: record,
-                            thumbnail: thumbnailResolver.resolve(
-                                catalogFoodID: record.catalogFoodID,
-                                storedFoodName: record.foodName
-                            )
-                        )
-                    }
-                    .onDelete(perform: deleteRecords)
-                }
+            ForEach(MealType.allCases) { mealType in
+                TodayMealSection(
+                    mealType: mealType,
+                    records: records.filter { $0.mealType == mealType },
+                    thumbnailResolver: thumbnailResolver,
+                    onAdd: { presentedSheet = .quickAdd(mealType) },
+                    onDelete: { deleteRecord($0) }
+                )
             }
         }
         .navigationTitle("今日")
@@ -365,13 +397,12 @@ struct TodayView: View {
         }
         .onAppear {
             createGoalSnapshotIfPossible()
-            refreshMealSuggestions()
         }
         .onChange(of: records.count) { _ in
-            refreshMealSuggestions()
+            suggestionState.invalidate()
         }
         .onChange(of: goals.first?.updatedAt) { _ in
-            refreshMealSuggestions()
+            suggestionState.invalidate()
         }
         .sheet(item: $presentedSheet) { sheet in
             switch sheet {
@@ -393,6 +424,16 @@ struct TodayView: View {
                     dailyRemaining: editorDailyRemaining,
                     catalog: editableFoods,
                     date: date
+                )
+            case let .quickAdd(mealType):
+                QuickAddFoodFlowView(
+                    mealType: mealType,
+                    date: date,
+                    builtInFoods: recommendationFoods,
+                    customFoods: customFoods.compactMap {
+                        try? $0.decodedFoodReference()
+                    },
+                    recentRecords: recentSnapshots
                 )
             }
         }
@@ -420,20 +461,19 @@ struct TodayView: View {
         }
     }
 
-    private func deleteRecords(at offsets: IndexSet) {
-        let targets = offsets.map { records[$0] }
+    private func deleteRecord(_ record: FoodRecord) {
         do {
-            try FoodRecordStore().delete(targets, context: context)
+            try FoodRecordStore().delete(record, context: context)
         } catch {
             context.rollback()
             errorMessage = error.localizedDescription
         }
     }
 
-    private func refreshMealSuggestions() {
+    private func generateMealSuggestions() {
         guard nutritionPresentation.canGenerateMealSuggestions,
               let goal = goals.first else {
-            mealSuggestions = []
+            suggestionState.invalidate()
             return
         }
         let target = NutritionValues(
@@ -446,10 +486,12 @@ struct TodayView: View {
             target: target,
             consumed: consumed
         ).remaining
-        mealSuggestions = MealRecommendationService().suggestions(
-            remaining: remaining,
-            completedMeals: Set(records.map(\.mealType)),
-            foods: recommendationFoods
+        suggestionState.setGenerated(
+            MealRecommendationService().suggestions(
+                remaining: remaining,
+                completedMeals: Set(records.map(\.mealType)),
+                foods: recommendationFoods
+            )
         )
     }
 }
@@ -459,6 +501,7 @@ private enum TodaySheet: Identifiable {
     case profile
     case weightGoal
     case mealSuggestion(MealSuggestion)
+    case quickAdd(MealType)
 
     var id: String {
         switch self {
@@ -467,6 +510,8 @@ private enum TodaySheet: Identifiable {
         case .weightGoal: return "weight-goal"
         case let .mealSuggestion(suggestion):
             return "meal-suggestion-\(suggestion.id)"
+        case let .quickAdd(mealType):
+            return "quick-add-\(mealType.rawValue)"
         }
     }
 }
@@ -662,66 +707,5 @@ private struct MacroProgressRow: View {
                 .foregroundStyle(remaining >= 0 ? Color.secondary : Color.red)
         }
         .padding(.vertical, 3)
-    }
-}
-
-private struct FoodRecordRow: View {
-    @ObservedObject var record: FoodRecord
-    let thumbnail: RecordFoodThumbnailDescriptor
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack(alignment: .top, spacing: 10) {
-                FoodThumbnailView(descriptor: thumbnail)
-                Spacer(minLength: 8)
-                VStack(alignment: .trailing, spacing: 4) {
-                    Text(nutrientText(
-                        value: record.partialNutritionValues.calories,
-                        unit: "千卡"
-                    ))
-                        .font(.subheadline.weight(.semibold))
-                    Text(record.mealType.title)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
-            HStack {
-                Text(
-                    "\(NutritionFormatters.oneDecimal(record.presentedQuantity)) "
-                        + record.presentedPortionName
-                )
-                Spacer()
-                Text("碳水 \(nutrientText(value: record.partialNutritionValues.carbohydrates))")
-                Text("蛋白 \(nutrientText(value: record.partialNutritionValues.protein))")
-                Text("脂肪 \(nutrientText(value: record.partialNutritionValues.fat))")
-            }
-            .font(.caption)
-            .foregroundStyle(.secondary)
-        }
-        .padding(.vertical, 4)
-    }
-
-    private func nutrientText(value: Double?, unit: String = "") -> String {
-        guard let value else { return "暂无官方数据" }
-        let suffix = unit.isEmpty ? "" : " \(unit)"
-        return NutritionFormatters.oneDecimal(value) + suffix
-    }
-}
-
-private struct EmptyFoodRecordsView: View {
-    var body: some View {
-        VStack(spacing: 10) {
-            Image(systemName: "fork.knife.circle")
-                .font(.system(size: 34))
-                .foregroundStyle(.secondary)
-            Text("今天还没有食物记录")
-                .font(.headline)
-            Text("前往“添加”页面记录第一餐吧。")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 22)
     }
 }
