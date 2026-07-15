@@ -65,6 +65,39 @@ final class MealRecommendationServiceTests: XCTestCase {
         XCTAssertEqual(Set(lunch.items.map(\.id)).count, lunch.items.count)
     }
 
+    func testMainMealSearchUsesBoundedTopCandidatesPerCategory() throws {
+        let target = NutritionValues(
+            calories: 0,
+            carbohydrates: 90,
+            protein: 60,
+            fat: 30
+        )
+        let remaining = target.scaled(by: 1 / 0.85)
+        let foods = [
+            food(id: "staple-near", category: .staple, carbs: 31, protein: 21, fat: 11),
+            food(id: "staple-combo", category: .staple, carbs: 90, protein: 0, fat: 0),
+            food(id: "protein-near", category: .protein, carbs: 31, protein: 21, fat: 11),
+            food(id: "protein-combo", category: .protein, carbs: 0, protein: 60, fat: 0),
+            food(id: "vegetable-near", category: .vegetable, carbs: 31, protein: 21, fat: 11),
+            food(id: "vegetable-combo", category: .vegetable, carbs: 0, protein: 0, fat: 30)
+        ]
+
+        let lunch = try XCTUnwrap(
+            MealRecommendationService(maximumMainMealCandidatesPerCategory: 1)
+                .suggestions(
+                    remaining: remaining,
+                    completedMeals: [.breakfast, .dinner],
+                    foods: foods
+                )
+                .first { $0.mealType == .lunch }
+        )
+
+        XCTAssertEqual(
+            Set(lunch.items.map(\.foodID)),
+            Set(["staple-near", "protein-near", "vegetable-near"])
+        )
+    }
+
     func testEveryAutomaticItemUsesItsCatalogDefaultPortionAndExactNutrition() throws {
         let suggestions = MealRecommendationService().suggestions(
             remaining: NutritionValues(
